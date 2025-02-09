@@ -25,6 +25,7 @@ func _ready():
 	timerDead.connect("timeout", self, "dead_timeout")
 	
 func _process(delta):
+	velocity.y += gravity
 	fireball.position.x -= 2.2
 	fireball.scale.x -= 0.004
 	fireball.scale.y -= 0.004
@@ -33,7 +34,6 @@ func _process(delta):
 		self.position.y = 5000
 		free = false
 func move_character():
-	velocity.y += gravity
 	if left:
 		velocity.x = -speed
 		velocity = move_and_slide(velocity,Vector2.UP)
@@ -71,8 +71,6 @@ func dead():
 func respawn():
 	self.position.y = OriginalPositionY
 	$AnimatedSprite.play("default")
-	speed = 60
-
 
 func _on_Area2D2_body_entered(body):
 	if body.name == "Player":
