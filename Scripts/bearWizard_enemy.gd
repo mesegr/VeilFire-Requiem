@@ -48,7 +48,9 @@ func _on_frame_changed():
 		fireball.scale.x = 1.4
 		fireball.scale.y = 1.4
 		$AudioStreamPlayer2D.play()
-		
+		$CollisionShape2D2.disabled = false
+	if $AnimatedSprite.frame == 34:
+		$CollisionShape2D2.disabled = true
 func dead_timeout():
 	free = true
 	

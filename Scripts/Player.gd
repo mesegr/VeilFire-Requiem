@@ -249,6 +249,7 @@ func playerMovement(delta):
 	motion = move_and_slide(motion, up)
 	
 func hit(damage):
+	sprite.stop()
 	PlayerLives -= damage
 	hitsound.play()
 	shake_camera()
@@ -323,6 +324,7 @@ func _on_rest_body_exited(body):
 		$"../altar/ECopia".visible = false
 		
 func dead():
+	sprite.stop()
 	PlayerLives = 4
 	sprite.play("dead")
 	deadeffect.start()
