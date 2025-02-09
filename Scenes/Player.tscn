@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://Assets/Knight/Idle.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
@@ -7,21 +7,20 @@
 [ext_resource path="res://Assets/Knight/rest.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Knight/Capa 10.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Knight/Capa 11.png" type="Texture" id=7]
-[ext_resource path="res://Sounds/playerHurt.wav" type="AudioStream" id=8]
+[ext_resource path="res://Sounds/path of exile.ogg" type="AudioStream" id=8]
 [ext_resource path="res://Assets/Knight/Dead.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Knight/Capa 12.png" type="Texture" id=10]
-[ext_resource path="res://Sounds/FinalBossMusic.wav" type="AudioStream" id=11]
+[ext_resource path="res://Sounds/FinalBossMusic.ogg" type="AudioStream" id=11]
 [ext_resource path="res://Assets/Knight/Capa 14.png" type="Texture" id=12]
-[ext_resource path="res://Sounds/attack_sound.wav" type="AudioStream" id=13]
-[ext_resource path="res://Sounds/hah_jump2.wav" type="AudioStream" id=14]
-[ext_resource path="res://Sounds/huh_jump1.wav" type="AudioStream" id=15]
-[ext_resource path="res://Sounds/attack_sound2.wav" type="AudioStream" id=16]
-[ext_resource path="res://Sounds/dragonslayer desert.wav" type="AudioStream" id=17]
-[ext_resource path="res://Sounds/rest.wav" type="AudioStream" id=18]
-[ext_resource path="res://Sounds/path of exile.wav" type="AudioStream" id=19]
-[ext_resource path="res://Sounds/Frostveil Shrine.wav" type="AudioStream" id=20]
-[ext_resource path="res://Sounds/crimson_Abyss_Forge.wav" type="AudioStream" id=21]
-[ext_resource path="res://Sounds/Cursed Abyssal Reef.wav" type="AudioStream" id=22]
+[ext_resource path="res://Sounds/attack_sound.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Sounds/hah_jump2.ogg" type="AudioStream" id=14]
+[ext_resource path="res://Sounds/huh_jump1.ogg" type="AudioStream" id=15]
+[ext_resource path="res://Sounds/dragonslayer desert.ogg" type="AudioStream" id=16]
+[ext_resource path="res://Sounds/Cursed Abyssal Reef.ogg" type="AudioStream" id=17]
+[ext_resource path="res://Sounds/rest.ogg" type="AudioStream" id=18]
+[ext_resource path="res://Sounds/playerHurt.ogg" type="AudioStream" id=19]
+[ext_resource path="res://Sounds/Frostveil Shrine.ogg" type="AudioStream" id=20]
+[ext_resource path="res://Sounds/crimson_Abyss_Forge.ogg" type="AudioStream" id=21]
 [ext_resource path="res://Assets/Knight/Hurt.png" type="Texture" id=23]
 [ext_resource path="res://Assets/Knight/dash-sheet.png" type="Texture" id=24]
 
@@ -277,7 +276,7 @@ position = Vector2( -2, 0.5 )
 shape = SubResource( 21 )
 
 [node name="hit" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 19 )
 volume_db = -10.857
 
 [node name="attack_sound" type="AudioStreamPlayer" parent="."]
@@ -293,20 +292,20 @@ stream = ExtResource( 14 )
 volume_db = -6.0
 
 [node name="attack_sound2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 16 )
-volume_db = -18.0
+stream = ExtResource( 13 )
+volume_db = -17.126
 
 [node name="rest_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 18 )
 volume_db = -14.0
 
 [node name="dragonslayer_desert_music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 17 )
+stream = ExtResource( 16 )
 volume_db = -29.0
 pitch_scale = 0.95
 
 [node name="path_of_exile_music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 19 )
+stream = ExtResource( 8 )
 pitch_scale = 1.05
 
 [node name="frostveil_Shrine_music" type="AudioStreamPlayer" parent="."]
@@ -318,7 +317,7 @@ stream = ExtResource( 21 )
 volume_db = -21.0
 
 [node name="Cursed_Abyssal_Reef_music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 22 )
+stream = ExtResource( 17 )
 volume_db = -14.0
 pitch_scale = 0.67
 

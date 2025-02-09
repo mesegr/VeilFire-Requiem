@@ -3,8 +3,8 @@
 [ext_resource path="res://Scripts/iceMonsterBoss.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Enemies/iceMonsterMiniboss-sheet.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Enemies/iceMonsterMinibossdead-sheet (1).png" type="Texture" id=3]
-[ext_resource path="res://Sounds/enemie_dead.wav" type="AudioStream" id=4]
-[ext_resource path="res://Sounds/iceMonster.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/enemie_dead.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/iceMonster.ogg" type="AudioStream" id=5]
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 3 )
@@ -93,7 +93,7 @@ script = ExtResource( 1 )
 position = Vector2( -1, -12 )
 scale = Vector2( 0.15, 0.16 )
 frames = SubResource( 7 )
-frame = 4
+frame = 3
 playing = true
 flip_h = true
 

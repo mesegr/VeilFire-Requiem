@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/fireWalker/01.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/fireWalker.gd" type="Script" id=2]
 [ext_resource path="res://Assets/fireWalker/02.png" type="Texture" id=3]
-[ext_resource path="res://Sounds/enemie_dead.wav" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/enemie_dead.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Assets/fireWalker/03.png" type="Texture" id=5]
 [ext_resource path="res://Assets/fireWalker/04.png" type="Texture" id=6]
 [ext_resource path="res://Assets/fireWalkerRage/02.png" type="Texture" id=7]
@@ -11,7 +11,7 @@
 [ext_resource path="res://Assets/fireWalkerRage/03.png" type="Texture" id=9]
 [ext_resource path="res://Assets/fireWalkerRage/04.png" type="Texture" id=10]
 [ext_resource path="res://Assets/fireWalker/firewalkerDEAD-sheet.png" type="Texture" id=11]
-[ext_resource path="res://Sounds/firewalkerFootsteps.wav" type="AudioStream" id=12]
+[ext_resource path="res://Sounds/firewalkerFootsteps.ogg" type="AudioStream" id=12]
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 11 )

@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Enemies/tornado_sand.png" type="Texture" id=1]
+[ext_resource path="res://Sounds/tornado_sand.ogg" type="AudioStream" id=2]
 
 [sub_resource type="Animation" id=4]
 resource_name = "CoinAnimation"
@@ -47,5 +48,12 @@ autoplay = "CoinAnimation"
 playback_speed = -1.5
 anims/CoinAnimation = SubResource( 4 )
 anims/RESET = SubResource( 5 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+volume_db = -6.992
+pitch_scale = 1.97
+max_distance = 150.0
+attenuation = 0.659754
 
 [connection signal="body_entered" from="quickSand" to="quickSand" method="_on_Coin2d_body_entered"]
