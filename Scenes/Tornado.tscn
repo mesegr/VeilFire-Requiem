@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Enemies/tornado_sand.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=4]
+resource_name = "CoinAnimation"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[node name="quickSand" type="Node2D"]
+
+[node name="quickSand" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="quickSand"]
+texture = ExtResource( 1 )
+hframes = 8
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="quickSand"]
+autoplay = "CoinAnimation"
+playback_speed = -1.5
+anims/CoinAnimation = SubResource( 4 )
+anims/RESET = SubResource( 5 )
+
+[connection signal="body_entered" from="quickSand" to="quickSand" method="_on_Coin2d_body_entered"]

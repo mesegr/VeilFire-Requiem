@@ -1,0 +1,133 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Assets/fireWalker/01.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/fireWalker.gd" type="Script" id=2]
+[ext_resource path="res://Assets/fireWalker/02.png" type="Texture" id=3]
+[ext_resource path="res://Sounds/enemie_dead.wav" type="AudioStream" id=4]
+[ext_resource path="res://Assets/fireWalker/03.png" type="Texture" id=5]
+[ext_resource path="res://Assets/fireWalker/04.png" type="Texture" id=6]
+[ext_resource path="res://Assets/fireWalkerRage/02.png" type="Texture" id=7]
+[ext_resource path="res://Assets/fireWalkerRage/01.png" type="Texture" id=8]
+[ext_resource path="res://Assets/fireWalkerRage/03.png" type="Texture" id=9]
+[ext_resource path="res://Assets/fireWalkerRage/04.png" type="Texture" id=10]
+[ext_resource path="res://Assets/fireWalker/firewalkerDEAD-sheet.png" type="Texture" id=11]
+[ext_resource path="res://Sounds/firewalkerFootsteps.wav" type="AudioStream" id=12]
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 11 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 11 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 11 )
+region = Rect2( 768, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 11 )
+region = Rect2( 1024, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 11 )
+region = Rect2( 1280, 0, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": true,
+"name": "dead",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "defaultAngry",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 15, 13.875 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 15.75, 13.5 )
+
+[node name="fireWalker" type="KinematicBody2D" groups=["enemie6"]]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -2, -14 )
+scale = Vector2( 0.195, 0.225 )
+frames = SubResource( 4 )
+frame = 3
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+position = Vector2( -2, 0.875 )
+shape = SubResource( 5 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( -8, 3 )
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+collision_mask = 5
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+position = Vector2( -2, 3 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+cast_to = Vector2( 0.00024128, 66.6667 )
+collision_mask = 5
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -2, 1.5 )
+shape = SubResource( 6 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="deadsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -3.0
+pitch_scale = 1.2
+
+[node name="right" type="RayCast2D" parent="."]
+position = Vector2( -2, -8 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+cast_to = Vector2( -1.14441e-05, 260 )
+collision_mask = 7
+
+[node name="left" type="RayCast2D" parent="."]
+position = Vector2( -3, -8 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+cast_to = Vector2( 0.000917435, 253.333 )
+collision_mask = 7
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 12 )
+volume_db = 9.403
+pitch_scale = 0.27
+max_distance = 150.0
+attenuation = 0.784584
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

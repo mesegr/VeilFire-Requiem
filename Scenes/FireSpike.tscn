@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Enemies/FireSpike.png" type="Texture" id=1]
+
+[node name="FireSpike" type="Area2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.734375, -4.21875 )
+scale = Vector2( 1.0464, 1.54018 )
+texture = ExtResource( 1 )

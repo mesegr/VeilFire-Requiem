@@ -1,0 +1,379 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Assets/controls/Esc copia.png" type="Texture" id=1]
+[ext_resource path="res://Assets/controls/a copia.png" type="Texture" id=2]
+[ext_resource path="res://Assets/UI/Main menu.png" type="Texture" id=3]
+[ext_resource path="res://Assets/controls/Capa 2.png" type="Texture" id=4]
+[ext_resource path="res://Sounds/path of exile.wav" type="AudioStream" id=5]
+[ext_resource path="res://Assets/controls/w copia.png" type="Texture" id=6]
+[ext_resource path="res://Sounds/PressButon.wav" type="AudioStream" id=7]
+[ext_resource path="res://Sounds/hoverButon.wav" type="AudioStream" id=8]
+[ext_resource path="res://Assets/controls/d copia.png" type="Texture" id=9]
+[ext_resource path="res://Assets/controls/E copia.png" type="Texture" id=10]
+[ext_resource path="res://Assets/controls/Capa 3.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/altar.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scripts/Main_menuEN.gd" type="Script" id=14]
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.188235, 0.188235, 0.188235, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 9
+border_width_bottom = 9
+border_color = Color( 0.0431373, 0.0431373, 0.0431373, 1 )
+border_blend = true
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+anti_aliasing_size = 0.976
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.25098, 0.658824, 0.384314, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.0352941, 0.360784, 0.141176, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.109804, 0.4, 0.203922, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.00784314, 0.180392, 0.0666667, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.0745098, 0.0745098, 0.0745098, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.25098, 0.658824, 0.384314, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.0352941, 0.360784, 0.141176, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.109804, 0.4, 0.203922, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.00784314, 0.180392, 0.0666667, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.137255, 0.137255, 0.137255, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 14 )
+
+[node name="MainMenu" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+scale = Vector2( 1.00156, 1.00186 )
+texture = ExtResource( 3 )
+
+[node name="Area2D" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1085, 341 )
+scale = Vector2( 0.7, 0.72 )
+
+[node name="Coin" parent="." instance=ExtResource( 13 )]
+position = Vector2( 930, 893 )
+scale = Vector2( 5, 5 )
+
+[node name="Coin2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1490, 779 )
+scale = Vector2( 5, 5 )
+
+[node name="Coin3" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1791, 359 )
+scale = Vector2( 5, 5 )
+
+[node name="Coin4" parent="." instance=ExtResource( 13 )]
+position = Vector2( 331, 575 )
+scale = Vector2( 5, 5 )
+
+[node name="Language" type="Panel" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.862745 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -46.0
+margin_top = 117.0
+margin_right = 42.0
+margin_bottom = 173.0
+custom_styles/panel = SubResource( 7 )
+
+[node name="ES" type="Button" parent="Language"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -33.0
+margin_top = -40.0
+margin_right = -3.0
+margin_bottom = -10.0
+rect_min_size = Vector2( 30, 30 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 4 )
+text = "ES"
+
+[node name="EN" type="Button" parent="Language"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 2.5
+margin_top = -40.0
+margin_right = 32.5
+margin_bottom = -10.0
+rect_min_size = Vector2( 30, 30 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 4 )
+text = "EN"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -190.0
+margin_top = -110.0
+margin_right = 190.0
+margin_bottom = -60.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_right = 380.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 3 )
+text = "Start Game"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -190.0
+margin_top = -40.0
+margin_right = 190.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="Button3" type="Button" parent="VBoxContainer3"]
+margin_right = 380.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 4 )
+text = "Controls"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -190.0
+margin_top = 30.0
+margin_right = 190.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="Button2" type="Button" parent="VBoxContainer2"]
+margin_right = 380.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 4 )
+text = "Quit Game"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -80.0
+margin_top = 95.0
+margin_right = 80.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 0, 35 )
+
+[node name="Button4" type="Button" parent="VBoxContainer4"]
+margin_right = 160.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 0, 35 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 4 )
+text = "Language"
+
+[node name="MenuTheme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+autoplay = true
+
+[node name="buttonPressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+pitch_scale = 0.7
+
+[node name="buttonHovered" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -10.0
+pitch_scale = 1.2
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.941176 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -220.0
+margin_right = 250.0
+margin_bottom = 310.0
+rect_min_size = Vector2( 500, 530 )
+custom_styles/panel = SubResource( 7 )
+
+[node name="back" type="Button" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -50.0
+margin_right = 100.0
+margin_bottom = -15.0
+rect_min_size = Vector2( 200, 35 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 4 )
+text = "BACK"
+
+[node name="Label" type="Label" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -220.0
+margin_top = -242.0
+margin_right = 160.0
+margin_bottom = 60.0
+rect_scale = Vector2( 2.1, 2.1 )
+text = "Jump -
+
+Move left -
+
+Move right -
+
+Interact -
+
+Attack -
+
+Pause/unpause -"
+
+[node name="Capa2" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.67451 )
+position = Vector2( 338.8, 37.4 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 4 )
+
+[node name="DCopia" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.67451 )
+position = Vector2( 294.8, 180.4 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 9 )
+
+[node name="Capa3" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.67451 )
+position = Vector2( 293, 323 )
+scale = Vector2( 0.22, 0.22 )
+texture = ExtResource( 11 )
+
+[node name="EscCopia" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.67451 )
+position = Vector2( 294.8, 396.4 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 1 )
+
+[node name="ECopia" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.67451 )
+position = Vector2( 294.8, 251.4 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 10 )
+
+[node name="WCopia" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.67451 )
+position = Vector2( 448.8, 36.4 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 6 )
+
+[node name="ACopia" type="Sprite" parent="Panel"]
+modulate = Color( 1, 1, 1, 0.67451 )
+position = Vector2( 294.8, 110.4 )
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 2 )
+
+[connection signal="mouse_entered" from="Language/ES" to="." method="_on_Button2_mouse_entered"]
+[connection signal="pressed" from="Language/ES" to="." method="_on_ES_pressed"]
+[connection signal="mouse_entered" from="Language/EN" to="." method="_on_Button2_mouse_entered"]
+[connection signal="pressed" from="Language/EN" to="." method="_on_EN_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Button" to="." method="_on_Button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer3/Button3" to="." method="_on_Button2_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer3/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer2/Button2" to="." method="_on_Button2_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer2/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer4/Button4" to="." method="_on_Button2_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer4/Button4" to="." method="_on_Button4_pressed"]
+[connection signal="mouse_entered" from="Panel/back" to="." method="_on_Button2_mouse_entered"]
+[connection signal="pressed" from="Panel/back" to="." method="_on_back_pressed"]
