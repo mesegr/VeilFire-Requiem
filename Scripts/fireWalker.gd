@@ -49,6 +49,16 @@ func hit():
 		velocity = Vector2(-0,-200)
 	else:
 		velocity = Vector2(0,-200)
+	$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
+	var timer = Timer.new()
+	timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
+	timer.one_shot = true
+	add_child(timer)
+	timer.connect("timeout", self, "_on_hit_timeout")
+	timer.start()
+
+func _on_hit_timeout():
+	$AnimatedSprite.modulate = Color(1, 1, 1, 1)
 	
 func dead():
 	velocity = Vector2.ZERO
