@@ -236,13 +236,13 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=21]
-extents = Vector2( 16, 33.5 )
+extents = Vector2( 16, 33 )
 
 [sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 32.625, 38 )
 
 [sub_resource type="RectangleShape2D" id=36]
-extents = Vector2( 9, 26 )
+extents = Vector2( 20, 26 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" groups=["Player"]]
 collision_layer = 2
@@ -258,6 +258,8 @@ position = Vector2( -3, 6 )
 shape = SubResource( 6 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 2 )
+scale = Vector2( 1, 0.95 )
 frames = SubResource( 5 )
 animation = "idle"
 
@@ -272,7 +274,7 @@ collision_layer = 10
 collision_mask = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="rest"]
-position = Vector2( -2, 0.5 )
+position = Vector2( -2, 1 )
 shape = SubResource( 21 )
 
 [node name="hit" type="AudioStreamPlayer" parent="."]
