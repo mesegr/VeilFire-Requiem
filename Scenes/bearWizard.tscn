@@ -64,7 +64,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 2.5, 1.78571 )
+extents = Vector2( 5.35714, 3.21429 )
 
 [sub_resource type="AtlasTexture" id=14]
 atlas = ExtResource( 38 )
@@ -129,7 +129,7 @@ flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 light_mask = 4
-position = Vector2( -26.5, 2.5 )
+position = Vector2( -25.5, 2.5 )
 scale = Vector2( 1.4, 1.4 )
 shape = SubResource( 13 )
 
@@ -144,7 +144,7 @@ attenuation = 0.63728
 position = Vector2( -5.96046e-08, -14 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 4 )
-frame = 40
+frame = 16
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

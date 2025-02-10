@@ -1,6 +1,5 @@
 extends KinematicBody2D
-var Playerlives = 4
-var gravity = 10
+var gravity = 15
 var speed = 0
 var velocity = Vector2(0,0)
 var left = true
