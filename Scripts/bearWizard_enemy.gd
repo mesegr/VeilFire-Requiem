@@ -28,17 +28,9 @@ func _process(delta):
 	fireball.position.x -= 2.2
 	fireball.scale.x -= 0.004
 	fireball.scale.y -= 0.004
-	move_character()
 	if free:
 		self.position.y = 5000
 		free = false
-func move_character():
-	if left:
-		velocity.x = -speed
-		velocity = move_and_slide(velocity,Vector2.UP)
-	else:
-		velocity.x = speed
-		velocity = move_and_slide(velocity,Vector2.UP)
 		
 func _on_frame_changed():
 	# Verifica si el frame actual es el 27

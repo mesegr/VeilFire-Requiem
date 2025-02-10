@@ -10226,48 +10226,48 @@ visible = false
 position = Vector2( 0, -171.429 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 8
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 16353.8, 241.025 )
 frames = SubResource( 209 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 12887.2, 241.025 )
 frames = SubResource( 210 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( -389.744, 2543.59 )
 frames = SubResource( 211 )
-frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16010.3, -5656.41 )
 frames = SubResource( 212 )
-frame = 4
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 3323.07, -1471.8 )
 frames = SubResource( 213 )
-frame = 4
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 27569.2, -3446.15 )
 frames = SubResource( 214 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 13707.7, 76.9238 )
 frames = SubResource( 215 )
+frame = 1
 playing = true
 
 [node name="altar" parent="altar" instance=ExtResource( 17 )]
@@ -10295,99 +10295,99 @@ position = Vector2( -18850, 6623.81 )
 position = Vector2( 14064, -1580 )
 
 [node name="fireWalker3" parent="." instance=ExtResource( 134 )]
-position = Vector2( 11534, -1584 )
+position = Vector2( 11534, -1583 )
 
 [node name="fireWalker2" parent="." instance=ExtResource( 134 )]
-position = Vector2( 11910, -1568 )
+position = Vector2( 11910, -1567 )
 
 [node name="fireWalker" parent="." instance=ExtResource( 134 )]
-position = Vector2( 10288, -1762 )
+position = Vector2( 10288, -1759 )
 
 [node name="fireWorm4" parent="." instance=ExtResource( 133 )]
 position = Vector2( 10508, -1711 )
 
 [node name="fireWorm2" parent="." instance=ExtResource( 133 )]
-position = Vector2( 12133, -1584 )
+position = Vector2( 12133, -1583 )
 
 [node name="fireWorm3" parent="." instance=ExtResource( 133 )]
-position = Vector2( 12671, -1728 )
+position = Vector2( 12671, -1727 )
 
 [node name="fireWorm" parent="." instance=ExtResource( 133 )]
 position = Vector2( 9428, -1631 )
 
 [node name="bearWizard3" parent="." instance=ExtResource( 132 )]
-position = Vector2( 1093, -112 )
+position = Vector2( 1095, -107 )
 
 [node name="bearWizard2" parent="." instance=ExtResource( 132 )]
-position = Vector2( 1807, -96 )
+position = Vector2( 1814, -92 )
 
 [node name="bearWizard" parent="." instance=ExtResource( 132 )]
-position = Vector2( 2943, -191 )
+position = Vector2( 2932, -189 )
 
 [node name="iceMonsterBoss3" parent="." instance=ExtResource( 131 )]
-position = Vector2( 8877, -1645 )
+position = Vector2( 8877, -1644 )
 
 [node name="iceMonsterBoss2" parent="." instance=ExtResource( 131 )]
-position = Vector2( 6946, -1122 )
+position = Vector2( 6946, -1115 )
 
 [node name="iceMonsterBoss4" parent="." instance=ExtResource( 131 )]
 position = Vector2( 5368, -304 )
 
 [node name="iceMonsterBoss" parent="." instance=ExtResource( 131 )]
-position = Vector2( 5114, -1193 )
+position = Vector2( 5122, -1196 )
 
 [node name="iceMonster3" parent="." instance=ExtResource( 129 )]
-position = Vector2( 3394, -457 )
+position = Vector2( 3394, -456 )
 
 [node name="iceMonster4" parent="." instance=ExtResource( 129 )]
 position = Vector2( 4376, -904 )
 
 [node name="iceMonster5" parent="." instance=ExtResource( 129 )]
-position = Vector2( 4782, -1113 )
+position = Vector2( 4782, -1112 )
 
 [node name="iceMonster6" parent="." instance=ExtResource( 129 )]
-position = Vector2( 6388, -1146 )
+position = Vector2( 6388, -1144 )
 
 [node name="iceMonster8" parent="." instance=ExtResource( 129 )]
-position = Vector2( 7042, -1194 )
+position = Vector2( 7042, -1191 )
 
 [node name="iceMonster10" parent="." instance=ExtResource( 129 )]
-position = Vector2( 8272, -1579 )
+position = Vector2( 8272, -1576 )
 
 [node name="iceMonster11" parent="." instance=ExtResource( 129 )]
-position = Vector2( 7912, -1436 )
+position = Vector2( 7912, -1432 )
 
 [node name="iceMonster9" parent="." instance=ExtResource( 129 )]
-position = Vector2( 6756, -1179 )
+position = Vector2( 6756, -1176 )
 
 [node name="iceMonster7" parent="." instance=ExtResource( 129 )]
-position = Vector2( 5453, -1177 )
+position = Vector2( 5453, -1176 )
 
 [node name="iceMonster" parent="." instance=ExtResource( 129 )]
-position = Vector2( 3139, -313 )
+position = Vector2( 3139, -312 )
 
 [node name="iceMonster2" parent="." instance=ExtResource( 129 )]
 position = Vector2( 5132, -297 )
 
 [node name="bear" parent="." groups=["enemie1"] instance=ExtResource( 128 )]
-position = Vector2( -237, -15 )
+position = Vector2( -237, -13 )
 
 [node name="bear2" parent="." groups=["enemie1"] instance=ExtResource( 128 )]
-position = Vector2( 250, -62 )
+position = Vector2( 250, -61 )
 scale = Vector2( 0.990315, 1 )
 
 [node name="bear5" parent="." groups=["enemie1"] instance=ExtResource( 128 )]
-position = Vector2( 1376, -113 )
+position = Vector2( 1376, -110 )
 
 [node name="bear6" parent="." groups=["enemie1"] instance=ExtResource( 128 )]
 position = Vector2( 2250, -95 )
 scale = Vector2( 0.990315, 1 )
 
 [node name="bear7" parent="." groups=["enemie1"] instance=ExtResource( 128 )]
-position = Vector2( 868, -159 )
+position = Vector2( 868, -158 )
 
 [node name="bear8" parent="." groups=["enemie1"] instance=ExtResource( 128 )]
-position = Vector2( 1655, -63 )
+position = Vector2( 1655, -62 )
 scale = Vector2( 0.990315, 1 )
 
 [node name="TraderCave" parent="." instance=ExtResource( 22 )]
@@ -10400,6 +10400,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
+frame = 1
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10412,7 +10413,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10425,7 +10426,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
