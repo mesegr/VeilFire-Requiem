@@ -22,8 +22,8 @@ var dash_duration = 0.055
 var dash_timer = 0
 var dash_cooldown = 1.5
 var dash_cooldown_timer = 0
-var moveSpeed = 45
-var maxSpeed = 95
+var moveSpeed = 47
+var maxSpeed = 98
 var jumpHeight = -272
 var gravity = 15
 var cooldownAttack = 0.75
@@ -212,8 +212,8 @@ func playerMovement(delta):
 			friction = true
 		if is_on_floor():
 			if can_doublejump == false:
-				moveSpeed = 43
-				maxSpeed = 90
+				moveSpeed = 47
+				maxSpeed = 98
 			can_doublejump = true
 			if Input.is_action_just_pressed("ui_up") and idle and attack:
 				sprite.play("jump")
@@ -249,17 +249,31 @@ func playerMovement(delta):
 	motion = move_and_slide(motion, up)
 	
 func hit(damage):
+	if !attack:
+		PlayerLives -= damage
+		hitsound.play()
+		shake_camera()
+		$AnimatedSprite.modulate = Color(5, 0, 0)  # Cambia el color del sprite a blanco (1, 1, 1)
+		var timer = Timer.new()
+		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
+		timer.one_shot = true
+		add_child(timer)
+		timer.connect("timeout", self, "_on_hit_timeout")
+		timer.start()
+		return
 	sprite.stop()
 	PlayerLives -= damage
 	hitsound.play()
 	shake_camera()
 	HitPlayer = true
-	motion = Vector2.ZERO
 	if !sprite.flip_h:
 		motion = Vector2(-100,-250)
 	else:
 		motion = Vector2(100,-250)
 	sprite.play("hurt")
+	
+func _on_hit_timeout():
+	$AnimatedSprite.modulate = Color(1, 1, 1, 1)
 	
 func updateCooldown(newCool):
 	cooldownAttack = newCool
@@ -271,7 +285,7 @@ func updateCooldown(newCool):
 func _on_animation_finished():
 	if sprite.animation == "hurt":
 		HitPlayer = false
-		motion = Vector2.ZERO
+		sprite.play("idle")
 		
 	if sprite.animation == "dash":
 		idle = true
@@ -370,13 +384,15 @@ func _on_Area2D8_body_entered(body):
 	if body.name == "Player":
 		stop_all_music()
 		Cursed_Abyssal_Reef_music.play()
+		doubleJumpItem2 = false
 		moveSpeed = 20
 		maxSpeed = 40
 		jumpHeight = -123
 		gravity = 2
 func _on_Area2D8_body_exited(body):
-	moveSpeed = 45
-	maxSpeed = 95
+	doubleJumpItem2 = true
+	moveSpeed = 47
+	maxSpeed = 98
 	jumpHeight = -272
 	gravity = 15
 

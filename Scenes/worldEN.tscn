@@ -10226,70 +10226,72 @@ visible = false
 position = Vector2( 0, -171.429 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 9
+frame = 4
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 16353.8, 241.025 )
 frames = SubResource( 209 )
-frame = 8
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 12887.2, 241.025 )
 frames = SubResource( 210 )
-frame = 8
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( -389.744, 2543.59 )
 frames = SubResource( 211 )
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16010.3, -5656.41 )
 frames = SubResource( 212 )
-frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 3323.07, -1471.8 )
 frames = SubResource( 213 )
-frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 27569.2, -3446.15 )
 frames = SubResource( 214 )
-frame = 8
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 13707.7, 76.9238 )
 frames = SubResource( 215 )
-frame = 1
+frame = 6
 playing = true
 
 [node name="altar" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 15945, 223.81 )
+position = Vector2( 14030, -157.143 )
 
 [node name="altar" parent="altar/altar" instance=ExtResource( 17 )]
-position = Vector2( 12565, 223.81 )
+position = Vector2( 10455, 1295.24 )
 
 [node name="altar" parent="altar/altar/altar" instance=ExtResource( 17 )]
-position = Vector2( 15230, -2895.24 )
+position = Vector2( 10040, -990.476 )
 
 [node name="altar" parent="altar/altar/altar/altar" instance=ExtResource( 17 )]
-position = Vector2( 30120, -4571.43 )
+position = Vector2( 9940, -2747.62 )
 
 [node name="altar" parent="altar/altar/altar/altar/altar" instance=ExtResource( 17 )]
-position = Vector2( 13365, 76.1914 )
+position = Vector2( 2505, -1219.05 )
 
 [node name="altar" parent="altar/altar/altar/altar/altar/altar" instance=ExtResource( 17 )]
-position = Vector2( -40245, 3128.57 )
+position = Vector2( 10690, -609.525 )
 
 [node name="altar" parent="altar/altar/altar/altar/altar/altar/altar" instance=ExtResource( 17 )]
-position = Vector2( -18850, 6623.81 )
+position = Vector2( 20490, -2742.86 )
+
+[node name="altar2" parent="altar/altar/altar/altar/altar/altar/altar" instance=ExtResource( 17 )]
+position = Vector2( 31780, -2361.9 )
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
 position = Vector2( 14064, -1580 )
@@ -10400,7 +10402,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 1
+frame = 6
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10413,7 +10415,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 2
+frame = 7
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10426,7 +10428,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 3
+frame = 8
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11566,7 +11568,7 @@ tile_data = PoolIntArray( -8256963, 94, 0, -8256962, 96, 0, -8256961, 96, 0, -82
 
 [node name="Clouds49" type="Sprite" parent="."]
 modulate = Color( 0.313726, 0.0235294, 0.0235294, 0.262745 )
-position = Vector2( 9425.3, -1672.64 )
+position = Vector2( 9417.31, -1672.64 )
 rotation = -1.57079
 scale = Vector2( 2.68783, 3.16208 )
 texture = ExtResource( 34 )
@@ -11579,7 +11581,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 780, -147 )
+position = Vector2( -4588, -196 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
