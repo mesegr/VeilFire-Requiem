@@ -242,7 +242,7 @@ extents = Vector2( 16, 33 )
 extents = Vector2( 32.625, 38 )
 
 [sub_resource type="RectangleShape2D" id=36]
-extents = Vector2( 20, 26 )
+extents = Vector2( 19, 26 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" groups=["Player"]]
 collision_layer = 2

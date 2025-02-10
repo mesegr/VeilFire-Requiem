@@ -380,6 +380,8 @@ func _on_Area2D8_body_exited(body):
 	jumpHeight = -272
 	gravity = 15
 
+var initial_enemy_lives = enemy_lives.duplicate()  # Copia las vidas iniciales
+
 func _on_Area2D_body_entered(body):
 	for group in enemy_lives.keys():
 		if body.is_in_group(group):
@@ -388,7 +390,8 @@ func _on_Area2D_body_entered(body):
 			body.hit()
 			if enemy_lives[group] <= 0:
 				body.dead()
-				enemy_lives[group] = enemy_lives[group]  # Restablece las vidas al valor inicial
+				# Restablece las vidas al valor inicial fuera del bucle
+				enemy_lives[group] = initial_enemy_lives[group]
 			break
 
 func shake_camera():
