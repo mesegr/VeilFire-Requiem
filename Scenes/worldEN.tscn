@@ -8815,7 +8815,7 @@ position = Vector2( -754, -1238 )
 scale = Vector2( 0.990315, 1 )
 
 [node name="Coin3" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -1070, -1222 )
+position = Vector2( -976, -1240 )
 scale = Vector2( 0.990315, 1 )
 
 [node name="Coin2" parent="CoinFather" instance=ExtResource( 16 )]
@@ -10222,50 +10222,57 @@ position = Vector2( -4932, -224 )
 scale = Vector2( 0.2, 0.21 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar"]
-visible = false
 position = Vector2( 0, -171.429 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 1
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
-position = Vector2( 16353.8, 241.025 )
+position = Vector2( 14389.7, -241.025 )
 frames = SubResource( 209 )
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
-position = Vector2( 12887.2, 241.025 )
+position = Vector2( 10728.2, 1446.15 )
 frames = SubResource( 210 )
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
-position = Vector2( -389.744, 2543.59 )
+position = Vector2( 10292.3, -1066.67 )
 frames = SubResource( 211 )
-frame = 2
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
-position = Vector2( 16010.3, -5656.41 )
+position = Vector2( 10194.9, -2964.1 )
 frames = SubResource( 212 )
-frame = 7
+frame = 4
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
-position = Vector2( 3323.07, -1471.8 )
+position = Vector2( 2564.11, -1312.82 )
 frames = SubResource( 213 )
-frame = 7
+frame = 4
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
-position = Vector2( 27569.2, -3446.15 )
+position = Vector2( 10969.2, -676.922 )
 frames = SubResource( 214 )
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
-position = Vector2( 13707.7, 76.9238 )
+position = Vector2( 16646.1, -2764.1 )
 frames = SubResource( 215 )
-frame = 3
+playing = true
+
+[node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
+position = Vector2( 27979.5, -2271.8 )
+frames = SubResource( 215 )
+frame = 9
 playing = true
 
 [node name="altar" parent="altar" instance=ExtResource( 17 )]
@@ -10287,10 +10294,10 @@ position = Vector2( 2505, -1219.05 )
 position = Vector2( 10690, -609.525 )
 
 [node name="altar" parent="altar/altar/altar/altar/altar/altar/altar" instance=ExtResource( 17 )]
-position = Vector2( 20490, -2742.86 )
+position = Vector2( 16230, -2590.47 )
 
 [node name="altar2" parent="altar/altar/altar/altar/altar/altar/altar" instance=ExtResource( 17 )]
-position = Vector2( 31780, -2361.9 )
+position = Vector2( 27280, -2133.33 )
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
 position = Vector2( 14064, -1580 )
@@ -10401,7 +10408,6 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 3
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10414,7 +10420,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 4
+frame = 1
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10427,7 +10433,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 5
+frame = 2
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11573,6 +11579,7 @@ scale = Vector2( 2.68783, 3.16208 )
 texture = ExtResource( 34 )
 
 [node name="Clouds50" type="Sprite" parent="."]
+visible = false
 modulate = Color( 0.313726, 0.0235294, 0.0235294, 0.262745 )
 position = Vector2( 19132, -1519 )
 rotation = 1.5708
