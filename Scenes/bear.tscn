@@ -81,14 +81,12 @@ shape = SubResource( 5 )
 position = Vector2( -15, 3 )
 scale = Vector2( 0.3, 0.3 )
 enabled = true
-collision_mask = 5
 
 [node name="RayCast2D2" type="RayCast2D" parent="."]
 position = Vector2( -2, 3 )
 rotation = 1.5708
 scale = Vector2( 0.3, 0.3 )
 enabled = true
-collision_mask = 5
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2

@@ -89,7 +89,6 @@ position = Vector2( -12, -2 )
 scale = Vector2( 0.3, 0.3 )
 enabled = true
 cast_to = Vector2( 0, 43.3333 )
-collision_mask = 5
 
 [node name="RayCast2D2" type="RayCast2D" parent="."]
 position = Vector2( -2, -9.09495e-13 )
@@ -97,7 +96,6 @@ rotation = 1.5708
 scale = Vector2( 0.3, 0.3 )
 enabled = true
 cast_to = Vector2( 0, 43.3333 )
-collision_mask = 5
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2
