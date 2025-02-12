@@ -12,10 +12,10 @@ var attack =  false
 var canAttack = true
 var fireAtt = false
 var up = false
-var fireUP = 1.5
-var fireUP2 = 1.5
-var fireUP3 = 1.5
-var fireUP4 = 1.5
+var fireUP = 250
+var fireUP2 = 250
+var fireUP3 = 250
+var fireUP4 = 250
 var down = false
 var numero_aleatorio = 0
 onready var camera = $"../Player/PlayerCamera"
@@ -49,7 +49,7 @@ func _ready():
 func _process(delta):
 	if !dead:
 		if fireAtt:
-			fireAttack()
+			fireAttack(delta)
 
 		if canAttack:
 			attack()
@@ -74,7 +74,7 @@ func move_character():
 func dead_timeout():
 	free = true
 
-func fireAttack():
+func fireAttack(delta):
 	
 	if fire.position.y <= 3:
 		fireUP = 0
@@ -89,28 +89,28 @@ func fireAttack():
 		
 		
 	if up:
-		fire.position.y -= fireUP
+		fire.position.y -= fireUP * delta
 		if fire.position.y <= 17:
-			fire2.position.y -= fireUP2
+			fire2.position.y -= fireUP2 * delta
 		if fire2.position.y <= 17:
-			fire3.position.y -= fireUP3
+			fire3.position.y -= fireUP3 * delta
 		if fire3.position.y <= 17:
-			fire4.position.y -= fireUP4
+			fire4.position.y -= fireUP4 * delta
 			
 	if fire4.position.y <= 3:
 		down = true
 		
 	if down:
-		fire.position.y += 1.4
-		fire2.position.y += 1.4
-		fire3.position.y += 1.4
-		fire4.position.y += 1.4
+		fire.position.y +=150 * delta
+		fire2.position.y += 150 * delta
+		fire3.position.y += 150 * delta
+		fire4.position.y += 150 * delta
 		if fire4.position.y >= 52:
 			down = false
-			fireUP = 1.5
-			fireUP2 = 1.5
-			fireUP3 = 1.5
-			fireUP4 = 1.5
+			fireUP = 250
+			fireUP2 = 250
+			fireUP3 = 250
+			fireUP4 = 250
 			numero_aleatorio = 0
 	
 func hit():
@@ -130,10 +130,10 @@ func reset_fire_positions():
 	fire2.position.y = fireOGposition
 	fire3.position.y = fireOGposition
 	fire4.position.y = fireOGposition
-	fireUP = 1.5
-	fireUP2 = 1.5
-	fireUP3 = 1.5
-	fireUP4 = 1.5
+	fireUP = 250
+	fireUP2 = 250
+	fireUP3 = 250
+	fireUP4 = 250
 	up = false
 	down = false
 	
@@ -192,7 +192,7 @@ func attack():
 		var obj = $Attack.get_collider()
 		if obj.is_in_group("Player"):
 			numero_aleatorio = randi() % 10 + 1
-			AttCoolRan = rand_range(3.5, 5) 
+			AttCoolRan = rand_range(4, 5.5) 
 
 			if numero_aleatorio <= 4:
 				$AnimatedSprite.play("Flames")

@@ -29,6 +29,11 @@ default_bus_layout=""
 Player="*res://Scripts/jugador1.gd"
 Altar="*res://Scripts/altar.gd"
 
+[debug]
+
+settings/fps/force_fps=30
+settings/stdout/print_fps=true
+
 [display]
 
 window/size/width=1920

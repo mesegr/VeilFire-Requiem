@@ -34,8 +34,8 @@ var original_camera_position = Vector2()
 var HitPlayer = false
 var player
 var can_doublejump = true
-var doubleJumpItem1 = false
-var doubleJumpItem2 = false
+var doubleJumpItem1 = true
+var doubleJumpItem2 = true
 var motion = Vector2()
 const up = Vector2(0, -1)
 onready var camera = $PlayerCamera

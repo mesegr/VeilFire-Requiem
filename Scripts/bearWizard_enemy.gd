@@ -25,9 +25,9 @@ func _ready():
 	
 func _process(delta):
 	velocity.y += gravity
-	fireball.position.x -= 2.2
-	fireball.scale.x -= 0.004
-	fireball.scale.y -= 0.004
+	fireball.position.x -= 280 * delta
+	fireball.scale.x -= 0.58 * delta
+	fireball.scale.y -= 0.58 * delta
 	if free:
 		self.position.y = 5000
 		free = false
