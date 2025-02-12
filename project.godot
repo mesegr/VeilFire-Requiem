@@ -31,7 +31,6 @@ Altar="*res://Scripts/altar.gd"
 
 [debug]
 
-settings/fps/force_fps=30
 settings/stdout/print_fps=true
 
 [display]
