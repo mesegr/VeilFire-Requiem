@@ -160,6 +160,7 @@ func _on_frame_changed():
 	if sprite.animation == "attackFire" and sprite.frame == 1:
 		$attackFireRawr.play()
 	if sprite.animation == "attackFire" and sprite.frame == 12:
+		player.shake_camera()
 		$CleaveSound.play()
 	if sprite.animation == "attackFire" and sprite.frame == 13:
 		$attack.disabled = false
@@ -168,6 +169,7 @@ func _on_frame_changed():
 	if sprite.animation == "attackcleave" and sprite.frame == 1:
 		$attackcleaveRawr.play()
 	if sprite.animation == "attackcleave" and sprite.frame == 10:
+		player.shake_camera()
 		$CleaveSound.play()
 	if sprite.animation == "attackcleave" and sprite.frame == 11:
 		$attack.disabled = false

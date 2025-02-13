@@ -1,4 +1,6 @@
 extends KinematicBody2D
+
+onready var player = get_node("../Player")
 var lives = 6
 var Playerlives = 4
 var gravity = 10
@@ -107,3 +109,4 @@ func _on_Area2D2_body_entered(body):
 		timer.start()
 		lives -= 1
 		dead()
+		player.shake_camera()
