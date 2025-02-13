@@ -8,6 +8,11 @@ func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		self.visible = not get_tree().paused
 		get_tree().paused = not get_tree().paused
+		$Panel.visible = false
+		$VBoxContainer4/Button4.visible = true
+		$Label.visible = true
+		$VBoxContainer3/Button3.visible = true
+		$VBoxContainer2/Button2.visible = true
 	
 func _on_Button_pressed():
 	pressed.play()
