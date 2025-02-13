@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+onready var player = get_node("../Player")
 var lives = 3
 var gravity = 00
 var speed = 50
@@ -59,7 +60,6 @@ func respawn():
 	speed = 50
 	lives = 3
 
-
 func _on_hitted_body_entered(body):
 	if body.is_in_group("hit"):
 		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
@@ -71,3 +71,4 @@ func _on_hitted_body_entered(body):
 		timer.start()
 		lives -= 1
 		dead()
+		player.shake_camera()

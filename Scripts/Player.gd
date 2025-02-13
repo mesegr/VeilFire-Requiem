@@ -70,9 +70,9 @@ var enemiesList = [
 		"iceMonsterBoss", "iceMonsterBoss2", "iceMonsterBoss3", "iceMonsterBoss4",
 		"bearWizard", "bearWizard2", "bearWizard3",
 		"fireworm", "fireworm2", "fireworm3", "fireworm4","fireWalker", "fireWalker2", "fireWalker3"]
-#var enemy_lives = {
-#	"enemie": 2,"enemie1": 3,"enemie2": 4,"enemie3": 4,"enemie4": 4,"enemie5": 5,
-#	"enemie6": 6,"finalBoss": 25}
+var enemy_lives = {
+	"enemie": 2,"enemie1": 3,"enemie2": 4,"enemie3": 4,"enemie4": 4,"enemie5": 5,
+	"enemie6": 6,"finalBoss": 25}
 var enemy_nodes = []  
 
 func _ready():
@@ -406,20 +406,6 @@ func _on_Area2D8_body_exited(body):
 	jumpHeight = -272
 	gravity = 15
 
-#var initial_enemy_lives = enemy_lives.duplicate()  # Copia las vidas iniciales
-
-#func _on_Area2D_body_entered(body):
-#	for group in enemy_lives.keys():
-#		if body.is_in_group(group):
-#			shake_camera()
-#			enemy_lives[group] -= 1
-#			body.hit()
-#			if enemy_lives[group] <= 0:
-#				body.dead()
-#				# Restablece las vidas al valor inicial fuera del bucle
-#				enemy_lives[group] = initial_enemy_lives[group]
-#			break
-
 func shake_camera():
 	camera_shake_timer = shake_duration  # Inicia el temporizador
 	var random_offset = Vector2(rand_range(-shake_intensity, shake_intensity), rand_range(-shake_intensity, shake_intensity))
@@ -427,15 +413,8 @@ func shake_camera():
 
 func _on_Area2D2_body_entered(body):
 	var enemy_damage = {
-		"enemie": 1,
-		"enemie1": 1,
-		"enemie2": 1,
-		"enemie3": 2,
-		"enemie4": 1,
-		"fireball": 1,
-		"enemie5": 2,
-		"enemie6": 2,
-		"finalBoss": 1}
+		"enemie": 1,"enemie1": 1,"enemie2": 1,"enemie3": 2,"enemie4": 1,
+		"fireball": 1,"enemie5": 2,"enemie6": 2,"finalBoss": 1}
 	for group in enemy_damage.keys():
 		if body.is_in_group(group) and PlayerLives != 0:
 			hit(enemy_damage[group])
