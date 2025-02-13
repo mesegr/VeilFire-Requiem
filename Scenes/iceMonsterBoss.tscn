@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scripts/iceMonsterBoss.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Enemies/iceMonsterMiniboss-sheet.png" type="Texture" id=2]
@@ -84,6 +84,9 @@ extents = Vector2( 9.5, 11 )
 [sub_resource type="RectangleShape2D" id=24]
 extents = Vector2( 6.25, 60 )
 
+[sub_resource type="RectangleShape2D" id=25]
+extents = Vector2( 12, 13 )
+
 [node name="iceMonsterBoss" type="KinematicBody2D" groups=["enemie3"]]
 collision_layer = 4
 collision_mask = 4
@@ -93,7 +96,7 @@ script = ExtResource( 1 )
 position = Vector2( -1, -12 )
 scale = Vector2( 0.15, 0.16 )
 frames = SubResource( 7 )
-frame = 3
+frame = 8
 playing = true
 flip_h = true
 
@@ -139,6 +142,7 @@ collision_mask = 7
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 23, -37 )
 shape = SubResource( 24 )
+disabled = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 5 )
@@ -147,5 +151,12 @@ pitch_scale = 0.3
 max_distance = 120.0
 attenuation = 0.63728
 
+[node name="Area2D3" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2( -1, -1 )
+shape = SubResource( 25 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
+[connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]
