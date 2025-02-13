@@ -18,7 +18,6 @@ func _ready():
 	timerDead.one_shot = true
 	timerDead.connect("timeout", self, "dead_timeout")
 	
-	
 func _process(delta):
 	move_character()
 	turn()
@@ -58,6 +57,7 @@ func respawn():
 	self.position.y = OriginalPositionY
 	$AnimatedSprite.play("default")
 	speed = 60
+	lives = 2
 
 func _on_Area2D2_body_entered(body):
 	if body.is_in_group("hit"):

@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+onready var player = get_node("../Player")
+var lives = 25
 var respawnP = false
 var gravity = 0
 var speed = 0
@@ -57,7 +59,6 @@ func _process(delta):
 		if !attack and !respawnP:
 			chase()
 			move_character()
-
 	else:
 		# Si el boss está muerto, no hacer nada más que la animación de muerte
 		pass
@@ -87,7 +88,6 @@ func fireAttack(delta):
 		fireUP4 = 0
 		up = false
 		
-		
 	if up:
 		fire.position.y -= fireUP * delta
 		if fire.position.y <= 17:
@@ -112,15 +112,6 @@ func fireAttack(delta):
 			fireUP3 = 250
 			fireUP4 = 250
 			numero_aleatorio = 0
-	
-func hit():
-	sprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
-	var timer = Timer.new()
-	timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
-	timer.one_shot = true
-	add_child(timer)
-	timer.connect("timeout", self, "_on_hit_timeout")
-	timer.start()
 
 func _on_hit_timeout():
 	sprite.modulate = Color(1, 1, 1, 1)
@@ -138,17 +129,18 @@ func reset_fire_positions():
 	down = false
 	
 func dead():
-	print($CollisionShape2D)  # Verifica que no sea null
-	print($CollisionShape2D2)  # Verifica que no sea null
-	$CollisionShape2D.disabled = true
-	$CollisionShape2D2.disabled = true
-	velocity = Vector2.ZERO
-	dead = true
-	$AnimatedSprite.play("dead") 
-	speed = 0  
-	attack = false  
-	fireAtt = false 
-	$FootSteps.stop() 
+	if lives == 0:
+		print($CollisionShape2D)  # Verifica que no sea null
+		print($CollisionShape2D2)  # Verifica que no sea null
+		$CollisionShape2D.disabled = true
+		$CollisionShape2D2.disabled = true
+		velocity = Vector2.ZERO
+		dead = true
+		$AnimatedSprite.play("dead") 
+		speed = 0  
+		attack = false  
+		fireAtt = false 
+		$FootSteps.stop() 
 	
 func respawn():
 	self.position.y = OriginalPositionY
@@ -160,6 +152,7 @@ func respawn():
 	reset_fire_positions()
 	$AttackFlame.disabled = true
 	$attack.disabled = true
+	lives = 25
 	
 func _on_frame_changed():
 	if sprite.animation == "attackFire" and sprite.frame == 14:
@@ -259,3 +252,16 @@ func chase():
 	elif rage:
 		$AnimatedSprite.play("Walk")
 
+func _on_Area2D2_body_entered(body):
+	if body.is_in_group("hit"):
+		sprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
+		var timer = Timer.new()
+		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
+		timer.one_shot = true
+		add_child(timer)
+		timer.connect("timeout", self, "_on_hit_timeout")
+		timer.start()
+		lives -= 1
+		dead()
+		player.shake_camera()
+		
