@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Assets/fireWalker/01.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/fireWalker.gd" type="Script" id=2]
@@ -60,6 +60,9 @@ extents = Vector2( 15, 13.875 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 15.75, 13.5 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 17, 14.5 )
 
 [node name="fireWalker" type="KinematicBody2D" groups=["enemie6"]]
 collision_layer = 4
@@ -130,4 +133,11 @@ pitch_scale = 0.27
 max_distance = 150.0
 attenuation = 0.784584
 
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( -2, 0.5 )
+shape = SubResource( 13 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
