@@ -1,6 +1,5 @@
 extends KinematicBody2D
 var gravity = 15
-var speed = 0
 var velocity = Vector2(0,0)
 var left = true
 var free = false
@@ -46,11 +45,6 @@ func dead_timeout():
 	free = true
 	
 func hit():
-	if !$AnimatedSprite.flip_h:
-		velocity = Vector2(-0,-200)
-
-	else:
-		velocity = Vector2(0,-200)
 	$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
 	var timer = Timer.new()
 	timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
@@ -68,7 +62,6 @@ func dead():
 	timerDead.start()
 	$AnimatedSprite.play("dead")
 	$Area2D.position.y = 5000
-	speed = 0
 	$deadsound.play()
 	
 func respawn():
@@ -80,5 +73,4 @@ func _on_Area2D2_body_entered(body):
 		scale.x = -scale.x
 
 func _on_Area2D3_body_entered(body):
-	if body.is_in_group("hit"):
-		print("piop")
+		print("pipupipu")

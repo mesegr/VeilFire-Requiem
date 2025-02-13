@@ -112,7 +112,7 @@ extents = Vector2( 8.5, 19 )
 extents = Vector2( 11, 9.5 )
 
 [sub_resource type="RectangleShape2D" id=20]
-extents = Vector2( 11, 10 )
+extents = Vector2( 13, 11 )
 
 [node name="bearWizard" type="KinematicBody2D" groups=["enemie4"]]
 collision_layer = 4
@@ -193,7 +193,7 @@ shape = SubResource( 5 )
 [node name="Area2D3" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2( -1, 3 )
+position = Vector2( -1, 0 )
 shape = SubResource( 20 )
 
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
