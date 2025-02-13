@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Assets/Enemies/crab.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/enemy_crab.gd" type="Script" id=2]
@@ -69,6 +69,9 @@ extents = Vector2( 9, 6 )
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 10, 5.5 )
 
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 9, 6 )
+
 [node name="crab" type="KinematicBody2D" groups=["enemie"]]
 collision_layer = 4
 collision_mask = 4
@@ -120,4 +123,11 @@ autoplay = true
 max_distance = 150.0
 attenuation = 0.659754
 
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 0, 2 )
+shape = SubResource( 16 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

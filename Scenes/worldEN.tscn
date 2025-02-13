@@ -10235,55 +10235,55 @@ visible = false
 position = Vector2( 0, -171.429 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 5
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 14389.7, -241.025 )
 frames = SubResource( 209 )
-frame = 4
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 10728.2, 1446.15 )
 frames = SubResource( 210 )
-frame = 4
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 10292.3, -1066.67 )
 frames = SubResource( 211 )
-frame = 6
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10194.9, -2964.1 )
 frames = SubResource( 212 )
-frame = 1
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 2564.11, -1312.82 )
 frames = SubResource( 213 )
-frame = 1
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10969.2, -676.922 )
 frames = SubResource( 214 )
-frame = 4
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16533.4, -2743.58 )
 frames = SubResource( 215 )
-frame = 7
+frame = 4
 playing = true
 
 [node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 27979.5, -2271.8 )
 frames = SubResource( 215 )
-frame = 6
+frame = 3
 playing = true
 
 [node name="altar" parent="altar" instance=ExtResource( 17 )]
@@ -10416,7 +10416,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 7
+frame = 4
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10429,7 +10429,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 8
+frame = 5
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10442,7 +10442,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 9
+frame = 6
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11595,7 +11595,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 397, -6 )
+position = Vector2( -3925, -261 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
