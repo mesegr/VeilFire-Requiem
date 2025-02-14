@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scripts/iceMonsterBoss.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Enemies/iceMonsterMiniboss-sheet.png" type="Texture" id=2]
@@ -81,6 +81,9 @@ extents = Vector2( 9, 11.5 )
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 9.5, 11 )
 
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 2, 37.25 )
+
 [sub_resource type="RectangleShape2D" id=25]
 extents = Vector2( 12, 13 )
 
@@ -137,13 +140,23 @@ pitch_scale = 0.3
 max_distance = 120.0
 attenuation = 0.63728
 
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( -1, 0 )
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 15, -24.75 )
+shape = SubResource( 26 )
+
 [node name="Area2D3" type="Area2D" parent="."]
 collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2( -1, -1 )
+position = Vector2( -1, 0 )
 shape = SubResource( 25 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]
