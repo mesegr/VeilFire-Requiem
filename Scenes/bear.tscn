@@ -65,8 +65,8 @@ extents = Vector2( 9.5, 6 )
 extents = Vector2( 9.5, 6 )
 
 [node name="bear" type="KinematicBody2D"]
-collision_layer = 4
-collision_mask = 4
+collision_layer = 8
+collision_mask = 8
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -110,6 +110,8 @@ max_distance = 150.0
 attenuation = 0.63728
 
 [node name="hitted" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitted"]
 light_mask = 4

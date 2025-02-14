@@ -73,8 +73,8 @@ extents = Vector2( 10, 5.5 )
 extents = Vector2( 9, 6 )
 
 [node name="crab" type="KinematicBody2D" groups=["enemie"]]
-collision_layer = 4
-collision_mask = 4
+collision_layer = 8
+collision_mask = 8
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -124,6 +124,8 @@ max_distance = 150.0
 attenuation = 0.659754
 
 [node name="Area2D2" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 0, 2 )

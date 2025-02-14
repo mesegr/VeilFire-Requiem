@@ -256,8 +256,8 @@ collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="Area2D2" type="Area2D" parent="."]
-collision_layer = 4
-collision_mask = 4
+collision_layer = 8
+collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( -3, 2 )
@@ -267,7 +267,8 @@ shape = SubResource( 6 )
 position = Vector2( 0, 2 )
 scale = Vector2( 1, 0.95 )
 frames = SubResource( 5 )
-animation = "crouch"
+animation = "attack 1"
+frame = 1
 
 [node name="TimerRest" type="Timer" parent="."]
 
@@ -330,8 +331,8 @@ volume_db = -14.0
 pitch_scale = 0.67
 
 [node name="Area2D" type="StaticBody2D" parent="." groups=["hit"]]
-collision_layer = 5
-collision_mask = 5
+collision_layer = 4
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 50.375, -5 )

@@ -85,8 +85,8 @@ extents = Vector2( 11, 6.5 )
 extents = Vector2( 11, 7 )
 
 [node name="fireWorm" type="KinematicBody2D" groups=["enemie5"]]
-collision_layer = 4
-collision_mask = 4
+collision_layer = 8
+collision_mask = 8
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -106,14 +106,12 @@ shape = SubResource( 5 )
 position = Vector2( -13, 3 )
 scale = Vector2( 0.3, 0.3 )
 enabled = true
-collision_mask = 5
 
 [node name="RayCast2D2" type="RayCast2D" parent="."]
 position = Vector2( 0, 3 )
 rotation = 1.5708
 scale = Vector2( 0.3, 0.3 )
 enabled = true
-collision_mask = 5
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2
@@ -138,6 +136,8 @@ max_distance = 100.0
 attenuation = 0.63728
 
 [node name="Area2D2" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( -1, 8 )
