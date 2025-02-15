@@ -113,7 +113,7 @@ scale = Vector2( 1.00156, 1.00186 )
 texture = ExtResource( 3 )
 
 [node name="Area2D" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1085, 341 )
+position = Vector2( 1084, 335 )
 scale = Vector2( 0.7, 0.72 )
 
 [node name="Coin" parent="." instance=ExtResource( 13 )]
