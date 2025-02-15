@@ -106,7 +106,7 @@ extents = Vector2( 203.25, 272 )
 extents = Vector2( 12.5, 8.75 )
 
 [sub_resource type="RectangleShape2D" id=19]
-extents = Vector2( 8.5, 19 )
+extents = Vector2( 8.5, 11 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 11, 9.5 )
@@ -119,9 +119,9 @@ collision_layer = 8
 collision_mask = 8
 script = ExtResource( 2 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["fireball"]]
-collision_layer = 4
-collision_mask = 4
+[node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["enemie4"]]
+collision_layer = 8
+collision_mask = 8
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="KinematicBody2D"]
 position = Vector2( -24, 2 )
@@ -144,7 +144,7 @@ max_distance = 100.0
 attenuation = 0.63728
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -5.96046e-08, -14 )
+position = Vector2( -1, -14 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 4 )
 frame = 16
@@ -181,7 +181,7 @@ max_distance = 420.0
 attenuation = 0.63728
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2( 22, -4 )
+position = Vector2( -27, -14 )
 shape = SubResource( 19 )
 disabled = true
 

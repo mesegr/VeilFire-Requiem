@@ -410,7 +410,7 @@ func shake_camera():
 func _on_Area2D2_body_entered(body):
 	var enemy_damage = {
 		"enemie": 1,"enemie1": 1,"enemie2": 1,"enemie3": 2,"enemie4": 1,
-		"fireball": 1,"enemie5": 2,"enemie6": 2,"finalBoss": 1}
+		"enemie5": 2,"enemie6": 2,"finalBoss": 1}
 	for group in enemy_damage.keys():
 		if body.is_in_group(group) and PlayerLives != 0:
 			hit(enemy_damage[group])
