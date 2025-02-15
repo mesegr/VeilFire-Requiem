@@ -69,7 +69,8 @@ var enemiesList = [
 		"iceMonster7", "iceMonster8", "iceMonster9", "iceMonster10", "iceMonster11",
 		"iceMonsterBoss", "iceMonsterBoss2", "iceMonsterBoss3", "iceMonsterBoss4",
 		"bearWizard", "bearWizard2", "bearWizard3",
-		"fireworm", "fireworm2", "fireworm3", "fireworm4","fireWalker", "fireWalker2", "fireWalker3"]
+		"fireWorm", "fireWorm2", "fireWorm3", "fireWorm4",
+		"fireWalker", "fireWalker2", "fireWalker3"]
 var enemy_nodes = []  
 
 func _ready():
