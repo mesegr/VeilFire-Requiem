@@ -1,0 +1,136 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://Scripts/firebear.gd" type="Script" id=1]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (5).png" type="Texture" id=2]
+[ext_resource path="res://Assets/Enemies/iceMonsterdead-sheet.png" type="Texture" id=3]
+[ext_resource path="res://Sounds/enemie_dead.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/iceMonster.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (10).png" type="Texture" id=6]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (37).png" type="Texture" id=7]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (8).png" type="Texture" id=8]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (45).png" type="Texture" id=9]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (14).png" type="Texture" id=10]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (33).png" type="Texture" id=11]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (34).png" type="Texture" id=12]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (11).png" type="Texture" id=13]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (40).png" type="Texture" id=14]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (42).png" type="Texture" id=15]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (41).png" type="Texture" id=16]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (39).png" type="Texture" id=17]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (46).png" type="Texture" id=18]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (2).png" type="Texture" id=19]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000.png" type="Texture" id=20]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (48).png" type="Texture" id=21]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (36).png" type="Texture" id=22]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (43).png" type="Texture" id=23]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (12).png" type="Texture" id=24]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (9).png" type="Texture" id=25]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (4).png" type="Texture" id=26]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (38).png" type="Texture" id=27]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (7).png" type="Texture" id=28]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (47).png" type="Texture" id=29]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (31).png" type="Texture" id=30]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (13).png" type="Texture" id=31]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (32).png" type="Texture" id=32]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (6).png" type="Texture" id=33]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (44).png" type="Texture" id=34]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (35).png" type="Texture" id=35]
+[ext_resource path="res://Assets/FirePandaEnemie/28db3db0393c4eb321cc6a204d1a493d-0000 (3).png" type="Texture" id=36]
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 318, 300 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 3 )
+region = Rect2( 318, 0, 318, 300 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 3 )
+region = Rect2( 636, 0, 318, 300 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 3 )
+region = Rect2( 1590, 0, 318, 300 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 3 )
+region = Rect2( 1908, 0, 318, 300 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
+region = Rect2( 2226, 0, 318, 300 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 3 )
+region = Rect2( 2544, 0, 318, 300 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), null ],
+"loop": false,
+"name": "dead",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 36 ), ExtResource( 26 ), ExtResource( 2 ), ExtResource( 33 ), ExtResource( 28 ), ExtResource( 8 ), ExtResource( 25 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 24 ), ExtResource( 31 ), ExtResource( 10 ), ExtResource( 19 ), ExtResource( 36 ), ExtResource( 26 ), ExtResource( 2 ), ExtResource( 33 ), ExtResource( 28 ), ExtResource( 8 ), ExtResource( 25 ), ExtResource( 30 ), ExtResource( 32 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 35 ), ExtResource( 22 ), ExtResource( 7 ), ExtResource( 27 ), ExtResource( 17 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 23 ), ExtResource( 34 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 29 ), ExtResource( 21 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 9, 11.5 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 9.5, 11 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 10, 13.5 )
+
+[node name="firebear" type="KinematicBody2D" groups=["enemie2"]]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1, -19 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 7 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+position = Vector2( -1, -4 )
+shape = SubResource( 8 )
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -1, -3 )
+shape = SubResource( 9 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="deadsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -3.0
+pitch_scale = 1.2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+pitch_scale = 0.4
+max_distance = 100.0
+attenuation = 0.63728
+
+[node name="Area2D2" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( -1, -5.5 )
+shape = SubResource( 24 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

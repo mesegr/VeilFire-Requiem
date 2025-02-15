@@ -1,4 +1,4 @@
-[gd_scene load_steps=359 format=2]
+[gd_scene load_steps=360 format=2]
 
 [ext_resource path="res://Assets/Deco/tree_trunk.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Deco/bush.png" type="Texture" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://Scenes/Shine.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Assets/Deco/sun.png" type="Texture" id=25]
 [ext_resource path="res://Assets/Backgrounds/trees.png" type="Texture" id=26]
+[ext_resource path="res://Scenes/firebear.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Assets/Objects/apple.png" type="Texture" id=28]
 [ext_resource path="res://Assets/Deco/water_b_5 frames.png" type="Texture" id=29]
 [ext_resource path="res://Assets/Deco/rock.png" type="Texture" id=30]
@@ -10235,52 +10236,55 @@ visible = false
 position = Vector2( 0, -171.429 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 14389.7, -241.025 )
 frames = SubResource( 209 )
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 10728.2, 1446.15 )
 frames = SubResource( 210 )
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 10292.3, -1066.67 )
 frames = SubResource( 211 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10194.9, -2964.1 )
 frames = SubResource( 212 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 2564.11, -1312.82 )
 frames = SubResource( 213 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10969.2, -676.922 )
 frames = SubResource( 214 )
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16533.4, -2743.58 )
 frames = SubResource( 215 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 27979.5, -2271.8 )
 frames = SubResource( 215 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="altar" parent="altar" instance=ExtResource( 17 )]
@@ -10413,7 +10417,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10426,7 +10430,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 4
+frame = 5
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10439,7 +10443,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 5
+frame = 6
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11592,7 +11596,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 5441, -330 )
+position = Vector2( 1274, -152 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -12125,6 +12129,9 @@ visible = false
 position = Vector2( 280, 127 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 137 )
+
+[node name="firebear" parent="." instance=ExtResource( 27 )]
+position = Vector2( 1380, -104 )
 
 [connection signal="body_entered" from="IceSpikeDown" to="Player" method="_on_IceSpikeDown_body_entered"]
 [connection signal="body_entered" from="IceSpikeUp" to="Player" method="_on_IceSpikeUp_body_entered"]

@@ -151,7 +151,7 @@ frame = 16
 flip_h = true
 
 [node name="Area2D2" type="Area2D" parent="."]
-collision_layer = 3
+collision_layer = 2
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
@@ -163,7 +163,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -1, 4 )
+position = Vector2( -4, 4 )
 shape = SubResource( 6 )
 
 [node name="Timer" type="Timer" parent="."]
@@ -181,13 +181,13 @@ max_distance = 420.0
 attenuation = 0.63728
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2( 34, -2 )
+position = Vector2( 22, -4 )
 shape = SubResource( 19 )
 disabled = true
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
 light_mask = 4
-position = Vector2( -1, 3 )
+position = Vector2( -4, 3 )
 shape = SubResource( 5 )
 
 [node name="Area2D3" type="Area2D" parent="."]
@@ -195,7 +195,7 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2( -1, 0 )
+position = Vector2( -4, 2 )
 shape = SubResource( 20 )
 
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
