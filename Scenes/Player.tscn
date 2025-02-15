@@ -267,8 +267,7 @@ shape = SubResource( 6 )
 position = Vector2( 0, 2 )
 scale = Vector2( 1, 0.95 )
 frames = SubResource( 5 )
-animation = "attack 1"
-frame = 1
+animation = "idle"
 
 [node name="TimerRest" type="Timer" parent="."]
 

@@ -159,13 +159,15 @@ func playerMovement(delta):
 	var friction = false
 	if HitPlayer == false:
 		if is_on_floor() and Input.is_action_pressed("agacharte"):
-			$Area2D2/CollisionShape2D.position.y = 20
+			$Area2D2/CollisionShape2D.position.y = 17
+			$Area2D2/CollisionShape2D.scale.y = 0.7
 			idle = false
 			moveSpeed = 0
 			motion.x = 0
 			sprite.play("crouch")
 		elif is_on_floor() and Input.is_action_just_released("agacharte"):
 			$Area2D2/CollisionShape2D.position.y = 2
+			$Area2D2/CollisionShape2D.scale.y = 1
 			moveSpeed = 47
 			idle = true
 		if is_on_floor() and Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim:
