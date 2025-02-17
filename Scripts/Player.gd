@@ -208,6 +208,7 @@ func playerMovement(delta):
 			idle = false
 			if sprite != null: 
 				sprite.play("rest")
+				motion.x = 0
 				rest.play()
 				PlayerLives = 4
 				enemies()
