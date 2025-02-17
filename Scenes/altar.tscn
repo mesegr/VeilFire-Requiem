@@ -54,7 +54,7 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 144.5, 329 )
 
-[node name="Area2D" type="StaticBody2D"]
+[node name="Area2D" type="StaticBody2D" groups=["altar"]]
 collision_layer = 8
 collision_mask = 8
 
@@ -63,7 +63,7 @@ position = Vector2( 2, -30 )
 scale = Vector2( 1.9, 1.9 )
 frames = SubResource( 1 )
 animation = "new"
-frame = 6
+frame = 9
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

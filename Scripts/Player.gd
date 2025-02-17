@@ -337,12 +337,12 @@ func addCoin():
 	canvasLayer.handleCoinCollected()
 
 func _on_rest_body_entered(body):
-	if body.name == "altar":
+	if body.is_in_group("altar"):
 		enter = true
 		$"../altar/ECopia".visible = true
 
 func _on_rest_body_exited(body):
-	if body.name == "altar":
+	if body.is_in_group("altar"):
 		enter = false
 		$"../altar/ECopia".visible = false
 		
