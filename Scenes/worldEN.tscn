@@ -11565,7 +11565,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 981, -135 )
+position = Vector2( 5589, -355 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )

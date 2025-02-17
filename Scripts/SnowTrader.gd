@@ -21,6 +21,10 @@ func _on_TraderCave_body_exited(body):
 	if body.name == "Player":
 		enter = false
 		$ECopia.visible = false
+		$"../CanvasLayer/PanelSnowTrader2".visible = false
+		$"../CanvasLayer/PanelSnowTrader2/LabelBible".visible = false
+		$"../CanvasLayer/PanelSnowTrader2/LabelNeckles".visible = false
+		$"../CanvasLayer/PanelSnowTrader2/LabelSword".visible = false
 		
 func _process(delta):
 	if Input.is_action_just_released("ui_accept") and enter:
@@ -35,6 +39,10 @@ func _process(delta):
 	if text == 3:
 		$"../CanvasLayer/PanelSnowTrader/SnowTader2".visible = false
 		$"../CanvasLayer/PanelSnowTrader".visible = false
+		$"../CanvasLayer/PanelSnowTrader2".visible = false
+		$"../CanvasLayer/PanelSnowTrader2/LabelBible".visible = false
+		$"../CanvasLayer/PanelSnowTrader2/LabelNeckles".visible = false
+		$"../CanvasLayer/PanelSnowTrader2/LabelSword".visible = false
 		text = 0
 		
 	if enter == false:
