@@ -49,18 +49,18 @@ func _ready():
 	cooldown.connect("timeout", self, "cooldown_attack")
 
 func _process(delta):
-	if !dead:
+	if !dead and !respawnP:  # Asegurarse de que no esté en respawn
 		if fireAtt:
 			fireAttack(delta)
 
 		if canAttack:
 			attack()
 
-		if !attack and !respawnP:
+		if !attack:
 			chase()
 			move_character()
 	else:
-		# Si el boss está muerto, no hacer nada más que la animación de muerte
+		# Si el boss está muerto o en respawn, no hacer nada
 		pass
 
 func move_character():
@@ -142,11 +142,8 @@ func dead():
 		cooldown.stop()  # Detén el temporizador de cooldown 
 	
 func respawn():
-	# Reiniciar la posición del boss
 	self.position.y = OriginalPositionY
 	self.position.x = OriginalPositionX
-	
-	# Reiniciar las variables de estado
 	speed = 0
 	velocity = Vector2.ZERO
 	rage = false
@@ -156,23 +153,33 @@ func respawn():
 	fireAtt = false
 	up = false
 	down = false
-	
-	# Reiniciar las posiciones de los ataques de fuego
 	reset_fire_positions()
-	
-	# Reiniciar la animación
 	$AnimatedSprite.play("Idle")
-	
-	# Habilitar las colisiones si están deshabilitadas
 	$CollisionShape2D.disabled = false
 	$Area2D2/CollisionShape2D2.disabled = false
-	
-	# Detener cualquier sonido o temporizador activo
 	$FootSteps.stop()
 	cooldown.stop()
-	
-	# Reiniciar el color del sprite (por si estaba en estado de "golpe")
 	sprite.modulate = Color(1, 1, 1, 1)
+	
+	# Asegurarse de que los ataques estén deshabilitados
+	$Attack.enabled = false
+	$LongAttack.enabled = false
+	$Right.enabled = false
+	$Left.enabled = false
+	
+	# Reactivar las detecciones después de un breve retraso
+	var timer = Timer.new()
+	timer.wait_time = 0.5  # Esperar 0.5 segundos antes de reactivar las detecciones
+	timer.one_shot = true
+	add_child(timer)
+	timer.connect("timeout", self, "_enable_detections")
+	timer.start()
+
+func _enable_detections():
+	$Attack.enabled = true
+	$LongAttack.enabled = true
+	$Right.enabled = true
+	$Left.enabled = true
 	
 func _on_frame_changed():
 	if sprite.animation == "attackFire" and sprite.frame == 14:
@@ -203,7 +210,7 @@ func _on_frame_changed():
 		$AttackFlame.disabled = true
 
 func attack():
-	if !dead and !attack and canAttack:  # Solo atacar si no está muerto, no está atacando y puede atacar
+	if !dead and !attack and canAttack and !respawnP:  # Asegurarse de que no esté en respawn
 		if $Attack.is_colliding():  # Verifica el rango de ataque cercano
 			var obj = $Attack.get_collider()
 			if obj.is_in_group("Player"):
@@ -256,7 +263,7 @@ func _on_animation_finished():
 		$Area2D2/CollisionShape2D2.disabled = true
 
 func chase():
-	if !dead:
+	if !dead and !respawnP:  # Asegurarse de que no esté en respawn
 		if $Right.is_colliding():
 			var obj = $Right.get_collider()
 			if obj.is_in_group("Player"):
