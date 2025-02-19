@@ -30,7 +30,7 @@ onready var cooldown = $cooldown
 var OriginalPositionY
 var OriginalPositionX
 var fireOGposition
-var AttCoolRan = rand_range(2, 4)
+var AttCoolRan = rand_range(4, 5.5)
 
 
 func _ready():
@@ -130,10 +130,8 @@ func reset_fire_positions():
 	
 func dead():
 	if lives == 0:
-		print($CollisionShape2D)  # Verifica que no sea null
-		print($CollisionShape2D2)  # Verifica que no sea null
 		$CollisionShape2D.disabled = true
-		$CollisionShape2D2.disabled = true
+		$Area2D2/CollisionShape2D2.disabled = true
 		velocity = Vector2.ZERO
 		dead = true
 		$AnimatedSprite.play("dead") 
@@ -141,18 +139,40 @@ func dead():
 		attack = false  
 		fireAtt = false 
 		$FootSteps.stop() 
+		cooldown.stop()  # Detén el temporizador de cooldown 
 	
 func respawn():
+	# Reiniciar la posición del boss
 	self.position.y = OriginalPositionY
 	self.position.x = OriginalPositionX
-	$AnimatedSprite.play("Idle")
-	attack = false
+	
+	# Reiniciar las variables de estado
+	speed = 0
+	velocity = Vector2.ZERO
+	rage = false
 	dead = false
-	respawnP = true
+	attack = false
+	canAttack = true
+	fireAtt = false
+	up = false
+	down = false
+	
+	# Reiniciar las posiciones de los ataques de fuego
 	reset_fire_positions()
-	$AttackFlame.disabled = true
-	$attack.disabled = true
-	lives = 25
+	
+	# Reiniciar la animación
+	$AnimatedSprite.play("Idle")
+	
+	# Habilitar las colisiones si están deshabilitadas
+	$CollisionShape2D.disabled = false
+	$Area2D2/CollisionShape2D2.disabled = false
+	
+	# Detener cualquier sonido o temporizador activo
+	$FootSteps.stop()
+	cooldown.stop()
+	
+	# Reiniciar el color del sprite (por si estaba en estado de "golpe")
+	sprite.modulate = Color(1, 1, 1, 1)
 	
 func _on_frame_changed():
 	if sprite.animation == "attackFire" and sprite.frame == 14:
@@ -160,18 +180,18 @@ func _on_frame_changed():
 	if sprite.animation == "attackFire" and sprite.frame == 1:
 		$attackFireRawr.play()
 	if sprite.animation == "attackFire" and sprite.frame == 12:
-		player.shake_camera()
 		$CleaveSound.play()
 	if sprite.animation == "attackFire" and sprite.frame == 13:
 		$attack.disabled = false
+		player.shake_camera()
 	if sprite.animation == "attackFire" and sprite.frame == 18:
 		$attack.disabled = true
 	if sprite.animation == "attackcleave" and sprite.frame == 1:
 		$attackcleaveRawr.play()
 	if sprite.animation == "attackcleave" and sprite.frame == 10:
-		player.shake_camera()
 		$CleaveSound.play()
 	if sprite.animation == "attackcleave" and sprite.frame == 11:
+		player.shake_camera()
 		$attack.disabled = false
 	if sprite.animation == "attackcleave" and sprite.frame == 14:
 		$attack.disabled = true
@@ -183,28 +203,30 @@ func _on_frame_changed():
 		$AttackFlame.disabled = true
 
 func attack():
-	if !attack and $Attack.is_colliding():  # Solo atacar si no está atacando ya
-		var obj = $Attack.get_collider()
-		if obj.is_in_group("Player"):
-			numero_aleatorio = randi() % 10 + 1
-			AttCoolRan = rand_range(4, 5.5) 
+	if !dead and !attack and canAttack:  # Solo atacar si no está muerto, no está atacando y puede atacar
+		if $Attack.is_colliding():  # Verifica el rango de ataque cercano
+			var obj = $Attack.get_collider()
+			if obj.is_in_group("Player"):
+				numero_aleatorio = randi() % 10 + 1
+				AttCoolRan = rand_range(4, 5.5)
 
-			if numero_aleatorio <= 4:
-				$AnimatedSprite.play("Flames")
-			else:
-				$AnimatedSprite.play("attackcleave")
+				if numero_aleatorio <= 4:
+					$AnimatedSprite.play("Flames")
+				else:
+					$AnimatedSprite.play("attackcleave")
 
-			attack = true
-			canAttack = false
-			cooldown.start()
-	if !attack and $LongAttack.is_colliding():  # Solo atacar si no está atacando ya
-		var obj = $LongAttack.get_collider()
-		if obj.is_in_group("Player"):
-			$AnimatedSprite.play("attackFire")
-			fireAtt = true
-			attack = true
-			canAttack = false
-			cooldown.start()
+				attack = true
+				canAttack = false
+				cooldown.start()
+
+		elif $LongAttack.is_colliding():  # Verifica el rango de ataque lejano
+			var obj = $LongAttack.get_collider()
+			if obj.is_in_group("Player"):
+				$AnimatedSprite.play("attackFire")
+				fireAtt = true
+				attack = true
+				canAttack = false
+				cooldown.start()
 
 func cooldown_attack():
 	canAttack = true
@@ -231,28 +253,26 @@ func _on_animation_finished():
 	
 	if sprite.animation == "dead":
 		$CollisionShape2D.disabled = true
-		$CollisionShape2D2.disabled = true
+		$Area2D2/CollisionShape2D2.disabled = true
 
 func chase():
-	if $Right.is_colliding():
-		var obj = $Right.get_collider()
-		if obj.is_in_group("Player"):
-			left = !left
-			scale.x = -scale.x
-			rage = true
-			speed = 25
-			
-	if $Left.is_colliding():
-		var obj = $Left.get_collider()
-		if obj.is_in_group("Player"):
-			rage = true
-			speed = 25
+	if !dead:
+		if $Right.is_colliding():
+			var obj = $Right.get_collider()
+			if obj.is_in_group("Player"):
+				left = !left
+				scale.x = -scale.x
+				rage = true
+				speed = 25
+				
+		if $Left.is_colliding():
+			var obj = $Left.get_collider()
+			if obj.is_in_group("Player"):
+				rage = true
+				speed = 25
 		
-	if dead:
-		$AnimatedSprite.play("dead")
-		speed = 0
-	elif rage:
-		$AnimatedSprite.play("Walk")
+		if rage:
+			$AnimatedSprite.play("Walk")
 
 func _on_Area2D2_body_entered(body):
 	if body.is_in_group("hit"):

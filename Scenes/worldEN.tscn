@@ -9806,7 +9806,6 @@ texture = ExtResource( 42 )
 
 [node name="Fondo1" type="Sprite" parent="0F83Vmh5Ag956"]
 position = Vector2( 0, 2.67029e-05 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 41 )
 
 [node name="0F83Vmh5Ag957" type="Sprite" parent="."]
@@ -9817,13 +9816,11 @@ texture = ExtResource( 42 )
 
 [node name="Fondo1" type="Sprite" parent="0F83Vmh5Ag957"]
 position = Vector2( 0, 2.67029e-05 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 41 )
 
 [node name="Fondo2" type="Sprite" parent="0F83Vmh5Ag957"]
 modulate = Color( 1, 1, 1, 0.521569 )
 position = Vector2( 0, 2.67029e-05 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 41 )
 
 [node name="Fondo1" type="Sprite" parent="."]
@@ -9869,7 +9866,6 @@ texture = ExtResource( 42 )
 
 [node name="Fondo1" type="Sprite" parent="0F83Vmh5Ag961"]
 position = Vector2( 0, 2.67029e-05 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 41 )
 
 [node name="0F83Vmh5Ag962" type="Sprite" parent="."]
@@ -9880,7 +9876,6 @@ texture = ExtResource( 42 )
 
 [node name="Fondo1" type="Sprite" parent="0F83Vmh5Ag962"]
 position = Vector2( 0, 2.67029e-05 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 41 )
 
 [node name="Fondo2" type="Sprite" parent="0F83Vmh5Ag962"]
