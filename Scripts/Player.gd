@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var PlayerLives = 4
-var downdoor = 5
+var downdoor = 6
 var enter = false
 var idle = true
 var attack = true
@@ -115,7 +115,7 @@ func enemies():
 	StopMusic = false
 	finalbossMusic = false
 	bajarfinalbossMusic = 0.5
-	downdoor = 5
+	downdoor = 6
 	
 func initializeTimers():
 	timerRest.wait_time = 2.8
@@ -159,8 +159,8 @@ func playerMovement(delta):
 	var friction = false
 	if HitPlayer == false:
 		if is_on_floor() and Input.is_action_pressed("agacharte"):
-			$Area2D2/CollisionShape2D.position.y = 17
-			$Area2D2/CollisionShape2D.scale.y = 0.7
+			$Area2D2/CollisionShape2D.position.y = 15
+			$Area2D2/CollisionShape2D.scale.y = 0.6
 			idle = false
 			moveSpeed = 0
 			motion.x = 0
@@ -259,6 +259,7 @@ func playerMovement(delta):
 	motion = move_and_slide(motion, up)
 	
 func hit(damage):
+	motion.x = 0
 	if !attack:
 		PlayerLives -= damage
 		hitsound.play()
@@ -362,6 +363,10 @@ func revive(body):
 		deadtp.start()
 		PlayerLives = 4
 		deadeff.play("default")
+		$Area2D2/CollisionShape2D.position.y = 2
+		$Area2D2/CollisionShape2D.scale.y = 1
+		moveSpeed = 47
+		idle = true
 		
 func _on_deadZone_body_entered(body):
 	revive(body)

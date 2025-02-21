@@ -49,18 +49,18 @@ func _ready():
 	cooldown.connect("timeout", self, "cooldown_attack")
 
 func _process(delta):
-	if !dead and !respawnP:  # Asegurarse de que no esté en respawn
+	if !dead:
 		if fireAtt:
 			fireAttack(delta)
 
 		if canAttack:
 			attack()
 
-		if !attack:
+		if !attack and !respawnP:
 			chase()
 			move_character()
 	else:
-		# Si el boss está muerto o en respawn, no hacer nada
+		# Si el boss está muerto, no hacer nada más que la animación de muerte
 		pass
 
 func move_character():
@@ -160,12 +160,11 @@ func respawn():
 	$FootSteps.stop()
 	cooldown.stop()
 	sprite.modulate = Color(1, 1, 1, 1)
-	
-	# Asegurarse de que los ataques estén deshabilitados
 	$Attack.enabled = false
 	$LongAttack.enabled = false
 	$Right.enabled = false
 	$Left.enabled = false
+	$AttackFlame.disabled = true
 	
 	# Reactivar las detecciones después de un breve retraso
 	var timer = Timer.new()
@@ -282,10 +281,12 @@ func chase():
 			$AnimatedSprite.play("Walk")
 
 func _on_Area2D2_body_entered(body):
-	if body.is_in_group("hit"):
-		sprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
+	print("Cuerpo detectado:", body.name)
+	if body.is_in_group("hit") and !dead:
+		print("Recibiendo daño")
+		sprite.modulate = Color(5, 5, 5)
 		var timer = Timer.new()
-		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
+		timer.wait_time = 0.1
 		timer.one_shot = true
 		add_child(timer)
 		timer.connect("timeout", self, "_on_hit_timeout")

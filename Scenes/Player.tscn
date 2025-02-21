@@ -260,14 +260,15 @@ collision_layer = 8
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2( -3, 2 )
+position = Vector2( -3, 15 )
+scale = Vector2( 1, 0.6 )
 shape = SubResource( 6 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 2 )
 scale = Vector2( 1, 0.95 )
 frames = SubResource( 5 )
-animation = "idle"
+animation = "crouch"
 
 [node name="TimerRest" type="Timer" parent="."]
 
