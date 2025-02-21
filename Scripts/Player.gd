@@ -17,7 +17,7 @@ var collision_disabled = false
 var finalbossLives = 25
 var canDash = true
 var is_dashing = false
-var dash_speed = 460
+var dash_speed = 490
 var dash_duration = 0.055
 var dash_timer = 0
 var dash_cooldown = 1.5
@@ -312,6 +312,10 @@ func _on_animation_finished():
 		door.position.y = -165
 		finalBoss.respawn()
 		finalbossLives = 25
+		$Area2D2/CollisionShape2D.position.y = 2
+		$Area2D2/CollisionShape2D.scale.y = 1
+		moveSpeed = 47
+		idle = true
 		
 	if sprite.animation == "attack" or sprite.animation == "attack 1":
 		$Area2D/CollisionShape2D.disabled = true
@@ -363,10 +367,6 @@ func revive(body):
 		deadtp.start()
 		PlayerLives = 4
 		deadeff.play("default")
-		$Area2D2/CollisionShape2D.position.y = 2
-		$Area2D2/CollisionShape2D.scale.y = 1
-		moveSpeed = 47
-		idle = true
 		
 func _on_deadZone_body_entered(body):
 	revive(body)
