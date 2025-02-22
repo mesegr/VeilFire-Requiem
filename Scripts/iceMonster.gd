@@ -17,6 +17,7 @@ func _ready():
 	timerDead.wait_time = 0.2
 	timerDead.one_shot = true
 	timerDead.connect("timeout", self, "dead_timeout")
+	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished2")
 	
 	
 func _process(delta):
@@ -33,7 +34,11 @@ func move_character():
 	else:
 		velocity.x = speed
 		velocity = move_and_slide(velocity,Vector2.UP)
-
+		
+func _on_animation_finished2():
+	if $AnimatedSprite2.animation == "default":
+		$AnimatedSprite2.play("inter")
+		
 func turn():
 	if not $RayCast2D.is_colliding() or $RayCast2D2.is_colliding():
 		left = !left
@@ -71,5 +76,6 @@ func _on_Area2D2_body_entered(body):
 		timer.start()
 		lives -= 1
 		dead()
+		$AnimatedSprite2.play("default")
 		player.shake_camera()
 		player.frameFreeze(0.04,0.25)

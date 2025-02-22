@@ -1,10 +1,11 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Scripts/iceMonsterBoss.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Enemies/iceMonsterMiniboss-sheet.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Enemies/iceMonsterMinibossdead-sheet (1).png" type="Texture" id=3]
 [ext_resource path="res://Sounds/enemie_dead.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Sounds/iceMonster.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/FX/hit.png" type="Texture" id=6]
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 3 )
@@ -82,10 +83,43 @@ extents = Vector2( 9, 11.5 )
 extents = Vector2( 9.5, 11 )
 
 [sub_resource type="RectangleShape2D" id=26]
-extents = Vector2( 2, 37.25 )
+extents = Vector2( 2, 59.75 )
 
 [sub_resource type="RectangleShape2D" id=25]
 extents = Vector2( 12, 13 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 6 )
+region = Rect2( 48, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 6 )
+region = Rect2( 96, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 6 )
+region = Rect2( 144, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 6 )
+region = Rect2( 192, 0, 48, 48 )
+
+[sub_resource type="SpriteFrames" id=32]
+animations = [ {
+"frames": [ null, SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), null ],
+"loop": false,
+"name": "default",
+"speed": 32.0
+}, {
+"frames": [ null, null ],
+"loop": true,
+"name": "inter",
+"speed": 50.0
+} ]
 
 [node name="iceMonsterBoss" type="KinematicBody2D" groups=["enemie3"]]
 collision_layer = 8
@@ -96,7 +130,7 @@ script = ExtResource( 1 )
 position = Vector2( -1, -12 )
 scale = Vector2( 0.15, 0.16 )
 frames = SubResource( 7 )
-frame = 3
+frame = 7
 playing = true
 flip_h = true
 
@@ -146,7 +180,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2( 15, -24.75 )
+position = Vector2( 15, -47.25 )
 shape = SubResource( 26 )
 
 [node name="Area2D3" type="Area2D" parent="."]
@@ -156,6 +190,11 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2( -1, 0 )
 shape = SubResource( 25 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+position = Vector2( -8, -7 )
+frames = SubResource( 32 )
+animation = "inter"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

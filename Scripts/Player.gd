@@ -86,6 +86,7 @@ func _ready():
 	self.position = startpos
 	
 	sprite.connect("animation_finished", self, "_on_animation_finished")
+	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished2")
 	initializeTimers()
 	
 func _physics_process(delta):
@@ -263,6 +264,7 @@ func playerMovement(delta):
 	motion = move_and_slide(motion, up)
 	
 func hit(damage):
+	$AnimatedSprite2.play("default")
 	$Area2D2/CollisionShape2D.position.y = -1025
 	print("hit")
 	var timerInmune = Timer.new()
@@ -273,6 +275,7 @@ func hit(damage):
 	timerInmune.start()
 	motion.x = 0
 	if !attack:
+		motion.x = 0
 		PlayerLives -= damage
 		hitsound.play()
 		shake_camera()
@@ -289,13 +292,16 @@ func hit(damage):
 	hitsound.play()
 	shake_camera()
 	HitPlayer = true
-	if !sprite.flip_h:
-		motion = Vector2(-150,-350)
-	else:
-		motion = Vector2(150,-350)
-	sprite.play("hurt")
 	if PlayerLives > 0:
 		frameFreeze(0.04,0.4)
+	if !sprite.flip_h:
+		motion = Vector2(-160, -380)
+	else:
+		motion = Vector2(160, -380)
+	sprite.play("hurt")
+	yield(get_tree().create_timer(0.35), "timeout")
+	motion.x = 0
+
 	
 func _on_hit_timeout():
 	$AnimatedSprite.modulate = Color(1, 1, 1, 1)
@@ -310,6 +316,10 @@ func updateCooldown(newCool):
 	timercooldown.start()  # Lo volvemos a iniciar
 	print(cooldownAttack)
 	
+func _on_animation_finished2():
+	if $AnimatedSprite2.animation == "default":
+		$AnimatedSprite2.play("inter")
+		
 func _on_animation_finished():
 	if sprite.animation == "hurt":
 		HitPlayer = false
@@ -342,9 +352,6 @@ func deadtpF():
 	self.position = startpos
 	deadeff.play("t")
 	enemies()
-		
-#func deadeffectF():
-#	deadeff.play("default") 
 
 func rest_timeout():
 	idle = true

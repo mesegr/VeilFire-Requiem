@@ -43,6 +43,7 @@ func _ready():
 	
 	sprite.connect("animation_finished", self, "_on_animation_finished")
 	sprite.connect("frame_changed", self, "_on_frame_changed")
+	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished2")
 	
 	cooldown.wait_time = AttCoolRan
 	cooldown.one_shot = true
@@ -65,7 +66,11 @@ func _process(delta):
 	else:
 		# Si el boss está muerto, no hacer nada más que la animación de muerte
 		pass
-
+		
+func _on_animation_finished2():
+	if $AnimatedSprite2.animation == "default":
+		$AnimatedSprite2.play("inter")
+		
 func move_character():
 	velocity.y += gravity
 	if left:
@@ -296,7 +301,7 @@ func _on_Area2D2_body_entered(body):
 		add_child(timer)
 		timer.connect("timeout", self, "_on_hit_timeout")
 		timer.start()
-		
+		$AnimatedSprite2.play("default")
 		if attack:
 			print("Recibiendo daño mientras ataca")
 		

@@ -17,6 +17,7 @@ func _ready():
 	timerDead.wait_time = 0.2
 	timerDead.one_shot = true
 	timerDead.connect("timeout", self, "dead_timeout")
+	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished2")
 	
 func _process(delta):
 	move_character()
@@ -40,6 +41,10 @@ func turn():
 		
 func dead_timeout():
 	free = true
+	
+func _on_animation_finished2():
+	if $AnimatedSprite2.animation == "default":
+		$AnimatedSprite2.play("inter")
 
 func _on_hit_timeout():
 	$AnimatedSprite.modulate = Color(1, 1, 1, 1)
@@ -68,6 +73,7 @@ func _on_Area2D2_body_entered(body):
 		add_child(timer)
 		timer.connect("timeout", self, "_on_hit_timeout")
 		timer.start()
+		$AnimatedSprite2.play("default")
 		lives -= 1
 		dead()
 		player.shake_camera()

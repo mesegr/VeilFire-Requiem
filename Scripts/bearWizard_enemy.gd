@@ -23,6 +23,7 @@ func _ready():
 	timerDead.wait_time = 0.2
 	timerDead.one_shot = true
 	timerDead.connect("timeout", self, "dead_timeout")
+	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished2")
 
 func _process(delta):
 	# Llama a move_character() para detectar colisiones sin movimiento
@@ -55,7 +56,11 @@ func _on_frame_changed():
 
 func dead_timeout():
 	free = true
-
+	
+func _on_animation_finished2():
+	if $AnimatedSprite2.animation == "default":
+		$AnimatedSprite2.play("inter")
+		
 func hit():
 	$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco
 	var timer = Timer.new()
@@ -70,7 +75,6 @@ func _on_hit_timeout():
 
 func dead():
 	if lives == 0:
-		self.position.y = position.y + 25
 		velocity = Vector2.ZERO
 		timerDead.start()
 		$AnimatedSprite.play("dead")
@@ -78,13 +82,13 @@ func dead():
 		$deadsound.play()
 		var loot_scene = preload("res://Scenes/Coin.tscn")  # Carga la escena del loot
 		var loot_instance = loot_scene.instance()  # Instancia el nodo
-		loot_instance.position = self.position + Vector2(0, -30)  # Inicia un poco más arriba
+		loot_instance.position = self.position + Vector2(0, -50)  # Inicia un poco más arriba
 		get_parent().add_child(loot_instance)  # Añadirlo a la escena
 
 		# Añadir un Tween manualmente
 		var tween = Tween.new()
 		get_parent().add_child(tween)  # Añadir el Tween a la escena
-		tween.interpolate_property(loot_instance, "position", loot_instance.position, self.position, 0.5, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
+		tween.interpolate_property(loot_instance, "position", loot_instance.position, self.position, 1, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
 		tween.start()
 
 func respawn():
@@ -101,5 +105,6 @@ func _on_Area2D3_body_entered(body):
 		hit()  # Llama a la función hit() para manejar el daño
 		lives -= 1
 		dead()
+		$AnimatedSprite2.play("default")
 		player.shake_camera()
 		player.frameFreeze(0.04,0.25)

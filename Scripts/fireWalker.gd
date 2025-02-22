@@ -18,6 +18,8 @@ func _ready():
 	$AnimatedSprite.play("default")
 	OriginalPositionY = self.position.y
 	
+	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished")
+	
 	timerDead.wait_time = 0.4
 	timerDead.one_shot = true
 	timerDead.connect("timeout", self, "dead_timeout")
@@ -47,7 +49,10 @@ func turn():
 func dead_timeout():
 	free = true
 	
-
+func _on_animation_finished():
+	if $AnimatedSprite2.animation == "default":
+		$AnimatedSprite2.play("inter")
+		
 func _on_hit_timeout():
 	$AnimatedSprite.modulate = Color(1, 1, 1, 1)
 	
@@ -62,13 +67,13 @@ func dead():
 		# Crear un nodo en la posición de muerte
 		var loot_scene = preload("res://Scenes/Coin.tscn")  # Carga la escena del loot
 		var loot_instance = loot_scene.instance()  # Instancia el nodo
-		loot_instance.position = self.position + Vector2(0, -30)  # Inicia un poco más arriba
+		loot_instance.position = self.position + Vector2(0,-50)  # Inicia un poco más arriba
 		get_parent().add_child(loot_instance)  # Añadirlo a la escena
 
 		# Añadir un Tween manualmente
 		var tween = Tween.new()
 		get_parent().add_child(tween)  # Añadir el Tween a la escena
-		tween.interpolate_property(loot_instance, "position", loot_instance.position, self.position, 0.5, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
+		tween.interpolate_property(loot_instance, "position", loot_instance.position, self.position, 1, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
 		tween.start()
 
 	
@@ -112,7 +117,8 @@ func chase():
 
 func _on_Area2D2_body_entered(body):
 	if body.is_in_group("hit"):
-		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
+		$AnimatedSprite.modulate = Color(5, 5, 5) 
+		$AnimatedSprite2.play("default") 
 		var timer = Timer.new()
 		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
 		timer.one_shot = true
