@@ -207,7 +207,7 @@ func playerMovement(delta):
 				else:
 					print("Error: 'sprite' es null en _physics_process")
 			motion.x = max(motion.x - moveSpeed, -maxSpeed)
-		elif Input.is_action_just_pressed("ui_accept") and enter and attack and is_on_floor():
+		elif Input.is_action_just_pressed("ui_accept") and enter and attack and !is_dashing and is_on_floor():
 			idle = false
 			if sprite != null: 
 				sprite.play("rest")

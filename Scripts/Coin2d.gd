@@ -3,7 +3,6 @@ extends Area2D
 onready var pickup = $"../pickup"
 onready var sprite = $Sprite
 func _on_Coin2d_body_entered(body):
-	
 	if body.get_name() == "Player":
 		body.addCoin()
 		sprite.play("pickup")
