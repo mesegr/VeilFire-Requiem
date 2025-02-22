@@ -14,7 +14,7 @@ dest_files=[ "res://.import/altart.png-9c6b491712c1bdfb88b38a1980b7d531.stex" ]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0

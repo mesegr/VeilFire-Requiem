@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Assets/controls/Esc copia.png" type="Texture" id=1]
 [ext_resource path="res://Assets/controls/a copia.png" type="Texture" id=2]
@@ -11,7 +11,6 @@
 [ext_resource path="res://Assets/controls/d copia.png" type="Texture" id=9]
 [ext_resource path="res://Assets/controls/E copia.png" type="Texture" id=10]
 [ext_resource path="res://Assets/controls/Capa 3.png" type="Texture" id=11]
-[ext_resource path="res://Scenes/altar.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scripts/Main_menuEN.gd" type="Script" id=14]
 
@@ -111,10 +110,6 @@ script = ExtResource( 14 )
 position = Vector2( 960, 540 )
 scale = Vector2( 1.00156, 1.00186 )
 texture = ExtResource( 3 )
-
-[node name="Area2D" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1084, 335 )
-scale = Vector2( 0.7, 0.72 )
 
 [node name="Coin" parent="." instance=ExtResource( 13 )]
 position = Vector2( 930, 893 )

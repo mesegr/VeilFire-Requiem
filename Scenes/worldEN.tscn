@@ -8766,136 +8766,6 @@ modulate = Color( 1.19, 1.19, 1.19, 1 )
 position = Vector2( -1932, 528 )
 scale = Vector2( 2.9, 2.5 )
 
-[node name="CoinFather" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1015, 1246 )
-
-[node name="Coin6" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -1134, -1350 )
-scale = Vector2( 0.990315, 1 )
-
-[node name="Coin5" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -785, -1302 )
-scale = Vector2( 0.990315, 1 )
-
-[node name="Coin4" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -754, -1238 )
-scale = Vector2( 0.990315, 1 )
-
-[node name="Coin3" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -976, -1240 )
-scale = Vector2( 0.990315, 1 )
-
-[node name="Coin2" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -1135, -1191 )
-scale = Vector2( 0.990315, 1 )
-
-[node name="Coin" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -691, -1222 )
-
-[node name="Coin17" parent="CoinFather" instance=ExtResource( 16 )]
-modulate = Color( 1, 1, 1, 0.180392 )
-position = Vector2( -651, -1150 )
-
-[node name="Coin7" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -262, -1211 )
-
-[node name="Coin8" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 118, -1302 )
-
-[node name="Coin9" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 1017, -1442 )
-
-[node name="Coin10" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 552, -1205 )
-
-[node name="Coin11" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 1055, -1237 )
-
-[node name="Coin13" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 1279, -1269 )
-
-[node name="Coin14" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 1684, -1335 )
-
-[node name="Coin12" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 831, -1193 )
-
-[node name="Coin15" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -6462, -1397 )
-
-[node name="Coin" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 859, -34 )
-
-[node name="Coin2" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 1414, -50 )
-
-[node name="Coin3" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 1748, -49 )
-
-[node name="Coin4" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 2332, -50 )
-
-[node name="Coin5" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 2586, -97 )
-
-[node name="Coin6" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3220, -80 )
-
-[node name="Coin7" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3634, -196 )
-
-[node name="Coin" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 810 )
-scale = Vector2( 1.8, 1.8 )
-
-[node name="Coin2" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 702 )
-scale = Vector2( 1.2, 1.2 )
-
-[node name="Coin5" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 674 )
-
-[node name="Coin3" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 736 )
-scale = Vector2( 1.4, 1.4 )
-
-[node name="Coin4" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 771 )
-scale = Vector2( 1.6, 1.6 )
-
-[node name="Coin8" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3941, -290 )
-
-[node name="Coin9" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3728, -324 )
-
-[node name="Coin10" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 4122, -98 )
-
-[node name="Coin11" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 4598, -51 )
-
-[node name="Coin16" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( 1970, -1349 )
-
-[node name="Coin" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 1158, -556 )
-
-[node name="Coin2" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 1356, -945 )
-
-[node name="Coin3" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 1904, -1024 )
-
-[node name="Coin4" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 2837, -1041 )
-
-[node name="Coin5" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 3973, -1007 )
-
-[node name="Coin" parent="CoinFather/Coin16/Coin5" instance=ExtResource( 16 )]
-position = Vector2( 1465, -419 )
-
 [node name="WaterBackGroungFather" type="Sprite" parent="."]
 position = Vector2( 309, 1155 )
 scale = Vector2( 0.990315, 1 )
@@ -10187,88 +10057,97 @@ scale = Vector2( 0.11, 0.12 )
 [node name="lavaCascade" parent="lavaCascade36" instance=ExtResource( 44 )]
 position = Vector2( -0.00390625, -115 )
 
+[node name="altar9" parent="." instance=ExtResource( 17 )]
+position = Vector2( -2116, -259 )
+scale = Vector2( 0.2, 0.21 )
+
+[node name="altar2" parent="." instance=ExtResource( 17 )]
+position = Vector2( -51, 13.0006 )
+scale = Vector2( 0.2, 0.21 )
+
+[node name="altar3" parent="." instance=ExtResource( 17 )]
+position = Vector2( 1973, -195 )
+scale = Vector2( 0.2, 0.21 )
+
+[node name="altar4" parent="." instance=ExtResource( 17 )]
+position = Vector2( 3953, -771.001 )
+scale = Vector2( 0.2, 0.21 )
+
+[node name="altar5" parent="." instance=ExtResource( 17 )]
+position = Vector2( 4455, -1027 )
+scale = Vector2( 0.2, 0.21 )
+
+[node name="altar6" parent="." instance=ExtResource( 17 )]
+position = Vector2( 6599, -1155 )
+scale = Vector2( 0.2, 0.21 )
+
+[node name="altar7" parent="." instance=ExtResource( 17 )]
+position = Vector2( 9825, -1699 )
+scale = Vector2( 0.2, 0.21 )
+
+[node name="altar8" parent="." instance=ExtResource( 17 )]
+position = Vector2( 12224, -1603 )
+scale = Vector2( 0.2, 0.21 )
+
 [node name="altar" parent="." instance=ExtResource( 17 )]
 position = Vector2( -4937, -227 )
 scale = Vector2( 0.2, 0.21 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar"]
+visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 5
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 14466.7, -200.001 )
 frames = SubResource( 209 )
-frame = 4
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 10589.8, 1394.87 )
 frames = SubResource( 210 )
-frame = 4
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 10374.4, -1046.15 )
 frames = SubResource( 211 )
-frame = 6
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10159, -2964.1 )
 frames = SubResource( 212 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 2574.36, -1312.82 )
 frames = SubResource( 213 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10994.9, -676.923 )
 frames = SubResource( 214 )
-frame = 4
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16543.6, -2758.97 )
 frames = SubResource( 215 )
-frame = 7
+frame = 9
 playing = true
 
 [node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 28846.1, -2287.18 )
 frames = SubResource( 215 )
-frame = 6
+frame = 8
 playing = true
-
-[node name="altar8" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 85805, -6552.38 )
-
-[node name="altar7" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 73810, -7009.52 )
-
-[node name="altar6" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 57680, -4419.05 )
-
-[node name="altar5" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 46960, -3809.52 )
-
-[node name="altar4" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 44450, -2590.48 )
-
-[node name="altar3" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 34550, 152.381 )
-
-[node name="altar2" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 24430, 1142.86 )
-
-[node name="altar" parent="altar" instance=ExtResource( 17 )]
-position = Vector2( 14105, -152.38 )
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
 position = Vector2( 14064, -1580 )
@@ -10376,7 +10255,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 7
+frame = 9
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10389,7 +10268,6 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 8
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10402,7 +10280,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 9
+frame = 1
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -10453,6 +10331,171 @@ offset_h = -1.0
 drag_margin_top = 0.3
 drag_margin_bottom = 0.3
 script = SubResource( 217 )
+
+[node name="CoinFather" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1015, 1246 )
+
+[node name="Coin6" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -1134, -1350 )
+scale = Vector2( 0.990315, 1 )
+
+[node name="Coin5" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -785, -1302 )
+scale = Vector2( 0.990315, 1 )
+
+[node name="Coin3" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -976, -1240 )
+scale = Vector2( 0.990315, 1 )
+
+[node name="Coin2" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -1135, -1191 )
+scale = Vector2( 0.990315, 1 )
+
+[node name="Coin" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -691, -1222 )
+
+[node name="Coin17" parent="CoinFather" instance=ExtResource( 16 )]
+modulate = Color( 1, 1, 1, 0.180392 )
+position = Vector2( -651, -1150 )
+
+[node name="Coin7" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -262, -1211 )
+
+[node name="Coin8" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 118, -1302 )
+
+[node name="Coin9" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 1017, -1442 )
+
+[node name="Coin10" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 552, -1205 )
+
+[node name="Coin11" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 1055, -1237 )
+
+[node name="Coin13" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 1279, -1269 )
+
+[node name="Coin14" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 1684, -1335 )
+
+[node name="Coin12" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 831, -1193 )
+
+[node name="Coin15" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -6462, -1397 )
+
+[node name="Coin" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 859, -34 )
+
+[node name="Coin2" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 1414, -50 )
+
+[node name="Coin3" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 1748, -49 )
+
+[node name="Coin4" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 2332, -50 )
+
+[node name="Coin5" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 2586, -97 )
+
+[node name="Coin6" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 3220, -80 )
+
+[node name="Coin7" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 3634, -196 )
+
+[node name="Coin" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
+position = Vector2( -184, 810 )
+scale = Vector2( 1.8, 1.8 )
+
+[node name="Coin2" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
+position = Vector2( -184, 702 )
+scale = Vector2( 1.2, 1.2 )
+
+[node name="Coin5" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
+position = Vector2( -184, 674 )
+
+[node name="Coin3" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
+position = Vector2( -184, 736 )
+scale = Vector2( 1.4, 1.4 )
+
+[node name="Coin4" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
+position = Vector2( -184, 771 )
+scale = Vector2( 1.6, 1.6 )
+
+[node name="Coin8" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 3941, -290 )
+
+[node name="Coin9" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 3728, -324 )
+
+[node name="Coin10" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 4122, -98 )
+
+[node name="Coin11" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
+position = Vector2( 4598, -51 )
+
+[node name="Coin16" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 1970, -1349 )
+
+[node name="Coin" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
+position = Vector2( 1158, -556 )
+
+[node name="Coin2" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
+position = Vector2( 1356, -945 )
+
+[node name="Coin3" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
+position = Vector2( 1904, -1024 )
+
+[node name="Coin4" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
+position = Vector2( 2837, -1041 )
+
+[node name="Coin5" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
+position = Vector2( 3973, -1007 )
+
+[node name="Coin" parent="CoinFather/Coin16/Coin5" instance=ExtResource( 16 )]
+position = Vector2( 1465, -419 )
+
+[node name="Coin18" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 3698, -1645 )
+
+[node name="Coin19" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 3988, -1560 )
+
+[node name="Coin4" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 2320, -1691 )
+
+[node name="Coin20" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 2884, -1962 )
+
+[node name="Coin21" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 4287, -2457 )
+
+[node name="Coin22" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 5146, -2438 )
+
+[node name="Coin23" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 5863, -2542 )
+
+[node name="Coin24" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 6646, -2439 )
+
+[node name="Coin25" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 7105, -2767 )
+
+[node name="Coin26" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 8363, -2895 )
+
+[node name="Coin27" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 9104, -2989 )
+
+[node name="Coin28" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 10412, -2860 )
+
+[node name="Coin29" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 11855, -2942 )
 
 [node name="quickSandFather" parent="." instance=ExtResource( 20 )]
 modulate = Color( 0.760784, 0.760784, 0.760784, 1 )
@@ -11556,7 +11599,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 12225, -1630 )
+position = Vector2( 4186, -716 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -12089,6 +12132,9 @@ visible = false
 position = Vector2( 280, 127 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 137 )
+
+[node name="Coin" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1556, -73 )
 
 [connection signal="body_entered" from="IceSpikeDown" to="Player" method="_on_IceSpikeDown_body_entered"]
 [connection signal="body_entered" from="IceSpikeUp" to="Player" method="_on_IceSpikeUp_body_entered"]

@@ -92,3 +92,4 @@ func _on_Area2D3_body_entered(body):
 		lives -= 1
 		dead()
 		player.shake_camera()
+		player.frameFreeze(0.04,0.25)

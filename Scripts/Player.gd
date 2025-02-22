@@ -37,7 +37,9 @@ var can_doublejump = true
 var doubleJumpItem1 = true
 var doubleJumpItem2 = true
 var motion = Vector2()
+var altar_cercano = null
 const up = Vector2(0, -1)
+signal playerRest(altar)
 onready var camera = $PlayerCamera
 onready var sprite = $AnimatedSprite
 onready var timerRest = $TimerRest
@@ -214,6 +216,8 @@ func playerMovement(delta):
 				PlayerLives = 4
 				enemies()
 				startpos = self.position
+				if altar_cercano:  # Solo emite la señal si hay un altar cerca
+					emit_signal("playerRest", altar_cercano)
 			timerRest.start()
 		elif idle and attack:
 			if sprite != null:
@@ -268,7 +272,6 @@ func hit(damage):
 	add_child(timerInmune)
 	timerInmune.connect("timeout", self, "_on_hit_inmune")
 	timerInmune.start()
-	frameFreeze(0.05,0.4)
 	motion.x = 0
 	if !attack:
 		PlayerLives -= damage
@@ -292,6 +295,8 @@ func hit(damage):
 	else:
 		motion = Vector2(150,-350)
 	sprite.play("hurt")
+	if PlayerLives > 0:
+		frameFreeze(0.04,0.4)
 	
 func _on_hit_timeout():
 	$AnimatedSprite.modulate = Color(1, 1, 1, 1)
@@ -339,8 +344,8 @@ func deadtpF():
 	deadeff.play("t")
 	enemies()
 		
-func deadeffectF():
-	deadeff.play("default") 
+#func deadeffectF():
+#	deadeff.play("default") 
 
 func rest_timeout():
 	idle = true
@@ -359,13 +364,16 @@ func _on_rest_body_entered(body):
 	if body.is_in_group("altar"):
 		enter = true
 		$"../altar/ECopia".visible = true
-
+		altar_cercano = body
+		
 func _on_rest_body_exited(body):
 	if body.is_in_group("altar"):
 		enter = false
 		$"../altar/ECopia".visible = false
+		altar_cercano = null
 		
 func dead():
+	deadeff.play("default")
 	sprite.stop()
 	PlayerLives = 4
 	sprite.play("dead")
@@ -373,8 +381,10 @@ func dead():
 	$Area2D2.position.y = -5000
 	motion = Vector2.ZERO
 	gravity = 0
+	frameFreeze(0.2, 2) 
+	$"../CanvasLayer/lives".stop()
 	enemies()
-
+	
 func revive(body):
 	if body.get_name() == "Player":
 		deadtp.start()
@@ -431,15 +441,16 @@ func shake_camera():
 
 func _on_Area2D2_body_entered(body):
 	var enemy_damage = {
-		"enemie": 1,"enemie1": 1,"enemie2": 1,"enemie3": 2,"enemie4": 1,
-		"enemie5": 2,"enemie6": 2,"finalBoss": 1}
+		"enemie": 1, "enemie1": 1, "enemie2": 1, "enemie3": 2, "enemie4": 1,
+		"enemie5": 2, "enemie6": 2, "finalBoss": 1
+	}
 	for group in enemy_damage.keys():
-		if body.is_in_group(group) and PlayerLives != 0:
+		if body.is_in_group(group) and PlayerLives > 0:
 			hit(enemy_damage[group])
-			break
-	if PlayerLives == 0:
-		dead()
-		$"../CanvasLayer/lives".stop()
+			break  # Evita múltiples llamadas en la misma colisión
+
+	if PlayerLives <= 0:
+		dead()  # Ahora `dead()` manejará el frame freeze adecuado
 
 func _on_Area2D9_body_entered(body):
 	if body.name == "Player":

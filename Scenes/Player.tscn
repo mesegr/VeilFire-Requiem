@@ -215,10 +215,10 @@ animations = [ {
 "name": "dead",
 "speed": 3.0
 }, {
-"frames": [ SubResource( 35 ), SubResource( 34 ), SubResource( 35 ), SubResource( 34 ), SubResource( 35 ) ],
+"frames": [ SubResource( 35 ), SubResource( 34 ), SubResource( 35 ), SubResource( 34 ), SubResource( 35 ), SubResource( 34 ), SubResource( 35 ) ],
 "loop": false,
 "name": "hurt",
-"speed": 9.0
+"speed": 16.0
 }, {
 "frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,

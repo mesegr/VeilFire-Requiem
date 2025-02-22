@@ -2,25 +2,25 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Capa 3.png-a39576c53cafb8783e066abb5084495b.stex"
+path="res://.import/altartBroke_sheet.png-4ef78a03349a1c26f52ba4f285ab2d4b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Objects/Capa 3.png"
-dest_files=[ "res://.import/Capa 3.png-a39576c53cafb8783e066abb5084495b.stex" ]
+source_file="res://Assets/Objects/altartBroke_sheet.png"
+dest_files=[ "res://.import/altartBroke_sheet.png-4ef78a03349a1c26f52ba4f285ab2d4b.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
