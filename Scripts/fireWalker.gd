@@ -58,6 +58,18 @@ func dead():
 		dead = true
 		$Area2D.position.y = 5000
 		$deadsound.play()
+		
+		# Crear un nodo en la posición de muerte
+		var loot_scene = preload("res://Scenes/Coin.tscn")  # Carga la escena del loot
+		var loot_instance = loot_scene.instance()  # Instancia el nodo
+		loot_instance.position = self.position + Vector2(0, -30)  # Inicia un poco más arriba
+		get_parent().add_child(loot_instance)  # Añadirlo a la escena
+
+		# Añadir un Tween manualmente
+		var tween = Tween.new()
+		get_parent().add_child(tween)  # Añadir el Tween a la escena
+		tween.interpolate_property(loot_instance, "position", loot_instance.position, self.position, 0.5, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
+		tween.start()
 
 	
 func respawn():

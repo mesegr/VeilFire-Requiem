@@ -6279,7 +6279,7 @@ texture = ExtResource( 37 )
 
 [node name="Clouds18" type="Sprite" parent="."]
 modulate = Color( 0.372549, 0.32549, 0.282353, 1 )
-position = Vector2( -494.671, -125.336 )
+position = Vector2( -496, -125 )
 rotation = 1.5708
 scale = Vector2( 0.865365, 1.09413 )
 texture = ExtResource( 34 )
@@ -6333,7 +6333,7 @@ flip_v = true
 
 [node name="Clouds19" type="Sprite" parent="."]
 modulate = Color( 0.317647, 0.27451, 0.239216, 1 )
-position = Vector2( -538, -119 )
+position = Vector2( -566, -127 )
 rotation = 1.5708
 scale = Vector2( 0.920966, 1.15148 )
 texture = ExtResource( 34 )
@@ -6341,7 +6341,7 @@ flip_h = true
 
 [node name="Clouds21" type="Sprite" parent="."]
 modulate = Color( 0.317647, 0.27451, 0.239216, 1 )
-position = Vector2( -1079, -299 )
+position = Vector2( -1057, -248 )
 rotation = 1.5708
 scale = Vector2( 1.11237, 1.496 )
 texture = ExtResource( 34 )
@@ -6357,7 +6357,7 @@ flip_v = true
 
 [node name="Clouds24" type="Sprite" parent="."]
 modulate = Color( 0.286275, 0.247059, 0.219608, 1 )
-position = Vector2( -1043, -233 )
+position = Vector2( -963, -281 )
 rotation = 1.5708
 scale = Vector2( 1.11237, 1.496 )
 texture = ExtResource( 34 )
@@ -6387,16 +6387,9 @@ scale = Vector2( 1.11237, 1.496 )
 texture = ExtResource( 34 )
 flip_v = true
 
-[node name="Clouds28" type="Sprite" parent="."]
-modulate = Color( 0.286275, 0.247059, 0.219608, 1 )
-position = Vector2( -797.692, 70.9886 )
-scale = Vector2( 1.42728, 6.98455 )
-texture = ExtResource( 34 )
-flip_v = true
-
 [node name="Clouds26" type="Sprite" parent="."]
 modulate = Color( 0.235294, 0.203922, 0.180392, 1 )
-position = Vector2( -893, -172 )
+position = Vector2( -886, -178 )
 rotation = 1.5708
 scale = Vector2( 1.17741, 1.496 )
 texture = ExtResource( 34 )
@@ -6410,26 +6403,19 @@ scale = Vector2( 1.17741, 1.496 )
 texture = ExtResource( 34 )
 flip_v = true
 
-[node name="Clouds27" type="Sprite" parent="."]
-modulate = Color( 0.235294, 0.203922, 0.180392, 1 )
-position = Vector2( -674, -137 )
-rotation = 1.5708
-scale = Vector2( 1.2587, 1.496 )
-texture = ExtResource( 34 )
-
 [node name="Clouds25" type="Sprite" parent="."]
 modulate = Color( 0.286275, 0.247059, 0.219608, 1 )
-position = Vector2( -564, -146 )
+position = Vector2( -620, -144 )
 rotation = 1.5708
 scale = Vector2( 1.11237, 1.496 )
 texture = ExtResource( 34 )
 
-[node name="Clouds22" type="Sprite" parent="."]
+[node name="Clouds27" type="Sprite" parent="."]
 modulate = Color( 0.235294, 0.203922, 0.180392, 1 )
-position = Vector2( -793.5, 27 )
-scale = Vector2( 0.535156, 7.51363 )
+position = Vector2( -696, -149 )
+rotation = 1.5708
+scale = Vector2( 1.2587, 1.496 )
 texture = ExtResource( 34 )
-flip_v = true
 
 [node name="Trees22" type="Sprite" parent="."]
 position = Vector2( 3564, -369 )
@@ -8973,9 +8959,9 @@ flip_v = true
 
 [node name="Clouds17" type="Sprite" parent="WaterBackGroungFather"]
 modulate = Color( 0.254902, 0.227451, 0.2, 1 )
-position = Vector2( 2198.17, -772 )
+position = Vector2( 2198.17, -736.27 )
 rotation = 1.5708
-scale = Vector2( 0.484728, 11.9561 )
+scale = Vector2( 0.949681, 11.9561 )
 texture = ExtResource( 34 )
 
 [node name="Clouds18" type="Sprite" parent="WaterBackGroungFather"]
@@ -9093,25 +9079,11 @@ position = Vector2( 2070.78, 182.898 )
 scale = Vector2( 2.15015, 1.9391 )
 texture = ExtResource( 34 )
 
-[node name="Clouds11" type="Sprite" parent="."]
-modulate = Color( 0.254902, 0.227451, 0.2, 1 )
-position = Vector2( 3143.78, 351.457 )
-rotation = 1.5708
-scale = Vector2( 0.349159, 21.9351 )
-texture = ExtResource( 34 )
-
 [node name="Clouds16" type="Sprite" parent="."]
 modulate = Color( 0.027451, 0.239216, 0.513726, 1 )
 position = Vector2( 1972, 440 )
 rotation = 0.489228
 scale = Vector2( 3.658, 2.97342 )
-texture = ExtResource( 34 )
-
-[node name="Clouds13" type="Sprite" parent="."]
-modulate = Color( 0.254902, 0.227451, 0.2, 1 )
-position = Vector2( 3431.33, 457.043 )
-rotation = 1.5708
-scale = Vector2( 0.646369, 21.9455 )
 texture = ExtResource( 34 )
 
 [node name="BubblesFather2" type="Sprite" parent="."]
@@ -10098,53 +10070,54 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 14466.7, -200.001 )
 frames = SubResource( 209 )
-frame = 8
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 10589.8, 1394.87 )
 frames = SubResource( 210 )
-frame = 8
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 10374.4, -1046.15 )
 frames = SubResource( 211 )
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10159, -2964.1 )
 frames = SubResource( 212 )
-frame = 5
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 2574.36, -1312.82 )
 frames = SubResource( 213 )
-frame = 5
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10994.9, -676.923 )
 frames = SubResource( 214 )
-frame = 8
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16543.6, -2758.97 )
 frames = SubResource( 215 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 28846.1, -2287.18 )
 frames = SubResource( 215 )
+frame = 1
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10253,7 +10226,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10266,7 +10239,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10279,7 +10252,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11598,7 +11571,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 13239, -1649 )
+position = Vector2( 12051, -1608 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
