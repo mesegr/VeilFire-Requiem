@@ -89,7 +89,6 @@ func _ready():
 	initializeTimers()
 	
 func _physics_process(delta):
-	print($Area2D2/CollisionShape2D.position)
 	cooldownAttack = cooldownAttack
 	motion.y += gravity
 	finalBossScene()

@@ -257,7 +257,6 @@ collision_mask = 8
 position = Vector2( 0, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire1"]
@@ -273,7 +272,6 @@ collision_mask = 8
 position = Vector2( 2.99994, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire2"]
@@ -288,7 +286,7 @@ collision_mask = 8
 position = Vector2( -1, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire3"]
@@ -303,7 +301,7 @@ collision_mask = 8
 position = Vector2( 13, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire4"]

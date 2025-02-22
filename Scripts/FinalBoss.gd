@@ -49,6 +49,10 @@ func _ready():
 	cooldown.connect("timeout", self, "cooldown_attack")
 
 func _process(delta):
+	move_character()
+	if attack:
+		$Area2D2/CollisionShape2D2.disabled = false
+		
 	if !dead:
 		if fireAtt:
 			fireAttack(delta)
@@ -58,7 +62,6 @@ func _process(delta):
 
 		if !attack and !respawnP:
 			chase()
-			move_character()
 	else:
 		# Si el boss está muerto, no hacer nada más que la animación de muerte
 		pass
@@ -142,6 +145,7 @@ func dead():
 		cooldown.stop()  # Detén el temporizador de cooldown 
 	
 func respawn():
+	lives = 25
 	self.position.y = OriginalPositionY
 	self.position.x = OriginalPositionX
 	speed = 0
@@ -209,6 +213,7 @@ func _on_frame_changed():
 		$AttackFlame.disabled = true
 
 func attack():
+	speed = 0
 	if !dead and !attack and canAttack and !respawnP:  # Asegurarse de que no esté en respawn
 		if $Attack.is_colliding():  # Verifica el rango de ataque cercano
 			var obj = $Attack.get_collider()
@@ -291,6 +296,10 @@ func _on_Area2D2_body_entered(body):
 		add_child(timer)
 		timer.connect("timeout", self, "_on_hit_timeout")
 		timer.start()
+		
+		if attack:
+			print("Recibiendo daño mientras ataca")
+		
 		lives -= 1
 		dead()
 		player.shake_camera()
