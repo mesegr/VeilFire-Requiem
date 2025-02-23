@@ -36,6 +36,7 @@ var player
 var can_doublejump = true
 var doubleJumpItem1 = true
 var doubleJumpItem2 = true
+var is_on_ice = false
 var motion = Vector2()
 var altar_cercano = null
 const up = Vector2(0, -1)
@@ -160,6 +161,19 @@ func playerLive():
 		
 func playerMovement(delta):
 	var friction = false
+	var found_ice = false  # Variable temporal para evitar problemas con el bucle
+
+	if is_on_floor():
+		if get_slide_count() > 0:
+			for i in range(get_slide_count()):
+				var collision = get_slide_collision(i)
+				if collision.collider and collision.collider.is_in_group("ice"):  # Evita errores si no hay collider
+					found_ice = true
+					break  # Detenemos el loop al encontrar hielo
+		is_on_ice = found_ice  # Actualizamos el estado solo al final
+
+	print("¿Está en hielo?: ", is_on_ice)  # Depuración
+		
 	if HitPlayer == false:
 		if is_on_floor() and Input.is_action_pressed("agacharte"):
 			$Area2D2/CollisionShape2D.position.y = 15
@@ -235,10 +249,14 @@ func playerMovement(delta):
 				motion.y = jumpHeight
 				jump1_sound.play()
 			if friction == true:
-				motion.x = lerp(motion.x, 0, 1)
+				if is_on_ice:
+					motion.x = lerp(motion.x, 0, 0.01)  # Fricción muy baja en hielo
+				else:
+					motion.x = lerp(motion.x, 0, 0.1)  # Fricción normal en suelo
 		else:
 			if friction == true:
-				motion.x = lerp(motion.x, 0, 0.11)
+				# Fricción en el aire: reducción gradual de la velocidad horizontal
+				motion.x = lerp(motion.x, 0, 0.02)  # Fricción baja en el aire para conservar inercia
 		if can_doublejump and !is_on_floor() and Input.is_action_just_pressed("ui_up") and doubleJumpItem1 and doubleJumpItem2:
 			jump2_sound.play()
 			moveSpeed = 62
@@ -261,7 +279,16 @@ func playerMovement(delta):
 				is_dashing = true
 				dash_timer = dash_duration
 				sprite.play("dash")
-	motion = move_and_slide(motion, up)
+				
+		if is_on_floor():
+			if is_on_ice:
+				if not Input.is_action_pressed("ui_right") and not Input.is_action_pressed("ui_left"):
+					motion.x = lerp(motion.x, 0, 0.025)  # Fricción súper baja para que se deslice mucho más tiempo
+			else:
+				if friction:
+					motion.x = lerp(motion.x, 0, 0.3)  # Ajuste para suelo normal
+	print("Velocidad X antes de move_and_slide:", motion.x)
+	motion = move_and_slide(motion, Vector2.UP)
 	
 func hit(damage):
 	$AnimatedSprite2.play("default")
