@@ -250,13 +250,13 @@ func playerMovement(delta):
 				jump1_sound.play()
 			if friction == true:
 				if is_on_ice:
-					motion.x = lerp(motion.x, 0, 0.01)  # Fricción muy baja en hielo
+					motion.x = lerp(motion.x, 0, 0.015)  # Fricción muy baja en hielo
 				else:
-					motion.x = lerp(motion.x, 0, 0.1)  # Fricción normal en suelo
+					motion.x = lerp(motion.x, 0, 0.15)  # Fricción normal en suelo
 		else:
 			if friction == true:
 				# Fricción en el aire: reducción gradual de la velocidad horizontal
-				motion.x = lerp(motion.x, 0, 0.02)  # Fricción baja en el aire para conservar inercia
+				motion.x = lerp(motion.x, 0, 0.025)  # Fricción baja en el aire para conservar inercia
 		if can_doublejump and !is_on_floor() and Input.is_action_just_pressed("ui_up") and doubleJumpItem1 and doubleJumpItem2:
 			jump2_sound.play()
 			moveSpeed = 62
@@ -286,7 +286,7 @@ func playerMovement(delta):
 					motion.x = lerp(motion.x, 0, 0.025)  # Fricción súper baja para que se deslice mucho más tiempo
 			else:
 				if friction:
-					motion.x = lerp(motion.x, 0, 0.3)  # Ajuste para suelo normal
+					motion.x = lerp(motion.x, 0, 0.35)  # Ajuste para suelo normal
 	print("Velocidad X antes de move_and_slide:", motion.x)
 	motion = move_and_slide(motion, Vector2.UP)
 	
