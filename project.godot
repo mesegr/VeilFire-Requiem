@@ -26,7 +26,6 @@ default_bus_layout=""
 
 [autoload]
 
-Player="*res://Scripts/jugador1.gd"
 Altar="*res://Scripts/altar.gd"
 
 [debug]

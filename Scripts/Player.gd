@@ -171,8 +171,6 @@ func playerMovement(delta):
 					found_ice = true
 					break  # Detenemos el loop al encontrar hielo
 		is_on_ice = found_ice  # Actualizamos el estado solo al final
-
-	print("¿Está en hielo?: ", is_on_ice)  # Depuración
 		
 	if HitPlayer == false:
 		if is_on_floor() and Input.is_action_pressed("agacharte"):
@@ -286,8 +284,7 @@ func playerMovement(delta):
 					motion.x = lerp(motion.x, 0, 0.025)  # Fricción súper baja para que se deslice mucho más tiempo
 			else:
 				if friction:
-					motion.x = lerp(motion.x, 0, 0.35)  # Ajuste para suelo normal
-	print("Velocidad X antes de move_and_slide:", motion.x)
+					motion.x = lerp(motion.x, 0, 0.35)  # Ajuste para suelo norma
 	motion = move_and_slide(motion, Vector2.UP)
 	
 func hit(damage):
