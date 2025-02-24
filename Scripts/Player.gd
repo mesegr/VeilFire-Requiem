@@ -98,6 +98,10 @@ func _physics_process(delta):
 	playerLive()
 	playerMovement(delta)
 	
+	if Input.is_action_just_pressed("guardar"):
+		print("guardando")
+		SaveSystem.save_game()
+	
 func finalBossScene():
 	if StopMusic:
 		crimson_Abyss_Forge_music.volume_db -= 0.5

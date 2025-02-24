@@ -7,6 +7,7 @@ onready var controls = $Panel
 func _on_Button_pressed():
 	pressed.play()
 	get_tree().change_scene("res://Scenes/worldEN.tscn")
+	SaveSystem.load_game()
 	$MenuTheme.stop()
 	
 func _on_Button2_pressed():
