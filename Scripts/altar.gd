@@ -2,6 +2,7 @@ extends StaticBody2D
 
 onready var sprite = $AnimatedSprite
 var firstAnim = true
+var active = false
 
 func _ready():
 	yield(get_tree(), "idle_frame")  # Esperar un frame para que todo cargue
@@ -16,5 +17,9 @@ func _on_playerRest(altar):
 		sprite.play("default")
 		yield(sprite, "animation_finished")
 		$AudioStreamPlayer2D.play()
-	sprite.play("new")
+	active = true
 	firstAnim = false
+	
+func _process(delta):
+	if active:
+		sprite.play("new")
