@@ -98,10 +98,6 @@ func _physics_process(delta):
 	playerLive()
 	playerMovement(delta)
 	
-	if Input.is_action_just_pressed("guardar"):
-		print("guardando")
-		SaveSystem.save_game()
-	
 func finalBossScene():
 	if StopMusic:
 		crimson_Abyss_Forge_music.volume_db -= 0.5
@@ -225,13 +221,13 @@ func playerMovement(delta):
 			motion.x = max(motion.x - moveSpeed, -maxSpeed)
 		elif Input.is_action_just_pressed("ui_accept") and enter and attack and !is_dashing and is_on_floor():
 			idle = false
-			if sprite != null: 
+			if sprite != null:
+				startpos = self.position
 				sprite.play("rest")
 				motion.x = 0
 				rest.play()
 				PlayerLives = 4
 				enemies()
-				startpos = self.position
 				if altar_cercano:  # Solo emite la señal si hay un altar cerca
 					emit_signal("playerRest", altar_cercano)
 			timerRest.start()
@@ -241,6 +237,7 @@ func playerMovement(delta):
 			else:
 				print("Error: 'sprite' es null en _physics_process")
 			friction = true
+
 		if is_on_floor():
 			if can_doublejump == false:
 				moveSpeed = 47

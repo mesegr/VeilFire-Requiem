@@ -5,17 +5,29 @@ var save_path = "user://savegame.save"
 func save_game():
 	var current_scene = get_tree().current_scene
 	var player = current_scene.get_node("Player")
+	var startpos = current_scene.get_node("Startpos")
 	var ui = current_scene.get_node("CanvasLayer")
 	var altars = current_scene.get_tree().get_nodes_in_group("altar")
+	var pickups = current_scene.get_tree().get_nodes_in_group("coin")
 	
 	if player:
 		# Guardar el estado de los altares
 		var altar_states = []
 		for altar in altars:
-			altar_states.append({
-				"path": altar.get_path(),  # Ruta única del altar
-				"active": altar.active     # Estado del altar
-			})
+			if is_instance_valid(altar):  # Verificar si el nodo existe
+				altar_states.append({
+					"path": altar.get_path(),  # Ruta única del altar
+					"active": altar.active     # Estado del altar
+				})
+			
+		# Guardar el estado de los pickups
+		var pickup_states = []
+		for pickup in pickups:
+			if is_instance_valid(pickup):  # Verificar si el nodo existe
+				pickup_states.append({
+					"path": pickup.get_path(),  # Ruta única del pickup
+					"picked": pickup.isPicked    # Estado del pickup
+				})
 		
 		# Crear el diccionario de guardado
 		var save_data = {
@@ -27,7 +39,9 @@ func save_game():
 			"player_doubleJumpItem2": player.doubleJumpItem2,
 			"player_cooldownAttack": player.cooldownAttack,
 			"ui_coins": ui.coins,
-			"altar_states": altar_states  # Guardar el array de estados de los altares
+			"altar_states": altar_states,  # Guardar el array de estados de los altares
+			"pickup_states": pickup_states,
+			"startpos": startpos.position,  # Guardar el array de estados de los pickups
 		}
 		
 		# Guardar en archivo
@@ -54,6 +68,7 @@ func load_game():
 	# Restaurar datos del jugador y la UI
 	var player = get_tree().current_scene.get_node("Player")
 	var ui = get_tree().current_scene.get_node("CanvasLayer")
+	var startpos = get_tree().current_scene.get_node("Startpos")
 	
 	if player:
 		player.position = save_data["player_position"]
@@ -63,17 +78,27 @@ func load_game():
 		player.doubleJumpItem2 = save_data["player_doubleJumpItem2"]
 		player.cooldownAttack = save_data["player_cooldownAttack"]
 		ui.coins = save_data["ui_coins"]
+		startpos.position = save_data["startpos"]
 	else:
 		print("Error: No se encontró el nodo del jugador en la escena cargada.")
 	
 	# Restaurar el estado de los altares
-	var altars = get_tree().current_scene.get_tree().get_nodes_in_group("altar")
 	for altar_state in save_data["altar_states"]:
 		var altar = get_tree().current_scene.get_node(altar_state["path"])
-		if altar:
+		if altar and is_instance_valid(altar):  # Verificar si el nodo existe
 			altar.active = altar_state["active"]
 		else:
 			print("Error: No se encontró el altar con la ruta:", altar_state["path"])
-
+	
+	# Restaurar el estado de los pickups
+	for pickup_state in save_data["pickup_states"]:
+		var pickup = get_tree().current_scene.get_node(pickup_state["path"])
+		if pickup and is_instance_valid(pickup):  # Verificar si el nodo existe
+			pickup.isPicked = pickup_state["picked"]
+			if pickup.isPicked:
+				pickup.visible = false  # Oculta el nodo si ha sido recogido
+				pickup.set_process(false)  # Detiene el procesamiento
+		else:
+			print("Error: No se encontró el pickup con la ruta:", pickup_state["path"])
 	
 	return true

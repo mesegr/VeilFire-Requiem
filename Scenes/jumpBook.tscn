@@ -39,24 +39,22 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=1]
 radius = 24.1868
 
-[node name="JumpBook" type="Node2D"]
-
-[node name="JumpBook" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 2
+[node name="JumpBook" type="Area2D" groups=["coin"]]
+collision_layer = 15
+collision_mask = 15
 script = ExtResource( 2 )
-
-[node name="Sprite" type="AnimatedSprite" parent="JumpBook"]
-frames = SubResource( 8 )
-frame = 9
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="JumpBook"]
-shape = SubResource( 1 )
 
 [node name="pickup" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -12.0
 pitch_scale = 0.58
 
-[connection signal="body_entered" from="JumpBook" to="JumpBook" method="_on_JumpBook_body_entered"]
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 8 )
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_JumpBook_body_entered"]

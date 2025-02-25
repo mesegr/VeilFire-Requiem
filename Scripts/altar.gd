@@ -19,6 +19,11 @@ func _on_playerRest(altar):
 		$AudioStreamPlayer2D.play()
 	active = true
 	firstAnim = false
+	print("guardando")
+	SaveSystem.save_game()
+	$"../CanvasLayer/loading".play("default")
+	yield($"../CanvasLayer/loading", "animation_finished")
+	$"../CanvasLayer/loading".play("New Anim")
 	
 func _process(delta):
 	if active:

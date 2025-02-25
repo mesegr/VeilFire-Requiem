@@ -5,6 +5,9 @@
 [ext_resource path="res://Sounds/coinpickup.ogg" type="AudioStream" id=3]
 [ext_resource path="res://Assets/FX/coin_collect.png" type="Texture" id=4]
 
+[sub_resource type="CircleShape2D" id=1]
+radius = 6.0
+
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 16, 16 )
@@ -90,27 +93,22 @@ animations = [ {
 "speed": 8.0
 } ]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 6.0
-
-[node name="Coin" type="Node2D" groups=["coin"]]
-
-[node name="Coin2d" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 2
+[node name="Coin" type="Area2D" groups=["coin"]]
+collision_layer = 15
+collision_mask = 15
 script = ExtResource( 2 )
-
-[node name="Sprite" type="AnimatedSprite" parent="Coin2d"]
-frames = SubResource( 20 )
-frame = 5
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin2d"]
-shape = SubResource( 1 )
 
 [node name="pickup" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -12.0
 pitch_scale = 1.25
 
-[connection signal="body_entered" from="Coin2d" to="Coin2d" method="_on_Coin2d_body_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 20 )
+frame = 5
+playing = true
+
+[connection signal="body_entered" from="." to="." method="_on_Coin_body_entered"]
