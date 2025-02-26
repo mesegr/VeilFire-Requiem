@@ -90,7 +90,7 @@ animations = [ {
 "frames": [ ExtResource( 42 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 55 ), ExtResource( 40 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 56 ), ExtResource( 41 ), ExtResource( 57 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 58 ), ExtResource( 59 ) ],
 "loop": true,
 "name": "Flames",
-"speed": 10.0
+"speed": 13.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
@@ -105,12 +105,12 @@ animations = [ {
 "frames": [ ExtResource( 30 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 27 ), ExtResource( 38 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 36 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "attackFire",
-"speed": 8.0
+"speed": 11.0
 }, {
 "frames": [ ExtResource( 30 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 27 ), ExtResource( 24 ), ExtResource( 32 ), ExtResource( 8 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 29 ), ExtResource( 29 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "attackcleave",
-"speed": 9.0
+"speed": 12.0
 }, {
 "frames": [ ExtResource( 75 ), ExtResource( 88 ), ExtResource( 82 ), ExtResource( 86 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 87 ), ExtResource( 79 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 70 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 69 ), null ],
 "loop": false,
@@ -122,10 +122,10 @@ animations = [ {
 extents = Vector2( 22.75, 41.75 )
 
 [sub_resource type="RectangleShape2D" id=16]
-extents = Vector2( 87.25, 18.75 )
+extents = Vector2( 90, 18.75 )
 
 [sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 62.25, 39.25 )
+extents = Vector2( 67.5, 39.25 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 33 )
@@ -215,12 +215,12 @@ position = Vector2( -14, -29 )
 shape = SubResource( 5 )
 
 [node name="AttackFlame" type="CollisionShape2D" parent="."]
-position = Vector2( -134.25, -20 )
+position = Vector2( -137, -20 )
 shape = SubResource( 16 )
 disabled = true
 
 [node name="attack" type="CollisionShape2D" parent="."]
-position = Vector2( -109.25, -26.75 )
+position = Vector2( -114.5, -26.75 )
 shape = SubResource( 15 )
 disabled = true
 
@@ -229,7 +229,7 @@ light_mask = 5
 position = Vector2( -49, -7 )
 rotation = 1.5708
 enabled = true
-cast_to = Vector2( 0, 480 )
+cast_to = Vector2( -1.99813, 518 )
 collision_mask = 2
 
 [node name="Right" type="RayCast2D" parent="."]
@@ -237,12 +237,12 @@ light_mask = 5
 position = Vector2( 47, -9 )
 rotation = -1.5708
 enabled = true
-cast_to = Vector2( 0, 480 )
+cast_to = Vector2( 0.997886, 584 )
 collision_mask = 2
 
 [node name="Attack" type="RayCast2D" parent="."]
 light_mask = 5
-position = Vector2( -25, -1 )
+position = Vector2( -37, -2 )
 rotation = 1.5708
 enabled = true
 cast_to = Vector2( -0.999341, 182 )

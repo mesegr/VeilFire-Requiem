@@ -30,7 +30,7 @@ onready var cooldown = $cooldown
 var OriginalPositionY
 var OriginalPositionX
 var fireOGposition
-var AttCoolRan = rand_range(4, 5.5)
+var AttCoolRan = rand_range(2.8, 3.8)
 
 
 func _ready():
@@ -224,7 +224,7 @@ func attack():
 			var obj = $Attack.get_collider()
 			if obj.is_in_group("Player"):
 				numero_aleatorio = randi() % 10 + 1
-				AttCoolRan = rand_range(4, 5.5)
+				AttCoolRan = rand_range(2.8, 3.8)
 
 				if numero_aleatorio <= 4:
 					$AnimatedSprite.play("Flames")
