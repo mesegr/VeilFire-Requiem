@@ -26,7 +26,8 @@ func save_game():
 			if is_instance_valid(pickup):  # Verificar si el nodo existe
 				pickup_states.append({
 					"path": pickup.get_path(),  # Ruta única del pickup
-					"picked": pickup.isPicked    # Estado del pickup
+					"picked": pickup.position,
+					   # Estado del pickup
 				})
 		
 		# Crear el diccionario de guardado
@@ -94,10 +95,7 @@ func load_game():
 	for pickup_state in save_data["pickup_states"]:
 		var pickup = get_tree().current_scene.get_node(pickup_state["path"])
 		if pickup and is_instance_valid(pickup):  # Verificar si el nodo existe
-			pickup.isPicked = pickup_state["picked"]
-			if pickup.isPicked:
-				pickup.visible = false  # Oculta el nodo si ha sido recogido
-				pickup.set_process(false)  # Detiene el procesamiento
+			pickup.position = pickup_state["picked"]
 		else:
 			print("Error: No se encontró el pickup con la ruta:", pickup_state["path"])
 	

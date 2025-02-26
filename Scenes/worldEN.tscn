@@ -9010,10 +9010,6 @@ modulate = Color( 1.19, 1.19, 1.19, 1 )
 position = Vector2( -1932, 528 )
 scale = Vector2( 2.9, 2.5 )
 
-[node name="Coin17" parent="." instance=ExtResource( 16 )]
-modulate = Color( 1, 1, 1, 0.317647 )
-position = Vector2( 364, 95.9999 )
-
 [node name="WaterBackGroungFather" type="Sprite" parent="."]
 position = Vector2( 309, 1155 )
 scale = Vector2( 0.990315, 1 )
@@ -9555,6 +9551,11 @@ position = Vector2( 424, -1080 )
 
 [node name="Coin10" parent="UnderWaterCoinFather" instance=ExtResource( 16 )]
 position = Vector2( -517, -968 )
+
+[node name="Coin17" parent="UnderWaterCoinFather" instance=ExtResource( 16 )]
+modulate = Color( 1, 1, 1, 0.317647 )
+position = Vector2( -1446, -1392 )
+scale = Vector2( 1, 1 )
 
 [node name="JumpBook" parent="." instance=ExtResource( 139 )]
 position = Vector2( 1918, 618 )
@@ -10332,55 +10333,54 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 14466.7, -200.001 )
 frames = SubResource( 209 )
-frame = 4
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 10589.8, 1394.87 )
 frames = SubResource( 210 )
-frame = 4
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 10374.4, -1046.15 )
 frames = SubResource( 211 )
-frame = 6
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10159, -2964.1 )
 frames = SubResource( 212 )
-frame = 1
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 2574.36, -1312.82 )
 frames = SubResource( 213 )
-frame = 1
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10994.9, -676.923 )
 frames = SubResource( 214 )
-frame = 4
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16543.6, -2758.97 )
 frames = SubResource( 215 )
-frame = 7
+frame = 2
 playing = true
 
 [node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 28846.1, -2287.18 )
 frames = SubResource( 215 )
-frame = 6
+frame = 1
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10489,7 +10489,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 7
+frame = 2
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10502,7 +10502,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 8
+frame = 3
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10515,7 +10515,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 9
+frame = 4
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -10596,7 +10596,7 @@ position = Vector2( -1135, -1191 )
 scale = Vector2( 0.990315, 1 )
 
 [node name="Coin" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -669, -1208 )
+position = Vector2( -670, -1208 )
 
 [node name="Coin7" parent="CoinFather" instance=ExtResource( 16 )]
 position = Vector2( -262, -1211 )
@@ -10625,78 +10625,8 @@ position = Vector2( 831, -1193 )
 [node name="Coin15" parent="CoinFather" instance=ExtResource( 16 )]
 position = Vector2( -6462, -1397 )
 
-[node name="Coin" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 859, -34 )
-
-[node name="Coin2" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 1414, -50 )
-
-[node name="Coin3" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 1748, -49 )
-
-[node name="Coin4" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 2332, -50 )
-
-[node name="Coin5" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 2586, -97 )
-
-[node name="Coin6" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3220, -80 )
-
-[node name="Coin7" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3634, -196 )
-
-[node name="Coin" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 810 )
-scale = Vector2( 1.8, 1.8 )
-
-[node name="Coin2" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 702 )
-scale = Vector2( 1.2, 1.2 )
-
-[node name="Coin5" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 674 )
-
-[node name="Coin3" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 736 )
-scale = Vector2( 1.4, 1.4 )
-
-[node name="Coin4" parent="CoinFather/Coin15/Coin7" instance=ExtResource( 16 )]
-position = Vector2( -184, 771 )
-scale = Vector2( 1.6, 1.6 )
-
-[node name="Coin8" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3941, -290 )
-
-[node name="Coin9" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 3728, -324 )
-
-[node name="Coin10" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 4122, -98 )
-
-[node name="Coin11" parent="CoinFather/Coin15" instance=ExtResource( 16 )]
-position = Vector2( 4598, -51 )
-
 [node name="Coin16" parent="CoinFather" instance=ExtResource( 16 )]
 position = Vector2( 1970, -1349 )
-
-[node name="Coin" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 1158, -556 )
-
-[node name="Coin2" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 1356, -945 )
-
-[node name="Coin3" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 1904, -1024 )
-
-[node name="Coin4" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 2837, -1041 )
-
-[node name="Coin5" parent="CoinFather/Coin16" instance=ExtResource( 16 )]
-position = Vector2( 3973, -1007 )
-
-[node name="Coin" parent="CoinFather/Coin16/Coin5" instance=ExtResource( 16 )]
-position = Vector2( 1465, -419 )
 
 [node name="Coin18" parent="CoinFather" instance=ExtResource( 16 )]
 position = Vector2( 3698, -1645 )
@@ -10736,6 +10666,79 @@ position = Vector2( 10412, -2860 )
 
 [node name="Coin29" parent="CoinFather" instance=ExtResource( 16 )]
 position = Vector2( 11855, -2942 )
+
+[node name="Coin17" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 541, -1319 )
+
+[node name="Coin30" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -5603, -1431 )
+
+[node name="Coin31" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -5048, -1447 )
+
+[node name="Coin32" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -4714, -1446 )
+
+[node name="Coin33" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -4130, -1447 )
+
+[node name="Coin34" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -3876, -1494 )
+
+[node name="Coin35" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -3242, -1477 )
+
+[node name="Coin36" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -2828, -1593 )
+
+[node name="Coin37" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -2521, -1687 )
+
+[node name="Coin38" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -2734, -1721 )
+
+[node name="Coin39" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -2340, -1495 )
+
+[node name="Coin40" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -1864, -1448 )
+
+[node name="Coin41" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 3128, -1905 )
+
+[node name="Coin42" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 3326, -2294 )
+
+[node name="Coin43" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 3874, -2373 )
+
+[node name="Coin44" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 4807, -2390 )
+
+[node name="Coin45" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 7408, -2775 )
+
+[node name="Coin46" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( 5943, -2356 )
+
+[node name="Coin47" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -3012, -783 )
+scale = Vector2( 1.8, 1.8 )
+
+[node name="Coin48" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -3012, -891 )
+scale = Vector2( 1.2, 1.2 )
+
+[node name="Coin49" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -3012, -919 )
+
+[node name="Coin50" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -3012, -857 )
+scale = Vector2( 1.4, 1.4 )
+
+[node name="Coin51" parent="CoinFather" instance=ExtResource( 16 )]
+position = Vector2( -3012, -822 )
+scale = Vector2( 1.6, 1.6 )
 
 [node name="quickSandFather" parent="." instance=ExtResource( 20 )]
 modulate = Color( 0.760784, 0.760784, 0.760784, 1 )
@@ -11839,7 +11842,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( -2037, -250 )
+position = Vector2( -30, 1 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -12379,9 +12382,6 @@ scale = Vector2( 2.26563, 2.3125 )
 frames = SubResource( 243 )
 animation = "New Anim"
 playing = true
-
-[node name="Coin" parent="." instance=ExtResource( 16 )]
-position = Vector2( 1556, -73 )
 
 [node name="tileMapIce" type="TileMap" parent="." groups=["ice"]]
 position = Vector2( 4, 0 )
