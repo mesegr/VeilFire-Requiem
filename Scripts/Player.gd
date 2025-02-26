@@ -11,7 +11,6 @@ var dead = false
 var StopMusic = false
 var finalbossMusic = false
 var bajarfinalbossMusic = 0.5
-var startpos = Vector2()
 var previous_player_lives = PlayerLives
 var collision_disabled = false
 var finalbossLives = 25
@@ -41,6 +40,7 @@ var motion = Vector2()
 var altar_cercano = null
 const up = Vector2(0, -1)
 signal playerRest(altar)
+onready var startpos = $"../Startpos"
 onready var camera = $PlayerCamera
 onready var sprite = $AnimatedSprite
 onready var timerRest = $TimerRest
@@ -83,8 +83,7 @@ func _ready():
 
 	original_camera_position = camera.position
 	
-	startpos = get_parent().get_node("Startpos").position
-	self.position = startpos
+	self.position = startpos.position
 	
 	sprite.connect("animation_finished", self, "_on_animation_finished")
 	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished2")
@@ -222,7 +221,7 @@ func playerMovement(delta):
 		elif Input.is_action_just_pressed("ui_accept") and enter and attack and !is_dashing and is_on_floor():
 			idle = false
 			if sprite != null:
-				startpos = self.position
+				startpos.position = self.position
 				sprite.play("rest")
 				motion.x = 0
 				rest.play()
@@ -356,7 +355,7 @@ func _on_animation_finished():
 		
 	if sprite.animation == "dead":
 		HitPlayer = false
-		self.position = startpos
+		self.position = startpos.position
 		gravity = 15
 		$Area2D2.position.y = 6
 		deadeff.play("t")
@@ -374,7 +373,7 @@ func _on_animation_finished():
 		attack = true
 		
 func deadtpF():
-	self.position = startpos
+	self.position = startpos.position
 	deadeff.play("t")
 	enemies()
 

@@ -42,7 +42,7 @@ func save_game():
 			"ui_coins": ui.coins,
 			"altar_states": altar_states,  # Guardar el array de estados de los altares
 			"pickup_states": pickup_states,
-			"startpos": startpos.position,  # Guardar el array de estados de los pickups
+			"startpos": startpos.position
 		}
 		
 		# Guardar en archivo

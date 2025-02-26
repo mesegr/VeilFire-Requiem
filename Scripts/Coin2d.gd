@@ -1,9 +1,8 @@
 extends Area2D
 
-onready var pickup = $"../pickup"
+onready var pickup = $pickup
 onready var sprite = $Sprite
 var canPick = true
-
 
 func _on_JumpBook_body_entered(body):
 	if body.get_name() == "Player" and canPick:
