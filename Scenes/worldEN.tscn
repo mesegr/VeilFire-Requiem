@@ -1,4 +1,4 @@
-[gd_scene load_steps=401 format=2]
+[gd_scene load_steps=404 format=2]
 
 [ext_resource path="res://Assets/Deco/tree_trunk.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Deco/bush.png" type="Texture" id=2]
@@ -3434,13 +3434,13 @@ resource_local_to_scene = true
 extents = Vector2( 580.613, 13 )
 
 [sub_resource type="RectangleShape2D" id=138]
-extents = Vector2( 1585.02, 42.75 )
+extents = Vector2( 356.939, 53.375 )
 
 [sub_resource type="RectangleShape2D" id=216]
 extents = Vector2( 75.5, 4 )
 
 [sub_resource type="RectangleShape2D" id=141]
-extents = Vector2( 556.125, 15.5 )
+extents = Vector2( 621.062, 18.25 )
 
 [sub_resource type="RectangleShape2D" id=142]
 extents = Vector2( 71.5, 10 )
@@ -3459,6 +3459,15 @@ extents = Vector2( 126, 21 )
 
 [sub_resource type="RectangleShape2D" id=108]
 extents = Vector2( 436, 29.25 )
+
+[sub_resource type="RectangleShape2D" id=292]
+extents = Vector2( 218, 10 )
+
+[sub_resource type="RectangleShape2D" id=293]
+extents = Vector2( 38, 10 )
+
+[sub_resource type="RectangleShape2D" id=294]
+extents = Vector2( 545.5, 10 )
 
 [sub_resource type="ConvexPolygonShape2D" id=31]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -9285,11 +9294,11 @@ position = Vector2( -277, 96 )
 shape = SubResource( 29 )
 
 [node name="DeadZone4" type="CollisionShape2D" parent="DeadZones"]
-position = Vector2( -4887, -103 )
+position = Vector2( -5777, -81 )
 shape = SubResource( 138 )
 
 [node name="DeadZone5" type="CollisionShape2D" parent="DeadZones"]
-position = Vector2( -3648.02, -131.25 )
+position = Vector2( -4559.94, -102 )
 shape = SubResource( 138 )
 
 [node name="DeadZone11" type="CollisionShape2D" parent="DeadZones"]
@@ -9297,7 +9306,7 @@ position = Vector2( -2014.5, 504 )
 shape = SubResource( 216 )
 
 [node name="DeadZone9" type="CollisionShape2D" parent="DeadZones"]
-position = Vector2( -1413.12, -125.5 )
+position = Vector2( -3289.06, -156.75 )
 shape = SubResource( 141 )
 
 [node name="DeadZone10" type="CollisionShape2D" parent="DeadZones"]
@@ -9330,6 +9339,18 @@ polygon = PoolVector2Array( 8767, -1601, 8691, -1115, 8625, -1088, 8554, -1576, 
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="DeadZones"]
 polygon = PoolVector2Array( 9229, -1614, 9744, -1598, 9913, -1673, 10548, -1682, 10656, -1703, 10737, -1615, 11074, -1621, 11151, -1575, 11228, -1612, 11310, -1573, 11348, -1589, 11542, -1514, 11755, -1543, 12228, -1547, 12235, -1569, 12365, -1569, 12517, -1655, 12554, -1613, 12570, -1683, 12728, -1701, 12789, -1614, 12822, -1670, 12947, -1586, 13247, -1588, 13312, -1520, 13350, -1558, 13350, -1418, 9222, -1405 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="DeadZones"]
+position = Vector2( -2395, -140 )
+shape = SubResource( 292 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="DeadZones"]
+position = Vector2( -2116, -174 )
+shape = SubResource( 293 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="DeadZones"]
+position = Vector2( -1408.5, -132 )
+shape = SubResource( 294 )
 
 [node name="Clouds10" type="Sprite" parent="."]
 modulate = Color( 0.254902, 0.227451, 0.2, 1 )
@@ -10333,54 +10354,52 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 14466.7, -200.001 )
 frames = SubResource( 209 )
-frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 10589.8, 1394.87 )
 frames = SubResource( 210 )
-frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 10374.4, -1046.15 )
 frames = SubResource( 211 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10159, -2964.1 )
 frames = SubResource( 212 )
-frame = 6
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 2574.36, -1312.82 )
 frames = SubResource( 213 )
-frame = 6
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10994.9, -676.923 )
 frames = SubResource( 214 )
-frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16543.6, -2758.97 )
 frames = SubResource( 215 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 28846.1, -2287.18 )
 frames = SubResource( 215 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10489,7 +10508,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10502,7 +10521,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 3
+frame = 4
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10515,7 +10534,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 4
+frame = 5
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -10924,82 +10943,82 @@ scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand53" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5222, -1744 )
+position = Vector2( -5209, -1752 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand54" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5128, -1745 )
+position = Vector2( -5115, -1753 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand55" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5175, -1804 )
+position = Vector2( -5162, -1812 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand56" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5221, -1804 )
+position = Vector2( -5208, -1812 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand57" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5084, -1744 )
+position = Vector2( -5071, -1752 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand58" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -4988, -1744 )
+position = Vector2( -4975, -1752 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand59" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5037, -1804 )
+position = Vector2( -5024, -1812 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand60" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5083, -1804 )
+position = Vector2( -5070, -1812 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand116" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5223, -1624 )
+position = Vector2( -5210, -1632 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand117" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5129, -1625 )
+position = Vector2( -5116, -1633 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand118" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5176, -1684 )
+position = Vector2( -5163, -1692 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand119" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5222, -1684 )
+position = Vector2( -5209, -1692 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand120" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5085, -1624 )
+position = Vector2( -5072, -1632 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand121" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -4989, -1624 )
+position = Vector2( -4976, -1632 )
 scale = Vector2( 3, 2.5 )
 
 [node name="quickSand122" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5038, -1684 )
+position = Vector2( -5025, -1692 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand123" parent="quickSandFather" instance=ExtResource( 20 )]
 modulate = Color( 1.19, 1.19, 1.19, 1 )
-position = Vector2( -5084, -1684 )
+position = Vector2( -5071, -1692 )
 scale = Vector2( 2.9, 2.5 )
 
 [node name="quickSand124" parent="quickSandFather" instance=ExtResource( 20 )]
