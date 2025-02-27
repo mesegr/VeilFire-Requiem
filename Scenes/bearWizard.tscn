@@ -154,6 +154,7 @@ collision_mask = 8
 script = ExtResource( 2 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["enemie4"]]
+position = Vector2( 0, -1 )
 collision_layer = 8
 collision_mask = 8
 
