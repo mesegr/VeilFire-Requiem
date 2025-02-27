@@ -9338,7 +9338,7 @@ build_mode = 1
 polygon = PoolVector2Array( 8767, -1601, 8691, -1115, 8625, -1088, 8554, -1576, 8432, -1552, 8373, -1101, 8305, -1534, 8209, -1540, 8162, -1248, 8127, -1496, 8068, -1488, 8027, -972, 7971, -1423, 7846, -1396, 7788, -944, 7631, -931, 7575, -1200, 7495, -1231, 7461, -1029, 7464, -1204, 7339, -1221, 7303, -990, 7068, -990, 7066, -1146, 6920, -1049, 6672, -1144, 6634, -862, 6608, -1122, 6497, -1139, 6453, -849, 6415, -1106, 6310, -1112, 6250, -835, 5892, -834, 5815, -1122, 5710, -1158, 5687, -1126, 5669, -1171, 5578, -1167, 5532, -824, 5500, -1137, 5408, -1155, 5330, -958, 5292, -1189, 5220, -1207, 5211, -1151, 5173, -1173, 5078, -1173, 5008, -949, 4958, -1144, 4856, -1104, 4838, -960, 4800, -1080, 4768, -1043, 4698, -1046, 4628, -821, 4545, -1044, 4491, -1030, 4480, -1002, 4395, -1000, 4397, -970, 4457, -967, 4469, -936, 4420, -833, 4385, -880, 4315, -872, 4312, -830, 4273, -839, 4205, -820, 4183, -666, 5956, -496, 5956, -157, 5280, -277, 5220, -246, 5162, -277, 5073, -277, 5059, -239, 4913, -261, 4910, -294, 4851, -306, 4838, -241, 4749, -227, 4708, -370, 4663, -354, 4642, -221, 4626, -324, 4585, -324, 4557, -268, 4408, -288, 4266, -433, 4262, -518, 4231, -513, 4200, -581, 4178, -497, 4139, -445, 4110, -550, 4100, -729, 4087, -772, 4013, -754, 3987, -647, 3976, -722, 3853, -689, 3831, -560, 3818, -712, 3793, -649, 3709, -647, 3662, -464, 3629, -561, 3538, -533, 3492, -263, 3422, -323, 3407, -436, 3332, -424, 3296, -303, 3262, -354, 3173, -323, 3157, -179, 8608, -82 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="DeadZones"]
-polygon = PoolVector2Array( 9229, -1614, 9744, -1598, 9913, -1673, 10548, -1682, 10656, -1703, 10737, -1615, 11074, -1621, 11151, -1575, 11228, -1612, 11310, -1573, 11348, -1589, 11542, -1514, 11755, -1543, 12228, -1547, 12235, -1569, 12365, -1569, 12517, -1655, 12554, -1613, 12570, -1683, 12728, -1701, 12789, -1614, 12822, -1670, 12947, -1586, 13247, -1588, 13312, -1520, 13350, -1558, 13350, -1418, 9222, -1405 )
+polygon = PoolVector2Array( 9218, -1617, 9744, -1598, 9913, -1673, 10548, -1682, 10656, -1703, 10737, -1615, 11074, -1621, 11151, -1575, 11228, -1611, 11310, -1573, 11348, -1589, 11542, -1514, 11755, -1543, 12228, -1547, 12235, -1569, 12365, -1569, 12517, -1655, 12554, -1613, 12570, -1683, 12728, -1701, 12789, -1614, 12822, -1670, 12947, -1586, 13247, -1588, 13312, -1520, 13350, -1558, 13350, -1418, 9222, -1405 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="DeadZones"]
 position = Vector2( -2395, -140 )
@@ -10353,52 +10353,54 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 0.975, 0.928572 )
 frames = SubResource( 208 )
-frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 14466.7, -200.001 )
 frames = SubResource( 209 )
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 10589.8, 1394.87 )
 frames = SubResource( 210 )
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 10374.4, -1046.15 )
 frames = SubResource( 211 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10159, -2964.1 )
 frames = SubResource( 212 )
-frame = 7
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 2574.36, -1312.82 )
 frames = SubResource( 213 )
-frame = 7
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 10994.9, -676.923 )
 frames = SubResource( 214 )
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 16543.6, -2758.97 )
 frames = SubResource( 215 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="ECopia2" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 28846.1, -2287.18 )
 frames = SubResource( 215 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10507,7 +10509,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.402579, -0.402579 )
 frames = SubResource( 207 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10520,7 +10522,7 @@ visible = false
 position = Vector2( 0, -170.968 )
 scale = Vector2( 1.25806, 1.25806 )
 frames = SubResource( 207 )
-frame = 4
+frame = 3
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10533,7 +10535,7 @@ visible = false
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 207 )
-frame = 5
+frame = 4
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
