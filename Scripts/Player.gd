@@ -186,6 +186,7 @@ func playerMovement(delta):
 			idle = true
 		if is_on_floor() and Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim:
 			$Area2D/CollisionShape2D.disabled = false
+			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
 			sprite.play("attack")
 			attack = false
@@ -194,6 +195,7 @@ func playerMovement(delta):
 			attanim = false
 		if is_on_floor() and Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim == false:
 			$Area2D/CollisionShape2D.disabled = false
+			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
 			sprite.play("attack 1")
 			attack = false
@@ -292,14 +294,12 @@ func hit(damage):
 	$Area2D2/CollisionShape2D.position.y = -1025
 	print("hit")
 	var timerInmune = Timer.new()
-	timerInmune.wait_time = 1
+	timerInmune.wait_time = 0.7
 	timerInmune.one_shot = true
 	add_child(timerInmune)
 	timerInmune.connect("timeout", self, "_on_hit_inmune")
 	timerInmune.start()
-	motion.x = 0
 	if !attack:
-		motion.x = 0
 		PlayerLives -= damage
 		hitsound.play()
 		shake_camera()
@@ -371,6 +371,7 @@ func _on_animation_finished():
 	if sprite.animation == "attack" or sprite.animation == "attack 1":
 		$Area2D/CollisionShape2D.disabled = true
 		attack = true
+		$Area2D2/CollisionShape2D.position.y = 2
 		
 func deadtpF():
 	self.position = startpos.position
