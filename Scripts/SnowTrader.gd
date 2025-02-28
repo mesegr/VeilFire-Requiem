@@ -14,7 +14,6 @@ func _on_TraderCave_body_entered(body):
 	if body.name == "Player":
 		enter = true
 		$ECopia.visible = true
-
 		print("wiwi")
 
 func _on_TraderCave_body_exited(body):
@@ -25,9 +24,11 @@ func _on_TraderCave_body_exited(body):
 		$"../CanvasLayer/PanelSnowTrader2/LabelBible".visible = false
 		$"../CanvasLayer/PanelSnowTrader2/LabelNeckles".visible = false
 		$"../CanvasLayer/PanelSnowTrader2/LabelSword".visible = false
+		player.cooldown = true
 		
 func _process(delta):
 	if Input.is_action_just_released("ui_accept") and enter:
+		player.cooldown = false
 		text += 1
 		next.play()
 	if text == 1:
@@ -43,12 +44,14 @@ func _process(delta):
 		$"../CanvasLayer/PanelSnowTrader2/LabelBible".visible = false
 		$"../CanvasLayer/PanelSnowTrader2/LabelNeckles".visible = false
 		$"../CanvasLayer/PanelSnowTrader2/LabelSword".visible = false
+		player.cooldown = true
 		text = 0
 		
 	if enter == false:
 		$"../CanvasLayer/PanelSnowTrader/SnowTrader1".visible = false
 		$"../CanvasLayer/PanelSnowTrader/SnowTader2".visible = false
 		$"../CanvasLayer/PanelSnowTrader".visible = false
+		player.cooldown = true
 		text = 0
 		
 func _on_Button_button_down():

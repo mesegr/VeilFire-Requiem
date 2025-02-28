@@ -3,6 +3,7 @@ extends Area2D
 var text = 0
 var enter = false
 onready var next = $"../CanvasLayer/nextLabel"
+onready var player = get_node("../Player")
 
 func _on_Oda_body_entered(body):
 	if body.name == "Player":
@@ -14,11 +15,13 @@ func _on_Oda_body_exited(body):
 	if body.name == "Player":
 		enter = false
 		$ECopia.visible = false
+		player.cooldown = true
 		
 func _process(delta):
 	if Input.is_action_just_released("ui_accept") and enter:
 		text += 1
 		next.play()
+		player.cooldown = false
 	if text == 1:
 		$"../CanvasLayer/PanelOda".visible = true
 		$"../CanvasLayer/PanelOda/Oda1".visible = true
@@ -38,6 +41,7 @@ func _process(delta):
 		$"../CanvasLayer/PanelOda/Oda2".visible = false
 		$"../CanvasLayer/PanelOda/Oda3".visible = false
 		$"../CanvasLayer/PanelOda".visible = false
+		player.cooldown = true
 		text = 0
 
 
