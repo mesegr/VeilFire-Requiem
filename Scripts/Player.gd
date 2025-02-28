@@ -150,12 +150,22 @@ func playerLive():
 		match PlayerLives:
 			4:
 				$"../CanvasLayer/lives".play("4_4")
+				$"../CanvasLayer/Bloodoverlay2".visible = false
+				$heartSound.volume_db = -80
+				
 			3:
 				$"../CanvasLayer/lives".play("3_4")
 			2:
 				$"../CanvasLayer/lives".play("2_4")
+				$"../CanvasLayer/Bloodoverlay".visible = true
+				$heartSound.volume_db = -20
+				$heartSound.pitch_scale = 1.1
 			1:
-				$"../CanvasLayer/lives".play("1_4")   
+				$"../CanvasLayer/lives".play("1_4")
+				$"../CanvasLayer/Bloodoverlay".visible = false
+				$"../CanvasLayer/Bloodoverlay2".visible = true
+				$heartSound.volume_db = -15
+				$heartSound.pitch_scale = 1.3
 		previous_player_lives = PlayerLives 
 		
 func playerMovement(delta):
