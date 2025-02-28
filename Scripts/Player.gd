@@ -250,7 +250,7 @@ func playerMovement(delta):
 				jump1_sound.play()
 			if friction == true:
 				if is_on_ice:
-					motion.x = lerp(motion.x, 0, 0.022)  # Fricción muy baja en hielo
+					motion.x = lerp(motion.x, 0, 0.015)  # Fricción muy baja en hielo
 				else:
 					motion.x = lerp(motion.x, 0, 0.22)  # Fricción normal en suelo
 		else:
@@ -317,11 +317,11 @@ func hit(damage):
 	shake_camera()
 	HitPlayer = true
 	if PlayerLives > 0:
-		frameFreeze(0.04,0.4)
+		frameFreeze(0.04,0.35)
 	if !sprite.flip_h:
-		motion = Vector2(-160, -380)
+		motion = Vector2(-150, -360)
 	else:
-		motion = Vector2(160, -380)
+		motion = Vector2(150, -360)
 	sprite.play("hurt")
 	yield(get_tree().create_timer(0.35), "timeout")
 	motion.x = 0
