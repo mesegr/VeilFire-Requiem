@@ -1,16 +1,8 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/pauseES.gd" type="Script" id=1]
-[ext_resource path="res://Capa 2.png" type="Texture" id=2]
 [ext_resource path="res://Sounds/hoverButon.ogg" type="AudioStream" id=3]
 [ext_resource path="res://Sounds/PressButon.ogg" type="AudioStream" id=4]
-[ext_resource path="res://Assets/controls/Capa 2.png" type="Texture" id=8]
-[ext_resource path="res://Assets/controls/w copia.png" type="Texture" id=9]
-[ext_resource path="res://Assets/controls/d copia.png" type="Texture" id=10]
-[ext_resource path="res://Assets/controls/E copia.png" type="Texture" id=11]
-[ext_resource path="res://Assets/controls/Capa 3.png" type="Texture" id=12]
-[ext_resource path="res://Assets/controls/a copia.png" type="Texture" id=13]
-[ext_resource path="res://Assets/controls/Esc copia.png" type="Texture" id=14]
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.25098, 0.658824, 0.384314, 1 )
@@ -66,11 +58,6 @@ anti_aliasing_size = 0.976
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-
-[node name="Capa2" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0.572549 )
-position = Vector2( 961, 540 )
-texture = ExtResource( 2 )
 
 [node name="Panel2" type="Panel" parent="."]
 modulate = Color( 0.266667, 0.266667, 0.266667, 0.470588 )
@@ -208,48 +195,6 @@ interact -
 attack -
 
 pause/unpause -"
-
-[node name="Capa2" type="Sprite" parent="Panel"]
-modulate = Color( 1, 1, 1, 0.67451 )
-position = Vector2( 338.8, 37.4 )
-scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 8 )
-
-[node name="DCopia" type="Sprite" parent="Panel"]
-modulate = Color( 1, 1, 1, 0.67451 )
-position = Vector2( 294.8, 180.4 )
-scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 10 )
-
-[node name="Capa3" type="Sprite" parent="Panel"]
-modulate = Color( 1, 1, 1, 0.67451 )
-position = Vector2( 293, 323 )
-scale = Vector2( 0.22, 0.22 )
-texture = ExtResource( 12 )
-
-[node name="EscCopia" type="Sprite" parent="Panel"]
-modulate = Color( 1, 1, 1, 0.67451 )
-position = Vector2( 294.8, 396.4 )
-scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 14 )
-
-[node name="ECopia" type="Sprite" parent="Panel"]
-modulate = Color( 1, 1, 1, 0.67451 )
-position = Vector2( 294.8, 251.4 )
-scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 11 )
-
-[node name="WCopia" type="Sprite" parent="Panel"]
-modulate = Color( 1, 1, 1, 0.67451 )
-position = Vector2( 448.8, 36.4 )
-scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 9 )
-
-[node name="ACopia" type="Sprite" parent="Panel"]
-modulate = Color( 1, 1, 1, 0.67451 )
-position = Vector2( 294.8, 110.4 )
-scale = Vector2( 1.2, 1.2 )
-texture = ExtResource( 13 )
 
 [connection signal="mouse_entered" from="VBoxContainer3/Button3" to="." method="_on_Button2_mouse_entered"]
 [connection signal="pressed" from="VBoxContainer3/Button3" to="." method="_on_Button3_pressed"]

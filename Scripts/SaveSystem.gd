@@ -100,3 +100,11 @@ func load_game():
 			print("Error: No se encontró el pickup con la ruta:", pickup_state["path"])
 	
 	return true
+	
+func new_game():
+	var dir = Directory.new()
+	if dir.file_exists(save_path):  # Verifica si el archivo de guardado existe
+		dir.remove(save_path)  # Elimina el archivo de guardado
+		print("Archivo de guardado eliminado.")
+	else:
+		print("No se encontró un archivo de guardado para eliminar.")

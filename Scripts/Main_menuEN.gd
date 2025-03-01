@@ -34,10 +34,7 @@ func _process(delta):
 			target_scales["ButtonBackControls"],
 			lerp_speed * delta
 		)
-	
 
-
-# Funciones para manejar el hover de los botones
 func _on_ButtonStartGame_mouse_entered():
 	target_scales["ButtonStartGame"] = Vector2(1.1, 1.05)
 	$buttonHovered.play()
@@ -45,12 +42,28 @@ func _on_ButtonStartGame_mouse_entered():
 func _on_ButtonStartGame_mouse_exited():
 	target_scales["ButtonStartGame"] = Vector2(1, 1)
 
+func _on_ButtonStartGame_button_down():
+	$MenuTheme.stop()
+	$buttonPressed.play()
+	target_scales["ButtonStartGame"] = Vector2(1, 1)
+	SaveSystem.new_game()
+	get_tree().change_scene("res://Scenes/worldEN.tscn")
+
+
 func _on_ButtonLoadGame_mouse_entered():
 	target_scales["ButtonLoadGame"] = Vector2(1.1, 1.05)
 	$buttonHovered.play()
 
 func _on_ButtonLoadGame_mouse_exited():
 	target_scales["ButtonLoadGame"] = Vector2(1, 1)
+	
+func _on_ButtonLoadGame_button_down():
+	$MenuTheme.stop()
+	$buttonPressed.play()
+	target_scales["ButtonStartGame"] = Vector2(1, 1)
+	get_tree().change_scene("res://Scenes/worldEN.tscn")
+	SaveSystem.load_game()
+
 
 func _on_ButtonControls_mouse_entered():
 	target_scales["ButtonControls"] = Vector2(1.1, 1.05)
@@ -59,21 +72,6 @@ func _on_ButtonControls_mouse_entered():
 func _on_ButtonControls_mouse_exited():
 	target_scales["ButtonControls"] = Vector2(1, 1)
 
-func _on_ButtonQuitGame_mouse_entered():
-	target_scales["ButtonQuitGame"] = Vector2(1.1, 1.05)
-	$buttonHovered.play()
-
-func _on_ButtonQuitGame_mouse_exited():
-	target_scales["ButtonQuitGame"] = Vector2(1, 1)
-
-func _on_ButtonBackControls_mouse_entered():
-	$buttonHovered.play()
-	target_scales["ButtonBackControls"] = Vector2(0.35, 0.37)
-
-func _on_ButtonBackControls_mouse_exited():
-	target_scales["ButtonBackControls"] = Vector2(0.32, 0.32)
-
-# Función para mostrar el panel de controles y ocultar los botones
 func _on_ButtonControls_button_down():
 	$buttonPressed.play()
 	$ControlsPanel.visible = true  # Activa el panel para que pueda ser interpolado
@@ -96,7 +94,32 @@ func _on_ButtonControls_button_down():
 	tween.start()
 	$ButtonsContainer.visible = false
 
-# Función para ocultar el panel de controles y mostrar los botones
+
+func _on_ButtonQuitGame_mouse_entered():
+	target_scales["ButtonQuitGame"] = Vector2(1.1, 1.05)
+	$buttonHovered.play()
+
+func _on_ButtonQuitGame_mouse_exited():
+	target_scales["ButtonQuitGame"] = Vector2(1, 1)
+
+func _on_ButtonQuitGame_button_down():
+	$buttonPressed.play()  # Reproduce el sonido
+
+	var timer = Timer.new()
+	timer.wait_time = 0.6  # Espera 0.5 segundos
+	timer.one_shot = true  # El Timer se detiene después de ejecutarse una vez
+	add_child(timer)  # Añade el Timer a la escena
+	timer.start()
+
+	yield(timer, "timeout")
+
+	get_tree().quit()
+
+
+func _on_ButtonBackControls_mouse_entered():
+	$buttonHovered.play()
+	target_scales["ButtonBackControls"] = Vector2(0.35, 0.37)
+
 func _on_ButtonBackControls_button_down():
 	$buttonPressed.play()
 	$ButtonsContainer.visible = true  # Activa el contenedor para que pueda ser interpolado
@@ -119,3 +142,7 @@ func _on_ButtonBackControls_button_down():
 	tween.start()
 	target_scales["ButtonControls"] = Vector2(1, 1)
 	$ControlsPanel.visible = false
+
+func _on_ButtonBackControls_mouse_exited():
+	target_scales["ButtonBackControls"] = Vector2(0.32, 0.32)
+

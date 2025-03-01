@@ -9234,55 +9234,55 @@ scale = Vector2( 0.2, 0.21 )
 position = Vector2( 0, -157.143 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 208 )
-frame = 13
+frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 7052.5, -73.8096 )
 frames = SubResource( 208 )
-frame = 13
+frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 4625, 485.714 )
 frames = SubResource( 208 )
-frame = 15
+frame = 17
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 5600, -333.333 )
 frames = SubResource( 208 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4950, -1359.52 )
 frames = SubResource( 208 )
-frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1255, -623.81 )
 frames = SubResource( 208 )
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 5360, -297.619 )
 frames = SubResource( 208 )
-frame = 4
+frame = 6
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 8065, -1292.86 )
 frames = SubResource( 208 )
-frame = 10
+frame = 13
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6000, 235.714 )
 frames = SubResource( 208 )
-frame = 9
+frame = 11
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9390,6 +9390,7 @@ position = Vector2( -8.01562, -40.0039 )
 rotation = 3.14159
 scale = Vector2( 0.8, -0.8 )
 frames = SubResource( 207 )
+frame = 2
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9401,6 +9402,7 @@ script = ExtResource( 105 )
 position = Vector2( 0, -170.968 )
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 207 )
+frame = 2
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9412,6 +9414,7 @@ script = ExtResource( 92 )
 position = Vector2( 3.07813, -38.4619 )
 scale = Vector2( 0.6, 0.6 )
 frames = SubResource( 207 )
+frame = 2
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11992,10 +11995,6 @@ margin_bottom = 107.4
 rect_scale = Vector2( 0.8, 0.8 )
 text = "press         to continue"
 
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor1"]
-position = Vector2( 453.8, 92.32 )
-scale = Vector2( 0.418181, 0.42909 )
-
 [node name="Eleanor2" type="RichTextLabel" parent="CanvasLayer/PanelEleanor"]
 visible = false
 margin_left = -170.143
@@ -12005,19 +12004,6 @@ margin_bottom = 72.0
 rect_scale = Vector2( 2.5, 2.5 )
 text = "My mission here is to help you start your adventure, so here we go! To move right, press       ,to move left, press      ,if you want to jump, use            or          .Be very careful, traveler; these lands aren’t friendly, and I guess you don’t want to die, right?"
 
-[node name="DCopia" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor2"]
-position = Vector2( 87.8, 21.2 )
-scale = Vector2( 0.336363, 0.348864 )
-
-[node name="ACopia" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor2/DCopia"]
-position = Vector2( 445.946, 1.14661 )
-
-[node name="Capa2" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor2/DCopia/ACopia"]
-position = Vector2( 576.757, 2.29321 )
-
-[node name="WCopia" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor2/DCopia/ACopia/Capa2"]
-position = Vector2( 140.324, -1.14667 )
-
 [node name="Label2" type="Label" parent="CanvasLayer/PanelEleanor/Eleanor2"]
 modulate = Color( 0.733333, 1, 0.67451, 1 )
 margin_left = 412.0
@@ -12026,10 +12012,6 @@ margin_right = 556.0
 margin_bottom = 108.2
 rect_scale = Vector2( 0.8, 0.8 )
 text = "press         to continue"
-
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor2"]
-position = Vector2( 454.4, 93.1199 )
-scale = Vector2( 0.418181, 0.42909 )
 
 [node name="Eleanor3" type="RichTextLabel" parent="CanvasLayer/PanelEleanor"]
 visible = false
@@ -12049,15 +12031,6 @@ margin_right = 556.2
 margin_bottom = 107.8
 rect_scale = Vector2( 0.8, 0.8 )
 text = "press         to continue"
-
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor3"]
-position = Vector2( 454.6, 92.7201 )
-scale = Vector2( 0.418181, 0.42909 )
-
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelEleanor/Eleanor3/ECopia"]
-visible = false
-position = Vector2( -131.044, -129.39 )
-scale = Vector2( 0.891304, 0.881356 )
 
 [node name="PanelOda" type="Sprite" parent="CanvasLayer"]
 visible = false
@@ -12087,10 +12060,6 @@ margin_bottom = 107.4
 rect_scale = Vector2( 0.8, 0.8 )
 text = "press         to continue"
 
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelOda/Oda1"]
-position = Vector2( 453.8, 92.32 )
-scale = Vector2( 0.418181, 0.42909 )
-
 [node name="Oda2" type="RichTextLabel" parent="CanvasLayer/PanelOda"]
 visible = false
 margin_left = -170.714
@@ -12109,14 +12078,6 @@ margin_bottom = 108.2
 rect_scale = Vector2( 0.8, 0.8 )
 text = "press         to continue"
 
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelOda/Oda2"]
-position = Vector2( 454.4, 93.1199 )
-scale = Vector2( 0.418181, 0.42909 )
-
-[node name="Capa3" type="Sprite" parent="CanvasLayer/PanelOda/Oda2"]
-position = Vector2( 31.4, 20.7998 )
-scale = Vector2( 0.08, 0.07 )
-
 [node name="Oda3" type="RichTextLabel" parent="CanvasLayer/PanelOda"]
 visible = false
 margin_left = -171.0
@@ -12134,10 +12095,6 @@ margin_right = 556.2
 margin_bottom = 107.8
 rect_scale = Vector2( 0.8, 0.8 )
 text = "press         to continue"
-
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelOda/Oda3"]
-position = Vector2( 454.6, 92.7201 )
-scale = Vector2( 0.418181, 0.42909 )
 
 [node name="PanelSnowTrader" type="Sprite" parent="CanvasLayer"]
 position = Vector2( 1009, 708 )
@@ -12166,20 +12123,12 @@ margin_bottom = 103.4
 rect_scale = Vector2( 0.55, 0.55 )
 text = "press         to continue"
 
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelSnowTrader/SnowTrader1"]
-position = Vector2( 254.6, 85.5999 )
-scale = Vector2( 0.3, 0.3 )
-
 [node name="SnowTader2" type="RichTextLabel" parent="CanvasLayer/PanelSnowTrader"]
 margin_left = -179.355
 margin_top = 18.2758
 margin_right = 351.645
 margin_bottom = 126.276
 rect_scale = Vector2( 2.5, 2.5 )
-
-[node name="ECopia" type="Sprite" parent="CanvasLayer/PanelSnowTrader/SnowTader2"]
-position = Vector2( 306.4, 101.2 )
-scale = Vector2( 0.3, 0.3 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/PanelSnowTrader/SnowTader2"]
 modulate = Color( 0.733333, 1, 0.67451, 1 )

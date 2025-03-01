@@ -81,33 +81,33 @@ margin_right = 550.0
 margin_bottom = 416.5
 rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 550, 590 )
-custom_constants/separation = 27
+custom_constants/separation = 30
 
 [node name="ButtonStartGame" type="Button" parent="ButtonsContainer"]
 margin_right = 1100.0
 margin_bottom = 188.0
 rect_pivot_offset = Vector2( 550, 94 )
-text = "START GAME"
+text = "NEW GAME"
 icon_align = 1
 
 [node name="ButtonLoadGame" type="Button" parent="ButtonsContainer"]
-margin_top = 215.0
+margin_top = 218.0
 margin_right = 1100.0
-margin_bottom = 403.0
+margin_bottom = 406.0
 rect_pivot_offset = Vector2( 550, 94 )
 text = "LOAD GAME"
 
 [node name="ButtonControls" type="Button" parent="ButtonsContainer"]
-margin_top = 430.0
+margin_top = 436.0
 margin_right = 1100.0
-margin_bottom = 618.0
+margin_bottom = 624.0
 rect_pivot_offset = Vector2( 550, 95 )
 text = "CONTROLS"
 
 [node name="ButtonQuitGame" type="Button" parent="ButtonsContainer"]
-margin_top = 645.0
+margin_top = 654.0
 margin_right = 1100.0
-margin_bottom = 833.0
+margin_bottom = 842.0
 rect_pivot_offset = Vector2( 550, 94 )
 text = "QUIT GAME"
 
@@ -285,13 +285,16 @@ rect_scale = Vector2( 0.32, 0.32 )
 rect_pivot_offset = Vector2( 550, 94 )
 text = "BACK TO MENU"
 
+[connection signal="button_down" from="ButtonsContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_button_down"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_mouse_exited"]
+[connection signal="button_down" from="ButtonsContainer/ButtonLoadGame" to="." method="_on_ButtonLoadGame_button_down"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonLoadGame" to="." method="_on_ButtonLoadGame_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonLoadGame" to="." method="_on_ButtonLoadGame_mouse_exited"]
 [connection signal="button_down" from="ButtonsContainer/ButtonControls" to="." method="_on_ButtonControls_button_down"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonControls" to="." method="_on_ButtonControls_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonControls" to="." method="_on_ButtonControls_mouse_exited"]
+[connection signal="button_down" from="ButtonsContainer/ButtonQuitGame" to="." method="_on_ButtonQuitGame_button_down"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonQuitGame" to="." method="_on_ButtonQuitGame_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonQuitGame" to="." method="_on_ButtonQuitGame_mouse_exited"]
 [connection signal="button_down" from="ControlsPanel/ButtonBackControls" to="." method="_on_ButtonBackControls_button_down"]
