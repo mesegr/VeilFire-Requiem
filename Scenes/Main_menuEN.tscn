@@ -63,7 +63,7 @@ autoplay = true
 [node name="buttonPressed" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
 volume_db = -13.196
-pitch_scale = 0.52
+pitch_scale = 0.45
 
 [node name="buttonHovered" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
