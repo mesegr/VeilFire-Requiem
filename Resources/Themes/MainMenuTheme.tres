@@ -1,0 +1,53 @@
+[gd_resource type="Theme" load_steps=7 format=2]
+
+[ext_resource path="res://Resources/Fonts/MayflowerAntique.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/UI/ButtonMainMenu.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 1
+outline_color = Color( 1, 0.678431, 0, 0.266667 )
+use_filter = true
+extra_spacing_top = -8
+extra_spacing_bottom = -8
+extra_spacing_char = 2
+extra_spacing_space = 2
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 1286, 228 )
+margin_left = 80.0
+margin_right = 76.0
+margin_top = 63.0
+margin_bottom = 61.0
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 1286, 228 )
+margin_left = 80.0
+margin_right = 76.0
+margin_top = 63.0
+margin_bottom = 61.0
+
+[sub_resource type="DynamicFont" id=6]
+size = 60
+use_filter = true
+font_data = ExtResource( 1 )
+
+[resource]
+Button/colors/font_color = Color( 1, 0.823529, 0.219608, 1 )
+Button/colors/font_color_disabled = Color( 1, 0.823529, 0.219608, 1 )
+Button/colors/font_color_focus = Color( 1, 0.823529, 0.219608, 1 )
+Button/colors/font_color_hover = Color( 1, 0.823529, 0.219608, 1 )
+Button/colors/font_color_pressed = Color( 1, 0.823529, 0.219608, 1 )
+Button/fonts/font = SubResource( 3 )
+Button/styles/disabled = SubResource( 4 )
+Button/styles/focus = SubResource( 4 )
+Button/styles/hover = SubResource( 4 )
+Button/styles/normal = SubResource( 4 )
+Button/styles/pressed = SubResource( 5 )
+Label/colors/font_color = Color( 1, 0.823529, 0.219608, 1 )
+Label/colors/font_color_shadow = Color( 1, 0.823529, 0.219608, 1 )
+Label/colors/font_outline_modulate = Color( 1, 0.823529, 0.219608, 1 )
+Label/fonts/font = SubResource( 6 )

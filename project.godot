@@ -15,7 +15,6 @@ _global_script_class_icons={
 [application]
 
 config/name="kuobule"
-config/description="asdasdasd"
 run/main_scene="res://Scenes/Main_menuEN.tscn"
 boot_splash/image="res://Capa 1.png"
 config/icon="res://Capa 1.png"
@@ -23,6 +22,9 @@ config/icon="res://Capa 1.png"
 [audio]
 
 default_bus_layout=""
+filters/sharpen_intensity=0.276
+filters/anisotropic_filter_level=2
+filters/use_fxaa=false
 
 [autoload]
 
