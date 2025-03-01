@@ -62,13 +62,13 @@ autoplay = true
 
 [node name="buttonPressed" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-volume_db = -10.0
-pitch_scale = 0.7
+volume_db = -13.196
+pitch_scale = 0.52
 
 [node name="buttonHovered" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
-volume_db = -10.0
-pitch_scale = 1.2
+volume_db = -13.491
+pitch_scale = 0.35
 
 [node name="ButtonsContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
@@ -113,7 +113,6 @@ text = "QUIT GAME"
 
 [node name="ControlsPanel" type="TextureRect" parent="."]
 visible = false
-modulate = Color( 1, 1, 1, 0.972549 )
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -290,9 +289,11 @@ text = "BACK TO MENU"
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_mouse_exited"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonLoadGame" to="." method="_on_ButtonLoadGame_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonLoadGame" to="." method="_on_ButtonLoadGame_mouse_exited"]
+[connection signal="button_down" from="ButtonsContainer/ButtonControls" to="." method="_on_ButtonControls_button_down"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonControls" to="." method="_on_ButtonControls_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonControls" to="." method="_on_ButtonControls_mouse_exited"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonQuitGame" to="." method="_on_ButtonQuitGame_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonQuitGame" to="." method="_on_ButtonQuitGame_mouse_exited"]
+[connection signal="button_down" from="ControlsPanel/ButtonBackControls" to="." method="_on_ButtonBackControls_button_down"]
 [connection signal="mouse_entered" from="ControlsPanel/ButtonBackControls" to="." method="_on_ButtonBackControls_mouse_entered"]
 [connection signal="mouse_exited" from="ControlsPanel/ButtonBackControls" to="." method="_on_ButtonBackControls_mouse_exited"]
