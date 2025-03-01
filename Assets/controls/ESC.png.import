@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Esc copia.png-4497fc941c73e48c981796da59b57681.stex"
+path="res://.import/ESC.png-47f3661f75417d8d745b2c36f2728f4b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/controls/Esc copia.png"
-dest_files=[ "res://.import/Esc copia.png-4497fc941c73e48c981796da59b57681.stex" ]
+source_file="res://Assets/controls/ESC.png"
+dest_files=[ "res://.import/ESC.png-47f3661f75417d8d745b2c36f2728f4b.stex" ]
 
 [params]
 

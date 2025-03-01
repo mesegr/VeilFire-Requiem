@@ -41,7 +41,6 @@ func _process(delta):
 		$"../CanvasLayer/PanelOda/Oda2".visible = false
 		$"../CanvasLayer/PanelOda/Oda3".visible = false
 		$"../CanvasLayer/PanelOda".visible = false
-		player.cooldown = true
 		text = 0
 
 

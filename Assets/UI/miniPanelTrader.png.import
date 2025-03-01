@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Capa 1.png-56d0e8bc291ee18e2625d43bd91e143c.stex"
+path="res://.import/miniPanelTrader.png-efd76474edd0ee6f0644612b99b1fb1a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/controls/E anim/Capa 1.png"
-dest_files=[ "res://.import/Capa 1.png-56d0e8bc291ee18e2625d43bd91e143c.stex" ]
+source_file="res://Assets/UI/miniPanelTrader.png"
+dest_files=[ "res://.import/miniPanelTrader.png-efd76474edd0ee6f0644612b99b1fb1a.stex" ]
 
 [params]
 

@@ -44,14 +44,12 @@ func _process(delta):
 		$"../CanvasLayer/PanelSnowTrader2/LabelBible".visible = false
 		$"../CanvasLayer/PanelSnowTrader2/LabelNeckles".visible = false
 		$"../CanvasLayer/PanelSnowTrader2/LabelSword".visible = false
-		player.cooldown = true
 		text = 0
 		
 	if enter == false:
 		$"../CanvasLayer/PanelSnowTrader/SnowTrader1".visible = false
 		$"../CanvasLayer/PanelSnowTrader/SnowTader2".visible = false
 		$"../CanvasLayer/PanelSnowTrader".visible = false
-		player.cooldown = true
 		text = 0
 		
 func _on_Button_button_down():

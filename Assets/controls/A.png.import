@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/d copia.png-2ce3bfcff34082bc7e187dd094507a21.stex"
+path="res://.import/A.png-92ad04ae65325da4dd0563d2811869bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/controls/d copia.png"
-dest_files=[ "res://.import/d copia.png-2ce3bfcff34082bc7e187dd094507a21.stex" ]
+source_file="res://Assets/controls/A.png"
+dest_files=[ "res://.import/A.png-92ad04ae65325da4dd0563d2811869bf.stex" ]
 
 [params]
 

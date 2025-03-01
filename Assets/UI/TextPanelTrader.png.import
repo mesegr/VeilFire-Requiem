@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Capa 2.png-e719732318f04796374d433a7331c330.stex"
+path="res://.import/TextPanelTrader.png-9f5f9334d0634e443776976eadfcf2a1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/controls/Capa 2.png"
-dest_files=[ "res://.import/Capa 2.png-e719732318f04796374d433a7331c330.stex" ]
+source_file="res://Assets/UI/TextPanelTrader.png"
+dest_files=[ "res://.import/TextPanelTrader.png-9f5f9334d0634e443776976eadfcf2a1.stex" ]
 
 [params]
 

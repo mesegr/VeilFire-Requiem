@@ -41,5 +41,4 @@ func _process(delta):
 		$"../CanvasLayer/PanelEleanor/Eleanor2".visible = false
 		$"../CanvasLayer/PanelEleanor/Eleanor3".visible = false
 		$"../CanvasLayer/PanelEleanor".visible = false
-		player.cooldown = true
 		text = 0

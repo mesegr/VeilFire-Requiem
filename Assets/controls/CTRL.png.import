@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/a copia.png-2d5ec0dc0341b1bdeea2f551f5a76487.stex"
+path="res://.import/CTRL.png-763c592c59f08ab6761865911e2aed89.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/controls/a copia.png"
-dest_files=[ "res://.import/a copia.png-2d5ec0dc0341b1bdeea2f551f5a76487.stex" ]
+source_file="res://Assets/controls/CTRL.png"
+dest_files=[ "res://.import/CTRL.png-763c592c59f08ab6761865911e2aed89.stex" ]
 
 [params]
 

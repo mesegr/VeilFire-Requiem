@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/w copia.png-9fb4539486e26e67efd91b122a2b1137.stex"
+path="res://.import/ARROWUP.png-3b61cc66995e9ad91a2b2df24df26d50.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/controls/w copia.png"
-dest_files=[ "res://.import/w copia.png-9fb4539486e26e67efd91b122a2b1137.stex" ]
+source_file="res://Assets/controls/ARROWUP.png"
+dest_files=[ "res://.import/ARROWUP.png-3b61cc66995e9ad91a2b2df24df26d50.stex" ]
 
 [params]
 
