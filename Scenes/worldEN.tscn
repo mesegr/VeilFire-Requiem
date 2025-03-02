@@ -9233,55 +9233,55 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 12
+frame = 4
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 12
+frame = 4
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 14
+frame = 6
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 2
+frame = 12
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 15
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 3
+frame = 13
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 10
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 8
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9390,7 +9390,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 17
+frame = 9
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9403,7 +9403,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 17
+frame = 9
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9416,7 +9416,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 17
+frame = 9
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11780,6 +11780,11 @@ scale = Vector2( 3.8, 4 )
 pause_mode = 2
 visible = false
 
+[node name="Talking" type="AudioStreamPlayer" parent="ControlCanvas/CanvasLayer"]
+stream = SubResource( 237 )
+volume_db = -10.281
+pitch_scale = 0.92
+
 [node name="nextLabel" type="AudioStreamPlayer" parent="ControlCanvas/CanvasLayer"]
 stream = SubResource( 237 )
 pitch_scale = 0.6
@@ -11791,8 +11796,8 @@ scale = Vector2( 3.5, 3.5 )
 texture = ExtResource( 130 )
 
 [node name="Continue" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer/PanelEleanor"]
-position = Vector2( 252, 31.7142 )
-scale = Vector2( 0.24, 0.2 )
+position = Vector2( 252.286, 30 )
+scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
 playing = true
 
@@ -11851,63 +11856,57 @@ position = Vector2( 894, 885 )
 scale = Vector2( 3.5, 3.5 )
 texture = ExtResource( 130 )
 
+[node name="Continue" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer/PanelOda"]
+position = Vector2( 252.286, 30 )
+scale = Vector2( 0.22, 0.18 )
+frames = SubResource( 317 )
+playing = true
+
 [node name="Oda1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
 visible = false
-margin_left = -170.286
-margin_top = -35.4287
-margin_right = 364.714
-margin_bottom = 69.5713
-rect_scale = Vector2( 2.5, 2.5 )
+margin_left = -214.286
+margin_top = -29.7144
+margin_right = 3077.71
+margin_bottom = 486.286
+rect_scale = Vector2( 0.14, 0.14 )
 size_flags_stretch_ratio = 0.0
+theme = ExtResource( 93 )
+custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 meta_underlined = false
 text = "Well, what do we have here? Another puny human trying to save the world? Hahaha. Guess your fate will be the same as the rest: a pathetic coward clinging to life in battle, only to end up crushed like a tiny piece of shit, just like all the other \"saviors\" before you."
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 
-[node name="Label" type="Label" parent="ControlCanvas/CanvasLayer/PanelOda/Oda1"]
-modulate = Color( 0.733333, 1, 0.67451, 1 )
-margin_left = 411.4
-margin_top = 86.4
-margin_right = 555.4
-margin_bottom = 107.4
-rect_scale = Vector2( 0.8, 0.8 )
-text = "press         to continue"
-
 [node name="Oda2" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
 visible = false
-margin_left = -170.714
-margin_top = -36.2859
-margin_right = 360.286
-margin_bottom = 71.7141
-rect_scale = Vector2( 2.5, 2.5 )
+margin_left = -212.0
+margin_top = -29.7144
+margin_right = 3100.0
+margin_bottom = 405.286
+rect_scale = Vector2( 0.14, 0.14 )
+theme = ExtResource( 93 )
+custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "If you want to last more than 5 minutes alive, listen up. When attacking an enemy use     , remember that your sword is too heavy for a weakling like you, so you won't be able to attack in the air. Be very careful, because the monsters won't wait for you to be ready; they'll attack without mercy."
-
-[node name="Label2" type="Label" parent="ControlCanvas/CanvasLayer/PanelOda/Oda2"]
-modulate = Color( 0.733333, 1, 0.67451, 1 )
-margin_left = 412.0
-margin_top = 87.1999
-margin_right = 556.0
-margin_bottom = 108.2
-rect_scale = Vector2( 0.8, 0.8 )
-text = "press         to continue"
 
 [node name="Oda3" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
 visible = false
-margin_left = -171.0
-margin_top = -36.0001
-margin_right = 361.0
-margin_bottom = 68.9999
-rect_scale = Vector2( 2.5, 2.5 )
+margin_left = -211.0
+margin_top = -29.0
+margin_right = 3116.0
+margin_bottom = 398.0
+rect_scale = Vector2( 0.14, 0.14 )
+theme = ExtResource( 93 )
+custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "Alright, with these tips, you should last at least 15 minutes. Finally, remember to face your mission with courage. Clinging to life will only push you closer to death, just like fear. If you’re not sure what you’re doing, turn around and go cry in bed like a little baby. But if you're ready to die for these lands, go ahead, start the adventure."
-
-[node name="Label3" type="Label" parent="ControlCanvas/CanvasLayer/PanelOda/Oda3"]
-modulate = Color( 0.733333, 1, 0.67451, 1 )
-margin_left = 412.2
-margin_top = 86.8001
-margin_right = 556.2
-margin_bottom = 107.8
-rect_scale = Vector2( 0.8, 0.8 )
-text = "press         to continue"
 
 [node name="PanelSnowTrader" type="Sprite" parent="ControlCanvas/CanvasLayer"]
 visible = false
