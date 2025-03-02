@@ -9,6 +9,8 @@ func save_game():
 	var ui = current_scene.get_node("ControlCanvas/CanvasLayer")
 	var altars = current_scene.get_tree().get_nodes_in_group("altar")
 	var pickups = current_scene.get_tree().get_nodes_in_group("coin")
+	var ButtonsTrader = current_scene.get_tree().get_nodes_in_group("ButtonsTrader")
+	var powerups = current_scene.get_tree().get_nodes_in_group("powerups")
 	
 	if player:
 		# Guardar el estado de los altares
@@ -19,15 +21,31 @@ func save_game():
 					"path": altar.get_path(),  # Ruta única del altar
 					"active": altar.active     # Estado del altar
 				})
+				
+		var powerups_states = []
+		for powerup in powerups:
+			if is_instance_valid(powerup): 
+				powerups_states.append({
+					"path": powerup.get_path(),  
+					"visible": powerup.visible     
+				})
+				
+		var button_states = []
+		for button in ButtonsTrader:
+			if is_instance_valid(button):
+				button_states.append({
+					"path": button.get_path(),  
+					"active": button.disabled, 
+					"scale": button.rect_scale,
+				})
 			
 		# Guardar el estado de los pickups
 		var pickup_states = []
 		for pickup in pickups:
-			if is_instance_valid(pickup):  # Verificar si el nodo existe
+			if is_instance_valid(pickup):  
 				pickup_states.append({
-					"path": pickup.get_path(),  # Ruta única del pickup
+					"path": pickup.get_path(),  
 					"picked": pickup.position,
-					   # Estado del pickup
 				})
 		
 		# Crear el diccionario de guardado
@@ -42,6 +60,8 @@ func save_game():
 			"ui_coins": ui.coins,
 			"altar_states": altar_states,  # Guardar el array de estados de los altares
 			"pickup_states": pickup_states,
+			"button_states": button_states,
+			"powerups_states": powerups_states,
 			"startpos": startpos.position
 		}
 		
@@ -68,7 +88,7 @@ func load_game():
 	
 	# Restaurar datos del jugador y la UI
 	var player = get_tree().current_scene.get_node("Player")
-	var ui = get_tree().current_scene.get_node("CanvasLayer")
+	var ui = get_tree().current_scene.get_node("ControlCanvas/CanvasLayer")
 	var startpos = get_tree().current_scene.get_node("Startpos")
 	
 	if player:
@@ -98,6 +118,21 @@ func load_game():
 			pickup.position = pickup_state["picked"]
 		else:
 			print("Error: No se encontró el pickup con la ruta:", pickup_state["path"])
+			
+	for button_states in save_data["button_states"]:
+		var ButtonsTrader = get_tree().current_scene.get_node(button_states["path"])
+		if ButtonsTrader and is_instance_valid(ButtonsTrader):  # Verificar si el nodo existe
+			ButtonsTrader.disabled = button_states["active"]
+			ButtonsTrader.rect_scale = button_states["scale"]
+		else:
+			print("Error: No se encontró el pickup con la ruta:", button_states["path"])
+			
+	for powerups_states in save_data["powerups_states"]:
+		var powerup = get_tree().current_scene.get_node(powerups_states["path"])
+		if powerup and is_instance_valid(powerup):  # Verificar si el nodo existe
+			powerup.visible = powerups_states["visible"]
+		else:
+			print("Error: No se encontró el pickup con la ruta:", powerups_states["path"])
 	
 	return true
 	

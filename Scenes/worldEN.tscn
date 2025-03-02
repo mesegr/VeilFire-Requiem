@@ -9102,56 +9102,56 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 11
+frame = 14
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 11
+frame = 14
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 13
+frame = 16
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 14
+frame = 17
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 17
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 9
+frame = 12
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9260,7 +9260,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 16
+frame = 1
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9273,7 +9273,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 16
+frame = 1
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9286,7 +9286,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 16
+frame = 1
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11669,7 +11669,6 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
-frame = 1
 playing = true
 
 [node name="Eleanor1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelEleanor"]
@@ -11731,7 +11730,6 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
-frame = 1
 playing = true
 
 [node name="Oda1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
@@ -11789,6 +11787,7 @@ texture = ExtResource( 140 )
 position = Vector2( 100, 105.172 )
 scale = Vector2( 0.2, 0.16 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="SnowTrader1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
@@ -11816,7 +11815,7 @@ margin_right = -86.5484
 margin_bottom = 32.3793
 rect_scale = Vector2( 2.5, 2.5 )
 
-[node name="Button" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2"]
+[node name="Button" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2" groups=["ButtonsTrader"]]
 margin_left = 116.258
 margin_top = 34.069
 margin_right = 205.147
@@ -11852,7 +11851,7 @@ custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "25"
 
-[node name="Button2" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2"]
+[node name="Button2" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2" groups=["ButtonsTrader"]]
 margin_left = 150.839
 margin_top = 37.6552
 margin_right = 200.839
@@ -11888,7 +11887,7 @@ custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "15"
 
-[node name="Button3" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2"]
+[node name="Button3" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2" groups=["ButtonsTrader"]]
 margin_left = 183.226
 margin_top = 37.6552
 margin_right = 233.226
@@ -11982,19 +11981,19 @@ position = Vector2( 960, 540 )
 frames = SubResource( 219 )
 animation = "t"
 
-[node name="Book06c" type="Sprite" parent="ControlCanvas/CanvasLayer"]
+[node name="Book06c" type="Sprite" parent="ControlCanvas/CanvasLayer" groups=["powerups"]]
 visible = false
 position = Vector2( 190, 127 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 136 )
 
-[node name="Item06" type="Sprite" parent="ControlCanvas/CanvasLayer"]
+[node name="Item06" type="Sprite" parent="ControlCanvas/CanvasLayer" groups=["powerups"]]
 visible = false
 position = Vector2( 235, 127 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 138 )
 
-[node name="Necklace02d" type="Sprite" parent="ControlCanvas/CanvasLayer"]
+[node name="Necklace02d" type="Sprite" parent="ControlCanvas/CanvasLayer" groups=["powerups"]]
 visible = false
 position = Vector2( 280, 127 )
 scale = Vector2( 2, 2 )
