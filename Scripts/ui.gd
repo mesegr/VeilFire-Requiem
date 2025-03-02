@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-var coins = 00
+var coins = 300
 
 func _process(delta):
 	UpdateCoins()

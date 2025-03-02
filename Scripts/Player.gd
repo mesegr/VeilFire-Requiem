@@ -346,9 +346,7 @@ func _on_hit_inmune():
 func updateCooldown(newCool):
 	cooldownAttack = newCool
 	timercooldown.wait_time = newCool
-	timercooldown.stop()  # Detenemos el temporizador
-	timercooldown.start()  # Lo volvemos a iniciar
-	print(cooldownAttack)
+	timercooldown.stop()  # Detenemos el temporizador  # Lo volvemos a iniciar
 	
 func _on_animation_finished2():
 	if $AnimatedSprite2.animation == "default":

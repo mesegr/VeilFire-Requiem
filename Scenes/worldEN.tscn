@@ -1,4 +1,4 @@
-[gd_scene load_steps=415 format=2]
+[gd_scene load_steps=412 format=2]
 
 [ext_resource path="res://Assets/Deco/tree_trunk.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Deco/bush.png" type="Texture" id=2]
@@ -94,6 +94,12 @@
 [ext_resource path="res://Scripts/Eleanor.gd" type="Script" id=92]
 [ext_resource path="res://Resources/Themes/NpcText.tres" type="Theme" id=93]
 [ext_resource path="res://Assets/UI/continue.png" type="Texture" id=94]
+[ext_resource path="res://Assets/UI/ButtonTraderEpic.png" type="Texture" id=95]
+[ext_resource path="res://Assets/UI/ButtonTraderCommon.png" type="Texture" id=96]
+[ext_resource path="res://Assets/UI/ButtonTraderEpicPressed.png" type="Texture" id=97]
+[ext_resource path="res://Assets/UI/ButtonTraderCommonPressed.png" type="Texture" id=98]
+[ext_resource path="res://Sounds/PressButon.ogg" type="AudioStream" id=99]
+[ext_resource path="res://Sounds/hoverButon.ogg" type="AudioStream" id=100]
 [ext_resource path="res://Assets/UI/CoinsPanel.png" type="Texture" id=103]
 [ext_resource path="res://Scenes/Oda Nabunaga.tscn" type="PackedScene" id=104]
 [ext_resource path="res://Scripts/Oda Nabunaga.gd" type="Script" id=105]
@@ -5409,158 +5415,21 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[sub_resource type="StyleBoxFlat" id=228]
-bg_color = Color( 0.419608, 0, 0.494118, 0.854902 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0.113725, 0, 0.129412, 1 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+[sub_resource type="StyleBoxTexture" id=318]
+texture = ExtResource( 95 )
+region_rect = Rect2( 0, 0, 82, 82 )
 
-[sub_resource type="StyleBoxFlat" id=227]
-bg_color = Color( 0.329412, 0, 0.388235, 0.878431 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0.113725, 0, 0.129412, 1 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color( 0, 0, 0, 0.376471 )
-shadow_size = 2
+[sub_resource type="StyleBoxTexture" id=319]
+texture = ExtResource( 97 )
+region_rect = Rect2( 0, 0, 82, 82 )
 
-[sub_resource type="StyleBoxEmpty" id=229]
+[sub_resource type="StyleBoxTexture" id=320]
+texture = ExtResource( 96 )
+region_rect = Rect2( 0, 0, 78, 78 )
 
-[sub_resource type="StyleBoxFlat" id=230]
-bg_color = Color( 0.329412, 0, 0.388235, 0.878431 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0.113725, 0, 0.129412, 1 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color( 0, 0, 0, 0.466667 )
-shadow_size = 2
-
-[sub_resource type="StyleBoxFlat" id=224]
-bg_color = Color( 0.666667, 0, 0.780392, 0.721569 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0.231373, 0, 0.27451, 1 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color( 0, 0, 0, 0.435294 )
-shadow_size = 1
-anti_aliasing_size = 0.608
-
-[sub_resource type="StyleBoxFlat" id=225]
-bg_color = Color( 0, 0.388235, 0.909804, 0.807843 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0, 0.0705882, 0.164706, 0.807843 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_size = 1
-
-[sub_resource type="StyleBoxFlat" id=231]
-bg_color = Color( 0, 0.258824, 0.603922, 0.87451 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0, 0.0705882, 0.164706, 0.807843 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color( 0, 0, 0, 0.439216 )
-shadow_size = 2
-
-[sub_resource type="StyleBoxEmpty" id=232]
-
-[sub_resource type="StyleBoxFlat" id=233]
-bg_color = Color( 0, 0.258824, 0.603922, 0.87451 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0, 0.0705882, 0.164706, 0.807843 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color( 0, 0, 0, 0.439216 )
-shadow_size = 2
-
-[sub_resource type="StyleBoxFlat" id=226]
-bg_color = Color( 0.110504, 0.493708, 0.832031, 0.807843 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0, 0.137255, 0.32549, 1 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_size = 1
-
-[sub_resource type="StyleBoxFlat" id=234]
-bg_color = Color( 0, 0.258824, 0.603922, 0.87451 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0, 0.0705882, 0.164706, 0.807843 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color( 0, 0, 0, 0.490196 )
-shadow_size = 2
-
-[sub_resource type="StyleBoxEmpty" id=235]
-
-[sub_resource type="StyleBoxFlat" id=236]
-bg_color = Color( 0, 0.258824, 0.603922, 0.87451 )
-border_width_left = 2
-border_width_top = 2
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color( 0, 0.0705882, 0.164706, 0.807843 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-shadow_color = Color( 0, 0, 0, 0.501961 )
-shadow_size = 2
+[sub_resource type="StyleBoxTexture" id=321]
+texture = ExtResource( 98 )
+region_rect = Rect2( 0, 0, 78, 76 )
 
 [sub_resource type="SpriteFrames" id=218]
 animations = [ {
@@ -9233,55 +9102,56 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 4
+frame = 11
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 4
+frame = 11
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 6
+frame = 13
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 12
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 7
+frame = 14
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 10
+frame = 17
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 13
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 2
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
+frame = 7
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9390,7 +9260,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 9
+frame = 16
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9403,7 +9273,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 9
+frame = 16
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9416,7 +9286,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 9
+frame = 16
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11673,7 +11543,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( -5071, -209 )
+position = Vector2( 5735, -244 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -11799,6 +11669,7 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Eleanor1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelEleanor"]
@@ -11860,6 +11731,7 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Oda1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
@@ -11909,133 +11781,159 @@ custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "Alright, with these tips, you should last at least 15 minutes. Finally, remember to face your mission with courage. Clinging to life will only push you closer to death, just like fear. If you’re not sure what you’re doing, turn around and go cry in bed like a little baby. But if you're ready to die for these lands, go ahead, start the adventure."
 
 [node name="PanelSnowTrader" type="Sprite" parent="ControlCanvas/CanvasLayer"]
-visible = false
 position = Vector2( 1009, 708 )
 scale = Vector2( 3.1, 2.9 )
 texture = ExtResource( 140 )
 
+[node name="Continue" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
+position = Vector2( 100, 105.172 )
+scale = Vector2( 0.2, 0.16 )
+frames = SubResource( 317 )
+playing = true
+
 [node name="SnowTrader1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
 visible = false
-margin_left = -137.742
-margin_top = 32.069
-margin_right = 166.258
-margin_bottom = 137.069
-rect_scale = Vector2( 2.5, 2.5 )
+margin_left = -130.323
+margin_top = 32.7587
+margin_right = 1586.68
+margin_bottom = 589.759
+rect_scale = Vector2( 0.14, 0.14 )
 size_flags_stretch_ratio = 0.0
+theme = ExtResource( 93 )
+custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 meta_underlined = false
 text = "Hehehe, you must be the little rat they picked to save us from the volcano. Well, for a small price in gold, I can sell you some totally not stolen items... hehehe."
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 
-[node name="Label" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTrader1"]
-modulate = Color( 0.733333, 1, 0.67451, 1 )
-margin_left = 224.6
-margin_top = 82.4
-margin_right = 368.6
-margin_bottom = 103.4
-rect_scale = Vector2( 0.55, 0.55 )
-text = "press         to continue"
-
 [node name="SnowTader2" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
-visible = false
-margin_left = -179.355
-margin_top = 18.2758
-margin_right = 351.645
-margin_bottom = 126.276
+margin_left = -433.548
+margin_top = -68.6207
+margin_right = -86.5484
+margin_bottom = 32.3793
 rect_scale = Vector2( 2.5, 2.5 )
 
-[node name="Label2" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2"]
-modulate = Color( 0.733333, 1, 0.67451, 1 )
-margin_left = 277.0
-margin_top = 98.0
-margin_right = 421.0
-margin_bottom = 115.0
-rect_scale = Vector2( 0.55, 0.55 )
-text = "press         to continue"
-
 [node name="Button" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2"]
-margin_left = 75.0
-margin_top = 22.0
-margin_right = 125.0
-margin_bottom = 72.0
-custom_styles/hover = SubResource( 228 )
-custom_styles/pressed = SubResource( 227 )
-custom_styles/focus = SubResource( 229 )
-custom_styles/disabled = SubResource( 230 )
-custom_styles/normal = SubResource( 224 )
+margin_left = 116.258
+margin_top = 34.069
+margin_right = 205.147
+margin_bottom = 137.277
+rect_scale = Vector2( 0.25, 0.22 )
+rect_pivot_offset = Vector2( 10, 10 )
+custom_styles/hover = SubResource( 318 )
+custom_styles/pressed = SubResource( 319 )
+custom_styles/focus = SubResource( 319 )
+custom_styles/disabled = SubResource( 319 )
+custom_styles/normal = SubResource( 318 )
 
 [node name="Book06c" type="Sprite" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button"]
-modulate = Color( 1, 1, 1, 0.8 )
-position = Vector2( 19.8, 20.8 )
-scale = Vector2( 1.7, 1.7 )
+modulate = Color( 1, 1, 1, 0.764706 )
+position = Vector2( 36.0322, 45.2508 )
+scale = Vector2( 2.3, 2.4 )
 texture = ExtResource( 136 )
 
 [node name="Coin" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button" instance=ExtResource( 16 )]
-position = Vector2( 49.8, 39.6 )
+position = Vector2( 75.258, 73.464 )
+scale = Vector2( 1.45, 1.55 )
 
-[node name="Label" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button"]
-margin_left = 30.2
-margin_top = 34.8
-margin_right = 70.2
-margin_bottom = 48.8
-rect_scale = Vector2( 0.8, 0.8 )
+[node name="Label" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button"]
+margin_left = 41.7096
+margin_top = 63.4326
+margin_right = 176.71
+margin_bottom = 160.433
+rect_scale = Vector2( 0.21, 0.22 )
+theme = ExtResource( 93 )
+custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "25"
 
 [node name="Button2" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2"]
-margin_left = 177.6
-margin_top = 22.0
-margin_right = 227.6
-margin_bottom = 72.0
-custom_styles/hover = SubResource( 225 )
-custom_styles/pressed = SubResource( 231 )
-custom_styles/focus = SubResource( 232 )
-custom_styles/disabled = SubResource( 233 )
-custom_styles/normal = SubResource( 226 )
+margin_left = 150.839
+margin_top = 37.6552
+margin_right = 200.839
+margin_bottom = 87.6552
+rect_scale = Vector2( 0.44, 0.44 )
+rect_pivot_offset = Vector2( 8, 8 )
+custom_styles/hover = SubResource( 320 )
+custom_styles/pressed = SubResource( 321 )
+custom_styles/focus = SubResource( 321 )
+custom_styles/disabled = SubResource( 321 )
+custom_styles/normal = SubResource( 320 )
 
 [node name="Necklace02d" type="Sprite" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2"]
-modulate = Color( 1, 1, 1, 0.768627 )
-position = Vector2( 21.6, 22.4 )
-scale = Vector2( 1.7, 1.7 )
+modulate = Color( 1, 1, 1, 0.772549 )
+position = Vector2( 21.5054, 23.0268 )
+scale = Vector2( 1.34, 1.34 )
 texture = ExtResource( 137 )
 
 [node name="Coin" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2" instance=ExtResource( 16 )]
-position = Vector2( 48.8, 40.8 )
+position = Vector2( 43.4839, 37.4671 )
+scale = Vector2( 0.8, 0.8 )
 
-[node name="Label" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2"]
-margin_left = 28.4
-margin_top = 35.6
-margin_right = 68.4
-margin_bottom = 49.6
-rect_scale = Vector2( 0.8, 0.8 )
+[node name="Label" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2"]
+margin_left = 23.5425
+margin_top = 30.5706
+margin_right = 155.542
+margin_bottom = 126.571
+rect_scale = Vector2( 0.12, 0.12 )
+theme = ExtResource( 93 )
+custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "15"
 
 [node name="Button3" type="Button" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2"]
-margin_left = 280.4
-margin_top = 22.0
-margin_right = 330.4
-margin_bottom = 72.0
-custom_styles/hover = SubResource( 225 )
-custom_styles/pressed = SubResource( 234 )
-custom_styles/focus = SubResource( 235 )
-custom_styles/disabled = SubResource( 236 )
-custom_styles/normal = SubResource( 226 )
+margin_left = 183.226
+margin_top = 37.6552
+margin_right = 233.226
+margin_bottom = 87.6552
+rect_scale = Vector2( 0.44, 0.44 )
+rect_pivot_offset = Vector2( 8, 8 )
+custom_styles/hover = SubResource( 320 )
+custom_styles/pressed = SubResource( 321 )
+custom_styles/focus = SubResource( 321 )
+custom_styles/disabled = SubResource( 321 )
+custom_styles/normal = SubResource( 320 )
+action_mode = 0
 
 [node name="Item06" type="Sprite" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3"]
-modulate = Color( 1, 1, 1, 0.878431 )
-position = Vector2( 22.4, 20 )
-scale = Vector2( 1.65, 1.65 )
+modulate = Color( 1, 1, 1, 0.784314 )
+position = Vector2( 21.783, 21.1662 )
+scale = Vector2( 1.2, 1.15 )
 texture = ExtResource( 138 )
 
 [node name="Coin" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3" instance=ExtResource( 16 )]
-position = Vector2( 49.2, 40.4 )
+position = Vector2( 43.4839, 37.4671 )
+scale = Vector2( 0.8, 0.8 )
 
-[node name="Label" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3"]
-margin_left = 28.8
-margin_top = 36.0
-margin_right = 68.8
-margin_bottom = 50.0
-rect_scale = Vector2( 0.8, 0.8 )
+[node name="Label" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3"]
+margin_left = 24.4224
+margin_top = 30.5706
+margin_right = 156.422
+margin_bottom = 119.571
+rect_scale = Vector2( 0.12, 0.12 )
+theme = ExtResource( 93 )
+custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
+custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "15"
+
+[node name="buttonPressed" type="AudioStreamPlayer" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
+stream = ExtResource( 99 )
+volume_db = -13.196
+pitch_scale = 0.45
+
+[node name="buttonHovered" type="AudioStreamPlayer" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
+stream = ExtResource( 100 )
+volume_db = -13.491
+pitch_scale = 0.35
 
 [node name="PanelSnowTrader2" type="Sprite" parent="ControlCanvas/CanvasLayer"]
 visible = false
@@ -12043,35 +11941,35 @@ position = Vector2( 1541, 887 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 141 )
 
-[node name="LabelBible" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader2"]
+[node name="LabelBible" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader2"]
 visible = false
-margin_left = -76.5
-margin_top = -43.5
-margin_right = 65.5
-margin_bottom = 189.5
-rect_scale = Vector2( 1.25, 1.25 )
-text = "Second and final part of a series of magical bibles. Legend has it that the bearer of these can perform a second jump while in the air. The last time they were seen, they were in the depths of the sea."
-autowrap = true
+margin_left = -44.0
+margin_top = -52.0
+margin_right = 710.0
+margin_bottom = 1021.0
+rect_scale = Vector2( 0.14, 0.14 )
+theme = ExtResource( 93 )
+text = "Second and final part of a series of magical bibles. Legend has it that the bearer of these can perform a second jump in the air. The last time they were seen, was in the depths of the sea."
 
-[node name="LabelNeckles" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader2"]
+[node name="LabelNeckles" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader2"]
 visible = false
-margin_left = -75.0
-margin_top = -41.0
-margin_right = 67.0
-margin_bottom = 192.0
-rect_scale = Vector2( 1.3, 1.3 )
+margin_left = -45.0
+margin_top = -52.0
+margin_right = 701.0
+margin_bottom = 781.0
+rect_scale = Vector2( 0.14, 0.14 )
+theme = ExtResource( 93 )
 text = "Ancient necklace of a famous wizard from the Middle Ages. Its bearer will gain the power to move quickly for short periods of time."
-autowrap = true
 
-[node name="LabelSword" type="Label" parent="ControlCanvas/CanvasLayer/PanelSnowTrader2"]
+[node name="LabelSword" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader2"]
 visible = false
-margin_left = -75.0
-margin_top = -41.0
-margin_right = 72.0
-margin_bottom = 192.0
-rect_scale = Vector2( 1.25, 1.25 )
+margin_left = -45.0
+margin_top = -51.0
+margin_right = 705.0
+margin_bottom = 867.0
+rect_scale = Vector2( 0.14, 0.14 )
+theme = ExtResource( 93 )
 text = "Sword stolen from the current King Roderick of Midland. With this sword, you will be able to execute faster thrusts without sacrificing its lethality."
-autowrap = true
 
 [node name="lives" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
 position = Vector2( 189, 79 )
@@ -12161,9 +12059,12 @@ tile_data = PoolIntArray( -6618598, 536870915, 0, -6618597, 536870912, 0, -57011
 [connection signal="button_down" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button" to="TraderCave" method="_on_Button_button_down"]
 [connection signal="mouse_entered" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button" to="TraderCave" method="_on_Button_mouse_entered"]
 [connection signal="mouse_exited" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button" to="TraderCave" method="_on_Button_mouse_exited"]
+[connection signal="pressed" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button" to="TraderCave" method="_on_Button_pressed"]
 [connection signal="button_down" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2" to="TraderCave" method="_on_Button2_button_down"]
 [connection signal="mouse_entered" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2" to="TraderCave" method="_on_Button2_mouse_entered"]
 [connection signal="mouse_exited" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2" to="TraderCave" method="_on_Button2_mouse_exited"]
+[connection signal="pressed" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2" to="TraderCave" method="_on_Button2_pressed"]
 [connection signal="button_down" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3" to="TraderCave" method="_on_Button3_button_down"]
 [connection signal="mouse_entered" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3" to="TraderCave" method="_on_Button3_mouse_entered"]
 [connection signal="mouse_exited" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3" to="TraderCave" method="_on_Button3_mouse_exited"]
+[connection signal="pressed" from="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3" to="TraderCave" method="_on_Button3_pressed"]
