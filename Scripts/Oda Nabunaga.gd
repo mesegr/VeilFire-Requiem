@@ -2,7 +2,7 @@ extends Area2D
 
 var text = 0
 var enter = false
-onready var next = $"../CanvasLayer/nextLabel"
+onready var next = $"../ControlCanvas/CanvasLayer/nextLabel"
 onready var player = get_node("../Player")
 
 func _on_Oda_body_entered(body):
@@ -23,24 +23,24 @@ func _process(delta):
 		next.play()
 		player.cooldown = false
 	if text == 1:
-		$"../CanvasLayer/PanelOda".visible = true
-		$"../CanvasLayer/PanelOda/Oda1".visible = true
+		$"../ControlCanvas/CanvasLayer/PanelOda".visible = true
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda1".visible = true
 	if text == 2:
-		$"../CanvasLayer/PanelOda/Oda1".visible = false
-		$"../CanvasLayer/PanelOda/Oda2".visible = true
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda1".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda2".visible = true
 	if text == 3:
-		$"../CanvasLayer/PanelOda/Oda2".visible = false
-		$"../CanvasLayer/PanelOda/Oda3".visible = true
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda2".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda3".visible = true
 	if text == 4:
-		$"../CanvasLayer/PanelOda/Oda3".visible = false
-		$"../CanvasLayer/PanelOda".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda3".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda".visible = false
 		text = 0
 				
 	if enter == false:
-		$"../CanvasLayer/PanelOda/Oda1".visible = false
-		$"../CanvasLayer/PanelOda/Oda2".visible = false
-		$"../CanvasLayer/PanelOda/Oda3".visible = false
-		$"../CanvasLayer/PanelOda".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda1".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda2".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda/Oda3".visible = false
+		$"../ControlCanvas/CanvasLayer/PanelOda".visible = false
 		text = 0
 
 

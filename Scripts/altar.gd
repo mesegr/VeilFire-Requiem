@@ -21,9 +21,9 @@ func _on_playerRest(altar):
 	firstAnim = false
 	print("guardando")
 	SaveSystem.save_game()
-	$"../CanvasLayer/loading".play("default")
-	yield($"../CanvasLayer/loading", "animation_finished")
-	$"../CanvasLayer/loading".play("New Anim")
+	$"../ControlCanvas/CanvasLayer/loading".play("default")
+	yield($"../ControlCanvas/CanvasLayer/loading", "animation_finished")
+	$"../ControlCanvas/CanvasLayer/loading".play("New Anim")
 	
 func _process(delta):
 	if active:

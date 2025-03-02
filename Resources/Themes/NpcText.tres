@@ -4,13 +4,15 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 66
+use_filter = true
+extra_spacing_char = 5
 font_data = ExtResource( 1 )
 
 [resource]
-RichTextLabel/colors/default_color = Color( 1, 0.862745, 0.392157, 1 )
-RichTextLabel/colors/font_color_selected = Color( 1, 0.862745, 0.392157, 1 )
-RichTextLabel/colors/font_color_shadow = Color( 1, 0.862745, 0.392157, 1 )
-RichTextLabel/colors/selection_color = Color( 1, 0.862745, 0.392157, 1 )
+RichTextLabel/colors/default_color = Color( 1, 0.823529, 0.219608, 1 )
+RichTextLabel/colors/font_color_selected = Color( 1, 0.823529, 0.219608, 1 )
+RichTextLabel/colors/font_color_shadow = Color( 1, 0.823529, 0.219608, 1 )
+RichTextLabel/colors/selection_color = Color( 1, 0.823529, 0.219608, 1 )
 RichTextLabel/fonts/bold_font = SubResource( 1 )
 RichTextLabel/fonts/bold_italics_font = SubResource( 1 )
 RichTextLabel/fonts/italics_font = SubResource( 1 )

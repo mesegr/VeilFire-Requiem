@@ -6,7 +6,7 @@ func save_game():
 	var current_scene = get_tree().current_scene
 	var player = current_scene.get_node("Player")
 	var startpos = current_scene.get_node("Startpos")
-	var ui = current_scene.get_node("CanvasLayer")
+	var ui = current_scene.get_node("ControlCanvas/CanvasLayer")
 	var altars = current_scene.get_tree().get_nodes_in_group("altar")
 	var pickups = current_scene.get_tree().get_nodes_in_group("coin")
 	

@@ -61,7 +61,7 @@ onready var hitsound = $hit
 onready var rest = $rest_sound
 onready var title = $AnimatedSprite2
 onready var deadtp = $deadtp
-onready var deadeff = $"../CanvasLayer/deadteffect"
+onready var deadeff = $"../ControlCanvas/CanvasLayer/deadteffect"
 onready var finalboss = $"../FinalBoss"
 onready var door = $"../finalTileMap"
 onready var finalBoss = get_node("../FinalBoss")
@@ -149,21 +149,21 @@ func playerLive():
 	if PlayerLives != previous_player_lives:
 		match PlayerLives:
 			4:
-				$"../CanvasLayer/lives".play("4_4")
-				$"../CanvasLayer/Bloodoverlay2".visible = false
+				$"../ControlCanvas/CanvasLayer/lives".play("4_4")
+				$"../ControlCanvas/CanvasLayer/Bloodoverlay2".visible = false
 				$heartSound.volume_db = -80
 				
 			3:
-				$"../CanvasLayer/lives".play("3_4")
+				$"../ControlCanvas/CanvasLayer/lives".play("3_4")
 			2:
-				$"../CanvasLayer/lives".play("2_4")
-				$"../CanvasLayer/Bloodoverlay".visible = true
+				$"../ControlCanvas/CanvasLayer/lives".play("2_4")
+				$"../ControlCanvas/CanvasLayer/Bloodoverlay".visible = true
 				$heartSound.volume_db = -20
 				$heartSound.pitch_scale = 1.1
 			1:
-				$"../CanvasLayer/lives".play("1_4")
-				$"../CanvasLayer/Bloodoverlay".visible = false
-				$"../CanvasLayer/Bloodoverlay2".visible = true
+				$"../ControlCanvas/CanvasLayer/lives".play("1_4")
+				$"../ControlCanvas/CanvasLayer/Bloodoverlay".visible = false
+				$"../ControlCanvas/CanvasLayer/Bloodoverlay2".visible = true
 				$heartSound.volume_db = -15
 				$heartSound.pitch_scale = 1.3
 		previous_player_lives = PlayerLives 
