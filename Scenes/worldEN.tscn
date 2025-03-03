@@ -1,4 +1,4 @@
-[gd_scene load_steps=412 format=2]
+[gd_scene load_steps=430 format=2]
 
 [ext_resource path="res://Assets/Deco/tree_trunk.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Deco/bush.png" type="Texture" id=2]
@@ -47,47 +47,12 @@
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=45]
 [ext_resource path="res://Assets/Objects/sign2.png" type="Texture" id=46]
 [ext_resource path="res://Assets/FX/bloodoverlay.png" type="Texture" id=47]
-[ext_resource path="res://Assets/dragonslayer desert/20.png" type="Texture" id=48]
+[ext_resource path="res://Assets/titleZones/CrimsonAbyssForge.png" type="Texture" id=48]
 [ext_resource path="res://Scripts/title_zone.gd" type="Script" id=49]
-[ext_resource path="res://Assets/dragonslayer desert/30.png" type="Texture" id=50]
-[ext_resource path="res://Assets/dragonslayer desert/90.png" type="Texture" id=51]
-[ext_resource path="res://Assets/dragonslayer desert/10.png" type="Texture" id=52]
-[ext_resource path="res://Assets/dragonslayer desert/75.png" type="Texture" id=53]
-[ext_resource path="res://Assets/dragonslayer desert/100.png" type="Texture" id=54]
-[ext_resource path="res://Assets/dragonslayer desert/60.png" type="Texture" id=55]
-[ext_resource path="res://Assets/dragonslayer desert/45.png" type="Texture" id=56]
-[ext_resource path="res://Assets/path of exile/45.png" type="Texture" id=57]
-[ext_resource path="res://Assets/path of exile/75.png" type="Texture" id=58]
-[ext_resource path="res://Assets/path of exile/90.png" type="Texture" id=59]
-[ext_resource path="res://Assets/path of exile/10.png" type="Texture" id=60]
-[ext_resource path="res://Assets/path of exile/20.png" type="Texture" id=61]
-[ext_resource path="res://Assets/path of exile/30.png" type="Texture" id=62]
-[ext_resource path="res://Assets/path of exile/60.png" type="Texture" id=63]
-[ext_resource path="res://Assets/path of exile/100.png" type="Texture" id=64]
-[ext_resource path="res://Assets/frostveil/100.png" type="Texture" id=65]
-[ext_resource path="res://Assets/frostveil/20.png" type="Texture" id=66]
-[ext_resource path="res://Assets/frostveil/10.png" type="Texture" id=67]
-[ext_resource path="res://Assets/frostveil/45.png" type="Texture" id=68]
-[ext_resource path="res://Assets/frostveil/60.png" type="Texture" id=69]
-[ext_resource path="res://Assets/frostveil/90.png" type="Texture" id=70]
-[ext_resource path="res://Assets/frostveil/75.png" type="Texture" id=71]
-[ext_resource path="res://Assets/frostveil/30.png" type="Texture" id=72]
-[ext_resource path="res://Assets/crimson abyss/60.png" type="Texture" id=73]
-[ext_resource path="res://Assets/crimson abyss/100.png" type="Texture" id=74]
-[ext_resource path="res://Assets/crimson abyss/75.png" type="Texture" id=75]
-[ext_resource path="res://Assets/crimson abyss/45.png" type="Texture" id=76]
-[ext_resource path="res://Assets/crimson abyss/30.png" type="Texture" id=77]
-[ext_resource path="res://Assets/crimson abyss/10.png" type="Texture" id=78]
-[ext_resource path="res://Assets/crimson abyss/20.png" type="Texture" id=79]
-[ext_resource path="res://Assets/crimson abyss/90.png" type="Texture" id=80]
-[ext_resource path="res://Assets/cursed abyssal/20.png" type="Texture" id=81]
-[ext_resource path="res://Assets/cursed abyssal/30.png" type="Texture" id=82]
-[ext_resource path="res://Assets/cursed abyssal/75.png" type="Texture" id=83]
-[ext_resource path="res://Assets/cursed abyssal/90.png" type="Texture" id=84]
-[ext_resource path="res://Assets/cursed abyssal/10.png" type="Texture" id=85]
-[ext_resource path="res://Assets/cursed abyssal/45.png" type="Texture" id=86]
-[ext_resource path="res://Assets/cursed abyssal/100.png" type="Texture" id=87]
-[ext_resource path="res://Assets/cursed abyssal/60.png" type="Texture" id=88]
+[ext_resource path="res://Assets/titleZones/ CursedAbyssalReef.png" type="Texture" id=50]
+[ext_resource path="res://Assets/titleZones/DragonslayerDesert.png" type="Texture" id=51]
+[ext_resource path="res://Assets/titleZones/FrostveilShrine.png" type="Texture" id=52]
+[ext_resource path="res://Assets/titleZones/PathOfExile.png" type="Texture" id=53]
 [ext_resource path="res://Assets/FX/bloodoverlay2.png" type="Texture" id=89]
 [ext_resource path="res://Scenes/pauseMenuEN.tscn" type="PackedScene" id=90]
 [ext_resource path="res://Scenes/Eleanor.tscn" type="PackedScene" id=91]
@@ -100,18 +65,11 @@
 [ext_resource path="res://Assets/UI/ButtonTraderCommonPressed.png" type="Texture" id=98]
 [ext_resource path="res://Sounds/PressButon.ogg" type="AudioStream" id=99]
 [ext_resource path="res://Sounds/hoverButon.ogg" type="AudioStream" id=100]
+[ext_resource path="res://Assets/UI/lives.png" type="Texture" id=101]
 [ext_resource path="res://Assets/UI/CoinsPanel.png" type="Texture" id=103]
 [ext_resource path="res://Scenes/Oda Nabunaga.tscn" type="PackedScene" id=104]
 [ext_resource path="res://Scripts/Oda Nabunaga.gd" type="Script" id=105]
 [ext_resource path="res://Scenes/Crab_enemy.tscn" type="PackedScene" id=107]
-[ext_resource path="res://Assets/UI/hearts/min 2_4.png" type="Texture" id=108]
-[ext_resource path="res://Assets/UI/hearts/max 2_4.png" type="Texture" id=109]
-[ext_resource path="res://Assets/UI/hearts/min 4_4.png" type="Texture" id=110]
-[ext_resource path="res://Assets/UI/hearts/min 1_4.png" type="Texture" id=111]
-[ext_resource path="res://Assets/UI/hearts/max 4_4.png" type="Texture" id=112]
-[ext_resource path="res://Assets/UI/hearts/max 1_4.png" type="Texture" id=113]
-[ext_resource path="res://Assets/UI/hearts/min 3_4.png" type="Texture" id=114]
-[ext_resource path="res://Assets/UI/hearts/max 3_4.png" type="Texture" id=115]
 [ext_resource path="res://Assets/UI/deadEffectEN/220.png" type="Texture" id=116]
 [ext_resource path="res://Assets/UI/deadEffectEN/60.png" type="Texture" id=117]
 [ext_resource path="res://Assets/UI/deadEffectEN/80.png" type="Texture" id=118]
@@ -5364,29 +5322,239 @@ extents = Vector2( 5.5, 115 )
 [sub_resource type="CanvasItemMaterial" id=101]
 blend_mode = 1
 
+[sub_resource type="AtlasTexture" id=332]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 0, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=333]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 242, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=334]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 484, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=335]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 726, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=336]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 968, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=337]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 1210, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=338]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 1452, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=339]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 1694, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=340]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 1936, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=341]
+atlas = ExtResource( 48 )
+region = Rect2( 0, 2178, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=342]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 0, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=343]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 242, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=344]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 484, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=345]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 726, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=346]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 968, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=347]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 1210, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=348]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 1452, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=349]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 1694, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=350]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 1936, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=351]
+flags = 4
+atlas = ExtResource( 50 )
+region = Rect2( 0, 2178, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=352]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 0, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=353]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 242, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=354]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 484, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=355]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 726, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=356]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 968, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=357]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 1210, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=358]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 1452, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=359]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 1694, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=360]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 1936, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=361]
+atlas = ExtResource( 51 )
+region = Rect2( 0, 2178, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=362]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 0, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=363]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 242, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=364]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 484, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=365]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 726, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=366]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 968, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=367]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 1210, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=368]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 1452, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=369]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 1694, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=370]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 1936, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=371]
+atlas = ExtResource( 52 )
+region = Rect2( 0, 2178, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=372]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 0, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=373]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 242, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=374]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 484, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=375]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 726, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=376]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 968, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=377]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 1210, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=378]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 1452, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=379]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 1694, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=380]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 1936, 1920, 242 )
+
+[sub_resource type="AtlasTexture" id=381]
+atlas = ExtResource( 53 )
+region = Rect2( 0, 2178, 1920, 242 )
+
 [sub_resource type="SpriteFrames" id=205]
 animations = [ {
-"frames": [ null, ExtResource( 78 ), ExtResource( 79 ), ExtResource( 77 ), ExtResource( 76 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 80 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 80 ), ExtResource( 75 ), ExtResource( 73 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 79 ), ExtResource( 78 ), null ],
+"frames": [ null, SubResource( 332 ), SubResource( 333 ), SubResource( 334 ), SubResource( 335 ), SubResource( 336 ), SubResource( 337 ), SubResource( 338 ), SubResource( 339 ), SubResource( 340 ), SubResource( 340 ), SubResource( 341 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 340 ), SubResource( 341 ), SubResource( 339 ), SubResource( 338 ), SubResource( 337 ), SubResource( 336 ), SubResource( 335 ), SubResource( 334 ), SubResource( 333 ), SubResource( 332 ), null ],
 "loop": false,
 "name": "crimson abyss",
 "speed": 12.0
 }, {
-"frames": [ null, ExtResource( 85 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 86 ), ExtResource( 88 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 84 ), ExtResource( 83 ), ExtResource( 88 ), ExtResource( 86 ), ExtResource( 82 ), ExtResource( 81 ), ExtResource( 85 ), null ],
+"frames": [ null, SubResource( 342 ), SubResource( 343 ), SubResource( 344 ), SubResource( 345 ), SubResource( 346 ), SubResource( 347 ), SubResource( 348 ), SubResource( 349 ), SubResource( 350 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 351 ), SubResource( 350 ), SubResource( 349 ), SubResource( 348 ), SubResource( 347 ), SubResource( 346 ), SubResource( 346 ), SubResource( 344 ), SubResource( 344 ), SubResource( 342 ), null ],
 "loop": false,
 "name": "cursed abyssal",
 "speed": 12.0
 }, {
-"frames": [ null, ExtResource( 52 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 51 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 51 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 50 ), ExtResource( 48 ), ExtResource( 52 ), null ],
+"frames": [ null, SubResource( 352 ), SubResource( 353 ), SubResource( 354 ), SubResource( 355 ), SubResource( 356 ), SubResource( 357 ), SubResource( 358 ), SubResource( 359 ), SubResource( 360 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 361 ), SubResource( 360 ), SubResource( 359 ), SubResource( 358 ), SubResource( 357 ), SubResource( 356 ), SubResource( 355 ), SubResource( 354 ), SubResource( 354 ), SubResource( 352 ), null ],
 "loop": false,
 "name": "default",
 "speed": 12.0
 }, {
-"frames": [ null, ExtResource( 67 ), ExtResource( 66 ), ExtResource( 72 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 71 ), ExtResource( 70 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 65 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 69 ), ExtResource( 68 ), ExtResource( 72 ), ExtResource( 66 ), ExtResource( 67 ), null ],
+"frames": [ null, SubResource( 362 ), SubResource( 363 ), SubResource( 364 ), SubResource( 365 ), SubResource( 366 ), SubResource( 367 ), SubResource( 368 ), SubResource( 369 ), SubResource( 370 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 371 ), SubResource( 370 ), SubResource( 369 ), SubResource( 368 ), SubResource( 367 ), SubResource( 366 ), SubResource( 365 ), SubResource( 364 ), SubResource( 363 ), SubResource( 362 ), null ],
 "loop": false,
 "name": "frostveil",
 "speed": 12.0
 }, {
-"frames": [ null, ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 57 ), ExtResource( 63 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 59 ), ExtResource( 58 ), ExtResource( 63 ), ExtResource( 57 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 60 ), null ],
+"frames": [ null, SubResource( 372 ), SubResource( 373 ), SubResource( 374 ), SubResource( 375 ), SubResource( 376 ), SubResource( 377 ), SubResource( 378 ), SubResource( 379 ), SubResource( 380 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 381 ), SubResource( 380 ), SubResource( 379 ), SubResource( 378 ), SubResource( 377 ), SubResource( 376 ), SubResource( 375 ), SubResource( 374 ), SubResource( 373 ), SubResource( 372 ), null ],
 "loop": false,
 "name": "path",
 "speed": 12.0
@@ -5431,27 +5599,82 @@ region_rect = Rect2( 0, 0, 78, 78 )
 texture = ExtResource( 98 )
 region_rect = Rect2( 0, 0, 78, 76 )
 
+[sub_resource type="AtlasTexture" id=326]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 7280, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=327]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 8190, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=328]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 5460, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=329]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 6370, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=330]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 3640, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=331]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 4550, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=322]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 1820, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=323]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 2730, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=324]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 0, 150, 910, 150 )
+
+[sub_resource type="AtlasTexture" id=325]
+flags = 4
+atlas = ExtResource( 101 )
+region = Rect2( 910, 150, 910, 150 )
+
 [sub_resource type="SpriteFrames" id=218]
 animations = [ {
-"frames": [ ExtResource( 111 ), ExtResource( 113 ), ExtResource( 111 ), ExtResource( 113 ), ExtResource( 111 ), ExtResource( 111 ), ExtResource( 111 ) ],
+"frames": [ SubResource( 326 ), SubResource( 327 ), SubResource( 326 ), SubResource( 327 ), SubResource( 326 ), SubResource( 326 ) ],
 "loop": true,
-"name": "1_4",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 108 ), ExtResource( 109 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ) ],
-"loop": true,
-"name": "2_4",
+"name": "1_5",
 "speed": 11.0
 }, {
-"frames": [ ExtResource( 114 ), ExtResource( 115 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 114 ), ExtResource( 114 ), ExtResource( 114 ), ExtResource( 114 ) ],
+"frames": [ SubResource( 328 ), SubResource( 329 ), SubResource( 328 ), SubResource( 328 ), SubResource( 329 ), SubResource( 328 ), SubResource( 328 ), SubResource( 328 ) ],
 "loop": true,
-"name": "3_4",
-"speed": 8.0
+"name": "2_5",
+"speed": 9.0
 }, {
-"frames": [ ExtResource( 110 ), ExtResource( 112 ), ExtResource( 110 ), ExtResource( 112 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ) ],
+"frames": [ SubResource( 330 ), SubResource( 331 ), SubResource( 330 ), SubResource( 330 ), SubResource( 331 ), SubResource( 330 ), SubResource( 330 ), SubResource( 330 ) ],
 "loop": true,
-"name": "4_4",
-"speed": 5.0
+"name": "3_5",
+"speed": 6.0
+}, {
+"frames": [ SubResource( 322 ), SubResource( 323 ), SubResource( 322 ), SubResource( 322 ), SubResource( 323 ), SubResource( 322 ), SubResource( 322 ), SubResource( 322 ), SubResource( 322 ) ],
+"loop": true,
+"name": "4_5",
+"speed": 5.5
+}, {
+"frames": [ SubResource( 324 ), SubResource( 325 ), SubResource( 324 ), SubResource( 324 ), SubResource( 325 ), SubResource( 324 ), SubResource( 324 ), SubResource( 324 ), SubResource( 324 ), SubResource( 324 ) ],
+"loop": true,
+"name": "5_5",
+"speed": 4.0
 } ]
 
 [sub_resource type="SpriteFrames" id=219]
@@ -9102,56 +9325,55 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 14
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 14
+frame = 9
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 16
+frame = 11
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 4
+frame = 17
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 17
+frame = 12
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 12
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 10
+frame = 5
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9260,7 +9482,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 1
+frame = 14
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9273,7 +9495,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 1
+frame = 14
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9286,7 +9508,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 1
+frame = 14
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11543,7 +11765,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 5735, -244 )
+position = Vector2( -5096, -237 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -11629,12 +11851,13 @@ theme = ExtResource( 93 )
 text = "00"
 
 [node name="title" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
-position = Vector2( 961, 171 )
-scale = Vector2( 0.7, 0.7 )
+position = Vector2( 981, 218 )
+scale = Vector2( 0.8, 0.7 )
 z_index = 5
 z_as_relative = false
 frames = SubResource( 205 )
-animation = "cursed abyssal"
+animation = "crimson abyss"
+frame = 11
 script = ExtResource( 49 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="ControlCanvas/CanvasLayer/title"]
@@ -11971,10 +12194,10 @@ theme = ExtResource( 93 )
 text = "Sword stolen from the current King Roderick of Midland. With this sword, you will be able to execute faster thrusts without sacrificing its lethality."
 
 [node name="lives" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
-position = Vector2( 189, 79 )
-scale = Vector2( 1, 0.9 )
+position = Vector2( 313, 55 )
+scale = Vector2( 1.2, 1.15 )
 frames = SubResource( 218 )
-animation = "4_4"
+animation = "5_5"
 
 [node name="deadteffect" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
 position = Vector2( 960, 540 )

@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var PlayerLives = 4
+var PlayerLives = 5
 var downdoor = 6
 var enter = false
 var idle = true
@@ -148,24 +148,28 @@ func cameraShaker(delta):
 func playerLive():
 	if PlayerLives != previous_player_lives:
 		match PlayerLives:
+			5:
+				$"../ControlCanvas/CanvasLayer/lives".play("5_5")
+				$"../ControlCanvas/CanvasLayer/Bloodoverlay2".visible = false
+				$"../ControlCanvas/CanvasLayer/Bloodoverlay".visible = false
+				$heartSound.volume_db = -80
 			4:
-				$"../ControlCanvas/CanvasLayer/lives".play("4_4")
+				$"../ControlCanvas/CanvasLayer/lives".play("4_5")
 				$"../ControlCanvas/CanvasLayer/Bloodoverlay2".visible = false
 				$heartSound.volume_db = -80
-				
 			3:
-				$"../ControlCanvas/CanvasLayer/lives".play("3_4")
+				$"../ControlCanvas/CanvasLayer/lives".play("3_5")
 			2:
-				$"../ControlCanvas/CanvasLayer/lives".play("2_4")
+				$"../ControlCanvas/CanvasLayer/lives".play("2_5")
 				$"../ControlCanvas/CanvasLayer/Bloodoverlay".visible = true
-				$heartSound.volume_db = -20
-				$heartSound.pitch_scale = 1.1
+				$heartSound.volume_db = -18
+				$heartSound.pitch_scale = 1
 			1:
-				$"../ControlCanvas/CanvasLayer/lives".play("1_4")
+				$"../ControlCanvas/CanvasLayer/lives".play("1_5")
 				$"../ControlCanvas/CanvasLayer/Bloodoverlay".visible = false
 				$"../ControlCanvas/CanvasLayer/Bloodoverlay2".visible = true
-				$heartSound.volume_db = -15
-				$heartSound.pitch_scale = 1.3
+				$heartSound.volume_db = -13
+				$heartSound.pitch_scale = 1.35
 		previous_player_lives = PlayerLives 
 		
 func playerMovement(delta):
@@ -237,7 +241,7 @@ func playerMovement(delta):
 				sprite.play("rest")
 				motion.x = 0
 				rest.play()
-				PlayerLives = 4
+				PlayerLives = 5
 				enemies()
 				if altar_cercano:  # Solo emite la señal si hay un altar cerca
 					emit_signal("playerRest", altar_cercano)
@@ -414,20 +418,20 @@ func _on_rest_body_exited(body):
 func dead():
 	deadeff.play("default")
 	sprite.stop()
-	PlayerLives = 4
+	PlayerLives = 5
 	sprite.play("dead")
 	deadeffect.start()
 	$Area2D2.position.y = -5000
 	motion = Vector2.ZERO
 	gravity = 0
 	frameFreeze(0.2, 2) 
-	$"../CanvasLayer/lives".stop()
+	$"../ControlCanvas/CanvasLayer/lives".stop()
 	enemies()
 	
 func revive(body):
 	if body.get_name() == "Player":
 		deadtp.start()
-		PlayerLives = 4
+		PlayerLives = 5
 		deadeff.play("default")
 		
 func _on_deadZone_body_entered(body):
