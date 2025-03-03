@@ -14,7 +14,7 @@ var bajarfinalbossMusic = 0.5
 var previous_player_lives = PlayerLives
 var collision_disabled = false
 var finalbossLives = 25
-var canDash = true
+var canDash = false
 var is_dashing = false
 var dash_speed = 490
 var dash_duration = 0.055
@@ -33,8 +33,8 @@ var original_camera_position = Vector2()
 var HitPlayer = false
 var player
 var can_doublejump = true
-var doubleJumpItem1 = true
-var doubleJumpItem2 = true
+var doubleJumpItem1 = false
+var doubleJumpItem2 = false
 var is_on_ice = false
 var motion = Vector2()
 var altar_cercano = null
@@ -97,6 +97,7 @@ func _physics_process(delta):
 	cameraShaker(delta)
 	playerLive()
 	playerMovement(delta)
+	adminOptions()
 	
 func finalBossScene():
 	if StopMusic:
@@ -259,7 +260,7 @@ func playerMovement(delta):
 				moveSpeed = 47
 				maxSpeed = 98
 			can_doublejump = true
-			if Input.is_action_just_pressed("ui_up") and idle and attack:
+			if Input.is_action_just_pressed("ui_up") and idle and attack and !is_dashing:
 				sprite.play("jump")
 				motion.y = jumpHeight
 				jump1_sound.play()
@@ -272,7 +273,7 @@ func playerMovement(delta):
 			if friction == true:
 				# Fricción en el aire: reducción gradual de la velocidad horizontal
 				motion.x = lerp(motion.x, 0, 0.030)  # Fricción baja en el aire para conservar inercia
-		if can_doublejump and !is_on_floor() and Input.is_action_just_pressed("ui_up") and doubleJumpItem1 and doubleJumpItem2:
+		if can_doublejump and !is_on_floor() and Input.is_action_just_pressed("ui_up") and doubleJumpItem1 and doubleJumpItem2 and !is_dashing:
 			jump2_sound.play()
 			moveSpeed = 62
 			maxSpeed = 124
@@ -284,7 +285,6 @@ func playerMovement(delta):
 				dash_timer -= delta
 				motion.x = dash_speed if !sprite.flip_h else -dash_speed
 				if dash_timer <= 0:
-					is_dashing = false
 					dash_cooldown_timer = dash_cooldown
 			elif dash_cooldown_timer > 0:
 				dash_cooldown_timer -= delta
@@ -341,7 +341,6 @@ func hit(damage):
 	yield(get_tree().create_timer(0.35), "timeout")
 	motion.x = 0
 
-	
 func _on_hit_timeout():
 	$AnimatedSprite.modulate = Color(1, 1, 1, 1)
 	
@@ -369,6 +368,7 @@ func _on_animation_finished():
 	if sprite.animation == "dash":
 		idle = true
 		$Area2D2/CollisionShape2D.disabled = false
+		is_dashing = false
 		
 	if sprite.animation == "dead":
 		HitPlayer = false
@@ -521,3 +521,12 @@ func frameFreeze(timeScale,duration):
 	Engine.time_scale = timeScale
 	yield(get_tree().create_timer(duration * timeScale),"timeout")
 	Engine.time_scale = 1
+
+func adminOptions():
+	if Input.is_action_just_pressed("j"):
+		doubleJumpItem1 = !doubleJumpItem1
+		doubleJumpItem2 = !doubleJumpItem2
+	if Input.is_action_just_pressed("k"):
+		canDash = !canDash
+	if Input.is_action_just_pressed("l"):
+		$Area2D2/CollisionShape2D.disabled = !$Area2D2/CollisionShape2D.disabled
