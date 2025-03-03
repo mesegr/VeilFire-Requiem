@@ -340,7 +340,8 @@ autoplay = true
 
 [node name="jump1_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
-volume_db = -9.0
+volume_db = -15.452
+pitch_scale = 1.03
 
 [node name="jump2_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
