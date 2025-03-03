@@ -87,6 +87,7 @@ func _ready():
 	
 	sprite.connect("animation_finished", self, "_on_animation_finished")
 	$AnimatedSprite2.connect("animation_finished", self, "_on_animation_finished2")
+	deadeff.connect("animation_finished", self, "_on_animation_finished3")
 	initializeTimers()
 	
 func _physics_process(delta):
@@ -352,6 +353,10 @@ func updateCooldown(newCool):
 	timercooldown.wait_time = newCool
 	timercooldown.stop()  # Detenemos el temporizador  # Lo volvemos a iniciar
 	
+func _on_animation_finished3():
+	if deadeff.animation == "default":
+		idle = true
+		
 func _on_animation_finished2():
 	if $AnimatedSprite2.animation == "default":
 		$AnimatedSprite2.play("inter")
@@ -416,6 +421,7 @@ func _on_rest_body_exited(body):
 		altar_cercano = null
 		
 func dead():
+	idle = false
 	deadeff.play("default")
 	sprite.stop()
 	PlayerLives = 5
@@ -430,6 +436,8 @@ func dead():
 	
 func revive(body):
 	if body.get_name() == "Player":
+		idle = false
+		motion.x = 0
 		deadtp.start()
 		PlayerLives = 5
 		deadeff.play("default")

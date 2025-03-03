@@ -1,7 +1,7 @@
 extends Control
 
-# Diccionario para almacenar la escala objetivo de cada botón
-# Variables para controlar la transición
+var loading_scene = null  # Almacenará la escena que se está cargando
+var loading_progress = 0  # Para rastrear el progreso de la carga
 var target_scales = {}
 var lerp_speed = 15.0  # Velocidad de la interpolación (ajusta según necesites)
 var tween = Tween.new()  # Crea un nodo Tween
@@ -34,6 +34,23 @@ func _process(delta):
 			target_scales["ButtonBackControls"],
 			lerp_speed * delta
 		)
+		
+	if loading_scene != null:
+		# Carga un fragmento de la escena
+		var status = loading_scene.poll()
+		
+		if status == ERR_FILE_EOF:
+			# La escena ha terminado de cargarse
+			var scene = loading_scene.get_resource()
+			loading_scene = null  # Reinicia la variable
+			get_tree().change_scene_to(scene)  # Cambia a la escena cargada
+		elif status == OK:
+			# Actualiza el progreso de la carga (opcional, para una barra de progreso)
+			loading_progress = float(loading_scene.get_stage()) / loading_scene.get_stage_count()
+		else:
+			# Hubo un error al cargar la escena
+			print("Error al cargar la escena: ", status)
+			loading_scene = null
 
 func _on_ButtonStartGame_mouse_entered():
 	target_scales["ButtonStartGame"] = Vector2(1.1, 1.05)
@@ -47,7 +64,16 @@ func _on_ButtonStartGame_button_down():
 	$buttonPressed.play()
 	target_scales["ButtonStartGame"] = Vector2(1, 1)
 	SaveSystem.new_game()
-	get_tree().change_scene("res://Scenes/worldEN.tscn")
+	
+	$ColorRect.visible = true
+	$AnimationPlayer.play("fade_to_black")
+	$loading.play("default")
+	
+	# Comienza a cargar la escena de manera asíncrona
+	loading_scene = ResourceLoader.load_interactive("res://Scenes/worldEN.tscn")
+	if loading_scene == null:
+		print("Error al cargar la escena.")
+		return
 
 
 func _on_ButtonLoadGame_mouse_entered():
@@ -146,3 +172,8 @@ func _on_ButtonBackControls_button_down():
 func _on_ButtonBackControls_mouse_exited():
 	target_scales["ButtonBackControls"] = Vector2(0.32, 0.32)
 
+
+
+func _on_AnimationPlayer_animation_finished(anim_name):
+	if anim_name == "fade_to_black":
+		get_tree().change_scene("res://Scenes/worldEN.tscn")

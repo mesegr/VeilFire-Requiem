@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Resources/Themes/MainMenuTheme.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/ControlsPanel.png" type="Texture" id=2]
@@ -20,6 +20,203 @@
 [ext_resource path="res://Assets/controls/SPACE.png" type="Texture" id=18]
 [ext_resource path="res://Assets/controls/MOUSEBUTTONLEFT.png" type="Texture" id=19]
 [ext_resource path="res://Assets/controls/ARROWLEFT.png" type="Texture" id=20]
+[ext_resource path="res://Resources/Fonts/Livingstone.ttf" type="DynamicFontData" id=21]
+[ext_resource path="res://Assets/loading/589.png" type="Texture" id=22]
+
+[sub_resource type="DynamicFont" id=292]
+size = 180
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 21 )
+
+[sub_resource type="Animation" id=294]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=295]
+resource_name = "fade_to_black"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=256]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=257]
+atlas = ExtResource( 22 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=258]
+atlas = ExtResource( 22 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=259]
+atlas = ExtResource( 22 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=260]
+atlas = ExtResource( 22 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=261]
+atlas = ExtResource( 22 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=262]
+atlas = ExtResource( 22 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=263]
+atlas = ExtResource( 22 )
+region = Rect2( 512, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=264]
+atlas = ExtResource( 22 )
+region = Rect2( 576, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=265]
+atlas = ExtResource( 22 )
+region = Rect2( 640, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=266]
+atlas = ExtResource( 22 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=267]
+atlas = ExtResource( 22 )
+region = Rect2( 832, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=268]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=269]
+atlas = ExtResource( 22 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=270]
+atlas = ExtResource( 22 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=271]
+atlas = ExtResource( 22 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=272]
+atlas = ExtResource( 22 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=273]
+atlas = ExtResource( 22 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=274]
+atlas = ExtResource( 22 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=275]
+atlas = ExtResource( 22 )
+region = Rect2( 512, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=276]
+atlas = ExtResource( 22 )
+region = Rect2( 576, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=277]
+atlas = ExtResource( 22 )
+region = Rect2( 640, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=278]
+atlas = ExtResource( 22 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=279]
+atlas = ExtResource( 22 )
+region = Rect2( 832, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=280]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=281]
+atlas = ExtResource( 22 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=282]
+atlas = ExtResource( 22 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=283]
+atlas = ExtResource( 22 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=284]
+atlas = ExtResource( 22 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=285]
+atlas = ExtResource( 22 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=286]
+atlas = ExtResource( 22 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=287]
+atlas = ExtResource( 22 )
+region = Rect2( 512, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=288]
+atlas = ExtResource( 22 )
+region = Rect2( 576, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=289]
+atlas = ExtResource( 22 )
+region = Rect2( 640, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=290]
+atlas = ExtResource( 22 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=291]
+atlas = ExtResource( 22 )
+region = Rect2( 832, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=293]
+animations = [ {
+"frames": [ null ],
+"loop": false,
+"name": "New Anim",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 256 ), SubResource( 257 ), SubResource( 258 ), SubResource( 259 ), SubResource( 260 ), SubResource( 261 ), SubResource( 262 ), SubResource( 263 ), SubResource( 264 ), SubResource( 265 ), SubResource( 266 ), SubResource( 267 ), SubResource( 268 ), SubResource( 269 ), SubResource( 270 ), SubResource( 271 ), SubResource( 272 ), SubResource( 273 ), SubResource( 274 ), SubResource( 275 ), SubResource( 276 ), SubResource( 277 ), SubResource( 278 ), SubResource( 279 ), SubResource( 280 ), SubResource( 281 ), SubResource( 282 ), SubResource( 283 ), SubResource( 284 ), SubResource( 285 ), SubResource( 286 ), SubResource( 287 ), SubResource( 288 ), SubResource( 289 ), SubResource( 290 ), SubResource( 291 ) ],
+"loop": true,
+"name": "default",
+"speed": 12.0
+} ]
 
 [node name="Menu" type="Control"]
 anchor_left = 0.5
@@ -70,15 +267,39 @@ stream = ExtResource( 8 )
 volume_db = -13.491
 pitch_scale = 0.35
 
+[node name="ColorRect2" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 0.388235 )
+margin_left = -19.9922
+margin_top = 68.773
+margin_right = 1940.01
+margin_bottom = 311.773
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -909.02
+margin_top = -429.365
+margin_right = 929.98
+margin_bottom = -249.365
+custom_colors/font_color = Color( 1, 0.705882, 0.0156863, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 7
+custom_constants/shadow_offset_y = 7
+custom_constants/shadow_as_outline = 0
+custom_fonts/font = SubResource( 292 )
+text = "NOMBRE DEL JUEGO"
+
 [node name="ButtonsContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -550.0
-margin_top = -416.5
+margin_top = -380.0
 margin_right = 550.0
-margin_bottom = 416.5
+margin_bottom = 462.0
 rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 550, 590 )
 custom_constants/separation = 30
@@ -285,6 +506,29 @@ rect_scale = Vector2( 0.32, 0.32 )
 rect_pivot_offset = Vector2( 550, 94 )
 text = "BACK TO MENU"
 
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+modulate = Color( 0, 0, 0, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -961.5
+margin_top = -543.5
+margin_right = 961.5
+margin_bottom = 543.5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 294 )
+anims/fade_to_black = SubResource( 295 )
+
+[node name="loading" type="AnimatedSprite" parent="."]
+position = Vector2( 1776.93, 948.619 )
+scale = Vector2( 3.70542, 3.48067 )
+frames = SubResource( 293 )
+animation = "New Anim"
+playing = true
+
 [connection signal="button_down" from="ButtonsContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_button_down"]
 [connection signal="mouse_entered" from="ButtonsContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonsContainer/ButtonStartGame" to="." method="_on_ButtonStartGame_mouse_exited"]
@@ -300,3 +544,4 @@ text = "BACK TO MENU"
 [connection signal="button_down" from="ControlsPanel/ButtonBackControls" to="." method="_on_ButtonBackControls_button_down"]
 [connection signal="mouse_entered" from="ControlsPanel/ButtonBackControls" to="." method="_on_ButtonBackControls_mouse_entered"]
 [connection signal="mouse_exited" from="ControlsPanel/ButtonBackControls" to="." method="_on_ButtonBackControls_mouse_exited"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

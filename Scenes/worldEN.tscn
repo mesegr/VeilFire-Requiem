@@ -9325,55 +9325,56 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 9
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 9
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 11
+frame = 9
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 17
+frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 12
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 15
+frame = 13
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
+frame = 16
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 7
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 5
+frame = 3
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9482,7 +9483,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 14
+frame = 12
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9495,7 +9496,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 14
+frame = 12
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9508,7 +9509,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 14
+frame = 12
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11765,7 +11766,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( -5096, -237 )
+position = Vector2( 5691, -291 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -11857,7 +11858,6 @@ z_index = 5
 z_as_relative = false
 frames = SubResource( 205 )
 animation = "crimson abyss"
-frame = 11
 script = ExtResource( 49 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="ControlCanvas/CanvasLayer/title"]
@@ -12002,6 +12002,7 @@ custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "Alright, with these tips, you should last at least 15 minutes. Finally, remember to face your mission with courage. Clinging to life will only push you closer to death, just like fear. If you’re not sure what you’re doing, turn around and go cry in bed like a little baby. But if you're ready to die for these lands, go ahead, start the adventure."
 
 [node name="PanelSnowTrader" type="Sprite" parent="ControlCanvas/CanvasLayer"]
+visible = false
 position = Vector2( 1009, 708 )
 scale = Vector2( 3.1, 2.9 )
 texture = ExtResource( 140 )
@@ -12032,6 +12033,7 @@ scroll_active = false
 deselect_on_focus_loss_enabled = false
 
 [node name="SnowTader2" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
+visible = false
 margin_left = -433.548
 margin_top = -68.6207
 margin_right = -86.5484
