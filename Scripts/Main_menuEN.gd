@@ -87,8 +87,17 @@ func _on_ButtonLoadGame_button_down():
 	$MenuTheme.stop()
 	$buttonPressed.play()
 	target_scales["ButtonStartGame"] = Vector2(1, 1)
-	get_tree().change_scene("res://Scenes/worldEN.tscn")
 	SaveSystem.load_game()
+	
+	$ColorRect.visible = true
+	$AnimationPlayer.play("fade_to_black")
+	$loading.play("default")
+	
+	# Comienza a cargar la escena de manera asíncrona
+	loading_scene = ResourceLoader.load_interactive("res://Scenes/worldEN.tscn")
+	if loading_scene == null:
+		print("Error al cargar la escena.")
+		return
 
 
 func _on_ButtonControls_mouse_entered():
