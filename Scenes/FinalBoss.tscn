@@ -119,7 +119,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 22.75, 41.75 )
+extents = Vector2( 22.75, 55.875 )
 
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 90, 18.75 )
@@ -211,7 +211,7 @@ animation = "Flames"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 4
-position = Vector2( -14, -29 )
+position = Vector2( -14, -43.125 )
 shape = SubResource( 5 )
 
 [node name="AttackFlame" type="CollisionShape2D" parent="."]
@@ -291,7 +291,7 @@ collision_mask = 8
 position = Vector2( 0, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire1"]
@@ -307,7 +307,7 @@ collision_mask = 8
 position = Vector2( 2.99994, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire2"]
@@ -322,7 +322,7 @@ collision_mask = 8
 position = Vector2( -1, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire3"]
@@ -337,7 +337,7 @@ collision_mask = 8
 position = Vector2( 13, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire4"]

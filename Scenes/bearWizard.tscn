@@ -113,7 +113,7 @@ extents = Vector2( 7.25, 6.5 )
 extents = Vector2( 11, 9.5 )
 
 [sub_resource type="RectangleShape2D" id=20]
-extents = Vector2( 13, 11 )
+extents = Vector2( 13, 14 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 39 )
@@ -230,7 +230,7 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2( -4, 2 )
+position = Vector2( -4, -1 )
 shape = SubResource( 20 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]

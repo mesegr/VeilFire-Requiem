@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Scripts/iceMonsterBoss.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Enemies/iceMonsterMiniboss-sheet.png" type="Texture" id=2]
@@ -82,11 +82,8 @@ extents = Vector2( 9, 11.5 )
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 9.5, 11 )
 
-[sub_resource type="RectangleShape2D" id=26]
-extents = Vector2( 0, 59.75 )
-
 [sub_resource type="RectangleShape2D" id=25]
-extents = Vector2( 12, 13 )
+extents = Vector2( 12, 23 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 6 )
@@ -130,7 +127,7 @@ script = ExtResource( 1 )
 position = Vector2( -1, -12 )
 scale = Vector2( 0.15, 0.16 )
 frames = SubResource( 7 )
-frame = 9
+frame = 11
 playing = true
 flip_h = true
 
@@ -174,21 +171,12 @@ pitch_scale = 0.3
 max_distance = 120.0
 attenuation = 0.63728
 
-[node name="Area2D2" type="Area2D" parent="."]
-position = Vector2( -1, 0 )
-collision_layer = 2
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2( 12, -47.25 )
-shape = SubResource( 26 )
-
 [node name="Area2D3" type="Area2D" parent="."]
 collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
-position = Vector2( -1, 0 )
+position = Vector2( -1, -10 )
 shape = SubResource( 25 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
@@ -197,5 +185,4 @@ frames = SubResource( 32 )
 animation = "inter"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]

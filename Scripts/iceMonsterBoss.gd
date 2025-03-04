@@ -76,11 +76,6 @@ func respawn():
 	speed = 40
 	lives = 4
 
-func _on_Area2D2_body_entered(body):
-	if body.name == "Player":
-		left = !left
-		scale.x = -scale.x
-
 func _on_Area2D3_body_entered(body):
 	if body.is_in_group("hit"):
 		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
