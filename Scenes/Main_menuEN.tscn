@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://Resources/Themes/MainMenuTheme.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/ControlsPanel.png" type="Texture" id=2]
@@ -21,7 +21,6 @@
 [ext_resource path="res://Assets/controls/ARROWLEFT.png" type="Texture" id=20]
 [ext_resource path="res://Resources/Fonts/Livingstone.ttf" type="DynamicFontData" id=21]
 [ext_resource path="res://Assets/loading/589.png" type="Texture" id=22]
-[ext_resource path="res://Assets/controls/S.png" type="Texture" id=23]
 
 [sub_resource type="DynamicFont" id=292]
 size = 180
@@ -472,14 +471,6 @@ margin_right = 507.0
 margin_bottom = 36.0
 rect_scale = Vector2( 4, 4 )
 texture = ExtResource( 17 )
-
-[node name="S" type="TextureRect" parent="ControlsPanel/ControlsLabelsContainer/CrouchLabel"]
-margin_left = 372.681
-margin_top = 19.8732
-margin_right = 404.681
-margin_bottom = 35.8732
-rect_scale = Vector2( 4, 4 )
-texture = ExtResource( 23 )
 
 [node name="DashLabel" type="Label" parent="ControlsPanel/ControlsLabelsContainer"]
 margin_top = 1036.0

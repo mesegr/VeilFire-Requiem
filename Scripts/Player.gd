@@ -377,6 +377,11 @@ func updateCooldown(newCool):
 func _on_animation_finished3():
 	if deadeff.animation == "default":
 		idle = true
+		moveSpeed = 47
+		gravity = 15
+		self.position = startpos.position
+		deadeff.play("t")
+		enemies()
 		
 func _on_animation_finished2():
 	if $AnimatedSprite2.animation == "default":
@@ -416,9 +421,7 @@ func _on_animation_finished():
 		sprite.play("jump")
 		
 func deadtpF():
-	self.position = startpos.position
-	deadeff.play("t")
-	enemies()
+	pass
 
 func rest_timeout():
 	idle = true
@@ -461,8 +464,9 @@ func dead():
 	
 func revive(body):
 	if body.get_name() == "Player":
-		idle = false
 		motion.x = 0
+		moveSpeed = 0
+		gravity = 5000
 		deadtp.start()
 		PlayerLives = 5
 		deadeff.play("default")
