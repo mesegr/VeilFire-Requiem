@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Resources/Themes/MainMenuTheme.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/ControlsPanel.png" type="Texture" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://Assets/controls/SHIFT.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scripts/Main_menuEN.gd" type="Script" id=14]
-[ext_resource path="res://Assets/controls/W.png" type="Texture" id=15]
 [ext_resource path="res://Assets/controls/A.png" type="Texture" id=16]
 [ext_resource path="res://Assets/controls/CTRL.png" type="Texture" id=17]
 [ext_resource path="res://Assets/controls/SPACE.png" type="Texture" id=18]
@@ -334,7 +333,6 @@ rect_pivot_offset = Vector2( 550, 94 )
 text = "QUIT GAME"
 
 [node name="ControlsPanel" type="TextureRect" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -360,25 +358,17 @@ margin_bottom = 80.0
 text = "Jump -"
 
 [node name="Space" type="TextureRect" parent="ControlsPanel/ControlsLabelsContainer/JumpLabel"]
-margin_left = 370.0
+margin_left = 471.627
 margin_top = 20.0
-margin_right = 402.0
+margin_right = 503.627
 margin_bottom = 36.0
 rect_scale = Vector2( 4, 4 )
 texture = ExtResource( 18 )
 
-[node name="W" type="TextureRect" parent="ControlsPanel/ControlsLabelsContainer/JumpLabel"]
-margin_left = 530.0
-margin_top = 20.0
-margin_right = 546.0
-margin_bottom = 36.0
-rect_scale = Vector2( 4, 4 )
-texture = ExtResource( 15 )
-
 [node name="ArrowUp" type="TextureRect" parent="ControlsPanel/ControlsLabelsContainer/JumpLabel"]
-margin_left = 270.0
+margin_left = 371.627
 margin_top = 20.0
-margin_right = 286.0
+margin_right = 387.627
 margin_bottom = 36.0
 rect_scale = Vector2( 4, 4 )
 texture = ExtResource( 4 )

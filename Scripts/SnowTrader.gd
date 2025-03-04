@@ -235,6 +235,6 @@ func _on_Button3_pressed():
 		$"../ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3".disabled = true
 		ui.coins -= 15
 		$"../ControlCanvas/CanvasLayer/Item06".visible = true
-		player.updateCooldown(0.5)
+		player.updateCooldown(0.35)
 		print("presed")
 		$"../ControlCanvas/CanvasLayer/PanelSnowTrader/buttonPressed".play()

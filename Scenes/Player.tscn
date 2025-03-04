@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=88 format=2]
 
 [ext_resource path="res://Assets/Knight/Idle.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
@@ -26,9 +26,36 @@
 [ext_resource path="res://Assets/Knight/dash-sheet.png" type="Texture" id=24]
 [ext_resource path="res://Assets/FX/hitP.png" type="Texture" id=25]
 [ext_resource path="res://Sounds/heartSound.ogg" type="AudioStream" id=26]
+[ext_resource path="res://Assets/Knight/Capa 13.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Knight/Capa 6.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Knight/attackup.png" type="Texture" id=29]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 10, 24.5 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 28 )
+region = Rect2( 0, 0, 144, 88 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 27 )
+region = Rect2( 0, 0, 144, 88 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 29 )
+region = Rect2( 0, 0, 83, 125 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 29 )
+region = Rect2( 83, 0, 83, 125 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 29 )
+region = Rect2( 166, 0, 83, 125 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 29 )
+region = Rect2( 249, 0, 83, 125 )
 
 [sub_resource type="AtlasTexture" id=37]
 atlas = ExtResource( 24 )
@@ -192,15 +219,20 @@ region = Rect2( 336, 0, 48, 64 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 12 ), ExtResource( 7 ) ],
+"frames": [ SubResource( 53 ), ExtResource( 12 ), ExtResource( 7 ) ],
 "loop": false,
 "name": "attack",
-"speed": 48.0
+"speed": 35.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 10 ), SubResource( 54 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "attack 1",
-"speed": 48.0
+"speed": 35.0
+}, {
+"frames": [ SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ) ],
+"loop": true,
+"name": "attackup",
+"speed": 45.0
 }, {
 "frames": [ ExtResource( 22 ) ],
 "loop": true,
@@ -247,7 +279,10 @@ animations = [ {
 extents = Vector2( 16, 33 )
 
 [sub_resource type="RectangleShape2D" id=33]
-extents = Vector2( 32.625, 38 )
+extents = Vector2( 32.625, 32.5 )
+
+[sub_resource type="RectangleShape2D" id=59]
+extents = Vector2( 31, 18.5 )
 
 [sub_resource type="RectangleShape2D" id=36]
 extents = Vector2( 18, 26 )
@@ -308,7 +343,8 @@ shape = SubResource( 6 )
 position = Vector2( 0, 2 )
 scale = Vector2( 1, 0.95 )
 frames = SubResource( 5 )
-animation = "crouch"
+animation = "attackup"
+frame = 2
 
 [node name="TimerRest" type="Timer" parent="."]
 
@@ -382,8 +418,13 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 50.375, -5 )
+position = Vector2( 50.375, 0.5 )
 shape = SubResource( 33 )
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -3, -38.5 )
+shape = SubResource( 59 )
 disabled = true
 
 [node name="deadAnim" type="Timer" parent="."]

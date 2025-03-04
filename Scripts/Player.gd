@@ -25,7 +25,7 @@ var moveSpeed = 47
 var maxSpeed = 98
 var jumpHeight = -272
 var gravity = 15
-var cooldownAttack = 0.75
+var cooldownAttack = 0.45
 var camera_shake_timer = 0
 var shake_intensity = 100
 var shake_duration = 0.2
@@ -98,6 +98,9 @@ func _physics_process(delta):
 	playerLive()
 	playerMovement(delta)
 	adminOptions()
+	print("cooldown antes del if:", cooldown)
+	
+	print(cooldown)
 	
 func finalBossScene():
 	if StopMusic:
@@ -200,7 +203,17 @@ func playerMovement(delta):
 			$Area2D2/CollisionShape2D.scale.y = 1
 			moveSpeed = 47
 			idle = true
-		if is_on_floor() and Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim:
+		if Input.is_action_pressed("attup") and Input.is_action_just_pressed("attack") and cooldown:
+			print("cooldown dentro del if:", cooldown)
+			$Area2D/CollisionShape2D2.disabled = false
+			$Area2D2/CollisionShape2D.position.y = -1025
+			cooldown = false
+			sprite.play("attackup")
+			attack = false
+			timercooldown.start()
+			attack_sound.play()
+			print("att up")
+		if Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim:
 			$Area2D/CollisionShape2D.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
@@ -209,7 +222,7 @@ func playerMovement(delta):
 			timercooldown.start()
 			attack_sound.play()
 			attanim = false
-		if is_on_floor() and Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim == false:
+		if Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim == false:
 			$Area2D/CollisionShape2D.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
@@ -385,10 +398,11 @@ func _on_animation_finished():
 		moveSpeed = 47
 		idle = true
 		
-	if sprite.animation == "attack" or sprite.animation == "attack 1":
+	if sprite.animation == "attack" or sprite.animation == "attack 1" or sprite.animation == "attackup":
 		$Area2D/CollisionShape2D.disabled = true
 		attack = true
 		$Area2D2/CollisionShape2D.position.y = 2
+		sprite.play("jump")
 		
 func deadtpF():
 	self.position = startpos.position
