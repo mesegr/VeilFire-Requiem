@@ -203,12 +203,21 @@ func playerMovement(delta):
 			$Area2D2/CollisionShape2D.scale.y = 1
 			moveSpeed = 47
 			idle = true
-		if Input.is_action_pressed("attup") and Input.is_action_just_pressed("attack") and cooldown:
-			print("cooldown dentro del if:", cooldown)
+		if Input.is_action_pressed("attup") and Input.is_action_just_pressed("attack") and cooldown and attack:
 			$Area2D/CollisionShape2D2.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
 			sprite.play("attackup")
+			attack = false
+			timercooldown.start()
+			attack_sound.play()
+			print("att up")
+		if Input.is_action_pressed("attdown") and Input.is_action_just_pressed("attack") and cooldown and attack:
+
+			$Area2D/CollisionShape2D3.disabled = false
+			$Area2D2/CollisionShape2D.position.y = -1025
+			cooldown = false
+			sprite.play("attackdown")
 			attack = false
 			timercooldown.start()
 			attack_sound.play()
@@ -398,8 +407,10 @@ func _on_animation_finished():
 		moveSpeed = 47
 		idle = true
 		
-	if sprite.animation == "attack" or sprite.animation == "attack 1" or sprite.animation == "attackup":
+	if sprite.animation == "attack" or sprite.animation == "attack 1" or sprite.animation == "attackup" or sprite.animation == "attackdown":
 		$Area2D/CollisionShape2D.disabled = true
+		$Area2D/CollisionShape2D2.disabled = true
+		$Area2D/CollisionShape2D3.disabled = true
 		attack = true
 		$Area2D2/CollisionShape2D.position.y = 2
 		sprite.play("jump")
