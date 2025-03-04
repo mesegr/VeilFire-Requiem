@@ -213,7 +213,6 @@ func playerMovement(delta):
 			attack_sound.play()
 			print("att up")
 		if Input.is_action_pressed("attdown") and Input.is_action_just_pressed("attack") and cooldown and attack:
-
 			$Area2D/CollisionShape2D3.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
@@ -222,6 +221,9 @@ func playerMovement(delta):
 			timercooldown.start()
 			attack_sound.play()
 			print("att up")
+			if !is_on_floor():
+				motion.y = -120
+				
 		if Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim:
 			$Area2D/CollisionShape2D.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
