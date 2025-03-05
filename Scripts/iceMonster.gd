@@ -1,11 +1,12 @@
 extends KinematicBody2D
 onready var player = get_node("../Player")
-var lives = 4
+var lives = 5
 var gravity = 10
 var speed = 30
 var velocity = Vector2(0,0)
 var left = true
 var free = false
+var dead = false
 onready var timerDead = $Timer
 var OriginalPositionY
 
@@ -21,6 +22,7 @@ func _ready():
 	
 	
 func _process(delta):
+	chase()
 	move_character()
 	turn()
 	if free:
@@ -56,6 +58,7 @@ func dead():
 		timerDead.start()
 		$AnimatedSprite.play("dead")
 		$Area2D.position.y = 5000
+		dead = true
 		speed = 0
 		$deadsound.play()
 	
@@ -63,7 +66,29 @@ func respawn():
 	self.position.y = OriginalPositionY
 	$AnimatedSprite.play("default")
 	speed = 30
-	lives = 4
+	dead = false
+	lives = 5
+	
+func chase():
+	if $right.is_colliding():
+		var obj = $right.get_collider()
+		if obj.is_in_group("Player"):
+			speed = 45
+			left = !left
+			scale.x = -scale.x
+	else:
+		speed = 30
+			
+	if $left.is_colliding():
+		var obj = $left.get_collider()
+		if obj.is_in_group("Player"):
+			speed = 45
+	else:
+		speed = 30
+		
+	if dead:
+		$AnimatedSprite.play("dead")
+		speed = 0
 
 func _on_Area2D2_body_entered(body):
 	if body.is_in_group("hit"):

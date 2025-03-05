@@ -9284,6 +9284,310 @@ position = Vector2( 9895, -1643 )
 scale = Vector2( 2.84722, 2.85714 )
 texture = ExtResource( 41 )
 
+[node name="lavaCascade" parent="." instance=ExtResource( 44 )]
+position = Vector2( 9501, -1665 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="lavaCascade" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade2" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 0, 230 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade2" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade3" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 0, -230 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade3" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade16" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 2480, -580 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade16" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade17" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 2480, -350 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade17" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade18" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 2480, -810 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade18" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade19" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 2480, -120 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade19" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade20" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 7240, -320 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade20" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade21" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 7240, -90 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade21" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade22" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 7240, -550 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade22" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade23" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 7240, 140 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade23" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade13" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 3915, -535 )
+scale = Vector2( 1.55, 1.65 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade13" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade14" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 3915, -150 )
+scale = Vector2( 1.55, 1.65 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade14" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade15" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 3915, -920 )
+scale = Vector2( 1.55, 1.65 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade15" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade4" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 185, 115 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade4" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade5" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 185, 290 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade5" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade6" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 185, -60 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade6" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade37" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18085, 80 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade37" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade38" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18085, 310 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade38" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade39" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18085, -150 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade39" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade43" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18085, -380 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade43" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade40" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18270, 195 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade40" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade41" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18270, 370 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade41" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade42" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18270, 20 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade42" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade44" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18270, -155 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade44" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade45" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 18270, -330 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade45" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade2" parent="lavaCascade/lavaCascade45" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -233.334 )
+
+[node name="lavaCascade7" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 185, -235 )
+scale = Vector2( 0.75, 0.75 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade7" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade8" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 950, -35 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade8" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade9" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 950, 100 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade9" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade12" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 950, 240 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade12" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade10" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 950, -175 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade10" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade11" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 950, -310 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade11" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade24" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 11145, 295 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade24" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade25" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 11145, 430 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade25" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade26" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 11145, 570 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade26" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade27" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 11145, 155 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade27" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade28" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 11145, 20 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade28" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade29" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 11145, -120 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade29" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade30" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 14205, 140 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade30" instance=ExtResource( 44 )]
+position = Vector2( 0, -115 )
+
+[node name="lavaCascade31" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 14205, 275 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade31" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade32" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 14205, 415 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade32" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade33" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 14205, 0 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade33" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade34" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 14205, -135 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade34" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade35" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 14205, -275 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade35" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
+[node name="lavaCascade36" parent="lavaCascade" instance=ExtResource( 44 )]
+position = Vector2( 14205, -415 )
+scale = Vector2( 0.55, 0.6 )
+
+[node name="lavaCascade" parent="lavaCascade/lavaCascade36" instance=ExtResource( 44 )]
+position = Vector2( -0.00390625, -115 )
+
 [node name="altar9" parent="." instance=ExtResource( 17 )]
 position = Vector2( -2116, -259 )
 scale = Vector2( 0.2, 0.21 )
@@ -9325,55 +9629,56 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 10
+frame = 17
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 10
+frame = 17
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 12
+frame = 1
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
+frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 13
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 16
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 1
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 8
+frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 6
+frame = 13
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9482,7 +9787,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 15
+frame = 4
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9495,7 +9800,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 15
+frame = 4
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9508,7 +9813,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 15
+frame = 4
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11336,309 +11641,6 @@ scale = Vector2( 4, 2 )
 [node name="lava16" parent="lava" instance=ExtResource( 40 )]
 position = Vector2( 49555, -15450 )
 
-[node name="lavaCascade" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 38330, -16195 )
-
-[node name="lavaCascade" parent="lava/lavaCascade" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade2" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 38330, -15965 )
-
-[node name="lavaCascade" parent="lava/lavaCascade2" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade3" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 38330, -16425 )
-
-[node name="lavaCascade" parent="lava/lavaCascade3" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade16" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 40810, -16775 )
-
-[node name="lavaCascade" parent="lava/lavaCascade16" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade17" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 40810, -16545 )
-
-[node name="lavaCascade" parent="lava/lavaCascade17" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade18" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 40810, -17005 )
-
-[node name="lavaCascade" parent="lava/lavaCascade18" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade19" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 40810, -16315 )
-
-[node name="lavaCascade" parent="lava/lavaCascade19" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade20" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 45570, -16515 )
-
-[node name="lavaCascade" parent="lava/lavaCascade20" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade21" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 45570, -16285 )
-
-[node name="lavaCascade" parent="lava/lavaCascade21" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade22" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 45570, -16745 )
-
-[node name="lavaCascade" parent="lava/lavaCascade22" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade23" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 45570, -16055 )
-
-[node name="lavaCascade" parent="lava/lavaCascade23" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade13" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 42245, -16730 )
-scale = Vector2( 1.55, 1.65 )
-
-[node name="lavaCascade" parent="lava/lavaCascade13" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade14" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 42245, -16345 )
-scale = Vector2( 1.55, 1.65 )
-
-[node name="lavaCascade" parent="lava/lavaCascade14" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade15" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 42245, -17115 )
-scale = Vector2( 1.55, 1.65 )
-
-[node name="lavaCascade" parent="lava/lavaCascade15" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade4" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 38515, -16080 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade4" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade5" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 38515, -15905 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade5" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade6" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 38515, -16255 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade6" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade37" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56415, -16115 )
-
-[node name="lavaCascade" parent="lava/lavaCascade37" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade38" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56415, -15885 )
-
-[node name="lavaCascade" parent="lava/lavaCascade38" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade39" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56415, -16345 )
-
-[node name="lavaCascade" parent="lava/lavaCascade39" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade43" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56415, -16575 )
-
-[node name="lavaCascade" parent="lava/lavaCascade43" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade40" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56600, -16000 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade40" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade41" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56600, -15825 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade41" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade42" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56600, -16175 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade42" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade44" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56600, -16350 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade44" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade45" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 56600, -16525 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade45" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade2" parent="lava/lavaCascade45" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -233.334 )
-
-[node name="lavaCascade7" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 38515, -16430 )
-scale = Vector2( 0.75, 0.75 )
-
-[node name="lavaCascade" parent="lava/lavaCascade7" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade8" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 39280, -16230 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade8" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade9" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 39280, -16095 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade9" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade12" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 39280, -15955 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade12" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade10" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 39280, -16370 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade10" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade11" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 39280, -16505 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade11" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade24" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 49475, -15900 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade24" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade25" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 49475, -15765 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade25" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade26" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 49475, -15625 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade26" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade27" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 49475, -16040 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade27" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade28" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 49475, -16175 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade28" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade29" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 49475, -16315 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade29" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade30" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 52535, -16055 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade30" instance=ExtResource( 44 )]
-position = Vector2( 0, -115 )
-
-[node name="lavaCascade31" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 52535, -15920 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade31" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade32" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 52535, -15780 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade32" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade33" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 52535, -16195 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade33" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade34" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 52535, -16330 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade34" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade35" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 52535, -16470 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade35" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
-[node name="lavaCascade36" parent="lava" instance=ExtResource( 44 )]
-position = Vector2( 52535, -16610 )
-scale = Vector2( 0.55, 0.6 )
-
-[node name="lavaCascade" parent="lava/lavaCascade36" instance=ExtResource( 44 )]
-position = Vector2( -0.00390625, -115 )
-
 [node name="Area2D3" type="Area2D" parent="."]
 light_mask = 5
 position = Vector2( -0.00012207, 0 )
@@ -11765,7 +11767,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( 4432, -1041 )
+position = Vector2( 8382, -1581 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -11891,7 +11893,6 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
-frame = 1
 playing = true
 
 [node name="Eleanor1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelEleanor"]
@@ -11953,7 +11954,6 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
-frame = 1
 playing = true
 
 [node name="Oda1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
@@ -12012,6 +12012,7 @@ texture = ExtResource( 140 )
 position = Vector2( 100, 105.172 )
 scale = Vector2( 0.2, 0.16 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="SnowTrader1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]

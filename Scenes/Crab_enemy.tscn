@@ -170,5 +170,21 @@ position = Vector2( -5, 0 )
 frames = SubResource( 32 )
 animation = "inter"
 
+[node name="right" type="RayCast2D" parent="."]
+position = Vector2( 0, -7 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+cast_to = Vector2( -0.000652313, 180 )
+collision_mask = 7
+
+[node name="left" type="RayCast2D" parent="."]
+position = Vector2( -1, -7 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+cast_to = Vector2( 0.000652313, 180 )
+collision_mask = 7
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

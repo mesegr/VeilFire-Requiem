@@ -123,7 +123,6 @@ script = ExtResource( 1 )
 position = Vector2( -1, -12 )
 scale = Vector2( 0.115, 0.12 )
 frames = SubResource( 7 )
-frame = 10
 playing = true
 flip_h = true
 
@@ -178,6 +177,22 @@ shape = SubResource( 24 )
 position = Vector2( -11, -7 )
 frames = SubResource( 32 )
 animation = "inter"
+
+[node name="right" type="RayCast2D" parent="."]
+position = Vector2( 0, -4 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+cast_to = Vector2( -0.000518799, 143.333 )
+collision_mask = 7
+
+[node name="left" type="RayCast2D" parent="."]
+position = Vector2( -1, -4 )
+rotation = 1.5708
+scale = Vector2( 0.3, 0.3 )
+enabled = true
+cast_to = Vector2( 0.000542641, 150 )
+collision_mask = 7
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

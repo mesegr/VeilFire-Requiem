@@ -222,8 +222,7 @@ func playerMovement(delta):
 			attack_sound.play()
 			print("att up")
 			if !is_on_floor() and $RayCast2D.is_colliding() or !is_on_floor() and $RayCast2D2.is_colliding() or !is_on_floor() and $RayCast2D3.is_colliding():
-				motion.y = -200
-				
+				motion.y = -220
 		if Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim:
 			$Area2D/CollisionShape2D.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025

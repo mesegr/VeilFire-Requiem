@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 onready var player = get_node("../Player")
-var lives = 25
+var lives = 30
 var respawnP = false
 var gravity = 0
 var speed = 0
@@ -150,7 +150,7 @@ func dead():
 		cooldown.stop()  # Detén el temporizador de cooldown 
 	
 func respawn():
-	lives = 25
+	lives = 30
 	self.position.y = OriginalPositionY
 	self.position.x = OriginalPositionX
 	speed = 0

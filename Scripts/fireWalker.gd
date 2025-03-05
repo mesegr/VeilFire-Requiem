@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 onready var player = get_node("../Player")
-var lives = 6
+var lives = 7
 var Playerlives = 4
 var gravity = 10
 var speed = 35
@@ -82,7 +82,7 @@ func respawn():
 	$AnimatedSprite.play("default")
 	speed = 50
 	dead = false
-	lives = 6
+	lives = 7
 	
 func chase():
 	if $right.is_colliding():
