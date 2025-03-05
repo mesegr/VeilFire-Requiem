@@ -6,9 +6,9 @@ var current_text = ""
 var current_index = 0
 var is_typing = false
 var dialog_texts = [
-	"Welcome to Midland, traveler. My name is Eleanor. We're facing the fall of our kingdom because of the eruption of the Tenebris volcano, and you're our only hope. You might wonder how you got here; well, you've simply been chosen for this, kind of like the chosen warrior. But there weren't many other options, so don't get too excited.",
-	"My mission here is to help you start your adventure, so here we go! To move right, press       ,to move left, press      ,if you want to jump, use            or          .Be very careful, traveler; these lands aren’t friendly, and I guess you don’t want to die, right?",
-	"Alright, you've learned the basics. A little further ahead, you'll find some kind of fountain; they say it rejuvenates anyone who touches its waters, or something like that—just village myths, you know. Try interacting with it using      and see what happens."
+	"Hi, traveler. My name is Eleanor, I am priestess of Albion. We're facing the fall of our kingdom because of the eruption of the Tenebris volcano, and you're our only hope. You might wonder how you got here; well, you've simply been chosen for this, kind of like the chosen warrior. But there weren't many other options, so don't get too excited.",
+	"My mission as a priestess of Albion is to guide you on your adventure as the savior of these lands. A little further ahead, you will come across an old altar dedicated to the spirits of light. They say that whoever manages to gather their orbs will be the chosen one to save us from the volcano.",
+	"I don’t have much more to tell you, except to try to survive. The rest of the chosen warriors haven’t returned from their mission. If you keep moving forward, you’ll come across the leader of the assault squad; he’ll teach you more useful things.\n\nGOOD LUCK ON YOUR ADVENTURE"
 ]
 
 onready var next = $"../ControlCanvas/CanvasLayer/nextLabel"

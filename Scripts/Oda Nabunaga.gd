@@ -7,8 +7,8 @@ var current_index = 0
 var is_typing = false
 var dialog_texts = [
 	"Well, what do we have here? Another puny human trying to save the world? Hahaha. Guess your fate will be the same as the rest: a pathetic coward clinging to life in battle, only to end up crushed like a tiny piece of shit, just like all the other saviors before you.",
-	"If you want to last more than 5 minutes alive, listen up. When attacking an enemy use     , remember that your sword is too heavy for a weakling like you, so you won't be able to attack in the air. Be very careful, because the monsters won't wait for you to be ready; they'll attack without mercy.",
-	"Alright, with these tips, you should last at least 15 minutes. Finally, remember to face your mission with courage. Clinging to life will only push you closer to death, just like fear. If you’re not sure what you’re doing, turn around and go cry in bed like a little baby. But if you're ready to die for these lands, go ahead, start the adventure."
+	"If you want to survive more than 5 minutes, listen carefully. You will face death head-on, relying on your sword as if it were an extension of yourself. But do not get distracted, because the enemy will not wait for you to be ready; the enemy attacks mercilessly.",
+	"Finally, remember to face your mission with courage. Clinging to life will only push you closer to death, just like fear. If you’re not sure what you’re doing, turn around and go cry in bed like a little baby. But if you're ready to die for these lands, go ahead, start the adventure."
 ]
 
 onready var next = $"../ControlCanvas/CanvasLayer/nextLabel"
