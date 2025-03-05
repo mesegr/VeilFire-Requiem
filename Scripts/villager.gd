@@ -6,8 +6,8 @@ var current_text = ""
 var current_index = 0
 var is_typing = false
 var dialog_texts = [
-	"default text",
-	"default text"
+	"Again? The chosen one to save us? The volcano is nothing but a farce; these mountains were sulfur and gold mines. Do you know what comes out of the crater? Gases from its rotten tunnels. But the people love the story of a hero coming to save us. The first so-called chosen ones were just poor devils they made disappear to keep the tale alive. What do you think? That you’re different?",
+	"Well, go ahead and keep believing the tales from the villagers of Albion and what the church tries to instill in all the inhabitants of the lands under its rule. After all, you’ll just be another one they make disappear to make it seem like you failed on your quest... What are you still staring at? The priestess and the leader of the army’s assault squad are waiting for you to begin your so-called adventure."
 ]
 
 onready var next = $"../ControlCanvas/CanvasLayer/nextLabel"
@@ -27,7 +27,7 @@ func _ready():
 # Crear el Timer dinámicamente
 func create_timer():
 	timer = Timer.new()  # Creamos una nueva instancia de Timer
-	timer.wait_time = 0.09  # Velocidad del texto (ajusta según necesites)
+	timer.wait_time = 0.1  # Velocidad del texto (ajusta según necesites)
 	timer.connect("timeout", self, "_on_Timer_timeout")  # Conectamos la señal timeout
 	add_child(timer)  # Añadimos el Timer a la escena
 
@@ -127,14 +127,14 @@ func _on_Timer_timeout():
 
 		# Reproducir el sonido con un pitch predefinido aleatorio
 		var talking_sound = $"../ControlCanvas/CanvasLayer/Talking"
-		var pitch_values = [0.45, 0.55, 0.7]  # Valores predefinidos
+		var pitch_values = [0.7, 0.8, 0.9]  # Valores predefinidos
 		talking_sound.pitch_scale = pitch_values[randi() % pitch_values.size()]  # Selecciona un valor aleatorio
 		talking_sound.play()
 
 		# Si se encontró un signo de puntuación, hacemos una pausa
 		if pause_index != -1:
 			timer.stop()  # Detener el Timer temporalmente
-			yield(get_tree().create_timer(0.26), "timeout")  # Pausa de 0.5 segundos
+			yield(get_tree().create_timer(0.25), "timeout")  # Pausa de 0.5 segundos
 			timer.start()  # Reanudar el Timer
 	else:
 		is_typing = false

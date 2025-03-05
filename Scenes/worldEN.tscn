@@ -9679,56 +9679,55 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 1
+frame = 12
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 1
+frame = 12
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 3
+frame = 14
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 9
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 4
+frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 7
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 10
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 17
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 15
+frame = 8
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9837,7 +9836,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 6
+frame = 17
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9850,7 +9849,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 6
+frame = 17
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9863,7 +9862,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 6
+frame = 17
 playing = true
 
 [node name="Villager" parent="." instance=ExtResource( 58 )]
@@ -9876,7 +9875,7 @@ visible = false
 position = Vector2( 0.00683594, -27.2727 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 207 )
-frame = 15
+frame = 8
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11964,6 +11963,7 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Eleanor1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelEleanor"]
@@ -12025,6 +12025,7 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Oda1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
@@ -12074,7 +12075,6 @@ custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 text = "Alright, with these tips, you should last at least 15 minutes. Finally, remember to face your mission with courage. Clinging to life will only push you closer to death, just like fear. If you’re not sure what you’re doing, turn around and go cry in bed like a little baby. But if you're ready to die for these lands, go ahead, start the adventure."
 
 [node name="PanelVillager" type="Sprite" parent="ControlCanvas/CanvasLayer"]
-visible = false
 position = Vector2( 894, 885 )
 scale = Vector2( 3.5, 3.5 )
 texture = ExtResource( 130 )
@@ -12083,14 +12083,15 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Villager1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelVillager"]
 visible = false
-margin_left = -214.286
-margin_top = -29.7144
-margin_right = 3077.71
-margin_bottom = 486.286
+margin_left = -214.0
+margin_top = -30.0
+margin_right = 3149.0
+margin_bottom = 486.0
 rect_scale = Vector2( 0.14, 0.14 )
 size_flags_stretch_ratio = 0.0
 theme = ExtResource( 93 )
@@ -12099,23 +12100,22 @@ custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 meta_underlined = false
-text = "Well, what do we have here? Another puny human trying to save the world? Hahaha. Guess your fate will be the same as the rest: a pathetic coward clinging to life in battle, only to end up crushed like a tiny piece of shit, just like all the other \"saviors\" before you."
+text = "Again? The chosen one to save us? The volcano is nothing but a farce; these mountains were sulfur and gold mines. Do you know what comes out of the crater? Gases from its rotten tunnels. But the people love the story of a hero coming to save us. The first so-called chosen ones were just poor devils they made disappear to keep the tale alive. What do you think? That you’re different?"
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 
 [node name="Villager2" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelVillager"]
-visible = false
 margin_left = -212.0
-margin_top = -29.7144
-margin_right = 3100.0
-margin_bottom = 405.286
+margin_top = -30.0
+margin_right = 3172.0
+margin_bottom = 488.0
 rect_scale = Vector2( 0.14, 0.14 )
 theme = ExtResource( 93 )
 custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
-text = "If you want to last more than 5 minutes alive, listen up. When attacking an enemy use     , remember that your sword is too heavy for a weakling like you, so you won't be able to attack in the air. Be very careful, because the monsters won't wait for you to be ready; they'll attack without mercy."
+text = "Well, go ahead and keep believing the tales from the villagers of Albion and what the church tries to instill in all the inhabitants of the lands under its rule. After all, you’ll just be another one they make disappear to make it seem like you failed on your quest... What are you still staring at? The priestess and the leader of the army’s assault squad are waiting for you to begin your so-called adventure."
 
 [node name="PanelSnowTrader" type="Sprite" parent="ControlCanvas/CanvasLayer"]
 visible = false
@@ -12127,7 +12127,6 @@ texture = ExtResource( 140 )
 position = Vector2( 100, 105.172 )
 scale = Vector2( 0.2, 0.16 )
 frames = SubResource( 317 )
-frame = 1
 playing = true
 
 [node name="SnowTrader1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
