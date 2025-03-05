@@ -5975,6 +5975,31 @@ position = Vector2( -5608.64, -251 )
 scale = Vector2( 7.10437, 4.76953 )
 texture = ExtResource( 34 )
 
+[node name="Clouds37" type="Sprite" parent="."]
+modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
+position = Vector2( -4208.9, -255 )
+scale = Vector2( 3.83109, 4.76953 )
+texture = ExtResource( 34 )
+
+[node name="Clouds38" type="Sprite" parent="."]
+modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
+position = Vector2( -3228.14, -257 )
+scale = Vector2( 3.83109, 4.76953 )
+texture = ExtResource( 34 )
+flip_h = true
+
+[node name="Clouds39" type="Sprite" parent="."]
+modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
+position = Vector2( -2247.38, -255.75 )
+scale = Vector2( 3.83109, 4.76953 )
+texture = ExtResource( 34 )
+
+[node name="Clouds40" type="Sprite" parent="."]
+modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
+position = Vector2( -1266.62, -259.75 )
+scale = Vector2( 3.83109, 4.76953 )
+texture = ExtResource( 34 )
+
 [node name="DesertHouse1" type="Sprite" parent="."]
 position = Vector2( -5650, -234 )
 scale = Vector2( 2.5, 2.3 )
@@ -5996,8 +6021,8 @@ scale = Vector2( 2.5, 2.4 )
 texture = ExtResource( 54 )
 
 [node name="DesertA3" type="Sprite" parent="."]
-modulate = Color( 0.913725, 0.913725, 0.913725, 0.662745 )
-position = Vector2( -3601.12, -1301.47 )
+modulate = Color( 0.913725, 0.913725, 0.913725, 0.329412 )
+position = Vector2( -3759, -1136 )
 rotation = 3.14159
 scale = Vector2( 24.0955, 21.3018 )
 texture = ExtResource( 12 )
@@ -6026,31 +6051,6 @@ texture = ExtResource( 36 )
 position = Vector2( 104.534, 4.75146 )
 scale = Vector2( 0.0389545, 0.0106963 )
 texture = ExtResource( 36 )
-
-[node name="Clouds37" type="Sprite" parent="."]
-modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
-position = Vector2( -4208.9, -255 )
-scale = Vector2( 3.83109, 4.76953 )
-texture = ExtResource( 34 )
-
-[node name="Clouds38" type="Sprite" parent="."]
-modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
-position = Vector2( -3228.14, -257 )
-scale = Vector2( 3.83109, 4.76953 )
-texture = ExtResource( 34 )
-flip_h = true
-
-[node name="Clouds39" type="Sprite" parent="."]
-modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
-position = Vector2( -2247.38, -255.75 )
-scale = Vector2( 3.83109, 4.76953 )
-texture = ExtResource( 34 )
-
-[node name="Clouds40" type="Sprite" parent="."]
-modulate = Color( 0.882353, 0.690196, 0.486275, 0.537255 )
-position = Vector2( -1266.62, -259.75 )
-scale = Vector2( 3.83109, 4.76953 )
-texture = ExtResource( 34 )
 
 [node name="MountainsFather" type="Sprite" parent="."]
 position = Vector2( 754, 1170 )
@@ -9681,56 +9681,55 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 11
+frame = 12
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 11
+frame = 12
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 13
+frame = 14
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 14
+frame = 15
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 17
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 9
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -9839,7 +9838,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 16
+frame = 17
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -9852,7 +9851,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 16
+frame = 17
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -9865,7 +9864,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 16
+frame = 17
 playing = true
 
 [node name="Villager" parent="." instance=ExtResource( 58 )]
@@ -9878,7 +9877,7 @@ visible = false
 position = Vector2( 0.00683594, -27.2727 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 207 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -9914,6 +9913,16 @@ texture = ExtResource( 27 )
 [node name="Sign2" type="Sprite" parent="Sign"]
 position = Vector2( 12410.8, 1291.89 )
 texture = ExtResource( 46 )
+
+[node name="Wasd2" type="Sprite" parent="."]
+position = Vector2( -5799, -207.65 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 60 )
+
+[node name="Wasd1" type="Sprite" parent="Wasd2"]
+position = Vector2( 10130, 0 )
+scale = Vector2( 1.1, 1.1 )
+texture = ExtResource( 61 )
 
 [node name="Player" parent="." instance=ExtResource( 45 )]
 position = Vector2( -5924, -223 )
@@ -10814,7 +10823,7 @@ position = Vector2( 1684, -1335 )
 position = Vector2( 831, -1193 )
 
 [node name="Coin15" parent="CoinFather" instance=ExtResource( 16 )]
-position = Vector2( -7488, -1546 )
+position = Vector2( -7472, -1501 )
 
 [node name="Coin52" parent="CoinFather" instance=ExtResource( 16 )]
 position = Vector2( -6436, -1497 )
@@ -11901,18 +11910,9 @@ collision_mask = 7
 position = Vector2( 13491, -1632 )
 shape = SubResource( 220 )
 
-[node name="Wasd2" type="Sprite" parent="."]
-position = Vector2( -5799, -207.65 )
-scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 60 )
-
-[node name="Wasd1" type="Sprite" parent="Wasd2"]
-position = Vector2( 10150, 0 )
-texture = ExtResource( 61 )
-
 [node name="DesertA5" type="Sprite" parent="."]
-modulate = Color( 0.913725, 0.913725, 0.913725, 0.607843 )
-position = Vector2( -3601.12, -1227.47 )
+modulate = Color( 0.913725, 0.913725, 0.913725, 0.486275 )
+position = Vector2( -3653, -1040 )
 rotation = 3.14159
 scale = Vector2( 24.0955, 21.3018 )
 texture = ExtResource( 12 )
