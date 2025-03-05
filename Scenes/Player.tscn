@@ -476,21 +476,27 @@ position = Vector2( -22, 32 )
 scale = Vector2( 2, 1 )
 enabled = true
 cast_to = Vector2( -3, 38 )
-collision_mask = 15
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="RayCast2D3" type="RayCast2D" parent="."]
 position = Vector2( 16, 32 )
 scale = Vector2( 2, 1 )
 enabled = true
 cast_to = Vector2( 3, 38 )
-collision_mask = 15
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false
 
 [node name="RayCast2D2" type="RayCast2D" parent="."]
 position = Vector2( -2, 32 )
 scale = Vector2( 2, 1 )
 enabled = true
 cast_to = Vector2( 0, 38 )
-collision_mask = 15
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false
 
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
 [connection signal="body_entered" from="rest" to="." method="_on_rest_body_entered"]
