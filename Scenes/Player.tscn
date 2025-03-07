@@ -304,7 +304,7 @@ extents = Vector2( 16, 33 )
 extents = Vector2( 32.625, 32.5 )
 
 [sub_resource type="RectangleShape2D" id=59]
-extents = Vector2( 26.5, 19.125 )
+extents = Vector2( 26.5, 19.5625 )
 
 [sub_resource type="RectangleShape2D" id=36]
 extents = Vector2( 18, 26 )
@@ -449,7 +449,7 @@ shape = SubResource( 59 )
 disabled = true
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -3, 51 )
+position = Vector2( -3, 51.4375 )
 shape = SubResource( 59 )
 disabled = true
 
@@ -472,28 +472,28 @@ scale = Vector2( 1.15, 1.15 )
 frames = SubResource( 52 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( -22, 32 )
+position = Vector2( -22, 33 )
 scale = Vector2( 2, 1 )
 enabled = true
-cast_to = Vector2( -3, 38 )
+cast_to = Vector2( -3, 35 )
 collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
 
 [node name="RayCast2D3" type="RayCast2D" parent="."]
-position = Vector2( 16, 32 )
+position = Vector2( 16, 33 )
 scale = Vector2( 2, 1 )
 enabled = true
-cast_to = Vector2( 3, 38 )
+cast_to = Vector2( 3, 35 )
 collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
 
 [node name="RayCast2D2" type="RayCast2D" parent="."]
-position = Vector2( -2, 32 )
+position = Vector2( -3, 34 )
 scale = Vector2( 2, 1 )
 enabled = true
-cast_to = Vector2( 0, 38 )
+cast_to = Vector2( 0, 34 )
 collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
