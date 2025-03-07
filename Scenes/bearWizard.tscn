@@ -67,29 +67,34 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 5.35714, 3.21429 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
 atlas = ExtResource( 38 )
-region = Rect2( 0, 450, 720, 322 )
+region = Rect2( 0, 0, 720, 554 )
 
-[sub_resource type="AtlasTexture" id=15]
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
 atlas = ExtResource( 38 )
-region = Rect2( 720, 450, 720, 322 )
+region = Rect2( 720, 0, 720, 554 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
 atlas = ExtResource( 38 )
-region = Rect2( 1440, 450, 720, 322 )
+region = Rect2( 2880, 0, 720, 554 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
 atlas = ExtResource( 38 )
-region = Rect2( 2160, 450, 720, 322 )
+region = Rect2( 1440, 0, 720, 554 )
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
 atlas = ExtResource( 38 )
-region = Rect2( 2880, 450, 720, 322 )
+region = Rect2( 2160, 0, 720, 554 )
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ) ],
 "loop": true,
 "name": "dead",
 "speed": 15.0
@@ -179,10 +184,9 @@ max_distance = 100.0
 attenuation = 0.63728
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -1, -14 )
+position = Vector2( -2, -14 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 4 )
-frame = 31
 flip_h = true
 
 [node name="Area2D2" type="Area2D" parent="."]
