@@ -73,7 +73,7 @@ func chase():
 	if $right.is_colliding():
 		var obj = $right.get_collider()
 		if obj.is_in_group("Player"):
-			speed = 55
+			speed = 60
 			left = !left
 			scale.x = -scale.x
 	else:
@@ -82,7 +82,7 @@ func chase():
 	if $left.is_colliding():
 		var obj = $left.get_collider()
 		if obj.is_in_group("Player"):
-			speed = 55
+			speed = 60
 	else:
 		speed = 40
 		

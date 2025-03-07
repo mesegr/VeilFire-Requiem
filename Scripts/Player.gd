@@ -297,7 +297,7 @@ func playerMovement(delta):
 			if friction == true:
 				# Fricción en el aire: reducción gradual de la velocidad horizontal
 				motion.x = lerp(motion.x, 0, 0.030)  # Fricción baja en el aire para conservar inercia
-		if can_doublejump and !is_on_floor() and Input.is_action_just_pressed("ui_up") and doubleJumpItem1 and doubleJumpItem2 and !is_dashing:
+		if can_doublejump and !is_on_floor() and Input.is_action_just_pressed("ui_up") and doubleJumpItem1 and doubleJumpItem2 and !is_dashing and attack:
 			jump2_sound.play()
 			moveSpeed = 62
 			maxSpeed = 124

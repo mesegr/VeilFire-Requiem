@@ -460,8 +460,8 @@ shader_param/brightness = 1.0
 shader_param/discolor = false
 shader_param/warp_amount = 0.3
 shader_param/clip_warp = false
-shader_param/vignette_intensity = 0.7
-shader_param/vignette_opacity = 1.0
+shader_param/vignette_intensity = 0.6
+shader_param/vignette_opacity = 0.878
 
 [node name="Menu" type="Control"]
 anchor_left = 0.5

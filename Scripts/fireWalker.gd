@@ -63,18 +63,14 @@ func dead():
 		dead = true
 		$Area2D.position.y = 5000
 		$deadsound.play()
-		
-		# Crear un nodo en la posición de muerte
 		var loot_scene = preload("res://Scenes/Coin.tscn")  # Carga la escena del loot
-		var loot_instance = loot_scene.instance()  # Instancia el nodo
-		loot_instance.position = self.position + Vector2(0,-50)  # Inicia un poco más arriba
-		get_parent().add_child(loot_instance)  # Añadirlo a la escena
 
-		# Añadir un Tween manualmente
-		var tween = Tween.new()
-		get_parent().add_child(tween)  # Añadir el Tween a la escena
-		tween.interpolate_property(loot_instance, "position", loot_instance.position, self.position, 1, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
-		tween.start()
+		for i in range(4):  # Repite el bloque 4 veces
+			var loot_instance = loot_scene.instance()  # Instancia el nodo
+			# Ajusta la posición en función de la iteración (i)
+			loot_instance.position = self.position + Vector2(cos(i * PI / 2) * 40, sin(i * PI / 2) * 40)
+			loot_instance.set_target(get_parent().get_node("Player"))  # Asigna el jugador como objetivo
+			get_parent().add_child(loot_instance) 
 
 	
 func respawn():
@@ -88,7 +84,7 @@ func chase():
 	if $right.is_colliding():
 		var obj = $right.get_collider()
 		if obj.is_in_group("Player"):
-			speed = 75
+			speed = 78
 			left = !left
 			scale.x = -scale.x
 			rage = true
@@ -99,7 +95,7 @@ func chase():
 	if $left.is_colliding():
 		var obj = $left.get_collider()
 		if obj.is_in_group("Player"):
-			speed = 75
+			speed = 78
 			rage = true
 	else:
 		speed = 35
