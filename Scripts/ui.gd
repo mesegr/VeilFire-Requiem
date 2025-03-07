@@ -1,17 +1,19 @@
 extends CanvasLayer
 
-var coins = 00
+var coins = 0
 
 func _process(delta):
 	UpdateCoins()
 
 func _ready():
-	
-	$CoinsPanel/Coins.text = String(coins)
-	
+	update_coin_display()
+
 func handleCoinCollected():
 	coins += 1
-	$CoinsPanel/Coins.text = String(coins)
-	
+	update_coin_display()
+
 func UpdateCoins():
-	$CoinsPanel/Coins.text = String(coins)
+	update_coin_display()
+
+func update_coin_display():
+	$CoinsPanel/Coins.bbcode_text = "[center]" + String(coins) + "[/center]"

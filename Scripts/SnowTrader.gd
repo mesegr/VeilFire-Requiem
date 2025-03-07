@@ -156,17 +156,17 @@ func _on_Timer_timeout():
 		is_typing = false
 		timer.stop()
 
-func _on_Button_button_down():
-	if ui.coins >= 25 and not $"../ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button".disabled:
-		target_scales["Button"] = Vector2(0.22, 0.20)
-
-func _on_Button2_button_down():
-	if ui.coins >= 15 and not $"../ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2".disabled:
-		target_scales["Button2"] = Vector2(0.4, 0.4)
-
-func _on_Button3_button_down():
-	if ui.coins >= 15 and not $"../ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3".disabled:
-		target_scales["Button3"] = Vector2(0.4, 0.4)
+#func _on_Button_button_down():
+#	if ui.coins >= 25 and not $"../ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button".disabled:
+#		target_scales["Button"] = Vector2(0.22, 0.20)
+#
+#func _on_Button2_button_down():
+#	if ui.coins >= 15 and not $"../ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button2".disabled:
+#		target_scales["Button2"] = Vector2(0.4, 0.4)
+#
+#func _on_Button3_button_down():
+#	if ui.coins >= 15 and not $"../ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button3".disabled:
+#		target_scales["Button3"] = Vector2(0.4, 0.4)
 
 func _on_Button_mouse_entered():
 	$"../ControlCanvas/CanvasLayer/PanelSnowTrader2".visible = true

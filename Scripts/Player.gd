@@ -38,6 +38,7 @@ var doubleJumpItem2 = false
 var is_on_ice = false
 var motion = Vector2()
 var altar_cercano = null
+var finalCollisionPos
 const up = Vector2(0, -1)
 signal playerRest(altar)
 onready var startpos = $"../Startpos"
@@ -77,6 +78,7 @@ var enemiesList = [
 var enemy_nodes = []  
 
 func _ready():
+	finalCollisionPos = $"../Area2D10".position
 	var deadZones = [$"../DeadZones",$"../IceSpikeDown",$"../IceSpikeUp",$"../IceSpikeRight",$"../IceSpikeLeft",$"../FireSpikeRight",$"../FireSpikeLeft",$"../FireSpikeUp"]
 	for deadZone in deadZones:
 		deadZone.connect("body_entered", self, "_on_deadZone_body_entered")
@@ -458,6 +460,7 @@ func dead():
 	$Area2D2.position.y = -5000
 	motion = Vector2.ZERO
 	gravity = 0
+	$"../Area2D10".position = finalCollisionPos
 	frameFreeze(0.2, 2) 
 	$"../ControlCanvas/CanvasLayer/lives".stop()
 	enemies()
@@ -468,6 +471,7 @@ func revive(body):
 		moveSpeed = 0
 		gravity = 5000
 		deadtp.start()
+		$"../Area2D10".position = finalCollisionPos
 		PlayerLives = 5
 		deadeff.play("default")
 		
@@ -545,6 +549,7 @@ func _on_Area2D10_body_entered(body):
 	if body.name == "Player":
 		FinalBoss.play()
 		finalbossMusic = true
+		$"../Area2D10".position.y = -1432
 		
 func frameFreeze(timeScale,duration):
 	Engine.time_scale = timeScale
