@@ -123,6 +123,7 @@ script = ExtResource( 1 )
 position = Vector2( -1, -12 )
 scale = Vector2( 0.115, 0.12 )
 frames = SubResource( 7 )
+frame = 4
 playing = true
 flip_h = true
 

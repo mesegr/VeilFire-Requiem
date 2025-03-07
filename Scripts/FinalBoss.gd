@@ -291,9 +291,24 @@ func chase():
 			$AnimatedSprite.play("Walk")
 
 func _on_Area2D2_body_entered(body):
-	print("Cuerpo detectado:", body.name)
 	if body.is_in_group("hit") and !dead:
-		print("Recibiendo daño")
+		sprite.modulate = Color(5, 5, 5)
+		var timer = Timer.new()
+		timer.wait_time = 0.1
+		timer.one_shot = true
+		add_child(timer)
+		timer.connect("timeout", self, "_on_hit_timeout")
+		timer.start()
+		$AnimatedSprite2.play("default")
+		if attack:
+			print("Recibiendo daño mientras ataca")
+		
+		lives -= 1
+		dead()
+		player.shake_camera()
+		player.frameFreeze(0.04,0.25)
+	if body.is_in_group("hitDown") and !dead:
+		player.motion.y = -280
 		sprite.modulate = Color(5, 5, 5)
 		var timer = Timer.new()
 		timer.wait_time = 0.1

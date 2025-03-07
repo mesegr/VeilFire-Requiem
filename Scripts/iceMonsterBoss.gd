@@ -116,3 +116,17 @@ func _on_Area2D3_body_entered(body):
 		dead()
 		player.shake_camera()
 		player.frameFreeze(0.04,0.25)
+	if body.is_in_group("hitDown"):
+		player.motion.y = -280
+		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
+		var timer = Timer.new()
+		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
+		timer.one_shot = true
+		add_child(timer)
+		timer.connect("timeout", self, "_on_hit_timeout")
+		timer.start()
+		$AnimatedSprite2.play("default")
+		lives -= 1
+		dead()
+		player.shake_camera()
+		player.frameFreeze(0.04,0.25)

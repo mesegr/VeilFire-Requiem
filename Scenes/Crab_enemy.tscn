@@ -163,7 +163,7 @@ frames = SubResource( 32 )
 animation = "inter"
 
 [node name="right" type="RayCast2D" parent="."]
-position = Vector2( 0, -7 )
+position = Vector2( 0, -6 )
 rotation = -1.5708
 scale = Vector2( 0.3, 0.3 )
 enabled = true
@@ -171,7 +171,7 @@ cast_to = Vector2( -0.000797272, 220 )
 collision_mask = 7
 
 [node name="left" type="RayCast2D" parent="."]
-position = Vector2( -1, -7 )
+position = Vector2( -1, -6 )
 rotation = 1.5708
 scale = Vector2( 0.3, 0.3 )
 enabled = true

@@ -25,7 +25,7 @@ var moveSpeed = 47
 var maxSpeed = 98
 var jumpHeight = -272
 var gravity = 15
-var cooldownAttack = 0.2
+var cooldownAttack = 0.45
 var camera_shake_timer = 0
 var shake_intensity = 100
 var shake_duration = 0.2
@@ -213,7 +213,7 @@ func playerMovement(delta):
 			attack_sound.play()
 			print("att up")
 		if Input.is_action_pressed("attdown") and Input.is_action_just_pressed("attack") and cooldown and attack:
-			$Area2D/CollisionShape2D3.disabled = false
+			$Area2D3/CollisionShape2D3.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
 			sprite.play("attackdown")
@@ -221,8 +221,7 @@ func playerMovement(delta):
 			timercooldown.start()
 			attack_sound.play()
 			print("att up")
-			if $RayCast2D.is_colliding() or $RayCast2D2.is_colliding() or $RayCast2D3.is_colliding():
-				motion.y = -280
+
 		if Input.is_action_just_pressed("attack") and idle and attack and cooldown and attanim:
 			$Area2D/CollisionShape2D.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
@@ -416,7 +415,7 @@ func _on_animation_finished():
 	if sprite.animation == "attack" or sprite.animation == "attack 1" or sprite.animation == "attackup" or sprite.animation == "attackdown":
 		$Area2D/CollisionShape2D.disabled = true
 		$Area2D/CollisionShape2D2.disabled = true
-		$Area2D/CollisionShape2D3.disabled = true
+		$Area2D3/CollisionShape2D3.disabled = true
 		attack = true
 		$Area2D2/CollisionShape2D.position.y = 2
 		sprite.play("jump")

@@ -97,7 +97,7 @@ animations = [ {
 "frames": [ ExtResource( 22 ), ExtResource( 9 ), ExtResource( 19 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 8 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 17 ), ExtResource( 22 ), ExtResource( 9 ), ExtResource( 19 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 8 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 23 ), ExtResource( 18 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 34 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 15 ), ExtResource( 21 ), ExtResource( 1 ), ExtResource( 33 ), ExtResource( 24 ), ExtResource( 16 ), ExtResource( 28 ) ],
 "loop": true,
 "name": "default",
-"speed": 20.0
+"speed": 18.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=7]

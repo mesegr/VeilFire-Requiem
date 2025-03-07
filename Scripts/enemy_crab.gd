@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 onready var player = get_node("../Player")
-var lives = 300
+var lives = 200
 var gravity = 10
 var speed = 45
 var velocity = Vector2(0,0)
@@ -53,10 +53,10 @@ func _on_hit_timeout():
 	
 func dead():
 	if lives == 0:
+		$Area2D.position.y = 5000
 		velocity = Vector2.ZERO
 		timerDead.start()
 		$AnimatedSprite.play("dead")
-		$Area2D.position.y = 5000
 		speed = 0
 		$AudioStreamPlayer.play()
 		dead = true
@@ -66,13 +66,13 @@ func respawn():
 	$AnimatedSprite.play("default")
 	speed = 45
 	dead = false
-	lives = 300
+	lives = 200
 	
 func chase():
 	if $right.is_colliding():
 		var obj = $right.get_collider()
 		if obj.is_in_group("Player"):
-			speed = 60
+			speed = 55
 			left = !left
 			scale.x = -scale.x
 	else:
@@ -81,7 +81,7 @@ func chase():
 	if $left.is_colliding():
 		var obj = $left.get_collider()
 		if obj.is_in_group("Player"):
-			speed = 60
+			speed = 55
 
 	else:
 		speed = 40
@@ -92,6 +92,20 @@ func chase():
 
 func _on_Area2D2_body_entered(body):
 	if body.is_in_group("hit"):
+		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
+		var timer = Timer.new()
+		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
+		timer.one_shot = true
+		add_child(timer)
+		timer.connect("timeout", self, "_on_hit_timeout")
+		timer.start()
+		$AnimatedSprite2.play("default")
+		lives -= 1
+		dead()
+		player.shake_camera()
+		player.frameFreeze(0.04,0.25)
+	if body.is_in_group("hitDown"):
+		player.motion.y = -280
 		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
 		var timer = Timer.new()
 		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)

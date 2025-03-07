@@ -108,3 +108,11 @@ func _on_Area2D3_body_entered(body):
 		$AnimatedSprite2.play("default")
 		player.shake_camera()
 		player.frameFreeze(0.04,0.25)
+	if body.is_in_group("hitDown"):
+		player.motion.y = -280
+		hit()  # Llama a la función hit() para manejar el daño
+		lives -= 1
+		dead()
+		$AnimatedSprite2.play("default")
+		player.shake_camera()
+		player.frameFreeze(0.04,0.25)
