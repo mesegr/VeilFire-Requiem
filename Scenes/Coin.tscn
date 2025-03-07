@@ -1,85 +1,90 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://Assets/Objects/coin_gold.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Coin2d.gd" type="Script" id=2]
 [ext_resource path="res://Sounds/coinpickup.ogg" type="AudioStream" id=3]
 [ext_resource path="res://Assets/FX/coin_collect.png" type="Texture" id=4]
+[ext_resource path="res://Assets/UI/shard.png" type="Texture" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 6.0
 
-[sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 16, 16 )
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 78, 106 )
 
-[sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 1 )
-region = Rect2( 16, 0, 16, 16 )
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 5 )
+region = Rect2( 78, 0, 78, 106 )
 
-[sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 1 )
-region = Rect2( 32, 0, 16, 16 )
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 5 )
+region = Rect2( 156, 0, 78, 106 )
 
-[sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 1 )
-region = Rect2( 48, 0, 16, 16 )
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 5 )
+region = Rect2( 234, 0, 78, 106 )
 
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 1 )
-region = Rect2( 64, 0, 16, 16 )
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 5 )
+region = Rect2( 312, 0, 78, 106 )
 
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 1 )
-region = Rect2( 80, 0, 16, 16 )
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 5 )
+region = Rect2( 390, 0, 78, 106 )
 
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 1 )
-region = Rect2( 96, 0, 16, 16 )
-
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 1 )
-region = Rect2( 112, 0, 16, 16 )
-
-[sub_resource type="AtlasTexture" id=23]
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 32, 0, 16, 16 )
+region = Rect2( 172, 0, 172, 174 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 48, 0, 16, 16 )
+region = Rect2( 344, 0, 172, 174 )
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 80, 0, 16, 16 )
+region = Rect2( 516, 0, 172, 174 )
 
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 64, 0, 16, 16 )
+region = Rect2( 688, 0, 172, 174 )
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=41]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 96, 0, 16, 16 )
+region = Rect2( 860, 0, 172, 174 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=42]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 112, 0, 16, 16 )
+region = Rect2( 1032, 0, 172, 174 )
 
-[sub_resource type="AtlasTexture" id=29]
+[sub_resource type="AtlasTexture" id=43]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 128, 0, 16, 16 )
+region = Rect2( 1204, 0, 172, 174 )
 
-[sub_resource type="AtlasTexture" id=30]
+[sub_resource type="AtlasTexture" id=44]
+flags = 4
 atlas = ExtResource( 4 )
-region = Rect2( 144, 0, 16, 16 )
+region = Rect2( 1376, 0, 172, 174 )
+
+[sub_resource type="AtlasTexture" id=45]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1548, 0, 172, 174 )
 
 [sub_resource type="SpriteFrames" id=20]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 23 ), SubResource( 24 ), SubResource( 26 ), SubResource( 25 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
+"frames": [ SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ) ],
 "loop": true,
 "name": "pickup",
 "speed": 8.0
@@ -100,8 +105,9 @@ pitch_scale = 1.16
 shape = SubResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.13, 0.12 )
 frames = SubResource( 20 )
-frame = 2
+frame = 1
 playing = true
 
 [connection signal="body_entered" from="." to="." method="_on_Coin_body_entered"]

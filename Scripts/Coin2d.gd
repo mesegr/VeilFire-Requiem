@@ -3,7 +3,7 @@ extends Area2D
 onready var pickup = $pickup
 onready var sprite = $Sprite
 var canPick = true
-var speed: float = 150.0  # Velocidad de movimiento
+var speed: float = 160.0  # Velocidad de movimiento
 var target: Node2D = null  # Objetivo a perseguir (el jugador)
 
 func set_target(new_target: Node2D) -> void:
