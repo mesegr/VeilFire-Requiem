@@ -17,6 +17,8 @@ func _process(delta: float) -> void:
 
 func _on_JumpBook_body_entered(body):
 	if body.get_name() == "Player" and canPick:
+		sprite.scale.x -= 0.5
+		sprite.scale.y -= 0.5
 		body.doubleJumpItem2 = true
 		sprite.play("pickup")
 		pickup.play()

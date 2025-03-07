@@ -61,7 +61,24 @@ func dead():
 		$Area2D.position.y = 5000
 		speed = 0
 		$deadsound.play()
-	
+		var loot_scene = preload("res://Scenes/Coin.tscn")  # Carga la escena del loot
+
+# Posiciones relativas al enemigo
+		var offset = Vector2(40, -20)  # Distancia horizontal (50) y vertical (-20 para subir)
+
+		# Bucle para generar 2 monedas
+		for i in range(2):  # Repite el bloque 2 veces
+			var loot_instance = loot_scene.instance()  # Instancia el nodo
+			
+			# Alternar entre izquierda y derecha
+			if i == 0:
+				loot_instance.position = self.position - offset  # Posición a la izquierda y arriba
+			else:
+				loot_instance.position = self.position + offset  # Posición a la derecha y arriba
+			
+			loot_instance.set_target(get_parent().get_node("Player"))  # Asignar el jugador como objetivo
+			get_parent().add_child(loot_instance)  # Añadir a la escena
+			
 func respawn():
 	self.position.y = OriginalPositionY
 	$AnimatedSprite.play("default")
