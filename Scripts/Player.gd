@@ -100,9 +100,6 @@ func _physics_process(delta):
 	playerLive()
 	playerMovement(delta)
 	adminOptions()
-	print("cooldown antes del if:", cooldown)
-	
-	print(cooldown)
 	
 func finalBossScene():
 	if StopMusic:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=440 format=2]
+[gd_scene load_steps=441 format=2]
 
 [ext_resource path="res://Assets/Deco/tree_trunk.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Deco/bush.png" type="Texture" id=2]
@@ -61,6 +61,7 @@
 [ext_resource path="res://Scripts/villager.gd" type="Script" id=59]
 [ext_resource path="res://Assets/controls/wasd2.png" type="Texture" id=60]
 [ext_resource path="res://Assets/controls/wasd1.png" type="Texture" id=61]
+[ext_resource path="res://Assets/icons 16x16/book_06d.png" type="Texture" id=62]
 [ext_resource path="res://Assets/FX/bloodoverlay2.png" type="Texture" id=89]
 [ext_resource path="res://Scenes/pauseMenuEN.tscn" type="PackedScene" id=90]
 [ext_resource path="res://Scenes/Eleanor.tscn" type="PackedScene" id=91]
@@ -9961,55 +9962,55 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 12
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 12
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 14
+frame = 4
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 2
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 15
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 3
+frame = 11
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 8
+frame = 16
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10121,7 +10122,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 17
+frame = 7
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10134,7 +10135,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 17
+frame = 7
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10147,7 +10148,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 17
+frame = 7
 playing = true
 
 [node name="Villager" parent="." instance=ExtResource( 58 )]
@@ -10160,7 +10161,7 @@ visible = false
 position = Vector2( 0.00683594, -27.2727 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 207 )
-frame = 8
+frame = 16
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -12028,7 +12029,6 @@ __meta__ = {
 [node name="title" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
 position = Vector2( 981, 218 )
 scale = Vector2( 0.8, 0.7 )
-z_index = 5
 z_as_relative = false
 frames = SubResource( 205 )
 animation = "crimson abyss"
@@ -12038,10 +12038,6 @@ script = ExtResource( 49 )
 stream = ExtResource( 15 )
 volume_db = -0.5
 pitch_scale = 0.3
-
-[node name="Menu" parent="ControlCanvas/CanvasLayer" instance=ExtResource( 90 )]
-pause_mode = 2
-visible = false
 
 [node name="Talking" type="AudioStreamPlayer" parent="ControlCanvas/CanvasLayer"]
 stream = SubResource( 237 )
@@ -12249,6 +12245,7 @@ scroll_active = false
 deselect_on_focus_loss_enabled = false
 
 [node name="SnowTader2" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
+visible = false
 margin_left = -433.548
 margin_top = -68.6207
 margin_right = -86.5484
@@ -12268,11 +12265,11 @@ custom_styles/focus = SubResource( 318 )
 custom_styles/disabled = SubResource( 319 )
 custom_styles/normal = SubResource( 318 )
 
-[node name="Book06c" type="Sprite" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button"]
-modulate = Color( 1, 1, 1, 0.764706 )
-position = Vector2( 36.0322, 45.2508 )
+[node name="Book06d" type="Sprite" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button"]
+modulate = Color( 1, 1, 1, 0.737255 )
+position = Vector2( 36.5803, 44.7961 )
 scale = Vector2( 2.3, 2.4 )
-texture = ExtResource( 136 )
+texture = ExtResource( 62 )
 
 [node name="Coin" parent="ControlCanvas/CanvasLayer/PanelSnowTrader/SnowTader2/Button" instance=ExtResource( 16 )]
 position = Vector2( 75.258, 73.464 )
@@ -12456,6 +12453,10 @@ texture = ExtResource( 89 )
 visible = false
 position = Vector2( 960, 540 )
 texture = ExtResource( 47 )
+
+[node name="Menu" parent="ControlCanvas/CanvasLayer" instance=ExtResource( 90 )]
+pause_mode = 2
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="ControlCanvas/CanvasLayer"]
 material = SubResource( 383 )

@@ -110,7 +110,7 @@ func _on_ButtonControls_mouse_exited():
 func _on_ButtonControls_button_down():
 	$buttonPressed.play()
 	$ControlsPanel.visible = true  # Activa el panel para que pueda ser interpolado
-
+	$ButtonsContainer/ButtonControls.disabled = true
 	# Animación de fade in para ControlsPanel
 	tween.interpolate_property(
 		$ControlsPanel, "modulate",
@@ -149,7 +149,7 @@ func _on_ButtonBackControls_mouse_entered():
 
 func _on_ButtonBackControls_button_down():
 	$buttonPressed.play()
-
+	$ButtonsContainer/ButtonControls.disabled = false
 	# Animación de fade out para ControlsPanel
 	tween.interpolate_property(
 		$ControlsPanel, "modulate",
@@ -167,8 +167,7 @@ func _on_ButtonBackControls_button_down():
 
 func _on_ButtonBackControls_mouse_exited():
 	target_scales["ButtonBackControls"] = Vector2(0.32, 0.32)
-
-
+	
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	if anim_name == "fade_to_black":
