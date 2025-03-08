@@ -2,25 +2,25 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Capa 1()2.png-619ef75e88b5fb842716ad1f4b7f30ba.stex"
+path="res://.import/OptionsPauseMenu.png-08500778895d13e2fc1b93e60dc15650.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Capa 1()2.png"
-dest_files=[ "res://.import/Capa 1()2.png-619ef75e88b5fb842716ad1f4b7f30ba.stex" ]
+source_file="res://Assets/UI/OptionsPauseMenu.png"
+dest_files=[ "res://.import/OptionsPauseMenu.png-08500778895d13e2fc1b93e60dc15650.stex" ]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

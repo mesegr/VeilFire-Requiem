@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Capa 1()8.png-48d60fad280845e8745bd26f0e134bb0.stex"
+path="res://.import/Capa 1()11.png-6d0d7c5a01285453c02dee0624b7f553.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Capa 1()8.png"
-dest_files=[ "res://.import/Capa 1()8.png-48d60fad280845e8745bd26f0e134bb0.stex" ]
+source_file="res://MainMenuBack/Capa 1()11.png"
+dest_files=[ "res://.import/Capa 1()11.png-6d0d7c5a01285453c02dee0624b7f553.stex" ]
 
 [params]
 

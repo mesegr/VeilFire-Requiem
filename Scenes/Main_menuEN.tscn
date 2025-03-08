@@ -463,9 +463,9 @@ void fragment()
 [sub_resource type="ShaderMaterial" id=383]
 shader = SubResource( 382 )
 shader_param/overlay = true
-shader_param/scanlines_opacity = 0.262
-shader_param/scanlines_width = 0.203
-shader_param/grille_opacity = 0.079
+shader_param/scanlines_opacity = 0.29
+shader_param/scanlines_width = 0.21
+shader_param/grille_opacity = 0.112
 shader_param/resolution = Vector2( 1920, 1080 )
 shader_param/pixelate = false
 shader_param/roll = false
@@ -473,7 +473,7 @@ shader_param/roll_speed = 1.0
 shader_param/roll_size = 0.0
 shader_param/roll_variation = 1.692
 shader_param/distort_intensity = 0.0
-shader_param/noise_opacity = 0.423
+shader_param/noise_opacity = 0.432
 shader_param/noise_speed = 5.0
 shader_param/static_noise_intensity = 0.07
 shader_param/aberration = 0.004
@@ -501,6 +501,7 @@ script = ExtResource( 14 )
 position = Vector2( 960, 540 )
 scale = Vector2( 0.94, 0.94 )
 frames = SubResource( 384 )
+frame = 1
 playing = true
 
 [node name="MenuTheme" type="AudioStreamPlayer" parent="."]
@@ -701,7 +702,7 @@ texture = ExtResource( 19 )
 margin_top = 740.0
 margin_right = 419.0
 margin_bottom = 820.0
-text = "Pause menu -"
+text = "Map -"
 
 [node name="ESC" type="TextureRect" parent="ControlsPanel/ControlsLabelsContainer/PauseMenuLabel"]
 margin_left = 530.0
