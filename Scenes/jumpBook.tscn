@@ -107,6 +107,7 @@ pitch_scale = 0.58
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 8 )
+frame = 6
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,8 +1,8 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Resources/Themes/MainMenuTheme.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/ControlsPanel.png" type="Texture" id=2]
-[ext_resource path="res://Assets/UI/Main menu.png" type="Texture" id=3]
+[ext_resource path="res://Capa 1.png" type="Texture" id=3]
 [ext_resource path="res://Assets/controls/ARROWUP.png" type="Texture" id=4]
 [ext_resource path="res://Sounds/path of exile.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Assets/controls/ARROWRIGHT.png" type="Texture" id=6]
@@ -12,7 +12,6 @@
 [ext_resource path="res://Assets/controls/D.png" type="Texture" id=10]
 [ext_resource path="res://Assets/controls/E.png" type="Texture" id=11]
 [ext_resource path="res://Assets/controls/SHIFT.png" type="Texture" id=12]
-[ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scripts/Main_menuEN.gd" type="Script" id=14]
 [ext_resource path="res://Assets/controls/A.png" type="Texture" id=16]
 [ext_resource path="res://Assets/controls/CTRL.png" type="Texture" id=17]
@@ -442,9 +441,9 @@ void fragment()
 [sub_resource type="ShaderMaterial" id=383]
 shader = SubResource( 382 )
 shader_param/overlay = true
-shader_param/scanlines_opacity = 0.192
-shader_param/scanlines_width = 0.04
-shader_param/grille_opacity = 0.054
+shader_param/scanlines_opacity = 0.22
+shader_param/scanlines_width = 0.198
+shader_param/grille_opacity = 0.06
 shader_param/resolution = Vector2( 1920, 1080 )
 shader_param/pixelate = false
 shader_param/roll = false
@@ -454,14 +453,14 @@ shader_param/roll_variation = 1.692
 shader_param/distort_intensity = 0.0
 shader_param/noise_opacity = 0.4
 shader_param/noise_speed = 5.0
-shader_param/static_noise_intensity = 0.05
+shader_param/static_noise_intensity = 0.07
 shader_param/aberration = 0.004
-shader_param/brightness = 1.0
+shader_param/brightness = 1.15
 shader_param/discolor = false
-shader_param/warp_amount = 0.3
+shader_param/warp_amount = 0.2
 shader_param/clip_warp = false
 shader_param/vignette_intensity = 0.6
-shader_param/vignette_opacity = 0.878
+shader_param/vignette_opacity = 0.775
 
 [node name="Menu" type="Control"]
 anchor_left = 0.5
@@ -477,25 +476,9 @@ theme = ExtResource( 1 )
 script = ExtResource( 14 )
 
 [node name="MainMenu" type="Sprite" parent="."]
-position = Vector2( 960, 540 )
-scale = Vector2( 1.00156, 1.00186 )
+position = Vector2( 950.629, 538.224 )
+scale = Vector2( 0.812183, 0.798845 )
 texture = ExtResource( 3 )
-
-[node name="Coin" parent="." instance=ExtResource( 13 )]
-position = Vector2( 930, 893 )
-scale = Vector2( 5, 5 )
-
-[node name="Coin2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1490, 779 )
-scale = Vector2( 5, 5 )
-
-[node name="Coin3" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1791, 359 )
-scale = Vector2( 5, 5 )
-
-[node name="Coin4" parent="." instance=ExtResource( 13 )]
-position = Vector2( 331, 575 )
-scale = Vector2( 5, 5 )
 
 [node name="MenuTheme" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
@@ -514,20 +497,20 @@ pitch_scale = 0.35
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 modulate = Color( 0, 0, 0, 0.388235 )
-margin_left = -19.9922
-margin_top = 68.773
-margin_right = 1940.01
-margin_bottom = 311.773
+margin_left = -15.9938
+margin_top = 44.852
+margin_right = 1944.01
+margin_bottom = 287.852
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -909.02
-margin_top = -429.365
-margin_right = 929.98
-margin_bottom = -249.365
+margin_left = -925.014
+margin_top = -457.273
+margin_right = 913.986
+margin_bottom = -277.273
 custom_colors/font_color = Color( 1, 0.705882, 0.0156863, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 7
@@ -537,17 +520,17 @@ custom_fonts/font = SubResource( 292 )
 text = "NOMBRE DEL JUEGO"
 
 [node name="ButtonsContainer" type="VBoxContainer" parent="."]
-anchor_left = 0.5
+anchor_left = 0.535
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 0.535
 anchor_bottom = 0.5
-margin_left = -550.0
-margin_top = -380.0
-margin_right = 550.0
-margin_bottom = 462.0
-rect_scale = Vector2( 0.5, 0.5 )
+margin_left = -107.2
+margin_top = -350.0
+margin_right = 992.8
+margin_bottom = 561.0
+rect_scale = Vector2( 0.62, 0.62 )
 rect_pivot_offset = Vector2( 550, 590 )
-custom_constants/separation = 30
+custom_constants/separation = 53
 
 [node name="ButtonStartGame" type="Button" parent="ButtonsContainer"]
 margin_right = 1100.0
@@ -557,23 +540,23 @@ text = "NEW GAME"
 icon_align = 1
 
 [node name="ButtonLoadGame" type="Button" parent="ButtonsContainer"]
-margin_top = 218.0
+margin_top = 241.0
 margin_right = 1100.0
-margin_bottom = 406.0
+margin_bottom = 429.0
 rect_pivot_offset = Vector2( 550, 94 )
 text = "LOAD GAME"
 
 [node name="ButtonControls" type="Button" parent="ButtonsContainer"]
-margin_top = 436.0
+margin_top = 482.0
 margin_right = 1100.0
-margin_bottom = 624.0
+margin_bottom = 670.0
 rect_pivot_offset = Vector2( 550, 95 )
 text = "CONTROLS"
 
 [node name="ButtonQuitGame" type="Button" parent="ButtonsContainer"]
-margin_top = 654.0
+margin_top = 723.0
 margin_right = 1100.0
-margin_bottom = 842.0
+margin_bottom = 911.0
 rect_pivot_offset = Vector2( 550, 94 )
 text = "QUIT GAME"
 
@@ -583,10 +566,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -300.0
-margin_top = -450.0
-margin_right = 300.0
-margin_bottom = 450.0
+margin_left = -441.202
+margin_top = -394.48
+margin_right = 158.798
+margin_bottom = 505.52
 texture = ExtResource( 2 )
 stretch_mode = 1
 

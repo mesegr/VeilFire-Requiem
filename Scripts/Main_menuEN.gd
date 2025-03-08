@@ -118,16 +118,8 @@ func _on_ButtonControls_button_down():
 		fade_speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 	)
 
-	# Animación de fade out para ButtonsContainer
-	tween.interpolate_property(
-		$ButtonsContainer, "modulate",
-		Color(1, 1, 1, 1), Color(1, 1, 1, 0),  # Desde visible hasta transparente
-		fade_speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
-	)
-
-	# Inicia las animaciones
 	tween.start()
-	$ButtonsContainer.visible = false
+
 
 
 func _on_ButtonQuitGame_mouse_entered():
@@ -157,7 +149,6 @@ func _on_ButtonBackControls_mouse_entered():
 
 func _on_ButtonBackControls_button_down():
 	$buttonPressed.play()
-	$ButtonsContainer.visible = true  # Activa el contenedor para que pueda ser interpolado
 
 	# Animación de fade out para ControlsPanel
 	tween.interpolate_property(
@@ -166,16 +157,12 @@ func _on_ButtonBackControls_button_down():
 		fade_speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 	)
 
-	# Animación de fade in para ButtonsContainer
-	tween.interpolate_property(
-		$ButtonsContainer, "modulate",
-		Color(1, 1, 1, 0), Color(1, 1, 1, 1),  # Desde transparente hasta visible
-		fade_speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
-	)
-
 	# Inicia las animaciones
 	tween.start()
-	target_scales["ButtonControls"] = Vector2(1, 1)
+# Espera a que la animación del Tween termine
+	yield(tween, "tween_completed")
+
+	# Hace invisible el panel después de la transición
 	$ControlsPanel.visible = false
 
 func _on_ButtonBackControls_mouse_exited():
