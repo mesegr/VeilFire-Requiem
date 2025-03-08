@@ -2,25 +2,25 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Capa1.png-513d7ac718a570520478f4448c4472d5.stex"
+path="res://.import/Capa 1()14.png-93a103af4da6421d96efa4ec6c4a9648.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Capa1.png"
-dest_files=[ "res://.import/Capa1.png-513d7ac718a570520478f4448c4472d5.stex" ]
+source_file="res://Capa 1()14.png"
+dest_files=[ "res://.import/Capa 1()14.png-93a103af4da6421d96efa4ec6c4a9648.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
