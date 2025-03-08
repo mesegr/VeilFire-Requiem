@@ -1,7 +1,8 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://Resources/Themes/MainMenuTheme.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/ControlsPanel.png" type="Texture" id=2]
+[ext_resource path="res://MainMenuBack/Capa 1()11.png" type="Texture" id=3]
 [ext_resource path="res://Assets/controls/ARROWUP.png" type="Texture" id=4]
 [ext_resource path="res://Sounds/path of exile.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Assets/controls/ARROWRIGHT.png" type="Texture" id=6]
@@ -11,9 +12,9 @@
 [ext_resource path="res://Assets/controls/D.png" type="Texture" id=10]
 [ext_resource path="res://Assets/controls/E.png" type="Texture" id=11]
 [ext_resource path="res://Assets/controls/SHIFT.png" type="Texture" id=12]
-[ext_resource path="res://Capa 1()3.png" type="Texture" id=13]
+[ext_resource path="res://MainMenuBack/Capa 1()5.png" type="Texture" id=13]
 [ext_resource path="res://Scripts/Main_menuEN.gd" type="Script" id=14]
-[ext_resource path="res://Capa 1()1.png" type="Texture" id=15]
+[ext_resource path="res://MainMenuBack/Capa 1()9.png" type="Texture" id=15]
 [ext_resource path="res://Assets/controls/A.png" type="Texture" id=16]
 [ext_resource path="res://Assets/controls/CTRL.png" type="Texture" id=17]
 [ext_resource path="res://Assets/controls/SPACE.png" type="Texture" id=18]
@@ -21,23 +22,23 @@
 [ext_resource path="res://Assets/controls/ARROWLEFT.png" type="Texture" id=20]
 [ext_resource path="res://Resources/Fonts/Livingstone.ttf" type="DynamicFontData" id=21]
 [ext_resource path="res://Assets/loading/589.png" type="Texture" id=22]
-[ext_resource path="res://Capa 1()2.png" type="Texture" id=23]
-[ext_resource path="res://Capa 1()8.png" type="Texture" id=24]
-[ext_resource path="res://Capa 1()5.png" type="Texture" id=25]
-[ext_resource path="res://Capa 1()10.png" type="Texture" id=26]
-[ext_resource path="res://Capa 1()12.png" type="Texture" id=27]
-[ext_resource path="res://Capa 1()11.png" type="Texture" id=28]
-[ext_resource path="res://Capa 1()9.png" type="Texture" id=29]
-[ext_resource path="res://Capa 1()7.png" type="Texture" id=30]
-[ext_resource path="res://Capa 1()14.png" type="Texture" id=31]
-[ext_resource path="res://Capa 1()6.png" type="Texture" id=32]
-[ext_resource path="res://Capa 1()13.png" type="Texture" id=33]
-[ext_resource path="res://Capa 1()4.png" type="Texture" id=34]
-[ext_resource path="res://Capa 1()15.png" type="Texture" id=35]
+[ext_resource path="res://MainMenuBack/Capa 1()3.png" type="Texture" id=23]
+[ext_resource path="res://MainMenuBack/Capa 1()7.png" type="Texture" id=24]
+[ext_resource path="res://MainMenuBack/Capa 1()10.png" type="Texture" id=25]
+[ext_resource path="res://MainMenuBack/Capa 1()16.png" type="Texture" id=26]
+[ext_resource path="res://MainMenuBack/Capa 1()13.png" type="Texture" id=27]
+[ext_resource path="res://MainMenuBack/Capa 1()2.png" type="Texture" id=28]
+[ext_resource path="res://MainMenuBack/Capa 1()14.png" type="Texture" id=29]
+[ext_resource path="res://MainMenuBack/Capa 1()6.png" type="Texture" id=30]
+[ext_resource path="res://MainMenuBack/Capa 1()1.png" type="Texture" id=31]
+[ext_resource path="res://MainMenuBack/Capa 1()8.png" type="Texture" id=32]
+[ext_resource path="res://MainMenuBack/Capa 1()4.png" type="Texture" id=33]
+[ext_resource path="res://MainMenuBack/Capa 1()15.png" type="Texture" id=34]
+[ext_resource path="res://MainMenuBack/Capa 1()12.png" type="Texture" id=35]
 
 [sub_resource type="SpriteFrames" id=384]
 animations = [ {
-"frames": [ ExtResource( 15 ), ExtResource( 23 ), ExtResource( 13 ), ExtResource( 34 ), ExtResource( 25 ), ExtResource( 32 ), ExtResource( 30 ), ExtResource( 24 ), ExtResource( 29 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 33 ), ExtResource( 31 ), ExtResource( 35 ) ],
+"frames": [ ExtResource( 31 ), ExtResource( 28 ), ExtResource( 23 ), ExtResource( 33 ), ExtResource( 13 ), ExtResource( 30 ), ExtResource( 24 ), ExtResource( 32 ), ExtResource( 15 ), ExtResource( 25 ), ExtResource( 3 ), ExtResource( 35 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 34 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "default",
 "speed": 6.0
@@ -501,7 +502,7 @@ script = ExtResource( 14 )
 position = Vector2( 960, 540 )
 scale = Vector2( 0.94, 0.94 )
 frames = SubResource( 384 )
-frame = 1
+frame = 13
 playing = true
 
 [node name="MenuTheme" type="AudioStreamPlayer" parent="."]
