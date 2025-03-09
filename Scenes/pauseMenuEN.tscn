@@ -323,10 +323,21 @@ custom_styles/focus = SubResource( 387 )
 custom_styles/disabled = SubResource( 386 )
 custom_styles/normal = SubResource( 386 )
 
-[node name="Book06d" type="Sprite" parent="Inventory/Obj1"]
+[node name="Bible1" type="Sprite" parent="Inventory/Obj1"]
+visible = false
 position = Vector2( 31.25, 33.75 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 28 )
+
+[node name="Bible1Desc" type="RichTextLabel" parent="Inventory/Obj1"]
+visible = false
+margin_left = 13.0
+margin_top = -130.0
+margin_right = 1912.0
+margin_bottom = 290.0
+rect_scale = Vector2( 0.22, 0.22 )
+theme = ExtResource( 8 )
+text = "Second and final part of a series of magical bibles. Legend has it that the bearer of these can perform a second jump in the air. The last time they were seen, was in the depths of the sea."
 
 [node name="Obj2" type="Button" parent="Inventory"]
 margin_left = 158.0
@@ -340,10 +351,20 @@ custom_styles/focus = SubResource( 387 )
 custom_styles/disabled = SubResource( 386 )
 custom_styles/normal = SubResource( 386 )
 
-[node name="Book06c" type="Sprite" parent="Inventory/Obj2"]
+[node name="Bible2" type="Sprite" parent="Inventory/Obj2"]
+visible = false
 position = Vector2( 31.4423, 33.75 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 25 )
+
+[node name="Bible2Desc" type="RichTextLabel" parent="Inventory/Obj2"]
+visible = false
+margin_top = -199.0
+margin_right = 1901.0
+margin_bottom = 188.0
+rect_scale = Vector2( 0.22, 0.22 )
+theme = ExtResource( 8 )
+text = "First part of a series of magical bibles. Legend has it that the bearer of these can perform a second jump in the air. The last time they were seen, was in the depths of the sea."
 
 [node name="Obj3" type="Button" parent="Inventory"]
 margin_left = 223.0
@@ -357,10 +378,21 @@ custom_styles/focus = SubResource( 387 )
 custom_styles/disabled = SubResource( 386 )
 custom_styles/normal = SubResource( 386 )
 
-[node name="Item06" type="Sprite" parent="Inventory/Obj3"]
+[node name="Sword" type="Sprite" parent="Inventory/Obj3"]
+visible = false
 position = Vector2( 32.4038, 34.5192 )
 scale = Vector2( 1.9, 1.9 )
 texture = ExtResource( 27 )
+
+[node name="SwordDesc" type="RichTextLabel" parent="Inventory/Obj3"]
+visible = false
+margin_left = -97.0
+margin_top = -140.0
+margin_right = 1817.0
+margin_bottom = 317.0
+rect_scale = Vector2( 0.22, 0.22 )
+theme = ExtResource( 8 )
+text = "Sword stolen from the current King Roderick of Midland. With this sword, you will be able to execute faster thrusts without sacrificing its lethality."
 
 [node name="Obj4" type="Button" parent="Inventory"]
 margin_left = 231.0
@@ -374,10 +406,21 @@ custom_styles/focus = SubResource( 387 )
 custom_styles/disabled = SubResource( 386 )
 custom_styles/normal = SubResource( 386 )
 
-[node name="Necklace02d" type="Sprite" parent="Inventory/Obj4"]
+[node name="Necklace" type="Sprite" parent="Inventory/Obj4"]
+visible = false
 position = Vector2( 31.6346, 33.0769 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 26 )
+
+[node name="NeclaceDesc" type="RichTextLabel" parent="Inventory/Obj4"]
+visible = false
+margin_left = -112.0
+margin_top = -210.0
+margin_right = 1785.0
+margin_bottom = 212.0
+rect_scale = Vector2( 0.22, 0.22 )
+theme = ExtResource( 8 )
+text = "Ancient necklace of a famous wizard from the Middle Ages. Its bearer will gain the power to move quickly for short periods of time."
 
 [node name="Obj5" type="Button" parent="Inventory"]
 margin_left = 316.0

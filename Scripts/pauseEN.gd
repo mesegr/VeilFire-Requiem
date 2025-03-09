@@ -3,6 +3,7 @@ extends Node
 onready var pressed = $buttonPressed
 onready var hovered = $buttonHovered
 onready var controls = $Panel
+onready var Player = $"../../../Player"
 var target_scales = {}
 var lerp_speed = 15.0  # Velocidad de la interpolación (ajusta según necesites)
 var tween = Tween.new()  # Crea un nodo Tween
@@ -161,23 +162,31 @@ func changePanel():
 
 func _on_Obj1_focus_entered():
 	$InventorybuttonPressed.play()
+	if $Inventory/Obj1/Bible1.visible:
+		$Inventory/Obj1/Bible1Desc.visible = true
 func _on_Obj1_focus_exited():
-	pass # Replace with function body.
+	$Inventory/Obj1/Bible1Desc.visible = false
 
 func _on_Obj2_focus_entered():
 	$InventorybuttonPressed.play()
+	if 	$Inventory/Obj2/Bible2.visible:
+		$Inventory/Obj2/Bible2Desc.visible = true
 func _on_Obj2_focus_exited():
-	pass # Replace with function body.
+	$Inventory/Obj2/Bible2Desc.visible = false
 
 func _on_Obj3_focus_entered():
 	$InventorybuttonPressed.play()
+	if $Inventory/Obj3/Sword.visible:
+		$Inventory/Obj3/SwordDesc.visible = true
 func _on_Obj3_focus_exited():
-	pass # Replace with function body.
+	$Inventory/Obj3/SwordDesc.visible = false
 
 func _on_Obj4_focus_entered():
 	$InventorybuttonPressed.play()
+	if $Inventory/Obj4/Necklace.visible:
+		$Inventory/Obj4/NeclaceDesc.visible =  true
 func _on_Obj4_focus_exited():
-	pass # Replace with function body.
+	$Inventory/Obj4/NeclaceDesc.visible =  false
 
 func _on_Obj5_focus_entered():
 	$InventorybuttonPressed.play()
@@ -198,3 +207,13 @@ func _on_Obj8_focus_entered():
 	$InventorybuttonPressed.play()
 func _on_Obj8_focus_exited():
 	pass # Replace with function body.
+
+func showItems():
+	if Player.doubleJumpItem1 == true:
+		$Inventory/Obj1/Bible1.visible = true
+	if Player.doubleJumpItem2 == true:
+		$Inventory/Obj2/Bible2.visible = true
+	if Player.canDash == true:
+		$Inventory/Obj4/Necklace.visible = true
+	if Player.cooldownAttack <= 0.40:
+		$Inventory/Obj3/Sword.visible = true
