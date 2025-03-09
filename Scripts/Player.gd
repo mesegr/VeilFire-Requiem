@@ -190,19 +190,20 @@ func playerMovement(delta):
 		is_on_ice = found_ice  # Actualizamos el estado solo al final
 		
 	if HitPlayer == false:
-		if is_on_floor() and Input.is_action_pressed("agacharte"):
+		if is_on_floor() and Input.is_action_pressed("agacharte") and attack:
 			$Area2D2/CollisionShape2D.position.y = 15
 			$Area2D2/CollisionShape2D.scale.y = 0.6
 			idle = false
 			moveSpeed = 0
 			motion.x = 0
 			sprite.play("crouch")
-		elif is_on_floor() and Input.is_action_just_released("agacharte"):
+		elif is_on_floor() and Input.is_action_just_released("agacharte") and attack:
 			$Area2D2/CollisionShape2D.position.y = 2
 			$Area2D2/CollisionShape2D.scale.y = 1
 			moveSpeed = 47
 			idle = true
-		if Input.is_action_pressed("attup") and Input.is_action_just_pressed("attack") and cooldown and attack:
+			
+		if Input.is_action_pressed("attup") and Input.is_action_just_pressed("attack") and idle and cooldown and attack:
 			$Area2D/CollisionShape2D2.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
@@ -211,7 +212,7 @@ func playerMovement(delta):
 			timercooldown.start()
 			attack_sound.play()
 			print("att up")
-		if Input.is_action_pressed("attdown") and Input.is_action_just_pressed("attack") and cooldown and attack:
+		if Input.is_action_pressed("attdown") and Input.is_action_just_pressed("attack") and idle and cooldown and attack:
 			$Area2D3/CollisionShape2D3.disabled = false
 			$Area2D2/CollisionShape2D.position.y = -1025
 			cooldown = false
@@ -239,6 +240,8 @@ func playerMovement(delta):
 			timercooldown.start()
 			attack_sound2.play()
 			attanim = true
+		
+			
 		elif Input.is_action_pressed("ui_right") and idle and attack:
 			sprite.flip_h = false
 			$Area2D/CollisionShape2D.position.x = 43.5

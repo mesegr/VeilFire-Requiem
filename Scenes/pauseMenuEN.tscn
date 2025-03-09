@@ -304,6 +304,7 @@ rect_pivot_offset = Vector2( 550, 94 )
 text = "BACK TO MENU"
 
 [node name="Inventory" type="TextureRect" parent="."]
+visible = false
 margin_left = 21.0
 margin_top = -322.0
 margin_right = 548.0
