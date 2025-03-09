@@ -21,6 +21,7 @@ func _ready():
 	$Options/ButtonsContainer.modulate = Color(1, 1, 1, 1)
 	
 func _process(delta):
+	showItems()
 	changePanel()
 	# Botones dentro del contenedor
 	for button in $Options/ButtonsContainer.get_children():
