@@ -241,7 +241,6 @@ func playerMovement(delta):
 			attack_sound2.play()
 			attanim = true
 		
-			
 		elif Input.is_action_pressed("ui_right") and idle and attack:
 			sprite.flip_h = false
 			$Area2D/CollisionShape2D.position.x = 43.5

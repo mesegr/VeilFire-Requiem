@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Scripts/pauseEN.gd" type="Script" id=1]
 [ext_resource path="res://Capa 2.png" type="Texture" id=2]
@@ -28,6 +28,31 @@
 [ext_resource path="res://Assets/icons 16x16/necklace_02d.png" type="Texture" id=26]
 [ext_resource path="res://Assets/icons 16x16/Item__06.png" type="Texture" id=27]
 [ext_resource path="res://Assets/icons 16x16/book_06d.png" type="Texture" id=28]
+[ext_resource path="res://Assets/maps/dragonslayerDesertMap/Sprite-0001.png" type="Texture" id=29]
+[ext_resource path="res://Assets/maps/dragonslayerDesertMap/Sprite-0003.png" type="Texture" id=30]
+[ext_resource path="res://Scripts/MapMenu.gd" type="Script" id=31]
+[ext_resource path="res://Assets/maps/dragonslayerDesertMap/Sprite-0006.png" type="Texture" id=32]
+[ext_resource path="res://Assets/maps/pathOfEsile/Sprite-0003.png" type="Texture" id=33]
+[ext_resource path="res://Assets/maps/frostveil/Sprite-0001.png" type="Texture" id=34]
+[ext_resource path="res://Assets/maps/AbyssalReef/Sprite-0002.png" type="Texture" id=35]
+[ext_resource path="res://Assets/maps/dragonslayerDesertMap/Sprite-0004.png" type="Texture" id=36]
+[ext_resource path="res://Assets/maps/dragonslayerDesertMap/Sprite-0002.png" type="Texture" id=37]
+[ext_resource path="res://Assets/maps/pathOfEsile/Sprite-0004.png" type="Texture" id=38]
+[ext_resource path="res://Assets/maps/AbyssalReef/Sprite-0004.png" type="Texture" id=39]
+[ext_resource path="res://Assets/maps/AbyssalReef/Sprite-0001.png" type="Texture" id=40]
+[ext_resource path="res://Assets/maps/AbyssalReef/Sprite-0003.png" type="Texture" id=41]
+[ext_resource path="res://Assets/maps/frostveil/Sprite-0005.png" type="Texture" id=42]
+[ext_resource path="res://Assets/maps/dragonslayerDesertMap/Sprite-0005.png" type="Texture" id=43]
+[ext_resource path="res://Assets/maps/pathOfEsile/Sprite-0001.png" type="Texture" id=44]
+[ext_resource path="res://Assets/maps/pathOfEsile/Sprite-0002.png" type="Texture" id=45]
+[ext_resource path="res://Assets/maps/frostveil/Sprite-0004.png" type="Texture" id=46]
+[ext_resource path="res://Assets/maps/frostveil/Sprite-0002.png" type="Texture" id=47]
+[ext_resource path="res://Assets/maps/crimsonForge/Sprite-0001.png" type="Texture" id=48]
+[ext_resource path="res://Assets/maps/crimsonForge/Sprite-0003.png" type="Texture" id=49]
+[ext_resource path="res://Assets/maps/crimsonForge/Sprite-0002.png" type="Texture" id=50]
+[ext_resource path="res://Assets/maps/frostveil/Sprite-0003.png" type="Texture" id=51]
+[ext_resource path="res://Assets/maps/frostveil/Sprite-0006.png" type="Texture" id=52]
+[ext_resource path="res://Assets/maps/frostveil/Sprite-0007.png" type="Texture" id=53]
 
 [sub_resource type="StyleBoxTexture" id=386]
 texture = ExtResource( 23 )
@@ -472,30 +497,164 @@ custom_styles/disabled = SubResource( 386 )
 custom_styles/normal = SubResource( 386 )
 
 [node name="Map" type="TextureRect" parent="."]
-visible = false
 margin_left = 21.0
 margin_top = -322.0
 margin_right = 548.0
 margin_bottom = 138.0
 rect_scale = Vector2( 3.2, 3.2 )
+rect_clip_content = true
 texture = ExtResource( 7 )
 
-[node name="ComingSoon" type="RichTextLabel" parent="Map"]
-margin_left = 104.062
-margin_top = 221.875
-margin_right = 875.063
-margin_bottom = 423.875
-rect_scale = Vector2( 0.5, 0.5 )
-theme = ExtResource( 8 )
-custom_colors/default_color = Color( 0.929412, 0.654902, 0, 1 )
-custom_colors/selection_color = Color( 0.929412, 0.654902, 0, 1 )
-custom_colors/font_color_selected = Color( 0.929412, 0.654902, 0, 1 )
-custom_colors/font_color_shadow = Color( 0.929412, 0.654902, 0, 1 )
-bbcode_enabled = true
-bbcode_text = "[center]MAP
-COMING SOON...[/center]"
-text = "MAP
-COMING SOON..."
+[node name="ScrollContainer" type="ScrollContainer" parent="Map"]
+margin_left = 116.0
+margin_top = 174.0
+margin_right = 479.0
+margin_bottom = 386.0
+follow_focus = true
+
+[node name="Control" type="Control" parent="Map/ScrollContainer"]
+script = ExtResource( 31 )
+
+[node name="Sprite-0004" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 25.48, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 30 )
+
+[node name="Sprite-0003" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 42.28, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 30 )
+
+[node name="Sprite-0001" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 8.687, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 29 )
+
+[node name="Sprite-0005" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 59.08, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 36 )
+
+[node name="Sprite-0006" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 59.08, 116.8 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 43 )
+
+[node name="Sprite-0002" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 59.08, 133.6 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 37 )
+
+[node name="Sprite-0007" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 75.875, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 32 )
+
+[node name="Sprite-0008" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 92.67, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 44 )
+
+[node name="Sprite-0009" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 109.47, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 33 )
+
+[node name="Sprite-0011" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 159.85, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 33 )
+
+[node name="Sprite-0010" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 134.65, 100 )
+scale = Vector2( 2.1, 1.05 )
+texture = ExtResource( 45 )
+
+[node name="Sprite-0012" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 176.65, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 38 )
+
+[node name="Sprite-0013" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 109.47, 116.8 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 39 )
+
+[node name="Sprite-0014" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 159.85, 116.8 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 39 )
+
+[node name="Sprite-0015" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 109.47, 133.6 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 40 )
+
+[node name="Sprite-0016" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 159.85, 133.6 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 35 )
+
+[node name="Sprite-0017" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 134.66, 133.6 )
+scale = Vector2( 2.23, 1.05 )
+texture = ExtResource( 41 )
+
+[node name="Sprite-0018" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 210.25, 83.2 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 34 )
+
+[node name="Sprite-0019" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 227.05, 83.2 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 42 )
+
+[node name="Sprite-0020" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 252.25, 83.2 )
+scale = Vector2( 2.1, 1.05 )
+texture = ExtResource( 46 )
+
+[node name="Sprite-0021" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 227.05, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 52 )
+
+[node name="Sprite-0022" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 243.85, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 47 )
+
+[node name="Sprite-0023" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 277.45, 83.2 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 51 )
+
+[node name="Sprite-0024" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 294.25, 83.2 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 48 )
+
+[node name="Sprite-0025" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 319.45, 83.2 )
+scale = Vector2( 2.1, 1.05 )
+texture = ExtResource( 49 )
+
+[node name="Sprite-0026" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 344.65, 83.2 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 50 )
+
+[node name="Sprite-0027" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 193.45, 100 )
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 53 )
+
+[node name="Sprite-0028" type="Sprite" parent="Map/ScrollContainer/Control"]
+position = Vector2( 193.45, 83.2 )
+rotation = 3.14159
+scale = Vector2( 1.05, 1.05 )
+texture = ExtResource( 53 )
 
 [connection signal="button_down" from="Options/ButtonsContainer/ButtonContinueGame" to="." method="_on_ButtonContinueGame_button_down"]
 [connection signal="mouse_entered" from="Options/ButtonsContainer/ButtonContinueGame" to="." method="_on_ButtonContinueGame_mouse_entered"]
