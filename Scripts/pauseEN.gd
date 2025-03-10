@@ -8,7 +8,8 @@ var target_scales = {}
 var lerp_speed = 15.0  # Velocidad de la interpolación (ajusta según necesites)
 var tween = Tween.new()  # Crea un nodo Tween
 var fade_speed = 0.2 
-
+var mapPositions = {}
+var pos
 func _ready():
 	add_child(tween)
 	$Options.visible = true
@@ -23,6 +24,7 @@ func _ready():
 func _process(delta):
 	showItems()
 	changePanel()
+	madeMapVisible()
 	# Botones dentro del contenedor
 	for button in $Options/ButtonsContainer.get_children():
 		if button.name in target_scales:
@@ -119,7 +121,7 @@ func _on_ButtonBackControls_button_down():
 
 func changePanel():
 	if Input.is_action_just_pressed("q"):
-		
+		$changePage.play()
 		if $Options.visible == true:
 			$Options.visible = false
 			$Options/ControlsPanel.visible = false
@@ -139,8 +141,9 @@ func changePanel():
 			$Map.visible = false
 			$Inventory.visible = false
 			print("map visible")
+			
 	if Input.is_action_just_pressed("ui_accept"):
-		
+		$changePage.play()
 		if $Options.visible == true:
 			$Options.visible = false
 			$Options/ControlsPanel.visible = false
@@ -218,3 +221,73 @@ func showItems():
 		$Inventory/Obj4/Necklace.visible = true
 	if Player.cooldownAttack <= 0.40:
 		$Inventory/Obj3/Sword.visible = true
+
+func madeMapVisible():
+	if Player != null:
+		pos = Player.position
+	if pos.y <= 120:
+		if pos.x >= -4585 and pos.x <= -3500:
+			$"Map/ScrollContainer/Control/Sprite-0004".visible = true
+		if pos.x >= -3500 and pos.x <= -2400:
+			$"Map/ScrollContainer/Control/Sprite-0003".visible = true
+		if pos.x >= -2400 and pos.x <= -1400:
+			$"Map/ScrollContainer/Control/Sprite-0005".visible = true
+			if pos.y >= 61 and pos.y <= 250:
+				$"Map/ScrollContainer/Control/Sprite-0006".visible = true
+		if pos.x >= -1400 and pos.x <= -500:
+			$"Map/ScrollContainer/Control/Sprite-0007".visible = true
+		if pos.x >= -500 and pos.x <= 200:
+			$"Map/ScrollContainer/Control/Sprite-0008".visible = true
+		if pos.x >= 200 and pos.x <= 675:
+			$"Map/ScrollContainer/Control/Sprite-0009".visible = true
+		if pos.x >= 675 and pos.x <= 1350:
+			$"Map/ScrollContainer/Control/Sprite-0010".visible = true
+		if pos.x >= 1350 and pos.x <= 2050:
+			$"Map/ScrollContainer/Control/Sprite-0030".visible = true
+		if pos.x >= 2050 and pos.x <= 2590:
+			$"Map/ScrollContainer/Control/Sprite-0011".visible = true
+		if pos.x >= 2590 and pos.x <= 3200:
+			$"Map/ScrollContainer/Control/Sprite-0012".visible = true
+		if pos.y >= - 600:
+			if pos.x >= 3200 and pos.x <= 3600:
+				$"Map/ScrollContainer/Control/Sprite-0027".visible = true
+			if pos.x >= 4127 and pos.x <= 5000:
+				$"Map/ScrollContainer/Control/Sprite-0021".visible = true
+			if pos.x >= 5000 and pos.x <= 5835:
+				$"Map/ScrollContainer/Control/Sprite-0022".visible = true
+	if pos.x >= -2400 and pos.x <= -1400 and pos.y >= 250 and pos.y <= 580:
+		$"Map/ScrollContainer/Control/Sprite-0002".visible = true
+	if pos.y >= 190 and pos.y <= 200:
+		if pos.x >= 200 and pos.x <= 675:
+			$"Map/ScrollContainer/Control/Sprite-0013".visible = true
+		if pos.x >= 2050 and pos.x <= 2590:
+			$"Map/ScrollContainer/Control/Sprite-0014".visible = true
+	if pos.y >= 200 and pos.y <= 800:
+		if pos.x >= 200 and pos.x <= 675:
+			$"Map/ScrollContainer/Control/Sprite-0015".visible = true
+		if pos.x >= 675 and pos.x <= 1350:
+			$"Map/ScrollContainer/Control/Sprite-0017".visible = true
+		if pos.x >= 1350 and pos.x <= 2050:
+			$"Map/ScrollContainer/Control/Sprite-0029".visible = true
+		if pos.x >= 2050 and pos.x <= 2590:
+			$"Map/ScrollContainer/Control/Sprite-0016".visible = true
+	if pos.y <= - 600:
+		if pos.x >= 3600 and pos.x <= 4050:
+			$"Map/ScrollContainer/Control/Sprite-0028".visible = true
+			$"Map/ScrollContainer/Control/Sprite-0018".visible = true
+		if pos.x >= 4050 and pos.x <= 4900:
+			$"Map/ScrollContainer/Control/Sprite-0019".visible = true
+		if pos.x >= 4900 and pos.x <= 6300:
+			$"Map/ScrollContainer/Control/Sprite-0020".visible = true
+		if pos.x >= 6300 and pos.x <= 7500:
+			$"Map/ScrollContainer/Control/Sprite-0031".visible = true
+		if pos.x >= 7500 and pos.x <= 9050:
+			$"Map/ScrollContainer/Control/Sprite-0023".visible = true
+		if pos.x >= 9050 and pos.x <= 10730:
+			$"Map/ScrollContainer/Control/Sprite-0024".visible = true
+		if pos.x >= 10730 and pos.x <= 12000:
+			$"Map/ScrollContainer/Control/Sprite-0025".visible = true
+		if pos.x >= 12000 and pos.x <= 13260:
+			$"Map/ScrollContainer/Control/Sprite-0032".visible = true
+		if pos.x >= 13260 and pos.x <= 15000:
+			$"Map/ScrollContainer/Control/Sprite-0026".visible = true
