@@ -11,6 +11,7 @@ func save_game():
 	var pickups = current_scene.get_tree().get_nodes_in_group("coin")
 	var ButtonsTrader = current_scene.get_tree().get_nodes_in_group("ButtonsTrader")
 	var powerups = current_scene.get_tree().get_nodes_in_group("powerups")
+	var maps = current_scene.get_tree().get_nodes_in_group("map")
 	
 	if player:
 		# Guardar el estado de los altares
@@ -47,6 +48,14 @@ func save_game():
 					"path": pickup.get_path(),  
 					"picked": pickup.position,
 				})
+				
+		var map_states = []
+		for map in maps:
+			if is_instance_valid(map):  
+				map_states.append({
+					"path": map.get_path(),  
+					"visible": map.visible,
+				})
 		
 		# Crear el diccionario de guardado
 		var save_data = {
@@ -62,7 +71,8 @@ func save_game():
 			"pickup_states": pickup_states,
 			"button_states": button_states,
 			"powerups_states": powerups_states,
-			"startpos": startpos.position
+			"startpos": startpos.position,
+			"map_states" : map_states
 		}
 		
 		# Guardar en archivo
@@ -125,14 +135,21 @@ func load_game():
 			ButtonsTrader.disabled = button_states["active"]
 			ButtonsTrader.rect_scale = button_states["scale"]
 		else:
-			print("Error: No se encontró el pickup con la ruta:", button_states["path"])
+			print("Error: No se encontró el button con la ruta:", button_states["path"])
 			
 	for powerups_states in save_data["powerups_states"]:
 		var powerup = get_tree().current_scene.get_node(powerups_states["path"])
 		if powerup and is_instance_valid(powerup):  # Verificar si el nodo existe
 			powerup.visible = powerups_states["visible"]
 		else:
-			print("Error: No se encontró el pickup con la ruta:", powerups_states["path"])
+			print("Error: No se encontró el powerups con la ruta:", powerups_states["path"])
+			
+	for map_states in save_data["map_states"]:
+		var map = get_tree().current_scene.get_node(map_states["path"])
+		if map and is_instance_valid(map):  # Verificar si el nodo existe
+			map.visible = map_states["visible"]
+		else:
+			print("Error: No se encontró el map con la ruta:", map_states["path"])
 	
 	return true
 	

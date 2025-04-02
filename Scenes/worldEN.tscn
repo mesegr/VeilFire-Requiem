@@ -6115,20 +6115,20 @@ shader_param/grille_opacity = 0.06
 shader_param/resolution = Vector2( 1920, 1080 )
 shader_param/pixelate = false
 shader_param/roll = false
-shader_param/roll_speed = 0.0
+shader_param/roll_speed = -1.0
 shader_param/roll_size = 0.0
 shader_param/roll_variation = 0.1
 shader_param/distort_intensity = 0.0
 shader_param/noise_opacity = 0.4
 shader_param/noise_speed = 5.0
-shader_param/static_noise_intensity = 0.07
+shader_param/static_noise_intensity = 0.06
 shader_param/aberration = 0.004
 shader_param/brightness = 1.1
 shader_param/discolor = false
-shader_param/warp_amount = 0.15
+shader_param/warp_amount = 0.25
 shader_param/clip_warp = false
 shader_param/vignette_intensity = 0.85
-shader_param/vignette_opacity = 1.0
+shader_param/vignette_opacity = 0.759
 
 [sub_resource type="ConvexPolygonShape2D" id=238]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 0 )
@@ -9962,55 +9962,56 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 4
+frame = 7
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 10
+frame = 13
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 11
+frame = 14
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 16
+frame = 1
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10122,7 +10123,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10135,7 +10136,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10148,7 +10149,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="Villager" parent="." instance=ExtResource( 58 )]
@@ -10161,7 +10162,7 @@ visible = false
 position = Vector2( 0.00683594, -27.2727 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 207 )
-frame = 16
+frame = 1
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -12464,11 +12465,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -1371.0
-margin_top = -775.0
-margin_right = 919.0
-margin_bottom = 612.0
-rect_scale = Vector2( 1.2, 1.1 )
+margin_left = -1145.0
+margin_top = -693.5
+margin_right = 1145.0
+margin_bottom = 693.5
 mouse_filter = 2
 
 [node name="tileMapIce" type="TileMap" parent="." groups=["ice"]]

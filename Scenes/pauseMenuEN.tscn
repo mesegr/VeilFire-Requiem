@@ -519,192 +519,192 @@ follow_focus = true
 [node name="Control" type="Control" parent="Map/ScrollContainer"]
 script = ExtResource( 31 )
 
-[node name="Sprite-0016" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0016" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 172.35, 133.6 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 35 )
 
-[node name="Sprite-0015" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0015" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 121.97, 133.6 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 40 )
 
-[node name="Sprite-0004" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0004" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 37.98, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 30 )
 
-[node name="Sprite-0003" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0003" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 54.78, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 30 )
 
-[node name="Sprite-0001" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0001" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 position = Vector2( 21.187, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 29 )
 
-[node name="Sprite-0005" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0005" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 71.58, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 36 )
 
-[node name="Sprite-0006" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0006" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 71.58, 116.8 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 43 )
 
-[node name="Sprite-0002" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0002" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 71.58, 133.6 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 37 )
 
-[node name="Sprite-0007" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0007" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 88.375, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 32 )
 
-[node name="Sprite-0008" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0008" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 105.17, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 44 )
 
-[node name="Sprite-0009" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0009" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 121.97, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 33 )
 
-[node name="Sprite-0011" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0011" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 172.35, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 33 )
 
-[node name="Sprite-0010" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0010" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 138.77, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 45 )
 
-[node name="Sprite-0030" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0030" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 155.55, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 45 )
 
-[node name="Sprite-0012" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0012" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 189.15, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 38 )
 
-[node name="Sprite-0013" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0013" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 121.97, 117.85 )
 scale = Vector2( 1.05, 1.181 )
 texture = ExtResource( 39 )
 
-[node name="Sprite-0014" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0014" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 172.35, 117.85 )
 scale = Vector2( 1.05, 1.181 )
 texture = ExtResource( 39 )
 
-[node name="Sprite-0017" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0017" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 138.28, 133.6 )
 scale = Vector2( 1.12, 1.05 )
 texture = ExtResource( 41 )
 
-[node name="Sprite-0029" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0029" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 156.04, 133.6 )
 scale = Vector2( 1.12, 1.05 )
 texture = ExtResource( 41 )
 
-[node name="Sprite-0018" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0018" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 222.75, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 34 )
 
-[node name="Sprite-0019" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0019" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 239.55, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 42 )
 
-[node name="Sprite-0020" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0020" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 256.35, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 46 )
 
-[node name="Sprite-0031" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0031" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 273.15, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 46 )
 
-[node name="Sprite-0021" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0021" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 239.55, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 52 )
 
-[node name="Sprite-0022" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0022" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 256.35, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 47 )
 
-[node name="Sprite-0023" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0023" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 289.95, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 51 )
 
-[node name="Sprite-0024" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0024" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 306.75, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 48 )
 
-[node name="Sprite-0025" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0025" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 323.55, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 49 )
 
-[node name="Sprite-0032" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0032" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 340.35, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 49 )
 
-[node name="Sprite-0026" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0026" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 357.15, 83.2 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 50 )
 
-[node name="Sprite-0027" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0027" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 205.95, 100 )
 scale = Vector2( 1.05, 1.05 )
 texture = ExtResource( 53 )
 
-[node name="Sprite-0028" type="Sprite" parent="Map/ScrollContainer/Control"]
+[node name="Sprite-0028" type="Sprite" parent="Map/ScrollContainer/Control" groups=["map"]]
 visible = false
 position = Vector2( 205.95, 83.2 )
 rotation = 3.14159
