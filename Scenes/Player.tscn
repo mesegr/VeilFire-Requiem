@@ -383,11 +383,12 @@ shape = SubResource( 21 )
 
 [node name="hit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
-volume_db = -10.857
+volume_db = -12.322
 
 [node name="attack_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
 volume_db = -18.0
+pitch_scale = 1.21
 
 [node name="heartSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 26 )
@@ -397,16 +398,17 @@ autoplay = true
 
 [node name="jump1_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
-volume_db = -15.452
+volume_db = -13.987
 pitch_scale = 1.03
 
 [node name="jump2_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
-volume_db = -6.0
+volume_db = -10.394
 
 [node name="attack_sound2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
 volume_db = -17.126
+pitch_scale = 1.03
 
 [node name="rest_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 18 )

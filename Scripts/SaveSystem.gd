@@ -7,6 +7,7 @@ func save_game():
 	var player = current_scene.get_node("Player")
 	var startpos = current_scene.get_node("Startpos")
 	var ui = current_scene.get_node("ControlCanvas/CanvasLayer")
+	var camera = current_scene.get_node("Player/PlayerCamera")
 	var altars = current_scene.get_tree().get_nodes_in_group("altar")
 	var pickups = current_scene.get_tree().get_nodes_in_group("coin")
 	var ButtonsTrader = current_scene.get_tree().get_nodes_in_group("ButtonsTrader")
@@ -72,7 +73,8 @@ func save_game():
 			"button_states": button_states,
 			"powerups_states": powerups_states,
 			"startpos": startpos.position,
-			"map_states" : map_states
+			"map_states" : map_states,
+			"cameraPos" : camera.position
 		}
 		
 		# Guardar en archivo
@@ -100,6 +102,7 @@ func load_game():
 	var player = get_tree().current_scene.get_node("Player")
 	var ui = get_tree().current_scene.get_node("ControlCanvas/CanvasLayer")
 	var startpos = get_tree().current_scene.get_node("Startpos")
+	var camera = get_tree().current_scene.get_node("Player/PlayerCamera")
 	
 	if player:
 		player.position = save_data["player_position"]
@@ -110,6 +113,7 @@ func load_game():
 		player.cooldownAttack = save_data["player_cooldownAttack"]
 		ui.coins = save_data["ui_coins"]
 		startpos.position = save_data["startpos"]
+		camera.position = save_data["cameraPos"]
 	else:
 		print("Error: No se encontró el nodo del jugador en la escena cargada.")
 	
