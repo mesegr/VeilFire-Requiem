@@ -120,7 +120,7 @@ func _on_ButtonBackControls_button_down():
 	$Options/ControlsPanel.visible = false
 
 func changePanel():
-	if Input.is_action_just_pressed("q"):
+	if Input.is_action_just_pressed("q") and self.visible:
 		$changePage.play()
 		if $Options.visible == true:
 			$Options.visible = false
@@ -142,7 +142,7 @@ func changePanel():
 			$Inventory.visible = false
 			print("map visible")
 			
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") and self.visible:
 		$changePage.play()
 		if $Options.visible == true:
 			$Options.visible = false
