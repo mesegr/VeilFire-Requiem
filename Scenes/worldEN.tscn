@@ -5714,19 +5714,6 @@ animations = [ {
 "speed": 4.0
 } ]
 
-[sub_resource type="SpriteFrames" id=219]
-animations = [ {
-"frames": [ null, ExtResource( 123 ), ExtResource( 120 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 119 ), ExtResource( 121 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 126 ), ExtResource( 126 ), ExtResource( 124 ), ExtResource( 122 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), null ],
-"loop": false,
-"name": "default",
-"speed": 13.0
-}, {
-"frames": [ null ],
-"loop": true,
-"name": "t",
-"speed": 5.0
-} ]
-
 [sub_resource type="AtlasTexture" id=256]
 atlas = ExtResource( 142 )
 region = Rect2( 0, 0, 64, 64 )
@@ -5882,6 +5869,19 @@ animations = [ {
 "loop": true,
 "name": "default",
 "speed": 12.0
+} ]
+
+[sub_resource type="SpriteFrames" id=219]
+animations = [ {
+"frames": [ null, ExtResource( 123 ), ExtResource( 120 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 119 ), ExtResource( 121 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 126 ), ExtResource( 126 ), ExtResource( 124 ), ExtResource( 122 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), null ],
+"loop": false,
+"name": "default",
+"speed": 13.0
+}, {
+"frames": [ null ],
+"loop": true,
+"name": "t",
+"speed": 5.0
 } ]
 
 [sub_resource type="Shader" id=384]
@@ -6513,8 +6513,8 @@ texture = ExtResource( 26 )
 flip_v = true
 
 [node name="Trees4" type="Sprite" parent="BackGroundTreesFather/BackgroundTrees"]
-position = Vector2( 2150.78, 95.2807 )
-scale = Vector2( 8.14559, 2.26404 )
+position = Vector2( 2150.78, 80.1794 )
+scale = Vector2( 8.14559, 2.02808 )
 texture = ExtResource( 26 )
 flip_v = true
 
@@ -6547,7 +6547,7 @@ texture = ExtResource( 26 )
 
 [node name="Trees21" type="Sprite" parent="BackGroundTreesFather/BackgroundTrees"]
 modulate = Color( 4.82745, 49.6824, 36.3961, 0.611765 )
-position = Vector2( 4625.07, -760.214 )
+position = Vector2( 4625.08, -772.44 )
 rotation = 0.0541052
 scale = Vector2( 5.40816, 3.13107 )
 texture = ExtResource( 26 )
@@ -9962,56 +9962,55 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 5
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 5
+frame = 2
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 7
+frame = 4
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 13
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
-frame = 8
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 11
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 14
+frame = 11
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4997.92, 190.477 )
 frames = SubResource( 208 )
-frame = 1
+frame = 16
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10123,7 +10122,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 10
+frame = 7
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10136,7 +10135,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 10
+frame = 7
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10149,7 +10148,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 10
+frame = 7
 playing = true
 
 [node name="Villager" parent="." instance=ExtResource( 58 )]
@@ -10162,7 +10161,7 @@ visible = false
 position = Vector2( 0.00683594, -27.2727 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 207 )
-frame = 1
+frame = 16
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -10765,7 +10764,7 @@ position = Vector2( 696, 374 )
 scale = Vector2( 1, 0.9 )
 
 [node name="Player" parent="." instance=ExtResource( 45 )]
-position = Vector2( -5924, -223 )
+position = Vector2( -5922, -242 )
 scale = Vector2( 0.5, 0.45 )
 
 [node name="PlayerCamera" type="Camera2D" parent="Player"]
@@ -11924,7 +11923,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( -5925, -225 )
+position = Vector2( 6732, -1189 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -12414,11 +12413,6 @@ scale = Vector2( 1.2, 1.15 )
 frames = SubResource( 218 )
 animation = "5_5"
 
-[node name="deadteffect" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
-position = Vector2( 960, 540 )
-frames = SubResource( 219 )
-animation = "t"
-
 [node name="Book06c" type="Sprite" parent="ControlCanvas/CanvasLayer" groups=["powerups"]]
 visible = false
 position = Vector2( 190, 127 )
@@ -12454,6 +12448,13 @@ texture = ExtResource( 89 )
 visible = false
 position = Vector2( 960, 540 )
 texture = ExtResource( 47 )
+
+[node name="deadteffect" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
+position = Vector2( 960, 540 )
+z_index = 1
+z_as_relative = false
+frames = SubResource( 219 )
+animation = "t"
 
 [node name="Menu" parent="ControlCanvas/CanvasLayer" instance=ExtResource( 90 )]
 pause_mode = 2
