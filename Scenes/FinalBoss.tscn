@@ -208,7 +208,7 @@ position = Vector2( -9, -114 )
 scale = Vector2( 1.5, 1.6 )
 frames = SubResource( 4 )
 animation = "Flames"
-frame = 17
+frame = 23
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 4
@@ -216,7 +216,7 @@ position = Vector2( -14, -43.125 )
 shape = SubResource( 5 )
 
 [node name="AttackFlame" type="CollisionShape2D" parent="."]
-position = Vector2( -135, -20 )
+position = Vector2( -140, -11 )
 shape = SubResource( 16 )
 disabled = true
 
@@ -283,7 +283,7 @@ pitch_scale = 0.19
 max_distance = 600.0
 attenuation = 0.840896
 
-[node name="fire1" type="KinematicBody2D" parent="." groups=["finalBoss"]]
+[node name="fire1" type="KinematicBody2D" parent="." groups=["finalBossFire"]]
 position = Vector2( -212, 52 )
 collision_layer = 8
 collision_mask = 8
@@ -292,14 +292,13 @@ collision_mask = 8
 position = Vector2( 0, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire1"]
 position = Vector2( -1.52588e-05, 3.8147e-06 )
 shape = SubResource( 14 )
 
-[node name="fire2" type="KinematicBody2D" parent="." groups=["finalBoss"]]
+[node name="fire2" type="KinematicBody2D" parent="." groups=["finalBossFire"]]
 position = Vector2( -265, 52 )
 collision_layer = 8
 collision_mask = 8
@@ -308,13 +307,12 @@ collision_mask = 8
 position = Vector2( 2.99994, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire2"]
 shape = SubResource( 14 )
 
-[node name="fire3" type="KinematicBody2D" parent="." groups=["finalBoss"]]
+[node name="fire3" type="KinematicBody2D" parent="." groups=["finalBossFire"]]
 position = Vector2( -312, 52 )
 collision_layer = 8
 collision_mask = 8
@@ -323,13 +321,13 @@ collision_mask = 8
 position = Vector2( -1, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire3"]
 shape = SubResource( 14 )
 
-[node name="fire4" type="KinematicBody2D" parent="." groups=["finalBoss"]]
+[node name="fire4" type="KinematicBody2D" parent="." groups=["finalBossFire"]]
 position = Vector2( -374, 52 )
 collision_layer = 8
 collision_mask = 8
@@ -338,7 +336,7 @@ collision_mask = 8
 position = Vector2( 13, -17 )
 scale = Vector2( 1.75, 1.7 )
 frames = SubResource( 13 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="fire4"]

@@ -212,9 +212,21 @@ func _on_frame_changed():
 		$attack.disabled = true
 	if sprite.animation == "Flames" and sprite.frame == 7:
 		$FlameThrow.play()
-	if sprite.animation == "Flames" and sprite.frame == 17:
+	if sprite.animation == "Flames" and sprite.frame == 12:
 		$AttackFlame.disabled = false
-	if sprite.animation == "Flames" and sprite.frame == 21:
+		$AttackFlame.position.x = -129
+		$AttackFlame.position.y = -140
+	if sprite.animation == "Flames" and sprite.frame == 14:
+		$AttackFlame.disabled = false
+		$AttackFlame.position.x = -140
+		$AttackFlame.position.y = -97
+	if sprite.animation == "Flames" and sprite.frame == 16:
+		$AttackFlame.position.y = -60
+	if sprite.animation == "Flames" and sprite.frame == 17:
+		$AttackFlame.position.y = -33
+	if sprite.animation == "Flames" and sprite.frame == 18:
+		$AttackFlame.position.y = -11
+	if sprite.animation == "Flames" and sprite.frame == 20:
 		$AttackFlame.disabled = true
 
 func attack():
