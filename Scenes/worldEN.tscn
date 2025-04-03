@@ -9962,55 +9962,56 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 15
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 15
+frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 17
+frame = 7
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 5
+frame = 13
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 3
+frame = 11
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 6
+frame = 14
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 13
+frame = 3
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 5033.34, 194.444 )
 frames = SubResource( 208 )
-frame = 11
+frame = 1
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10122,7 +10123,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 2
+frame = 10
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10135,7 +10136,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 2
+frame = 10
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10148,7 +10149,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 2
+frame = 10
 playing = true
 
 [node name="Villager" parent="." instance=ExtResource( 58 )]
@@ -10161,7 +10162,7 @@ visible = false
 position = Vector2( 0.00683594, -27.2727 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 207 )
-frame = 11
+frame = 1
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -10226,49 +10227,6 @@ flip_v = true
 modulate = Color( 0.254902, 0.227451, 0.2, 1 )
 position = Vector2( 2070.78, 182.898 )
 scale = Vector2( 2.15015, 1.9391 )
-texture = ExtResource( 34 )
-
-[node name="Clouds16" type="Sprite" parent="."]
-modulate = Color( 0.027451, 0.239216, 0.513726, 1 )
-position = Vector2( 1972, 440 )
-rotation = 0.489228
-scale = Vector2( 3.658, 2.97342 )
-texture = ExtResource( 34 )
-
-[node name="Clouds4" type="Sprite" parent="."]
-modulate = Color( 0, 0.168627, 0.380392, 0.317647 )
-position = Vector2( 486, 597 )
-scale = Vector2( 3.80117, 3.72967 )
-texture = ExtResource( 34 )
-
-[node name="Clouds5" type="Sprite" parent="."]
-modulate = Color( 0, 0.168627, 0.380392, 0.317647 )
-position = Vector2( 1459.1, 594 )
-scale = Vector2( 3.80117, 3.72967 )
-texture = ExtResource( 34 )
-
-[node name="Clouds6" type="Sprite" parent="."]
-modulate = Color( 0, 0.168627, 0.380392, 0.317647 )
-position = Vector2( 2432.2, 613 )
-scale = Vector2( 3.80117, 3.72967 )
-texture = ExtResource( 34 )
-
-[node name="Clouds7" type="Sprite" parent="."]
-modulate = Color( 0, 0.168627, 0.380392, 0.619608 )
-position = Vector2( 340.55, 680.699 )
-scale = Vector2( 3.80117, 3.72967 )
-texture = ExtResource( 34 )
-
-[node name="Clouds14" type="Sprite" parent="."]
-modulate = Color( 0, 0.168627, 0.380392, 0.619608 )
-position = Vector2( 1313.65, 680.699 )
-scale = Vector2( 3.80117, 3.72967 )
-texture = ExtResource( 34 )
-
-[node name="Clouds15" type="Sprite" parent="."]
-modulate = Color( 0, 0.168627, 0.380392, 0.619608 )
-position = Vector2( 2286.75, 677.699 )
-scale = Vector2( 3.80117, 3.72967 )
 texture = ExtResource( 34 )
 
 [node name="Clouds22" type="Sprite" parent="."]
@@ -10367,18 +10325,6 @@ texture = ExtResource( 6 )
 position = Vector2( 0, -3333.33 )
 texture = ExtResource( 6 )
 
-[node name="Bubbles31" type="Sprite" parent="BubblesFather"]
-position = Vector2( 0, -3333.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles12" type="Sprite" parent="BubblesFather"]
-position = Vector2( 10, -3138.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles13" type="Sprite" parent="BubblesFather"]
-position = Vector2( 1173.33, -3131.67 )
-texture = ExtResource( 6 )
-
 [node name="Bubbles17" type="Sprite" parent="BubblesFather"]
 position = Vector2( 980, -3335 )
 texture = ExtResource( 6 )
@@ -10388,7 +10334,7 @@ position = Vector2( 506.667, -3331.67 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles19" type="Sprite" parent="BubblesFather"]
-position = Vector2( 200, -3333.33 )
+position = Vector2( 200, -3331.67 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles20" type="Sprite" parent="BubblesFather"]
@@ -10416,83 +10362,19 @@ position = Vector2( 1576.67, -3332.5 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles24" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2556.67, -3334.17 )
+position = Vector2( 2506.67, -3328.33 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles25" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2083.33, -3330.83 )
+position = Vector2( 2086.67, -3321.67 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles26" type="Sprite" parent="BubblesFather"]
-position = Vector2( 1776.67, -3332.5 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles27" type="Sprite" parent="BubblesFather"]
-position = Vector2( 1910, -3330 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles28" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2223.33, -3329.17 )
+position = Vector2( 1886.67, -3331.67 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles29" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2356.67, -3326.67 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles35" type="Sprite" parent="BubblesFather"]
-position = Vector2( 980, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles36" type="Sprite" parent="BubblesFather"]
-position = Vector2( 506.667, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles37" type="Sprite" parent="BubblesFather"]
-position = Vector2( 200, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles38" type="Sprite" parent="BubblesFather"]
-position = Vector2( 333.333, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles39" type="Sprite" parent="BubblesFather"]
-position = Vector2( 646.667, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles40" type="Sprite" parent="BubblesFather"]
-position = Vector2( 780, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles42" type="Sprite" parent="BubblesFather"]
-position = Vector2( 1376.67, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles43" type="Sprite" parent="BubblesFather"]
-position = Vector2( 1576.67, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles44" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2556.67, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles45" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2083.33, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles46" type="Sprite" parent="BubblesFather"]
-position = Vector2( 1776.67, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles47" type="Sprite" parent="BubblesFather"]
-position = Vector2( 1910, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles48" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2223.33, -3128.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles49" type="Sprite" parent="BubblesFather"]
-position = Vector2( 2356.67, -3128.33 )
+position = Vector2( 2303.33, -3325 )
 texture = ExtResource( 6 )
 
 [node name="Singlebuble2" type="Sprite" parent="."]
@@ -10615,27 +10497,15 @@ scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles12" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 0, -2666.67 )
+position = Vector2( 0, -2616.67 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles2" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 200, -2666.67 )
+position = Vector2( 200, -2613.34 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles3" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 400, -2665.83 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles8" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 113.333, -2470 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles9" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 300, -2446.67 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles10" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 530, -2453.33 )
+position = Vector2( 426.667, -2619.16 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles11" type="Sprite" parent="BubblesFather2"]
@@ -10643,23 +10513,16 @@ position = Vector2( 1110, -2430 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles4" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 600, -2665.83 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles5" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 733.333, -2663.33 )
-texture = ExtResource( 6 )
-
-[node name="Bubbles6" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 1046.67, -2662.5 )
+position = Vector2( 623.333, -2598.33 )
+scale = Vector2( 1.08, 1.12888 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles7" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 1180, -2660 )
+position = Vector2( 1110, -2663.33 )
 texture = ExtResource( 6 )
 
 [node name="Bubbles30" type="Sprite" parent="BubblesFather2"]
-position = Vector2( 4423.33, -1990 )
+position = Vector2( 4400, -1986.67 )
 texture = ExtResource( 6 )
 
 [node name="DoubleLittleRock" type="Sprite" parent="."]
@@ -10764,7 +10627,7 @@ position = Vector2( 696, 374 )
 scale = Vector2( 1, 0.9 )
 
 [node name="Player" parent="." instance=ExtResource( 45 )]
-position = Vector2( -5922, -242 )
+position = Vector2( -5963, -224 )
 scale = Vector2( 0.5, 0.45 )
 
 [node name="PlayerCamera" type="Camera2D" parent="Player"]
@@ -10792,20 +10655,6 @@ position = Vector2( 309, 1155 )
 scale = Vector2( 0.990315, 1 )
 texture = ExtResource( 37 )
 
-[node name="WaterB5Frames" type="Sprite" parent="WaterBackGroungFather"]
-modulate = Color( 1, 1, 1, 0.588235 )
-light_mask = 1023
-position = Vector2( -1308.75, -1075 )
-scale = Vector2( 2.8, 4 )
-texture = ExtResource( 29 )
-
-[node name="WaterB5Frames2" type="Sprite" parent="WaterBackGroungFather"]
-modulate = Color( 1, 1, 1, 0.588235 )
-light_mask = 1023
-position = Vector2( -1084.75, -1075 )
-scale = Vector2( 2.8, 4 )
-texture = ExtResource( 29 )
-
 [node name="WaterB5Frames3" type="Sprite" parent="WaterBackGroungFather"]
 modulate = Color( 1, 1, 1, 0.588235 )
 light_mask = 1023
@@ -10830,15 +10679,15 @@ texture = ExtResource( 29 )
 [node name="WaterBack3" type="Sprite" parent="WaterBackGroungFather"]
 modulate = Color( 1, 1, 1, 0.588235 )
 light_mask = 1023
-position = Vector2( -860.632, -1017 )
-scale = Vector2( 4.376, 6 )
+position = Vector2( -718.758, -1017 )
+scale = Vector2( 3.26761, 6 )
 texture = ExtResource( 37 )
 
 [node name="WaterBack4" type="Sprite" parent="WaterBackGroungFather"]
 modulate = Color( 1, 1, 1, 0.588235 )
 light_mask = 1023
-position = Vector2( -860.632, -947 )
-scale = Vector2( 4.376, 6 )
+position = Vector2( -730.875, -947 )
+scale = Vector2( 3.36228, 6 )
 texture = ExtResource( 37 )
 flip_v = true
 
@@ -10887,7 +10736,7 @@ texture = ExtResource( 37 )
 [node name="WaterB5Frames11" type="Sprite" parent="WaterBackGroungFather"]
 modulate = Color( 1, 1, 1, 0.588235 )
 light_mask = 1023
-position = Vector2( 931.8, -1075 )
+position = Vector2( 931.73, -1075 )
 scale = Vector2( 2.8, 4 )
 texture = ExtResource( 29 )
 
@@ -11819,8 +11668,8 @@ texture = ExtResource( 34 )
 
 [node name="Clouds17" type="Sprite" parent="."]
 modulate = Color( 0, 0.168627, 0.380392, 0.419608 )
-position = Vector2( -709.32, 188 )
-scale = Vector2( 2.95137, 3.69061 )
+position = Vector2( -578.272, 188 )
+scale = Vector2( 1.92756, 3.69061 )
 texture = ExtResource( 34 )
 
 [node name="Clouds3" type="Sprite" parent="."]
@@ -11916,7 +11765,6 @@ scale = Vector2( 2.68783, 3.16208 )
 texture = ExtResource( 34 )
 
 [node name="Clouds50" type="Sprite" parent="."]
-visible = false
 modulate = Color( 0.313726, 0.0235294, 0.0235294, 0.262745 )
 position = Vector2( 19132, -1519 )
 rotation = 1.5708
@@ -11924,7 +11772,7 @@ scale = Vector2( 7.38431, 148.63 )
 texture = ExtResource( 34 )
 
 [node name="Startpos" type="Position2D" parent="."]
-position = Vector2( -5939, -231 )
+position = Vector2( -5963, -224 )
 
 [node name="Area2D4" type="Area2D" parent="."]
 position = Vector2( -3474, -422 )
@@ -12059,6 +11907,7 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Eleanor1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelEleanor"]
@@ -12076,7 +11925,6 @@ custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 visible_characters = 335
 meta_underlined = false
-text = "Hi, traveler. My name is Eleanor, I am priestess of Albion. We're facing the fall of our kingdom because of the eruption of the Tenebris volcano, and you're our only hope. You might wonder how you got here; well, you've simply been chosen for this, kind of like the chosen warrior. But there weren't many other options, so don't get too excited."
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 
@@ -12092,7 +11940,6 @@ custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
-text = "My mission as a priestess of Albion is to guide you on your adventure as the savior of these lands. A little further ahead, you will come across an old altar dedicated to the spirits of light. They say that whoever manages to gather their orbs will be the chosen one to save us from the volcano."
 
 [node name="Eleanor3" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelEleanor"]
 visible = false
@@ -12106,9 +11953,6 @@ custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
-text = "I don’t have much more to tell you, except to try to survive. The rest of the chosen warriors haven’t returned from their mission. If you keep moving forward, you’ll come across the leader of the assault squad; he’ll teach you more useful things for your adventure.
-
-GOOD LUCK ON YOUR ADVENTURE!!"
 
 [node name="PanelOda" type="Sprite" parent="ControlCanvas/CanvasLayer"]
 visible = false
@@ -12120,6 +11964,7 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Oda1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
@@ -12136,7 +11981,6 @@ custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 meta_underlined = false
-text = "Well, what do we have here? Another puny human trying to save the world? Hahaha. Guess your fate will be the same as the rest: a pathetic coward clinging to life in battle, only to end up crushed like a tiny piece of shit, just like all the other \"saviors\" before you."
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 
@@ -12152,7 +11996,6 @@ custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
-text = "If you want to survive more than 5 minutes, listen carefully. You will face death head-on, relying on your sword as if it were an extension of yourself. But do not get distracted, because the enemy will not wait for you to be ready; the enemy attacks mercilessly."
 
 [node name="Oda3" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelOda"]
 visible = false
@@ -12166,7 +12009,6 @@ custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
-text = "Alright, with these tips, you should last at least 15 minutes. Finally, remember to face your mission with courage. Clinging to life will only push you closer to death, just like fear. If you’re not sure what you’re doing, turn around and go cry in bed like a little baby. But if you're ready to die for these lands, go ahead, start the adventure."
 
 [node name="PanelVillager" type="Sprite" parent="ControlCanvas/CanvasLayer"]
 visible = false
@@ -12178,6 +12020,7 @@ texture = ExtResource( 130 )
 position = Vector2( 252.286, 30 )
 scale = Vector2( 0.22, 0.18 )
 frames = SubResource( 317 )
+frame = 1
 playing = true
 
 [node name="Villager1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelVillager"]
@@ -12194,7 +12037,6 @@ custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 meta_underlined = false
-text = "Again? The chosen one to save us? The volcano is nothing but a farce; these mountains were sulfur and gold mines. Do you know what comes out of the crater? Gases from its rotten tunnels. But the people love the story of a hero coming to save us. The first so-called chosen ones were just poor devils they made disappear to keep the tale alive. What do you think? That you’re different?"
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 
@@ -12210,7 +12052,6 @@ custom_colors/default_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
-text = "Well, go ahead and keep believing the tales from the villagers of Albion and what the church tries to instill in all the inhabitants of the lands under its rule. After all, you’ll just be another one they make disappear to make it seem like you failed on your quest... What are you still staring at? The priestess and the leader of the army’s assault squad are waiting for you to begin your so-called adventure."
 
 [node name="PanelSnowTrader" type="Sprite" parent="ControlCanvas/CanvasLayer"]
 visible = false
@@ -12222,7 +12063,6 @@ texture = ExtResource( 140 )
 position = Vector2( 100, 105.172 )
 scale = Vector2( 0.2, 0.16 )
 frames = SubResource( 317 )
-frame = 1
 playing = true
 
 [node name="SnowTrader1" type="RichTextLabel" parent="ControlCanvas/CanvasLayer/PanelSnowTrader"]
@@ -12239,7 +12079,6 @@ custom_colors/selection_color = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_selected = Color( 1, 0.870588, 0.435294, 0.964706 )
 custom_colors/font_color_shadow = Color( 1, 0.870588, 0.435294, 0.964706 )
 meta_underlined = false
-text = "Hehehe, you must be the little rat they picked to save us from the volcano. Well, for a small price in gold, I can sell you some totally not stolen items... hehehe."
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 
