@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/dragonslayer desert.ogg-425b961e93bcdae4a2a4bce4a9a0ad86.oggstr"
+
+[deps]
+
+source_file="res://Sounds/dragonslayer desert.ogg"
+dest_files=[ "res://.import/dragonslayer desert.ogg-425b961e93bcdae4a2a4bce4a9a0ad86.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

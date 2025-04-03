@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hoverButon.ogg-148b7234919c7eed3f28b098833203f6.oggstr"
+
+[deps]
+
+source_file="res://Sounds/hoverButon.ogg"
+dest_files=[ "res://.import/hoverButon.ogg-148b7234919c7eed3f28b098833203f6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

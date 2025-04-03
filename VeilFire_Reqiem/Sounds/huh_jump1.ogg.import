@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/huh_jump1.ogg-20cab37c109edfa1070d68bca4dd4c65.oggstr"
+
+[deps]
+
+source_file="res://Sounds/huh_jump1.ogg"
+dest_files=[ "res://.import/huh_jump1.ogg-20cab37c109edfa1070d68bca4dd4c65.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tornado_sand.ogg-d141831ecff0566b42bdedabd6ceff72.oggstr"
+
+[deps]
+
+source_file="res://Sounds/tornado_sand.ogg"
+dest_files=[ "res://.import/tornado_sand.ogg-d141831ecff0566b42bdedabd6ceff72.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/altarOrb.ogg-6057c37215f55dc0678d4500d75db575.oggstr"
+
+[deps]
+
+source_file="res://Sounds/altarOrb.ogg"
+dest_files=[ "res://.import/altarOrb.ogg-6057c37215f55dc0678d4500d75db575.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

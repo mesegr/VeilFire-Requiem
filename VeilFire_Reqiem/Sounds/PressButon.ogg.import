@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PressButon.ogg-8e70386ea74f8cc2a10ff2984cf386fe.oggstr"
+
+[deps]
+
+source_file="res://Sounds/PressButon.ogg"
+dest_files=[ "res://.import/PressButon.ogg-8e70386ea74f8cc2a10ff2984cf386fe.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

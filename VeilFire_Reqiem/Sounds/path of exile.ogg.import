@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/path of exile.ogg-cfd18fa6463c4d90dcb0b5edc4cf6d01.oggstr"
+
+[deps]
+
+source_file="res://Sounds/path of exile.ogg"
+dest_files=[ "res://.import/path of exile.ogg-cfd18fa6463c4d90dcb0b5edc4cf6d01.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

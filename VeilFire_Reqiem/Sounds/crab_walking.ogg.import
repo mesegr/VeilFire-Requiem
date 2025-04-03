@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/crab_walking.ogg-ac16a38c04c66770764752ce7f0f76b2.oggstr"
+
+[deps]
+
+source_file="res://Sounds/crab_walking.ogg"
+dest_files=[ "res://.import/crab_walking.ogg-ac16a38c04c66770764752ce7f0f76b2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

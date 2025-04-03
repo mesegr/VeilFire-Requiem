@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/flameThrowBoss.ogg-006a959091c2686721fe5c640dc67f54.oggstr"
+
+[deps]
+
+source_file="res://Sounds/flameThrowBoss.ogg"
+dest_files=[ "res://.import/flameThrowBoss.ogg-006a959091c2686721fe5c640dc67f54.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
