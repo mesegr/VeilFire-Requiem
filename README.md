@@ -16,6 +16,8 @@ This is an **early BETA**, meaning:
 
 *(Want stability? Wait for the full release. Want to shape the game? Your feedback is gold!)*  
 
+[Release BETA-1.0.0 notes](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/tag/BETA-1.0.0)
+
 ---
 
 ### 🚀 **About the Game**  
