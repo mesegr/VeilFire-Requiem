@@ -504,7 +504,7 @@ script = ExtResource( 14 )
 position = Vector2( 960, 540 )
 scale = Vector2( 0.94, 0.94 )
 frames = SubResource( 384 )
-frame = 15
+frame = 2
 playing = true
 
 [node name="MenuTheme" type="AudioStreamPlayer" parent="."]
