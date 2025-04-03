@@ -6,7 +6,7 @@ In a world on the brink of cataclysm, you play as a warrior destined to confront
 
 ---
 
-## Índice 📜
+##  Table of Contents 📜
 
 - [📌 Current Version](#-current-version)
 - [🚀 About the Game](#-about-the-game)
