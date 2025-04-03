@@ -37,7 +37,7 @@ This is an **early BETA**, meaning:
 
 ---
 
-### 🛠️ **Installation**  
+### 🛠️ **Downloads**  
 1. Download the latest release for your OS (Windows/Linux).
 - [Download_BETA-1.0.0._Linux](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.0/Download_BETA-1.0.0_Linux.zip)
 - [Download_BETA-1.0.0._Windows](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.0/Download_BETA-1.0.0_Windows.zip)  
