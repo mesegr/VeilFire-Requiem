@@ -30,15 +30,6 @@ This is an **early BETA**, meaning:
 
 --- 
 
-### 🔮 **Planned for Future Updates**  
-- **Optimization**: Smoother performance.  
-- **Enhanced visuals**: Reworked Textures and animations.  
-- **New zones**: Expanded lore and challenges.  
-- **Sound design**: new music and SFX.  
-- **World interactivity**: NPCs  and puzzles.  
-
----
-
 ### 🛠️ **Downloads**  
 1. Download the latest release for your OS (Windows/Linux).
 - [Download_BETA-1.0.0._Linux](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.0/Download_BETA-1.0.0_Linux.zip)
@@ -51,6 +42,15 @@ This is an **early BETA**, meaning:
 - GPU: OpenGL 3.2+ compatible  
 - RAM: 1GB  
 - STORAGE: 450MB
+
+---
+
+### 🔮 **Planned for Future Updates**  
+- **Optimization**: Smoother performance.  
+- **Enhanced visuals**: Reworked Textures and animations.  
+- **New zones**: Expanded lore and challenges.  
+- **Sound design**: new music and SFX.  
+- **World interactivity**: NPCs  and puzzles.  
 
 ---
 
