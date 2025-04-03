@@ -63,4 +63,3 @@ Please include:
 - **Steps to reproduce**: How can we trigger it?  
 - **Screenshots/Videos** (if possible).  
   
- 
