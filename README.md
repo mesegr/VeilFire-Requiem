@@ -20,16 +20,6 @@ This is an **early BETA**, meaning:
 
 ---
 
-### 🚀 **About the Game**  
-**VeilFire Requiem** is a **2D action-adventure Metroidvania** with:  
-- **Exploration-driven progression**: Unlock abilities and access new zones.  
-- **Combat**: Dodge, slash, and brandish your sword.  
-- **Atmospheric storytelling**: Discover a dying world’s secrets.  
-
-⚠️ **This is a BETA**. Expect bugs, unfinished content, and placeholder assets.  
-
---- 
-
 ### 🛠️ **Downloads**  
 1. Download the latest release for your OS (Windows/Linux).
 - [Download_BETA-1.0.0._Linux](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.0/Download_BETA-1.0.0_Linux.zip)
@@ -44,6 +34,16 @@ This is an **early BETA**, meaning:
 - STORAGE: 450MB
 
 ---
+
+### 🚀 **About the Game**  
+**VeilFire Requiem** is a **2D action-adventure Metroidvania** with:  
+- **Exploration-driven progression**: Unlock abilities and access new zones.  
+- **Combat**: Dodge, slash, and brandish your sword.  
+- **Atmospheric storytelling**: Discover a dying world’s secrets.  
+
+⚠️ **This is a BETA**. Expect bugs, unfinished content, and placeholder assets.  
+
+--- 
 
 ### 🔮 **Planned for Future Updates**  
 - **Optimization**: Smoother performance.  
