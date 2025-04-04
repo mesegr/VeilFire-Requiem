@@ -307,8 +307,10 @@ func playerMovement(delta):
 			if dash_timer > 0:
 				dash_timer -= delta
 				motion.x = dash_speed if !sprite.flip_h else -dash_speed
+			
 				if dash_timer <= 0:
 					dash_cooldown_timer = dash_cooldown
+					is_dashing = false  # Termina el dash 
 			elif dash_cooldown_timer > 0:
 				dash_cooldown_timer -= delta
 			elif Input.is_action_just_pressed("shift") and is_on_floor() and !is_dashing and idle and attack:
