@@ -357,7 +357,7 @@ func hit(damage):
 	shake_camera()
 	HitPlayer = true
 	if PlayerLives > 0:
-		frameFreeze(0.04,0.35)
+		frameFreeze(0.1,0.35)
 	if !sprite.flip_h:
 		motion = Vector2(-150, -360)
 	else:
@@ -462,7 +462,7 @@ func dead():
 	motion = Vector2.ZERO
 	gravity = 0
 	$"../Area2D10".position = finalCollisionPos
-	frameFreeze(0.2, 2) 
+	frameFreeze(0.3, 2) 
 	$"../ControlCanvas/CanvasLayer/lives".stop()
 	enemies()
 	
@@ -552,10 +552,20 @@ func _on_Area2D10_body_entered(body):
 		finalbossMusic = true
 		$"../Area2D10".position.y = -1432
 		
-func frameFreeze(timeScale,duration):
+func frameFreeze(timeScale, duration):
 	Engine.time_scale = timeScale
-	yield(get_tree().create_timer(duration * timeScale),"timeout")
-	Engine.time_scale = 1
+	# Forzar una actualización inmediata
+	get_tree().set_deferred("pause", true)
+	get_tree().set_deferred("pause", false)
+	
+	var timer = Timer.new()
+	add_child(timer)
+	timer.wait_time = duration * timeScale
+	timer.one_shot = true
+	timer.start()
+	yield(timer, "timeout")
+	timer.queue_free()
+	Engine.time_scale = 1.0
 
 func adminOptions():
 	if Input.is_action_just_pressed("j"):

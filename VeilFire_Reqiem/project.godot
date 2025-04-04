@@ -33,7 +33,8 @@ SaveSystem="*res://Scripts/SaveSystem.gd"
 
 [debug]
 
-settings/fps/force_fps=165
+settings/fps/force_fps=75
+settings/stdout/print_fps=true
 
 [display]
 

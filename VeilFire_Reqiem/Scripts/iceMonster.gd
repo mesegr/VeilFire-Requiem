@@ -120,7 +120,7 @@ func _on_Area2D2_body_entered(body):
 		dead()
 		$AnimatedSprite2.play("default")
 		player.shake_camera()
-		player.frameFreeze(0.04,0.25)
+		player.frameFreeze(0.1,0.30)
 	if body.is_in_group("hitDown"):
 		player.motion.y = -280
 		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
@@ -134,5 +134,5 @@ func _on_Area2D2_body_entered(body):
 		dead()
 		$AnimatedSprite2.play("default")
 		player.shake_camera()
-		player.frameFreeze(0.04,0.25)
+		player.frameFreeze(0.1,0.30)
 
