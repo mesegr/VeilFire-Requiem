@@ -6,6 +6,16 @@ In a world on the brink of cataclysm, you play as a warrior destined to confront
 
 ---
 
+##  Table of Contents 📜
+
+- [📌 Current Version](#-current-version)
+- [🚀 About the Game](#-about-the-game)
+- [🛠️ Downloads](#️-downloads)
+- [🔮 Planned for Future Updates](#-planned-for-future-updates)
+- [🐛 Reporting Bugs & Feedback](#-reporting-bugs--feedback)
+
+---
+
 ## 📌 Current Version: **BETA-1.0.0**  
 **VeilFire Requiem’s first playable build!**  
 
