@@ -7,6 +7,7 @@ var speed = 45
 var velocity = Vector2(0,0)
 var left = true
 var free = false
+var hitDowneFF = -280
 onready var timerDead = $Timer
 var OriginalPositionY
 var dead = false
@@ -120,9 +121,11 @@ func _on_Area2D2_body_entered(body):
 		lives -= 1
 		dead()
 		player.shake_camera()
-		player.frameFreeze(0.1,0.30)
+		player.frameFreeze(0.1,0.29)
 	if body.is_in_group("hitDown"):
-		player.motion.y = -280
+		if player.hitEffY == -150:
+			hitDowneFF = -90
+		player.motion.y = hitDowneFF
 		$AnimatedSprite.modulate = Color(5, 5, 5)  # Cambia el color del sprite a blanco (1, 1, 1)
 		var timer = Timer.new()
 		timer.wait_time = 0.1  # Duración del color blanco (0.1 segundos)
@@ -134,4 +137,5 @@ func _on_Area2D2_body_entered(body):
 		lives -= 1
 		dead()
 		player.shake_camera()
-		player.frameFreeze(0.1,0.30)
+		player.frameFreeze(0.1,0.29)
+		hitDowneFF = -280

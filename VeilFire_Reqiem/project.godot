@@ -14,7 +14,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="kuobule"
+config/name="VeilFire Requiem"
 run/main_scene="res://Scenes/Main_menuEN.tscn"
 boot_splash/image="res://Capa 1.png"
 config/icon="res://Capa 1.png"
@@ -33,7 +33,7 @@ SaveSystem="*res://Scripts/SaveSystem.gd"
 
 [debug]
 
-settings/fps/force_fps=75
+settings/fps/force_fps=60
 settings/stdout/print_fps=true
 
 [display]

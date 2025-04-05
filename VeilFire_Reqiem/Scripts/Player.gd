@@ -39,6 +39,8 @@ var is_on_ice = false
 var motion = Vector2()
 var altar_cercano = null
 var finalCollisionPos
+var hitEffX = -150
+var hitEffY = -360
 const up = Vector2(0, -1)
 signal playerRest(altar)
 onready var startpos = $"../Startpos"
@@ -357,11 +359,11 @@ func hit(damage):
 	shake_camera()
 	HitPlayer = true
 	if PlayerLives > 0:
-		frameFreeze(0.1,0.35)
+		frameFreeze(0.1,0.36)
 	if !sprite.flip_h:
-		motion = Vector2(-150, -360)
+		motion = Vector2(hitEffX, hitEffY)
 	else:
-		motion = Vector2(150, -360)
+		motion = Vector2(-hitEffX, hitEffY)
 	sprite.play("hurt")
 	yield(get_tree().create_timer(0.35), "timeout")
 	motion.x = 0
@@ -512,12 +514,14 @@ func _on_Area2D8_body_entered(body):
 		maxSpeed = 40
 		jumpHeight = -123
 		gravity = 2
+		hitEffY = - 150
 func _on_Area2D8_body_exited(body):
 	doubleJumpItem2 = true
 	moveSpeed = 47
 	maxSpeed = 98
 	jumpHeight = -272
 	gravity = 15
+	hitEffY = - 360
 
 func shake_camera():
 	camera_shake_timer = shake_duration  # Inicia el temporizador

@@ -318,7 +318,7 @@ func _on_Area2D2_body_entered(body):
 		lives -= 1
 		dead()
 		player.shake_camera()
-		player.frameFreeze(0.1,0.30)
+		player.frameFreeze(0.1,0.29)
 	if body.is_in_group("hitDown") and !dead:
 		player.motion.y = -280
 		sprite.modulate = Color(5, 5, 5)
@@ -335,5 +335,5 @@ func _on_Area2D2_body_entered(body):
 		lives -= 1
 		dead()
 		player.shake_camera()
-		player.frameFreeze(0.1,0.30)
+		player.frameFreeze(0.1,0.29)
 		
