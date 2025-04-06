@@ -17,7 +17,7 @@ In a world on the brink of cataclysm, you play as a warrior destined to confront
 ---
 
 ## 📌 Current Version: **BETA-1.0.1**  
-**VeilFire Requiem’s Physics hotfix update 1.0.1!**  
+### **VeilFire Requiem’s Physics hotfix update 1.0.1!**  
 
 This is an **early BETA**, meaning:
 - The game is **actively in development** — expect significant changes in future updates.  
