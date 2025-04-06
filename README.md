@@ -16,17 +16,17 @@ In a world on the brink of cataclysm, you play as a warrior destined to confront
 
 ---
 
-## 📌 Current Version: **BETA-1.0.0**  
-**VeilFire Requiem’s first playable build!**  
+## 📌 Current Version: **BETA-1.0.1**  
+**VeilFire Requiem’s Physics hotfix update 1.0.1!**  
 
-This is an **early BETA**, meaning:  
+This is an **early BETA**, meaning:
 - The game is **actively in development** — expect significant changes in future updates.  
-- **Progress will NOT save between versions** (BETA-1.0.0 saves won’t work in later releases).  
+- **Progress will NOT save between versions** (BETA-1.0.1 saves won’t work in later releases).  
 - Current content is **unpolished**: placeholder art, bugs, and incomplete mechanics may appear.  
 
 *(Want stability? Wait for the full release. Want to shape the game? Your feedback is gold!)*  
 
-[Release BETA-1.0.0 notes](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/tag/BETA-1.0.0)
+[Release BETA-1.0.1 notes](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/tag/BETA-1.0.1)
 
 ---
 
@@ -42,8 +42,8 @@ This is an **early BETA**, meaning:
 
 ### 🛠️ **Downloads**  
 1. Download the latest release for your OS (Windows/Linux).
-- [Download_BETA-1.0.0._Linux](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.0/Download_BETA-1.0.0_Linux.zip)
-- [Download_BETA-1.0.0._Windows](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.0/Download_BETA-1.0.0_Windows.zip)  
+- [Download_BETA-1.0.1._Linux](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.1/VeilFire_Requiem_BETA-1.0.1_Linux.zip)
+- [Download_BETA-1.0.1._Windows](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.0.1/VeilFire_Requiem_BETA-1.0.1_Windows.zip)  
 4. Extract the ZIP file.  
 5. Run `VeilFire Requiem.exe` (or equivalent).  
 
@@ -56,7 +56,6 @@ This is an **early BETA**, meaning:
 ---
 
 ### 🔮 **Planned for Future Updates**  
-- **Optimization**: Smoother performance.  
 - **Enhanced visuals**: Reworked Textures and animations.  
 - **New zones**: Expanded lore and challenges.  
 - **Sound design**: new music and SFX.  
