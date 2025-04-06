@@ -304,7 +304,6 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
 [sub_resource type="StreamTexture" id=385]
-load_path = "res://.import/sun.png-2a6e7b70775615219125bcfb434a867b.stex"
 
 [sub_resource type="ConvexPolygonShape2D" id=77]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -6327,25 +6326,25 @@ texture = ExtResource( 32 )
 flip_h = true
 
 [node name="Mountains1" type="Sprite" parent="."]
-position = Vector2( 699.003, -72.8749 )
+position = Vector2( 699.003, -108.875 )
 scale = Vector2( 1.23633, 1.98632 )
 texture = ExtResource( 32 )
 flip_h = true
 
 [node name="Mountains7" type="Sprite" parent="."]
-position = Vector2( 1048.38, -108.874 )
+position = Vector2( 1048.38, -123.874 )
 scale = Vector2( 1.65332, 2.08008 )
 texture = ExtResource( 32 )
 flip_h = true
 
 [node name="Mountains3" type="Sprite" parent="."]
-position = Vector2( 2086.01, -178.374 )
+position = Vector2( 2086.01, -187.374 )
 scale = Vector2( 1.56738, 2.00977 )
 texture = ExtResource( 32 )
 flip_h = true
 
 [node name="Mountains4" type="Sprite" parent="."]
-position = Vector2( 1781.19, -133.686 )
+position = Vector2( 1781.19, -145.686 )
 scale = Vector2( 1.23291, 2.12989 )
 texture = ExtResource( 32 )
 flip_h = true
@@ -6361,7 +6360,7 @@ scale = Vector2( 1.9641, 4.38136 )
 texture = ExtResource( 32 )
 
 [node name="Mountains6" type="Sprite" parent="."]
-position = Vector2( 2572, -146 )
+position = Vector2( 2572, -151 )
 scale = Vector2( 2.58984, 6.56347 )
 texture = ExtResource( 32 )
 flip_h = true
@@ -6460,27 +6459,27 @@ scale = Vector2( 1.7876, 4.63917 )
 texture = ExtResource( 32 )
 
 [node name="BackMountais" type="Sprite" parent="."]
-position = Vector2( -98.9998, -51.9989 )
+position = Vector2( -98.9998, -65.9989 )
 scale = Vector2( 1.58985, 1.75977 )
 texture = ExtResource( 32 )
 
 [node name="BackMountais5" type="Sprite" parent="."]
-position = Vector2( -375, -52.0006 )
+position = Vector2( -375, -74.0006 )
 scale = Vector2( 1.02149, 1.24707 )
 texture = ExtResource( 32 )
 
 [node name="Mountains2" type="Sprite" parent="."]
-position = Vector2( 261.753, -45.8739 )
+position = Vector2( 261.753, -60.8738 )
 scale = Vector2( 1.23633, 2.08008 )
 texture = ExtResource( 32 )
 
 [node name="BackMountais2" type="Sprite" parent="."]
-position = Vector2( 623.253, -47.8738 )
+position = Vector2( 623.253, -63.8738 )
 scale = Vector2( 1.58792, 1.83009 )
 texture = ExtResource( 32 )
 
 [node name="BackMountais3" type="Sprite" parent="."]
-position = Vector2( 1448, -129.999 )
+position = Vector2( 1448, -145.999 )
 scale = Vector2( 1.58985, 1.98634 )
 texture = ExtResource( 32 )
 flip_h = true
@@ -10430,55 +10429,55 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.4, 2.4 )
 frames = SubResource( 208 )
-frame = 15
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia"]
 position = Vector2( 5877.08, -59.5239 )
 frames = SubResource( 208 )
-frame = 15
+frame = 10
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia"]
 position = Vector2( 3764.58, 369.048 )
 frames = SubResource( 208 )
-frame = 17
+frame = 12
 playing = true
 offset = Vector2( 537.5, 164.286 )
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia"]
 position = Vector2( 4754.17, -246.032 )
 frames = SubResource( 208 )
-frame = 5
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4125, -1144.84 )
 frames = SubResource( 208 )
+frame = 13
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 1045.83, -507.937 )
 frames = SubResource( 208 )
-frame = 3
+frame = 16
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 4466.67, -253.968 )
 frames = SubResource( 208 )
-frame = 6
+frame = 1
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 6720.83, -1081.35 )
 frames = SubResource( 208 )
-frame = 13
+frame = 8
 playing = true
 
 [node name="ECopia" type="AnimatedSprite" parent="altar/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia/ECopia"]
 position = Vector2( 5033.34, 194.444 )
 frames = SubResource( 208 )
-frame = 11
+frame = 6
 playing = true
 
 [node name="FinalBoss" parent="." instance=ExtResource( 135 )]
@@ -10590,7 +10589,7 @@ position = Vector2( -8, -36 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 frames = SubResource( 207 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="Oda" parent="." instance=ExtResource( 104 )]
@@ -10603,7 +10602,7 @@ visible = false
 position = Vector2( 0, -200 )
 scale = Vector2( 2.8, 2.8 )
 frames = SubResource( 207 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="Eleanor" parent="." instance=ExtResource( 91 )]
@@ -10616,7 +10615,7 @@ visible = false
 position = Vector2( 3.07715, -41.5383 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 207 )
-frame = 2
+frame = 15
 playing = true
 
 [node name="Villager" parent="." instance=ExtResource( 58 )]
@@ -10629,7 +10628,7 @@ visible = false
 position = Vector2( 0.00683594, -27.2727 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 207 )
-frame = 11
+frame = 6
 playing = true
 
 [node name="crab4" parent="." instance=ExtResource( 107 )]
@@ -11168,6 +11167,34 @@ position = Vector2( 2081, 408 )
 scale = Vector2( 1, 0.9 )
 z_index = 1
 
+[node name="Player" parent="." instance=ExtResource( 45 )]
+position = Vector2( -5963, -224 )
+scale = Vector2( 0.5, 0.45 )
+
+[node name="PlayerCamera" type="Camera2D" parent="Player"]
+position = Vector2( 402, -35.5557 )
+scale = Vector2( 0.65192, 0.689532 )
+offset = Vector2( 0, 5 )
+rotating = true
+current = true
+zoom = Vector2( 0.3, 0.3 )
+process_mode = 0
+limit_left = -6800
+limit_top = -4700
+limit_bottom = 100000
+limit_smoothed = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 4.0
+offset_h = -1.0
+drag_margin_top = 0.3
+drag_margin_bottom = 0.3
+script = SubResource( 217 )
+
+[node name="JumpBook" parent="." instance=ExtResource( 139 )]
+position = Vector2( 1918, 618 )
+scale = Vector2( 0.35, 0.35 )
+
 [node name="WaterB5Frames3" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.588235 )
 light_mask = 1023
@@ -11324,13 +11351,6 @@ position = Vector2( 3269.4, 18.9999 )
 scale = Vector2( 2.77288, 4 )
 texture = ExtResource( 29 )
 
-[node name="WaterB5Frames20" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0.588235 )
-light_mask = 1023
-position = Vector2( 3491.35, 18.9999 )
-scale = Vector2( 2.77585, 4 )
-texture = ExtResource( 29 )
-
 [node name="WaterBack9" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.588235 )
 light_mask = 1023
@@ -11359,34 +11379,6 @@ light_mask = 1023
 position = Vector2( -4.27502, 6.31389 )
 scale = Vector2( 0.425754, 0.816139 )
 texture = ExtResource( 37 )
-
-[node name="Player" parent="." instance=ExtResource( 45 )]
-position = Vector2( -5963, -224 )
-scale = Vector2( 0.5, 0.45 )
-
-[node name="PlayerCamera" type="Camera2D" parent="Player"]
-position = Vector2( 402, -35.5557 )
-scale = Vector2( 0.65192, 0.689532 )
-offset = Vector2( 0, 5 )
-rotating = true
-current = true
-zoom = Vector2( 0.3, 0.3 )
-process_mode = 0
-limit_left = -6800
-limit_top = -4700
-limit_bottom = 100000
-limit_smoothed = true
-drag_margin_v_enabled = true
-smoothing_enabled = true
-smoothing_speed = 4.0
-offset_h = -1.0
-drag_margin_top = 0.3
-drag_margin_bottom = 0.3
-script = SubResource( 217 )
-
-[node name="JumpBook" parent="." instance=ExtResource( 139 )]
-position = Vector2( 1918, 618 )
-scale = Vector2( 0.35, 0.35 )
 
 [node name="SecondaryTileMap" type="TileMap" parent="."]
 light_mask = 3

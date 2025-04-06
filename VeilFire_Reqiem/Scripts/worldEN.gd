@@ -6,7 +6,7 @@ export var intervalo_actualizacion := 2.5
 export var distancia_minima_actualizacion := 200.0
 
 # Exclusiones
-export(Array, String) var nodos_excluidos = ["TileMap", "MountainsFather", "Sky","DeadZones","altar","DesertA5","DesertA2","DesertA4","DesertA3","Trees2"]
+export(Array, String) var nodos_excluidos = ["TileMap", "MountainsFather", "Sky","DeadZones","altar","DesertA5","DesertA2","DesertA4","DesertA3","Trees2","Clouds44","Clouds50"]
 export(Array, String) var tipos_excluidos = ["TileMap", "CanvasLayer"]
 
 # --- VARIABLES ---
