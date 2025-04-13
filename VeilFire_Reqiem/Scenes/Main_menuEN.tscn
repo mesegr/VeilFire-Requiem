@@ -476,7 +476,7 @@ shader_param/roll_speed = -2.5
 shader_param/roll_size = 28.248
 shader_param/roll_variation = 0.311
 shader_param/distort_intensity = 0.002
-shader_param/noise_opacity = 0.161
+shader_param/noise_opacity = 0.183
 shader_param/noise_speed = 5.0
 shader_param/static_noise_intensity = 0.045
 shader_param/aberration = 0.005
@@ -504,7 +504,7 @@ script = ExtResource( 14 )
 position = Vector2( 960, 540 )
 scale = Vector2( 0.94, 0.94 )
 frames = SubResource( 384 )
-frame = 12
+frame = 5
 playing = true
 
 [node name="MenuTheme" type="AudioStreamPlayer" parent="."]
