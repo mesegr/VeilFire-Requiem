@@ -145,7 +145,7 @@ func _on_ButtonQuitGame_button_down():
 
 func _on_ButtonBackControls_mouse_entered():
 	$buttonHovered.play()
-	target_scales["ButtonBackControls"] = Vector2(0.35, 0.37)
+	target_scales["ButtonBackControls"] = Vector2(0.45, 0.47)
 
 func _on_ButtonBackControls_button_down():
 	$buttonPressed.play()
@@ -166,7 +166,7 @@ func _on_ButtonBackControls_button_down():
 	$ControlsPanel.visible = false
 
 func _on_ButtonBackControls_mouse_exited():
-	target_scales["ButtonBackControls"] = Vector2(0.32, 0.32)
+	target_scales["ButtonBackControls"] = Vector2(0.43, 0.43)
 	
 
 func _on_AnimationPlayer_animation_finished(anim_name):

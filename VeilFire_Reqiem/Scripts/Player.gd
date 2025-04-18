@@ -317,6 +317,7 @@ func playerMovement(delta):
 				dash_cooldown_timer -= delta
 			elif Input.is_action_just_pressed("shift") and is_on_floor() and !is_dashing and idle and attack:
 				$Area2D2/CollisionShape2D.disabled = true
+				$dash.play()
 				idle = false
 				is_dashing = true
 				dash_timer = dash_duration

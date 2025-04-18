@@ -479,10 +479,10 @@ shader_param/distort_intensity = 0.002
 shader_param/noise_opacity = 0.183
 shader_param/noise_speed = 5.0
 shader_param/static_noise_intensity = 0.045
-shader_param/aberration = 0.005
+shader_param/aberration = 0.004
 shader_param/brightness = 1.15
 shader_param/discolor = false
-shader_param/warp_amount = 0.4
+shader_param/warp_amount = 0.45
 shader_param/clip_warp = false
 shader_param/vignette_intensity = 0.7
 shader_param/vignette_opacity = 1.0
@@ -504,7 +504,6 @@ script = ExtResource( 14 )
 position = Vector2( 960, 540 )
 scale = Vector2( 0.94, 0.94 )
 frames = SubResource( 384 )
-frame = 5
 playing = true
 
 [node name="MenuTheme" type="AudioStreamPlayer" parent="."]
@@ -522,14 +521,36 @@ stream = ExtResource( 8 )
 volume_db = -13.491
 pitch_scale = 0.35
 
+[node name="ColorRect2" type="ColorRect" parent="."]
+modulate = Color( 0, 0, 0, 0.388235 )
+margin_left = -11.9953
+margin_top = 38.7961
+margin_right = 1948.01
+margin_bottom = 281.796
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -735.0
+margin_top = 57.0
+margin_right = 735.0
+margin_bottom = 263.0
+custom_colors/font_color = Color( 1, 0.705882, 0.0156863, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 11
+custom_constants/shadow_offset_y = 9
+custom_constants/shadow_as_outline = 0
+custom_fonts/font = SubResource( 292 )
+text = "VeilFire Requiem"
+
 [node name="ButtonsContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.557
 anchor_top = 0.5
 anchor_right = 0.601
 anchor_bottom = 0.5
-margin_left = -1099.44
+margin_left = -1118.44
 margin_top = -350.0
-margin_right = 18.7601
+margin_right = -0.239868
 margin_bottom = 561.0
 rect_scale = Vector2( 0.62, 0.62 )
 rect_pivot_offset = Vector2( 550, 590 )
@@ -564,15 +585,15 @@ rect_pivot_offset = Vector2( 550, 94 )
 text = "QUIT GAME  "
 
 [node name="ControlsPanel" type="TextureRect" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 40.0
-margin_top = -370.0
-margin_right = 640.0
-margin_bottom = 530.0
+margin_left = 112.0
+margin_top = -267.0
+margin_right = 712.0
+margin_bottom = 633.0
+rect_scale = Vector2( 0.8, 0.78 )
 texture = ExtResource( 2 )
 stretch_mode = 1
 
@@ -721,11 +742,11 @@ rect_scale = Vector2( 4, 4 )
 texture = ExtResource( 12 )
 
 [node name="ButtonBackControls" type="Button" parent="ControlsPanel"]
-margin_left = -240.0
-margin_top = 705.0
-margin_right = 810.0
-margin_bottom = 893.0
-rect_scale = Vector2( 0.32, 0.32 )
+margin_left = -221.111
+margin_top = 705.556
+margin_right = 828.889
+margin_bottom = 893.556
+rect_scale = Vector2( 0.43, 0.43 )
 rect_pivot_offset = Vector2( 550, 94 )
 text = "BACK TO MENU"
 
@@ -741,20 +762,13 @@ margin_top = -543.5
 margin_right = 961.5
 margin_bottom = 543.5
 
-[node name="ColorRect2" type="ColorRect" parent="."]
-modulate = Color( 0, 0, 0, 0.388235 )
-margin_left = -11.9953
-margin_top = 61.7961
-margin_right = 1948.01
-margin_bottom = 304.796
-
-[node name="Label" type="Label" parent="."]
+[node name="Label2" type="Label" parent="ColorRect"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -735.0
-margin_top = 80.0
+margin_top = 83.5
 margin_right = 735.0
-margin_bottom = 286.0
+margin_bottom = 289.5
 custom_colors/font_color = Color( 1, 0.705882, 0.0156863, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 11

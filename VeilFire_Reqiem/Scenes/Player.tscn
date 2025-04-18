@@ -30,6 +30,7 @@
 [ext_resource path="res://Assets/Knight/Capa 6.png" type="Texture" id=28]
 [ext_resource path="res://Assets/Knight/attackup.png" type="Texture" id=29]
 [ext_resource path="res://Assets/Knight/attackdown.png" type="Texture" id=30]
+[ext_resource path="res://Sounds/dash_sfx.ogg" type="AudioStream" id=31]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 10, 24.5 )
@@ -103,45 +104,41 @@ region = Rect2( 166, 0, 83, 125 )
 atlas = ExtResource( 29 )
 region = Rect2( 249, 0, 83, 125 )
 
-[sub_resource type="AtlasTexture" id=37]
+[sub_resource type="AtlasTexture" id=66]
 atlas = ExtResource( 24 )
-region = Rect2( 2, 0, 177, 66 )
+region = Rect2( 0, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=38]
+[sub_resource type="AtlasTexture" id=67]
 atlas = ExtResource( 24 )
-region = Rect2( 179, 0, 177, 66 )
+region = Rect2( 114, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=39]
+[sub_resource type="AtlasTexture" id=68]
 atlas = ExtResource( 24 )
-region = Rect2( 1595, 0, 177, 66 )
+region = Rect2( 228, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=40]
+[sub_resource type="AtlasTexture" id=69]
 atlas = ExtResource( 24 )
-region = Rect2( 1418, 0, 177, 66 )
+region = Rect2( 342, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=41]
+[sub_resource type="AtlasTexture" id=70]
 atlas = ExtResource( 24 )
-region = Rect2( 1241, 0, 177, 66 )
+region = Rect2( 456, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=42]
+[sub_resource type="AtlasTexture" id=71]
 atlas = ExtResource( 24 )
-region = Rect2( 1064, 0, 177, 66 )
+region = Rect2( 570, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=43]
+[sub_resource type="AtlasTexture" id=72]
 atlas = ExtResource( 24 )
-region = Rect2( 887, 0, 177, 66 )
+region = Rect2( 684, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=44]
+[sub_resource type="AtlasTexture" id=73]
 atlas = ExtResource( 24 )
-region = Rect2( 710, 0, 177, 66 )
+region = Rect2( 798, 0, 114, 66 )
 
-[sub_resource type="AtlasTexture" id=45]
+[sub_resource type="AtlasTexture" id=74]
 atlas = ExtResource( 24 )
-region = Rect2( 356, 0, 177, 66 )
-
-[sub_resource type="AtlasTexture" id=46]
-atlas = ExtResource( 24 )
-region = Rect2( 533, 0, 177, 66 )
+region = Rect2( 912, 0, 114, 66 )
 
 [sub_resource type="AtlasTexture" id=27]
 atlas = ExtResource( 9 )
@@ -290,7 +287,7 @@ animations = [ {
 "name": "crouch",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ) ],
+"frames": [ SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ), SubResource( 74 ) ],
 "loop": true,
 "name": "dash",
 "speed": 40.0
@@ -444,6 +441,11 @@ pitch_scale = 1.03
 [node name="rest_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 18 )
 volume_db = -14.0
+
+[node name="dash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 31 )
+volume_db = -13.351
+pitch_scale = 1.83
 
 [node name="dragonslayer_desert_music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 16 )
