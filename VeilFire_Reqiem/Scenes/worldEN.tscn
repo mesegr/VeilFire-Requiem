@@ -1,4 +1,4 @@
-[gd_scene load_steps=447 format=2]
+[gd_scene load_steps=450 format=2]
 
 [ext_resource path="res://Assets/Deco/tree_trunk.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Deco/bush.png" type="Texture" id=2]
@@ -6169,6 +6169,125 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="Animation" id=393]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ControlCanvas/CanvasLayer/ColorRect2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ControlCanvas/CanvasLayer/lives:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ControlCanvas/CanvasLayer/CoinsPanel:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=394]
+resource_name = "fadeFromBlack"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ControlCanvas/CanvasLayer/ColorRect2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.9, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ControlCanvas/CanvasLayer/lives:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ControlCanvas/CanvasLayer/CoinsPanel:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=395]
+resource_name = "fade_to_black"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
 [sub_resource type="Shader" id=384]
 code = "shader_type canvas_item;
 
@@ -6394,20 +6513,20 @@ void fragment()
 [sub_resource type="ShaderMaterial" id=383]
 shader = SubResource( 384 )
 shader_param/overlay = true
-shader_param/scanlines_opacity = 0.195
-shader_param/scanlines_width = 0.156
-shader_param/grille_opacity = 0.055
-shader_param/resolution = Vector2( 1920, 1080 )
+shader_param/scanlines_opacity = 0.308
+shader_param/scanlines_width = 0.312
+shader_param/grille_opacity = 0.05
+shader_param/resolution = Vector2( 1080, 500 )
 shader_param/pixelate = false
 shader_param/roll = true
-shader_param/roll_speed = -1.5
-shader_param/roll_size = 28.73
+shader_param/roll_speed = -1.8
+shader_param/roll_size = 32.451
 shader_param/roll_variation = 0.317
 shader_param/distort_intensity = 0.002
-shader_param/noise_opacity = 0.15
+shader_param/noise_opacity = 0.085
 shader_param/noise_speed = 5.0
-shader_param/static_noise_intensity = 0.04
-shader_param/aberration = 0.003
+shader_param/static_noise_intensity = 0.03
+shader_param/aberration = 0.002
 shader_param/brightness = 1.1
 shader_param/discolor = false
 shader_param/warp_amount = 0.3
@@ -12822,6 +12941,7 @@ margin_bottom = 1890.0
 script = ExtResource( 21 )
 
 [node name="CoinsPanel" type="Sprite" parent="ControlCanvas/CanvasLayer"]
+modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 1789, 66 )
 scale = Vector2( 0.6, 0.55 )
 texture = ExtResource( 103 )
@@ -13217,6 +13337,7 @@ theme = ExtResource( 93 )
 text = "Sword stolen from the current King Roderick of Midland. With this sword, you will be able to execute faster thrusts without sacrificing its lethality."
 
 [node name="lives" type="AnimatedSprite" parent="ControlCanvas/CanvasLayer"]
+modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 301, 55 )
 scale = Vector2( 1.2, 1.15 )
 frames = SubResource( 218 )
@@ -13268,6 +13389,26 @@ animation = "t"
 [node name="Menu" parent="ControlCanvas/CanvasLayer" instance=ExtResource( 90 )]
 pause_mode = 2
 visible = false
+
+[node name="ColorRect2" type="ColorRect" parent="ControlCanvas/CanvasLayer"]
+process_priority = -1
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+show_behind_parent = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -963.0
+margin_top = -540.0
+margin_right = 960.0
+margin_bottom = 547.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ControlCanvas/CanvasLayer"]
+root_node = NodePath("../../..")
+anims/RESET = SubResource( 393 )
+anims/fadeFromBlack = SubResource( 394 )
+anims/fade_to_black = SubResource( 395 )
 
 [node name="ColorRect" type="ColorRect" parent="ControlCanvas/CanvasLayer"]
 material = SubResource( 383 )

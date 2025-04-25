@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=2]
+[gd_scene load_steps=80 format=2]
 
 [ext_resource path="res://Resources/Themes/MainMenuTheme.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/ControlsPanel.png" type="Texture" id=2]
@@ -35,6 +35,7 @@
 [ext_resource path="res://MainMenuBack/Capa 1()4.png" type="Texture" id=33]
 [ext_resource path="res://MainMenuBack/Capa 1()15.png" type="Texture" id=34]
 [ext_resource path="res://MainMenuBack/Capa 1()12.png" type="Texture" id=35]
+[ext_resource path="res://Capa 1.png" type="Texture" id=36]
 
 [sub_resource type="SpriteFrames" id=384]
 animations = [ {
@@ -70,7 +71,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=295]
 resource_name = "fade_to_black"
-length = 2.0
+length = 1.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("ColorRect:modulate")
 tracks/0/interp = 1
@@ -78,10 +79,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1.7 ),
+"times": PoolRealArray( 0, 1.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+"values": [ Color( 0, 0, 0, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="AtlasTexture" id=256]
@@ -466,19 +467,19 @@ void fragment()
 [sub_resource type="ShaderMaterial" id=383]
 shader = SubResource( 382 )
 shader_param/overlay = true
-shader_param/scanlines_opacity = 0.29
-shader_param/scanlines_width = 0.21
-shader_param/grille_opacity = 0.112
-shader_param/resolution = Vector2( 1920, 1080 )
+shader_param/scanlines_opacity = 0.304
+shader_param/scanlines_width = 0.224
+shader_param/grille_opacity = 0.051
+shader_param/resolution = Vector2( 1080, 500 )
 shader_param/pixelate = false
 shader_param/roll = true
 shader_param/roll_speed = -2.5
 shader_param/roll_size = 28.248
 shader_param/roll_variation = 0.311
 shader_param/distort_intensity = 0.002
-shader_param/noise_opacity = 0.183
+shader_param/noise_opacity = 0.146
 shader_param/noise_speed = 5.0
-shader_param/static_noise_intensity = 0.045
+shader_param/static_noise_intensity = 0.036
 shader_param/aberration = 0.004
 shader_param/brightness = 1.15
 shader_param/discolor = false
@@ -504,6 +505,7 @@ script = ExtResource( 14 )
 position = Vector2( 960, 540 )
 scale = Vector2( 0.94, 0.94 )
 frames = SubResource( 384 )
+frame = 3
 playing = true
 
 [node name="MenuTheme" type="AudioStreamPlayer" parent="."]
@@ -585,6 +587,7 @@ rect_pivot_offset = Vector2( 550, 94 )
 text = "QUIT GAME  "
 
 [node name="ControlsPanel" type="TextureRect" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -750,32 +753,11 @@ rect_scale = Vector2( 0.43, 0.43 )
 rect_pivot_offset = Vector2( 550, 94 )
 text = "BACK TO MENU"
 
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
+[node name="ColorRect" type="Sprite" parent="."]
 modulate = Color( 0, 0, 0, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -961.5
-margin_top = -543.5
-margin_right = 961.5
-margin_bottom = 543.5
-
-[node name="Label2" type="Label" parent="ColorRect"]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -735.0
-margin_top = 83.5
-margin_right = 735.0
-margin_bottom = 289.5
-custom_colors/font_color = Color( 1, 0.705882, 0.0156863, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 11
-custom_constants/shadow_offset_y = 9
-custom_constants/shadow_as_outline = 0
-custom_fonts/font = SubResource( 292 )
-text = "VeilFire Requiem"
+position = Vector2( 960, 540 )
+scale = Vector2( 0.725, 0.72 )
+texture = ExtResource( 36 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 294 )
@@ -797,9 +779,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -1115.0
-margin_top = -641.0
+margin_top = -642.0
 margin_right = 736.0
-margin_bottom = 529.0
+margin_bottom = 528.0
 rect_scale = Vector2( 1.2, 1.1 )
 mouse_filter = 2
 

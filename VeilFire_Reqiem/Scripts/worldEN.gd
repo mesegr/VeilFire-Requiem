@@ -16,6 +16,9 @@ var ultima_posicion_actualizacion := Vector2.ZERO
 
 # --- INICIALIZACIÓN ---
 func _ready():
+	$ControlCanvas/CanvasLayer/AnimationPlayer.play("fadeFromBlack")
+
+	$ControlCanvas/CanvasLayer/AnimationPlayer.connect("animation_finished", self, "_on_AnimationPlayer_animation_finished")
 	# Configurar cámara (ajusta la ruta según tu escena)
 	camera = get_node("Player/PlayerCamera") if has_node("Player/PlayerCamera") else null
 	
@@ -39,6 +42,11 @@ func _on_Timer_timeout():
 		_actualizar_visibilidad()
 		ultima_posicion_actualizacion = camera.global_position
 
+func _on_AnimationPlayer_animation_finished(fadeFromBlack):
+	print("La animación", fadeFromBlack, "ha terminado")
+	$ControlCanvas/CanvasLayer/ColorRect2.visible = false
+	# Aquí puedes hacer lo que necesites al terminar la animación
+		
 # --- LÓGICA DE VISIBILIDAD ---
 func _actualizar_visibilidad():
 	print("Actualizando visibilidad...")
