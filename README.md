@@ -26,7 +26,7 @@ This is an **early BETA**, meaning:
 
 *(Want stability? Wait for the full release. Want to shape the game? Your feedback is gold!)*  
 
-[Release BETA-1.1.0 notes](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/tag/BETA-1.1.0)
+[Release BETA-1.1.0 notes](https://github.com/mesegr/VeilFire-Requiem/releases/tag/BETA-1.1.0)
 
 ---
 
@@ -42,8 +42,8 @@ This is an **early BETA**, meaning:
 
 ### 🛠️ **Downloads**  
 1. Download the latest release for your OS (Windows/Linux).
-- [Download_BETA-1.1.0._Linux](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.1.0/VeilFire_Requiem_BETA-1.1.0_Linux.zip)
-- [Download_BETA-1.1.0._Windows](https://github.com/AlejandroYanezMeseguer/VeilFire-Requiem/releases/download/BETA-1.1.0/VeilFire_Requiem_BETA-1.1.0_Windows.zip)  
+- [Download_BETA-1.1.0._Linux](https://github.com/mesegr/VeilFire-Requiem/releases/download/BETA-1.1.0/VeilFire_Requiem_BETA-1.1.0_Linux.zip)
+- [Download_BETA-1.1.0._Windows](https://github.com/mesegr/VeilFire-Requiem/releases/download/BETA-1.1.0/VeilFire_Requiem_BETA-1.1.0_Windows.zip)  
 4. Extract the ZIP file.  
 5. Run `VeilFire Requiem.exe` (or equivalent).  
 
